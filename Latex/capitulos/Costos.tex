@@ -1,0 +1,126 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Análisis de Costo}
+%\blindtext
+\section{Costos variables}
+Los costos variables corresponden a los costos directos involucrados en la producción y venta de un articulo. Alineándonos a nuestro proyecto, no cubrimos gastos por ventas, pero si por producción, en donde, se derivan dos categorías: a) costos por materias primas y b) costos por mano de obra directa. 
+
+Los costos primarios corresponden a los costos por materia prima directa gastados. Ya que en nuestro trabajo no se manufacturó ni tampoco se transformó el material, nuestra materia prima corresponde a todo el material que se utilizó para llevar acabo el desarrollo del proyecto, desde la compra de los robots hasta la compra de los tornillos, pegamento, etc.
+
+%%Tabla 1
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{4.5cm}|c|p{2.5cm}|p{2.5cm}|p{4cm}|}
+	\hline
+	Articulo &  Cantidad & Precio unitario & Precio total \\
+	\hline
+	Turtlebot3 burger &  2 & 590 USD* & 1180 USD*\\
+	\hline
+	Teclado y mouse Logitech &  2 & 343.97 MXN & 687.80 MXN\\
+	\hline
+	Cargado Energizer &  1 & 206.03 MXN & 206.03 MXN\\
+	\hline
+	Plan de remplazo &  2 & 68.10 MXN & 136.20 MXN\\
+	\hline
+    Adaptador de HDMI a VGA &  2 & 188.70 MXN & 188.70 MXN\\
+	\hline
+	Baterías &  1 & 76.73 MXN & 73.73 MXN\\
+	\hline
+	Placas de madera &  3 & 170.00 MXN & 510.00 MXN\\
+	\hline
+	Tira de pino &  6 & 25.00 MXN & 150.00 MXN\\
+	\hline
+	Otros (tornillos, pegamento, etc) &  n & 150.00 MXN & 150.00 MXN\\
+	\hline
+	\multicolumn{3}{|c|}{Total} & \cellcolor{naranja}24,808.75 MXN\\
+	\hline
+	\end{tabular}
+	\caption{Tabla de costos variables.}
+	\label{tab:Tabla_CostosVariables}
+\end{table}
+%-------------------------
+*La compra de los Turtlebot3 burger se hizo el 14 de septiembre de 2018, ese día el tipo de cambio promedio un total de 19.24 pesos mexicanos por cada dólar estadounidense.
+
+\section{Costos fijos}
+
+%\subsection{Costos fijos por horas trabajadas}	
+
+%Para calcular los costos fijos por horas trabajadas, se dividen los costos fijos de la empresa entre el total de horas trabajadas. 
+Horas trabajadas
+
+%%Tabla 2-------------------------------------------------------
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\multirow{2}{*}{TT1} &Total de días trabajados & Horas trabajadas por día\\ \cline{2-3}
+	& 85 &  3\\
+	\hline
+	\multicolumn{2}{|c|}{Total de horas trabajadas} & 255\\
+	\hline
+	\end{tabular}
+	\caption{Días trabajados TT1.}
+	\label{tab:Diastrabajados_TT1}	
+\end{table}	
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	\multirow{2}{*}{TT2} &Total de días trabajados & Horas trabajadas por día\\ \cline{2-3}
+	& 95 &  4\\
+	\hline
+	\multicolumn{2}{|c|}{Total de horas trabajadas} & 380 \\
+	\hline
+	\end{tabular}
+	\caption{Días trabajados TT2.}
+	\label{tab:Diastrabajados_TT2}	
+\end{table}	
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|}
+	\hline
+	Total de días trabajados & 180 días \\
+	\hline
+	Total de horas trabajadas & 635 horas \\
+	\hline
+	\end{tabular}
+	\caption{Total de días y horas trabajadas.}
+	\label{tab:Total_dias_horas}	
+\end{table}	
+
+%%---------------------------------------------------------------
+Nota: El total de días trabajados es ideal, ya que únicamente se están contabilizando los 5 primeros días de la semana, sin contar fines de semana, ni vacaciones, aunque se haya trabajado en fines de semana y vacaciones. Este análisis se hizo basándose en el calendario del Instituto Politécnico Nacional (semestres 2019 -1 y 2019 -2).
+
+Los costos fijos son costos periódicos, es decir, suelen incurrirse a ellos por medio del tiempo transcurrido, como lo sería costos por renta, mantenimiento, etc., pero como fue en nuestro caso nosotros no cubrimos ninguno de esos gastos, porque son gastos cubiertos por el Instituto Politécnico Nacional. Consideramos como gastos fijos los gastos de transporte, comidas, y tiempo en la escuela por todos los miembros del equipo.
+
+%%----------------------------------Tabla 3
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	Tipo de gasto & Gasto por día [MXN]& Gasto por el total de días trabajados (180) \\
+	\hline
+	Pasajes & \$140.00 & \$25,200.00 \\
+	\hline
+	Comidas & \$160.00 & \$28,800.00 \\
+	\hline
+	Otros gastos & \$15.00 & \$2,700.00 \\
+	\hline
+	\multicolumn{2}{|c|}{TOTAL} & \$56,700.00 MXN \\
+	\hline
+	\end{tabular}
+	\caption{Costo total de gastos fijos.}
+	\label{tab:CostoTotal_GastosFijos}	
+\end{table}	
+
+
+\section{Costo total}
+
+El costo total de proyecto corresponde a la suma del costo fijo más la suma del costo variable. 
+\begin{center}
+\textit{Costo total = Costo fijo + Costo variable}
+
+Costo total del proyecto = \textcolor{red}{\$81,508.75.00} 
+
+\end{center}
+Este es el \textit{precio neto} del proyecto por lo que si se pensará en comercializarlo se le podría agregar un porcentaje de ganancia con base en el costo total de proyecto. 

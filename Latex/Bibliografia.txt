@@ -1,0 +1,43 @@
+% ------------------------------------------------------------------------
+@MANUAL{e-Manual-structure,
+	author = {Robotis},
+	title= {e-Manual specifications},
+	journal= {Robotis},
+	url = {http://emanual.robotis.com/docs/en/platform/turtlebot3/specifications/},
+	year = {2016} }
+% ------------------------------------------------------------------------
+ @misc{qt_build,
+	title={qt-build},
+	url={http://wiki.ros.org/qt-build},
+	journal={wiki ros},
+	publisher={ros},
+	author={ROS},
+	year={2014},
+	month={Feb}}
+
+@misc{catkin_make,
+	title={catkin make},
+	url={http://wiki.ros.org/catkin/commands/catkin_make},
+	journal={wiki ros},
+	publisher={ros},
+	author={ROS},
+	year={2014},
+	month={Feb}}
+
+@misc{install_ubuntu,
+	title={install ubuntu},
+	url={https://www.linuxtechi.com/install-ubuntu-16-04-with-screenshots/},
+	journal={linuxtechi},
+	publisher={linuxtechi},
+	author={Pradeep Kumar},
+	year={2016},
+	month={Apr}}
+
+@misc{ssh,
+	title={SSH (Secure Shell)},
+	url={https://www.raspberrypi.org/documentation/remote-access/ssh/},
+	journal={Raspberrypi.org},
+	publisher={Raspberrypi.org},
+	author={Raspberrypi.org},
+	year={2013},
+	month={Feb}}

@@ -1,0 +1,865 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Integración del Sistema}
+%\blindtext
+\section{Implementación del Área Funcional Estructura}
+
+La resolución de está área funcional estuvo relacionada con el armado del robot, que como ya se había mencionado posteriormente en capítulos pasados, está área funcional tenía como requerimiento alberga a todas las demás áreas funcionales que conforma a cada robot, lo cual no presentó mayor dificultad porque cada robot ya viene diseñado con tal objetivo para únicamente centrarse en armar.
+
+A continuación se detalla cada parte del proceso.
+
+\subsection{Armado de los robots móviles}
+
+%%Caja de los diferentes componentes del robot.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.40]{imagenes/Implementacion/Estructura/01_Caja_de_Componentes.jpg}}
+	\caption{Caja con los diferentes componentes del robot.}
+	\label{fig:Figura_Caja_Componentes}
+\end{figure}
+
+Los componentes del turtlebot3 burger vienen en 4 cajas enumeradas y mostradas en la Figura \ref{fig:Figura_Caja_Componentes}, cada caja, con distintas piezas y componentes. En la \textit{caja 1} como se muestra en la Figura \ref{fig:Figura_Caja_1}, viene una tarjeta microSD de 16GB, una tarjeta Raspberry Pi 3, un par de motores Dynamixel y una tarjeta OpenCR Cortex M7. En la \textit{caja 2} mostrada en la Figura \ref{fig:Figura_Caja_2} viene una bateria LiPo junto con su cargador, un desarmador, un sensor LIDAR, un conector USB2LDS y soportes para pcb's. En la \textit{caja 3} como se muestra en la Figura \ref{fig:Figura_Caja_3} vienen todos los pisos del robot denominados ``Waffle - Plate". En la \textit{caja 4} mostrada en la Figura \ref{fig:Figura_Caja_4} viene el sistema de tracción, es decir, las llantas, sus respectivas ruedas, así como los tornillos y piezas de ensamble de todo el robot, cables y una rueda loca.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.27]{imagenes/Implementacion/Estructura/02_Caja_1.jpg}}
+	\caption{Caja de componentes 1. \textit{MicroSD, Raspberry Pi 3, motores Dynamixel y Tarjera OpenCR Cortex M7}}
+	\label{fig:Figura_Caja_1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.27]{imagenes/Implementacion/Estructura/03_Caja_2.jpg}}
+	\caption{Caja de componentes 2. \textit{Bateria LiPo, cargador, desarmador, sensor LIDAR, conector USB2LDS y soportes para pcb's}}
+	\label{fig:Figura_Caja_2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/Estructura/04_Caja_3.jpg}}
+	\caption{Caja de componentes 3. \textit{ ``Waffle - Plate" pisos de los robots}}
+	\label{fig:Figura_Caja_3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/Estructura/05_Caja_4.jpg}}
+	\caption{Caja de componentes 4. \textit{Llantas, ruedas, tornillos, piezas de ensamble, cables y una rueda loca}}
+	\label{fig:Figura_Caja_4}
+\end{figure}
+
+Además de estas cuatro cajas, también viene en una caja más no numerada donde viene la fuente de voltaje para el cargador con su respectivo cable como se muestra en la Figura \ref{fig:Figura_Fuente_de_carga}.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg}}
+	\caption{Fuente de voltaje para bateria LiPo.}
+	\label{fig:Figura_Fuente_de_carga}
+\end{figure}
+
+La primera parte del armado consistió en unir cada uno de los pisos con ayuda de sus respectivos tornillos, así como también de sus distintos componentes, como se muestra en las Figuras \ref{fig:Figura_Uniones} y \ref{fig:Figura_Wafles_Ensamblados}.
+
+%%Unión de los pisos del robot.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.40]{imagenes/Implementacion/Estructura/07_Uniones.jpg}}
+	\caption{Unión de los pisos del robot.}
+	\label{fig:Figura_Uniones}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg}}
+	\caption{Piezas Ensambladas.}
+	\label{fig:Figura_Wafles_Ensamblados}
+\end{figure}
+
+Los problemas que en esta parte se presentaron fueron que a pesar de que en el instructivo de armado viene paso por paso como van las piezas y cada una de las tapas, muchas veces este no era tan claro aunado a que todas las partes del robot son muy parecidas, dando lugar a piezas mal colocadas y por ende mal ensambladas a la hora de unir cada uno de los pisos.
+
+%%Ensamble del robot.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.35]{imagenes/Implementacion/Estructura/09_Ensamble_Robot.jpg}}
+	\caption{Ensamble del robot.}
+	\label{fig:Figura_Ensamble_Robot}
+\end{figure}
+
+\subsection{Instrucciones de Armado}
+
+Para el armado de estructura y de las partes electrónicas se siguieron las instrucciones tal y como se indican el manual de ensamble del turtlebot3 burger \cite{e-Manual-structure}, con algunos consejos que a continuación se mencionan.
+
+\begin{itemize}
+	\item Antes de armar el turtlebot3 burger tener todo el software de inicio instalado.
+	\item En el caso particular de la Raspberry Pi 3 usar un cargador de 5.0V a 2A para instalar el sistema operativo.
+	\item Tener un desarmador imantando como el proporcionado que sujete bien los tornillos.
+	\item Ir verificando que cada capa este bien sujetada.
+	\item Hacer las pruebas de hardware para cada capa.
+	\item Colocar de manera correcta todos los cables de conexión por los orificios indicados.
+	\item Armarla en un lugar seguro en cual no pierdan piezas pequeñas.
+	\item Consultar el video de armado para un mejor armado.
+\end{itemize}
+
+\subsection{Resultados del proceso de armado}
+
+En las Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura_Piso_3} y \ref{fig:Figura_Ensamble_Final} se puede observar como se ve en físico cada uno del los pisos del turtlebot3 burger así como el orden en el que fueron ensamblados.
+.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/10_Piso_1.jpg}}
+	\caption{Ensamble del primer piso.}
+	\label{fig:Figura_Piso_1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/11_Piso_2.jpg}}
+	\caption{Ensamble del segundo piso.}
+	\label{fig:Figura_Piso_2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/Estructura/12_Piso_03.jpg}}
+	\caption{Ensamble del tercer piso.}
+	\label{fig:Figura_Piso_3}
+\end{figure}
+
+%%Ensamble final del robot.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=1.5]{imagenes/Implementacion/Estructura/13_Ensamble_Final.jpg}}
+	\caption{Ensamble final del robot.}
+	\label{fig:Figura_Ensamble_Final}
+\end{figure}
+
+Cabe destacar que el armado de cada robot representó un trabajo muy minucioso ya que cada tornillo y tuerca tenían que estar en el lugar adecuado, cada piso y componente por lo mismo la tarea duró aproximadamente 5 horas de trabajo contínuo para cada turtlebot3 burger.
+
+
+%%Robots Líder ? Seguidor.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=2.0]{imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg}}
+	\caption{Robot líder y robot seguidor seguidor.}
+	\label{fig:Figura_Robots_Lider_Seguidor}
+\end{figure}
+
+\subsection{Verificación de ensamble del sistema}
+
+Una vez que el robot estuvo armado verificamos que todo estuviera bien conectado, es decir, que la batería LiPo alimentara a las dos tarjetas de procesamiento (Raspberry y OpenCR) y que estas alimentaran a los subsistemas que de ellas dependen como lo son los actuadores y el sensor LIDAR. El trabajo en conjunto del ensamble del robot junto con la programación e instalación de Raspbian a la Raspberry Pi 3.
+
+\section{Implementación del Área Funcional Movimiento}
+
+Esta área funcional es la encargada de la unión de la estructura junto con su configuración mecánica. En la implementación se utilizaron 2 actuadores Dynamixel por cada robot conectados a una tarjeta OpenCR denominada tarjeta de control. Para ajustar el PID encargado de mantener estable las velocidades de los robots no fue necesario realzar un calculo de valores, ya que los motores contaban con la opción de autotune que permitía de forma automática obtener los valores de PID necesarios para lograr un control de velocidad y estos ya estaban previamente configurados, con un valor \textbf{P} de 1.1, \textbf{D} de 0.03 e \textbf{I} de 0.11.
+
+\begin{figure}[H]
+	\centering
+    \fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/11_Piso_2.jpg}}
+	\caption{Area funcional movimiento, que cuenta con los dos motores Dynamixel y la OpenCR.}
+	\label{fig:Figura_Area movimientos}
+\end{figure}
+
+\section{Implementación del Área Funcional Percepción}
+
+En la implementación de la tercera área funcional; percepción se utilizan 2 sensores (sensor LIDAR, encoder del actuador) que en conjunto logran percibir el entorno brindando así la posibilidad de conocer la posición de cada robot y determinar si hay un objeto cercano al robot para que este lo pueda esquivar.
+
+\subsection{Sensor LIDAR}
+
+El primer sensor involucrado es el sensor LIDAR, y por medio de este sensor se miden las distancias mínimas de cercanía hacia algún objeto (para este proyecto puede ser una pared u obstáculo), para cada uno de los 360 grados que rodean al robot.
+
+Para su implementación este sensor fue colocado en la capa superior de cada móvil como se observa en Figura \ref{fig:Figura_Montaje_LIDAR}, destacando que cada uno de estos sensores es independiente del otro y al verificar su correcto funcionamiento en robot se deben aplicar los mismos pasos para el otro robot, posteriormente se realizaron las pruebas en la interfaz gráfica proporcionada por el fabricante (previamente realizando la configuración básica del turtlebot3 burger a verificar, descrita a fondo en procesamiento) y con los resultados de la interfaz gráfica la cual muestra las distancias del sensor LIDAR reflejadas en un mapa 2D, podemos comprobar que el sensor esta trabajando correctamente.
+
+%%Ilustración 1: Montaje del sensor LIDAR en la estructura
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.35]{imagenes/Implementacion/01_Montaje_LIDAR.jpg}}
+	\caption{Montaje del sensor LIDAR en la estructura.}
+	\label{fig:Figura_Montaje_LIDAR}
+\end{figure}
+Como se puede observar en la Figura  \ref{fig:Figura_Montaje_LIDAR} se debe tener cuidado en la orientación en la que se coloca el sensor LIDAR, colocándolo de tal forma como se muestra en la Figura  \ref{fig:Figura_Montaje_LIDAR}. Esto debido a que el sistema de referencia entre el móvil y los datos arrojados en la interfaz, los cuales son propuestos para que el sensor LIDAR tenga su origen en 0 grados en la parte frontal del móvil, sino respetara está condición provocaría  un desfase en el ángulo lo cual afectaría en la realización del mapa del entorno y que posteriormente se vería reflejado en un desfase angular en los demás móviles que no tuvieran la misma orientación que el móvil con el cual se realizó el escaneo del mapa.
+
+Es importante también señalar que el sensor LIDAR como el mostrado en la Figura  \ref{fig:Figura_Sensor_LIDAR_tb3} cuenta al frente con un indicador de fase, el cual le comunica al controlador del LIDAR que ha pasado por el 0 absoluto del sensor, esto se realiza ya que no se sabe certeramente en que posición esta apuntando el  del sensor LIDAR cuando se inicia el escaneo.
+
+%%Ilustración 2: Sensor LIDAR del Turtlebot3 burger
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/02_LIDAR_tb3.jpg}}
+	\caption{Sensor LIDAR del Turtlebot3 burger.}
+	\label{fig:Figura_Sensor_LIDAR_tb3}
+\end{figure}
+Para comprobar que el sensor esta funcionando correctamente se cuenta con un programa que inicializa los nodos necesarios para el funcionamiento básico del robot, el cual comunica el robot con la computadora principal además de obtener y mandar datos al sensor LIDAR y a los motores por medio de la tarjeta OpenCR.
+
+Las instrucciones para correr esta verificación son las siguientes:
+
+\begin{itemize}
+	\item roscore (En la PC principal)
+	\item roslaunch turtlebot3 turtlebot3\_bringup.launch (En la Raspberry Pi 3)
+	\item roslaunch turtlebot3\_slam turtlebot3\_slam.launch (En la PC principal)
+\end{itemize}
+
+Al correr estos comandos habiendo configurado correctamente la comunicación por ROS entre el turtlebot3 y la PC principal y estando en la misma red con mismos parámetros se obtuvieron los resultados mostrados en la Figura \ref{fig:Figura_Distancias_LIDAR_RVIZ}, donde los puntos en amarillo son las distancias escaneadas por el LIDAR.
+
+%%Ilustración 3: Distancias del LIDAR en RVIZ
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/03_RVIZ_Distancias.jpg}}
+	\caption{Distancias del LIDAR en RVIZ}
+	\label{fig:Figura_Distancias_LIDAR_RVIZ}
+\end{figure}
+Adicionalmente se pueden ver los valores de las distancias si ejecutamos el comando:
+
+\begin{itemize}
+	\item rqt (En la PC principal)
+\end{itemize}
+
+Al abrirse la ventana como se muestra en la Figura \ref{fig:Figura_RQt_LIDAR_scan} se podrán observar los valores de los mensajes publicados y si se marca la casilla se puede leer y ver su valor en pantalla, para verificar los datos que da el sensor se marca la casilla /scan, la cual si no aparece significa que se tiene problemas en el sensor LIDAR o en la ejecución de los comandos.
+
+%%Ilustración 4: Visualización en rqt de los valores del sensor LIDAR
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.32]{imagenes/Implementacion/04_RQt_scan.jpg}}
+	\caption{Visualización en rqt de los valores del sensor LIDAR.}
+	\label{fig:Figura_RQt_LIDAR_scan}
+\end{figure}
+
+\subsection{Sensores del motor DYNAMIXEL}
+
+El segundo sensor involucrado es el encoder contenido en los motores DYNAMIXEL mostrado en la Figura \ref{fig:Figura_Motores_DYNAMIXEL_XL430}, este enconder lleva a cabo la tarea en conjunto con el microcontrolador del motor DYNAMIXEL, de estimar del desplazamiento que ha tenido el robot.
+
+%%Ilustración 5: Motores DYNAMIXEL XL430
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.23]{imagenes/Implementacion/05_Dynamixel.jpg}}
+	\caption{Motores DYNAMIXEL XL430.}
+	\label{fig:Figura_Motores_DYNAMIXEL_XL430}
+\end{figure}
+Para la implementación de este sensor se colocan los 2 motores en la estructura conectados a la tarjeta OpenCR como se muestra en la Figura \ref{fig:Figura_Ensamble_motores_OpenCR}.
+
+%%Ilustración 6: Ensamble de los motores, OpenCR y Bateria LiPo
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.43]{imagenes/Implementacion/06_OpenCR_Dynamixel.jpg}}
+	\caption{Ensamble de los motores, OpenCR y Batería LiPo.}
+	\label{fig:Figura_Ensamble_motores_OpenCR}
+\end{figure}
+
+Una vez ensamblada esa capa se procedió a verificar el funcionamiento de los motores así como él de los enconders por medio del programa base que se le carga  a la OpenCR. Este programa hace dos pruebas con los motores una para lograr un desplazamiento lineal y otra para un desplazamiento angular (giro de 180° conforme al centro del robot) en la posición del robot.
+
+%%Ilustración 7: Localización de los botones de prueba en la tarjeta OpenCR
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/07_OpenCR_botones.jpg}}
+	\caption{Localización de los botones de prueba en la tarjeta OpenCR.}
+	\label{fig:Figura_Botones_OpenCR}
+\end{figure}
+
+El proceso de verificación del correcto funcionamiento de los encoders y el giro de los motores es el siguiente :
+
+\begin{itemize}
+	\item Revisar que todos los elementos estén ensamblados al menos hasta la capa 2.
+	\item Encender el Robot por medio del switch que trae consigo la tarjeta Open CR.
+	\item Colocar el robot en una zona que no choque y a su vez no se caiga como una mesa.
+	\item Presionar por 3 segundos el botón PUSH SW1 visto en la Figura \ref{fig:Figura_Botones_OpenCR} para verificar que el robot avance alrededor de 30 cm.
+	\item Presionar por 3 segundos el botón PUSH SW2 visto en la Figura \ref{fig:Figura_Botones_OpenCR} para verificar que el robot gire 180° grados sobre su propio eje.
+\end{itemize}
+
+Si estas 2 pruebas se cumplen entonces los encoders están funcionando correctamente, ya que nos están dando la distancia desplazada real.
+
+\section{Implementación del Área Funcional Alimentación}
+Para la implementación de esta área funcional se usó una batería LiPo de11.1V y 1800mAH vista en la Figura \ref{fig:Figura_Bateria_LiPo_LB012}, la cual se carga totalmente aproximadamente en 1 hora y media, y es capaz de mantener en operación al robot por aproximadamente 2 horas en funcionamiento con uso moderado.
+
+%%Batería LiPo LB-012
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.27]{imagenes/Implementacion/08_Bateria_LiPo.jpg}}
+	\caption{Batería LiPo LB-012.}
+	\label{fig:Figura_Bateria_LiPo_LB012}
+\end{figure}
+
+Para verificar su correcto funcionamiento solamente se conectó al móvil siguiendo los primeros pasos de ensamble como se muestra en la Figura \ref{fig:Figura_Ensamble_motores_OpenCR} y se verificó que el Power  LED de la OpenCR estuviera prendido, este LED se muestra en la Figura \ref{fig:Figura_Botones_OpenCR}.
+
+\section{Implementación del Área Funcional Procesamiento}
+
+\subsection{Pasos previos}
+
+La sección de procesamiento requiere una configuración previa de las tarjetas y de la computadora remota. Todos los pasos que son necesarios para tener en funcionamiento los turtlebot3 burger se encuentran en su manual online, a continuación, se presentan algunos consejos de implementación o pasos adicionales que se tuvieron que realizar.
+
+En la computadora remota se instaló Ubuntu16.04, muchos son los tutoriales que explican cómo hacerlo y dependiendo de la computadora puede ser más o menos complejo, una buena fuente de referencia es la de la página web linuxtechi \cite{install_ubuntu}. La mejor forma de instalar ROS sobre la computadora remota es con el método que propone el manual online de los turtlebot3, todo el proceso es automático, ya que a diferencia de los métodos convencionales donde es necesario ejecutar una seria de comandos manualmente, este manual proporciona un script que va ejecutando los pasos uno después de otro hasta finalizar la instalación, además de que descarga todos los paquetes necesarios para el funcionamiento de los robots al ejecutar todas las instrucciones que nos dice.
+
+Para la Raspberry Pi 3 existen dos sistemas operativos compatibles con ROS, Raspbian y UbuntuMate, para este caso se optó por Raspbian ya que la forma de configurar el SSH está bien establecida en la documentación oficial de la Raspberry Pi \cite{ssh}, además en el mismo manual , se proporciona una versión de Raspbian con ROS instalado, lo cual reduce en aproximadamente en 2 horas el tiempo de instalación por tarjeta.
+
+Para la configuración de OpenCR, igual existen dos formas de configurarla, la primera por medio de de la computadora remota y sirve cuando se está ensamblando por primera vez el turtlebot3 burger y la segunda directo de la Raspberry Pi 3, la segunda opción es la mas sencilla cuando ya se tiene ensamblado el turtlebot3 burger pues no se tiene que desconectar. Para llevar a cabo este proceso en la Raspberry Pi 3 la cual está conectada por USB a la tarjeta OpenCR, se ejecuta el comando siguiente, el cual  descarga e instala el programa que va sobre la tarjeta OpenCR:\\
+
+https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1
+/latest/opencr\_update.tar.bz2\&\& tar -xvf opencr\_update.tar.bz2
+\&\& cd ./opencr\_update \&\& ./update.sh \$OPENCR\_PORT \$OPENCR\_MODEL.opencr \&\& cd ..
+\\
+
+Para desarrollar la aplicación de una forma más fluida es necesario tener conocimientos previos en ROS y sus extensiones que facilitan las tareas de simulación y visualización de información como lo son Gazebo, Rviz y RQt. Todas estas extensiones se instalan predeterminadamente si se elige instalar la versión completa de ROS por lo que es recomendable hacerlo en la computadora principal. Las herramientas de ROS más usadas en el proyecto fueron los mensajes (messages), suscriptores (subscribers) y publicadores (publishers), y por medio de estas herramientas es como  podemos modularizar y compartir información entre nodos.
+
+Lo siguiente en la implementación fue hacer el modelo 3D del ambiente en que los robots virtuales serian simulados. Para ello se usó Gazebo, y los pasos para hacerlo fueron, en la opción de editar se seleccionó la figura que se asemeja a una pared, se trazó con las medias correctas y después en las opciones de cada una de las paredes, fue modificado su aspecto visual y altura, finalmente se guardó el diseño.
+
+También fue necesario configurar RViz para poder visualizar los datos de los dos robots en tiempo de ejecución, la manera de configurarlo fue editar el archivo base que proporcionan las librerías de Turtlebot3 burger y eliminar algunos tópicos que no eran necesarios para esta aplicación, los cuales son:
+
+\begin{itemize}
+	\item /cost\_map
+	\item /global\_cost\_map
+\end{itemize}
+
+Además, se agregaron los tópicos del seguidor, que a continuación se enlistan:
+
+\begin{itemize}
+	\item /tb3\_1/robot\_model
+	\item /tb3\_1/laser
+	\item /tb3\_1/amcl\_particles
+\end{itemize}
+
+Adicionalmente con ayuda de AMCL, una de las librerías de ROS, se realiza el mapa del ambiente virtual y del espacio real, esto con el fin de usarlo para posteriormente obtener su posición con ayuda de los sensores. Los comandos, que también estan presentes en el manual y se ejecutan sobre la terminal de la computadora remota son:
+
+\begin{itemize}
+	\item roslaunch turtlebot3\_slam turtlebot3\_slam.launch slam\_methods:=gmapping
+	\item roslaunch turtlebot3\_teleop turtlebot3\_teleop\_key.launch
+\end{itemize}
+
+\subsection{Comunicación}
+
+Para establecer la comunicación entre los robots y la computadora central, se siguieron los pasos como se indica en el manual online de los Turtlebot3 burger, también fue requerido configurar la red de la computadora remota como un punto de acceso. Lo primero por hacer es crear una nueva red, mostrada en la Figura \ref{fig:Figura_Creacion_de_red}.
+
+%Ilustración 1: Creación de una nueva red en Ubuntu.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.72]{imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg}}
+	\caption{Creación de una nueva red en Ubuntu.}
+	\label{fig:Figura_Creacion_de_red}
+\end{figure}
+
+Posteriormente se seleccionó el tipo de conexión como inalámbrica como se muestra en la Figura \ref{fig:Figura_Tipo_de_conexion}.
+
+%Ilustración 2: Elegir tipo de conexión.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.6]{imagenes/Implementacion/Procesamiento/02_Tipo_de_conexion.jpg}}
+	\caption{Elegir tipo de conexión.}
+	\label{fig:Figura_Tipo_de_conexion}
+\end{figure}
+
+Y por último se editaron las pestañas de las configuraciones inalámbricas y de seguridad como se muestran las Figuras \ref{fig:Figura_Configuracion_de_nombre} y \ref{fig:Figura_Configuracion_de_seguridad}.
+
+%Ilustración 3: Configuración del Modo y Nombre.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/03_Configuracion_de_nombre.jpg}}
+	\caption{Configuración del Modo y Nombre.}
+	\label{fig:Figura_Configuracion_de_nombre}
+\end{figure}
+
+%Ilustración 4: Configuración de la seguridad.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/04_Configuracion_de_seguridad.jpg}}
+	\caption{Configuración de la seguridad.}
+	\label{fig:Figura_Configuracion_de_seguridad}
+\end{figure}
+
+Una vez establecida la comunicación se procedió a realizar pruebas con el propósito de determinar si la comunicación fue establecida correctamente. Para ellos se utilizó el comando ping de la terminal de Linux que envía paquetes de forma continua a cada turtlebot3 burger como se muestra en la Figura \ref{fig:Figura_Comando_ping}.
+
+%Ilustración 5: Muestra del resultado correcto de la ejecución del comando ping.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/05_Comando_ping.jpg}}
+	\caption{Muestra del resultado correcto de la ejecución del comando ping.}
+	\label{fig:Figura_Comando_ping}
+\end{figure}
+
+Como se pudo apreciar en la Figura \ref{fig:Figura_Comando_ping}, la comunicación fue establecida correctamente ya que se recibieron paquetes correctamente. Finalmente se prueba la comunicación de algunos tópicos simples, para verificar que la configuración entre la red y ROS es correcta, para ello se inicializa por medio de la computadora remota un turtlebot3 burger.
+
+Además con apoyo de RQt, se puede visualizó el valor actual de algunos tópicos, en este caso se eligió el estado de la batería.
+
+%Ilustración 6: RQt mostrando los datos del tópico battery.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/06_RQt_topico_bateria.jpg}}
+	\caption{RQt mostrando los datos del tópico battery.}
+	\label{fig:Figura_RQt_topico_bateria}
+\end{figure}
+
+Para la implementación de los algoritmos de control, todos fueron programados en el lenguaje Python con la lógica que fue propuesta en los diagramas de flujo, posteriormente fueron almacenados en un mismo paquete al que llamamos LiderSeguidor, con el objetivo de mantener un orden de la información para realizar la ejecución del algoritmo, el cual fue creado especialmente para este proyecto. Para manejar la información de forma independiente fue necesario agrupar por namespaces todos los tópicos propios de cada uno de los turtlebot3 burger, ya que en un principio cada turtlebot3 burger posee tópicos con el mismo nombre, en el caso de no usarse el namespace para nombrar los tópicos de forma distinta resulta muy complejo controlar los robots de forma individual ya que no se puede saber si la información se le enviá al líder o al seguidor.
+
+\subsection{Prueba A: Verificación de la matriz de fuerza}
+
+El objetivo de esta prueba fue verificar que la matriz fuese hecha correctamente, se prueba con un código que reconstruye la trayectoria a partir de la matriz, si la trayectoria tiene la forma de la original se puede asegurar que fue hecha correctamente. Las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C} muestran la reconstrucción, mientras que las \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C}, muestran la trayectoria original.
+
+%Ilustración 7. Reconstrucción de la trayectoria A.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/07_Reconstruccion_trayectoria_A.jpg}}
+	\caption{Reconstrucción de la trayectoria A.}
+	\label{fig:Figura_Reconstruccion_trayectoria_A}
+\end{figure}
+
+%Ilustración 8. Reconstrucción de la trayectoria B.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/08_Reconstruccion_trayectoria_B.jpg}}
+	\caption{Reconstrucción de la trayectoria B.}
+	\label{fig:Figura_Reconstruccion_trayectoria_B}
+\end{figure}
+
+%Ilustración 9. Reconstrucción de la trayectoria C.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.jpg}}
+	\caption{Reconstrucción de la trayectoria C.}
+	\label{fig:Figura_Reconstruccion_trayectoria_C}
+\end{figure}
+
+%Ilustración 10. Puntos de trayectoria A.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg}}
+	\caption{Puntos de trayectoria A.}
+	\label{fig:Figura_Puntos_de_trayectoria_A}
+\end{figure}
+
+%Ilustración 11. Puntos de trayectoria B.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/11_Puntos_trayectoria_B.jpg}}
+	\caption{Puntos de trayectoria B.}
+	\label{fig:Figura_Puntos_de_trayectoria_B}
+\end{figure}
+
+%Ilustración 12. Puntos de trayectoria C.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/12_Puntos_trayectoria_C.jpg}}
+	\caption{Puntos de trayectoria C.}
+	\label{fig:Figura_Puntos_de_trayectoria_C}
+\end{figure}
+
+\subsubsection{Análisis de resultados}
+De las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B}, \ref{fig:Figura_Reconstruccion_trayectoria_C}, \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B}, \ref{fig:Figura_Puntos_de_trayectoria_C} se logró observar que la reconstrucción conserva la forma de la trayectoria, lo cual indica que las matrices fueron hechas de forma correcta.
+
+\subsection{Prueba B: Validar el seguimiento de trayectoria}
+
+Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del seguimiento de trayectoria. La prueba consistió en el usó del ambiente de simulación hecho en Gazebo para saber si funcionaba correctamente, en cuanto a la simulación se hizo la confirmación, ya que se pudo apreciar visualmente como el robot seguía la trayectoria, posteriormente se procedió a la prueba física. Una vez hecho esto se ejecutó el programa con ``roslaunch LiderSeguidor lider.launch" por medio de la computadora remota e inició la recabación de las posiciones con el comando ,``rosrecord tb3\_0/amcl\_pose tb3\_1/amcl\_pose", los datos que se recabaron son usados para calcular el error que existe entre los puntos por cuales fue definida la trayectoria y los puntos por los que el robot pasó, estos se muestran en las figuras 13, 14 y 15.
+
+%Ilustración 13. Error del líder en seguimiento de la trayectoria A.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/13_Error_liderA.jpg}}
+	\caption{Error del líder en seguimiento de la trayectoria A.}
+	\label{fig:Figura_Error_lider_A}
+\end{figure}
+
+%Ilustración 14. Error del líder en seguimiento de la trayectoria B.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/14_Error_lider_B.jpg}}
+	\caption{Error del líder en seguimiento de la trayectoria B.}
+	\label{fig:Figura_Error_lider_B}
+\end{figure}
+
+%Ilustración 15. Gráfica de las posiciones alcanzadas y el error.
+.\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/15_Grafica_posiciones_alcanzadas.jpg}}
+	\caption{Gráfica de las posiciones alcanzadas y el error.}
+	\label{fig:Figura_Grafica_posiciones_alcanzadas}
+\end{figure}
+
+\subsubsection{Análisis de resultados}
+
+Se puede observar el error disminuir y posteriormente mantenerse dentro de un umbral de 7 cm, lo cual indica que el seguimiento de trayectoria efectivamente es ejecutado y realmente se hace un seguimiento de trayectoria.
+
+\subsection{Prueba C: Validar el algoritmo Líder-Seguidor}
+
+Al realizar pruebas en la simulación del algoritmo líder-seguidor, se notaba como el robot seguidor en ocasiones realizaba los movimientos del líder con un desfase en la posición. Lo que se hizo para lograr un mejor seguimiento de los puntos de coordenada, fue aplicar una condición de distancia mínima (la cual se obtiene empíricamente) para poder cambiar la dirección del móvil una vez actualizada la posición del seguidor, esta condición se aplicó debido a que el algoritmo utilizado en el diseño detallado solo cambia su dirección con base a la actualización de la información, lo cual provoca que el seguidor solo cambie su orientación por el avance que ha tenido el líder, sin verse afectado por su posición actual, al asignar una condición de distancia mínima entonces se logra que en el punto al que cambia su orientación el líder sea el mismo o muy parecido al del seguidor.
+
+%Ilustración 16. Error del seguidor en la trayectoria A.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/16_Error_Seguidor_A.jpg}}
+	\caption{Error del seguidor en la trayectoria A.}
+	\label{fig:Figura_Error_Seguidor_A}
+\end{figure}
+
+%Ilustración 17. Error del seguidor en la trayectoria B.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/17_Error_Seguidor_B.jpg}}
+	\caption{Error del seguidor en la trayectoria B.}
+	\label{fig:Figura_Error_Seguidor_B}
+\end{figure}
+
+\subsubsection{Análisis de resultados}
+
+Nuevamente se tomaron datos de posición en este caso del seguidor, obteniendo un error respecto a la trayectoria, dicho error, después de llegar a la trayectoria se mantiene en cierto umbral, validando el seguimiento al líder, el cual a su vez sigue la trayectoria.
+
+\subsection{Prueba D:Validar la evasión de obstáculos}
+
+El algoritmo de evasión de obstáculos fue la parte más compleja durante la implementación ya que, al reducir las dimensiones propuestas del espacio de trabajo, no lograba esquivar los objetos, el problema radicó en que todas las paredes eran leídas como obstáculos y no se lograba establecer un camino adecuado para la evasión.
+Para solucionar esta problemática, un nodo adicional fue hecho, este nodo se encargaba de calcular una distancia mínima para ciertos ángulos del robot, la función de este código mostrado en la Figura \ref{fig:Figura_Nodo_laser_distance} es informarle al nodo principal si se debe leer o no el Histograma para posteriormente aplicar el algoritmo Vector Field Histogram (VFH). La forma de verificar el funcionamiento del código fue con apoyo del ambiente virtual hecho en Gazebo, el cual inicializaba el nodo y posteriormente corroboraba la información que enviaba el nodo con las posiciones de los obstáculos.
+
+%Ilustración 18. Nodo Laser_Distance.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/Procesamiento/18_nodo_laser_distance.jpg}}
+	\caption{Nodo Laser\_Distance.}
+	\label{fig:Figura_Nodo_laser_distance}
+\end{figure}
+
+En el programa donde se implementó el VFH fue necesario validarlo colocando obstáculos en el ambiente de simulación, y corroborando que el histograma efectivamente reflejara la posición angular de los obstáculos respecto al robot. Las figuras \ref{fig:Figura_Deteccion_obstaculo_A} y \ref{fig:Figura_Deteccion_obstaculo_B} muestran los resultados las pruebas.
+
+%Ilustración 19. Detección del obstáculo cercano colocado en el primer cuadrante.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.8]{imagenes/Implementacion/Procesamiento/19_Deteccion_obstaculo_A.jpg}}
+	\caption{Detección del obstáculo cercano colocado en el primer cuadrante.}
+	\label{fig:Figura_Deteccion_obstaculo_A}
+\end{figure}
+
+%Ilustración 20. Detección del obstáculo cercano colocado en el segundo cuadrante.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.8]{imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg}}
+	\caption{Detección del obstáculo cercano colocado en el segundo cuadrante.}
+	\label{fig:Figura_Deteccion_obstaculo_B}
+\end{figure}
+
+Para integrar los nuevos nodos junto con el código del seguimiento de trayectoria fue necesario primeramente implementar la matriz de fuerza que permite al nodo saber la orientación que debe tomar el móvil para mantenerse dentro de la trayectoria propuesta, este algoritmo se programó en una función que llamamos Follow mostrado en la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_A}, que sigue el siguiente algoritmo, obtiene su posición por el callback que genera el nodo amcl, una vez conocida la posición, se discretiza en un a matriz para poder ser accedida, dado que es una matriz discretizada para evitar un error de índices en la programación, se definen los límites máximos y mínimos, tomando en cuenta las dimensiónes del mapa.  Con los índices definidos se procede a extraer la diferencia de la distancia entre el punto de origen del robot y el punto al que se desea llegar, en caso de que no se haya seleccionado una trayectoria el robot se detiene.
+
+Para incluir la evasión de obstáculos se propuso tener una distancia mínima mostrado en la Figura \ref{fig:Figura_Nodo_laser_distance}, con la cual se inicia la evasión. En el caso en cual se tiene una distancia mayor a la propuesta, se ejecuta el algoritmo de la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_B}, el cual tiene como propósito alinearse con el ángulo deseado y la orientación propia del robot, posteriormente este ángulo se compara con su complemento para determinar el sentido en que girar para tener movimientos más cortos, debido a que el sistema puede dar oscilaciones muy grandes y con esto dañar los motores, además se incluyen condiciones para que la velocidad angular quede dentro de un margen, así mismo si es muy grande el ángulo de error(45°) la velocidad lineal se vuelve cero. Estas velocidades son publicadas para que el robot tome estos valores, posteriormente se le da un retardo a la ejecución del código para tener tiempo suficiente de recopilar los datos.
+
+En el caso en que la distancia es menor a la propuesta como se muestra en las Figuras \ref{fig:Figura_Algoritmo_seguimiento_parte_C} y \ref{fig:Figura_Algoritmo_seguimiento_parte_D} se verifica si no hay un obstáculo en la dirección por la que el robot de ir. De no haber obstáculo sobre el ángulo deseado se ejecuta la rutina anterior, en el caso de que si lo haya se hace una búsqueda para encontrar el primer camino libre en sentido antihorario, agregando 15° más para evitar colisionar, finalmente la nueva velocidad es publicada. Esto se ejecuta controlado por la interfaz que indica el avance o paro del robot.
+
+%Ilustración 21. Algoritmo de seguimiento de trayectoria parte A.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.265]{imagenes/Implementacion/Procesamiento/21_Algoritmo_seguimiento_parte_A.jpg}}
+	\caption{Función follow para decidir que ejecutar.}
+	\label{fig:Figura_Algoritmo_seguimiento_parte_A}
+\end{figure}
+
+%Ilustración 22. Algoritmo de seguimiento de trayectoria parte B.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/22_Algoritmo_seguimiento_parte_B.jpg}}
+	\caption{Función de seguimiento de trayectoria.}
+	\label{fig:Figura_Algoritmo_seguimiento_parte_B}
+\end{figure}
+
+%Ilustración 23. Algoritmo de seguimiento de trayectoria parte C.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.35]{imagenes/Implementacion/Procesamiento/23_Algoritmo_seguimiento_parte_C.jpg}}
+	\caption{Algoritmo para aplicar VFH.}
+	\label{fig:Figura_Algoritmo_seguimiento_parte_C}
+\end{figure}
+
+%Ilustración 24. Algoritmo de seguimiento de trayectoria parte D.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Implementacion/Procesamiento/24_Algoritmo_seguimiento_parte_D.jpg}}
+	\caption{Función para ir a un sector libre.}
+	\label{fig:Figura_Algoritmo_seguimiento_parte_D}
+\end{figure}
+
+\subsection{Validación de seguimiento y evasión}
+La forma de validar los algoritmos de seguimiento de trayectorias y líder-seguidor consistió en una misma serie de pasos. Inicialmente fueron probados en un ambiente virtual, que incluye el espacio físico y un modelo funcional de los turtlebot3 burger, como si se tratase de los reales. De la simulación se verifican los programas, únicamente de forma visual, la prueba consiste en observar el comportamiento de los robots, y si estos siguen la trayectoria sin colisionar se confirma que fueron hechos correctamente. Posteriormente, los robots se prueban físicamente. Durante las pruebas físicas se guardan datos de posición, que junto con los datos de la trayectoria a seguir aplicando un algoritmo basado en un árbol kd se obtiene un error y con éste es finalmente validado, si existieron cambios son documentados.
+
+Finalmente, para validar el algoritmo de evasión de obstáculos la prueba consiste en colocar dos obstáculos en la zona de pruebas y ejecutar los algoritmos de seguimiento de trayectoria, líder-seguidor y evasión. Para cada trayectoria los robots dan 3 recorridos, si falla únicamente una sola vez se considera exitoso.
+
+\subsubsection{Análisis de resultados}
+Como se observo en las Figuras los algoritmos de evasión funcionan correctamente ya que el histograma muestra datos correctos, para los diferentes casos en que se presenta el obstáculo.
+
+\subsection{Prueba E: Validar la integración de evasión y seguimiento}
+El objetivo de esta prueba fue validar el funcionamiento del sistema en conjunto, líder-seguir y evasión. Se realizó una prueba en el ambiente físico, colocando ambos robots a medio metro de distancia y dos obstáculos en posiciones por las que se estaba seguro de que el líder intentaría pasar, debido al seguimiento de trayectoria, se realizaron 3 recorrido para cada trayectoria, si únicamente colisionaba una vez por trayectoria se consideró válido, adicionalmente mostramos las gráficas de error.
+
+
+%Ilustración 25. Algoritmo de seguimiento de trayectoria parte C.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Implementacion/Procesamiento/25_errorLider-evasion.png}}
+	\caption{Error del Líder durante la evasión.}
+	\label{fig:25_Lider}
+\end{figure}
+
+%Ilustración 26. Algoritmo de seguimiento de trayectoria parte D.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Implementacion/Procesamiento/26_errorSeguidor-evasion.png}}
+	\caption{Error del Seguidor durante la evasión.}
+	\label{fig:26_Seguidor}
+\end{figure}
+
+\subsubsection{Análisis de resultados}
+Como se puede observar en las Figuras \ref{fig:25_Lider} y \ref{fig:26_Seguidor}, el error disminuye cuando se mantiene dentro de la trayectoria y aumenta cuando requiere alejarse de la trayectoria e iniciar la evasión, para ambos robots el comportamiento es el mismo, lo cual valida que realmente existe una evasión ya que el líder toma como prioridad no chocar a mantenerse sobre la trayectoria, como el seguidor realiza las acciones del líder, el seguidor como era de esperar no colisionó.
+
+\subsection{Realización de la HMI}
+
+Para lograr que el sistema tenga una mejor interacción con el usuario se optó por intregrarle una hmi (human machine interface), para esto se buscaron varias posibilidades de frameworks de trabajo que fueran compatibles con ROS y que tuvieran una considerable información de consulta en páginas web.
+
+Dadas estas características se utilizó el ambiente de trabajo QtCreator en el cual además de tener una extensa documentación e información de ayuda en internet, había sido utilizado para desarrollar una de las principales herramientas para el análisis de la información que posee el ecosistema de ROS, logrando estp por medio de la interfaz RQt realizada en Qt, en dicha interfaz se puden visualizar las conexiones entre nodos, los valores de los distintos tópicos, mandar información para probar las variables de los tópicos de los nodos como la velocidad de los motores del turtlebot3 burger y graficar la información de los nodos a través del tiempo entre muchas otras funciones como las que en las Figuras \ref{fig:Figura_RQt_Graficas} y \ref{fig:Figura_RQt_Mensajes}.
+
+%%Ilustración 1: RQt para graficar distintos tópicos contra del tiempo.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=4.3]{imagenes/Implementacion/HMI/01_RQt_Graficas.jpg}}
+	\caption{RQt para graficar distintos tópicos con respecto al tiempo.}
+	\label{fig:Figura_RQt_Graficas}
+\end{figure}
+
+%%Ilustración 2: RQt mostrando y filtrando los distintos tipos de mensajes.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=4]{imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg}}
+	\caption{RQt mostrando y filtrando los distintos tipos de mensajes.}
+	\label{fig:Figura_RQt_Mensajes}
+\end{figure}
+
+Con el objetivo de usar Qt como interfaz gráfica para mandar ordenes a los robots líder y seguidor se usaron los siguientes paquetes:
+
+\begin{itemize}
+	\item qtcreator
+	\item ros-kinetic-qt-create
+	\item ros-kinetic-qt-build
+\end{itemize}
+
+Y para instalarlos se usaron las siguientes instrucciones:
+
+\begin{itemize}
+	\item sudo apt-get install qtcreator
+	\item sudo apt-get install ros-kinetic-qt-create
+	\item sudo apt-get install ros-kinetic-qt-build
+\end{itemize}
+
+Una vez instalados se crearon los paquetes como se describen en la página web de la wiki de ros en la sección qt\_build \cite{qt_build}, asimismo cabe mencionar que para generar el paquete de ROS relacionado a la interfaz se usó la instrucción en la terminal en la carpeta catkin\_ws de la siguiente forma:
+
+\begin{itemize}
+	\item catkin\_create\_qt\_pkg qgui
+\end{itemize}
+
+Donde ``catkin\_create\_qt\_pkg", es la instrucción para generar el paquete y ``qgui", es el nombre del paquete asignado por el usuario.
+
+Una vez compilado correctamente el paquete de la interfaz ahora se puede compilar como cualquier otro paquete usando la instrucción catkin\_make y si esta instrucción al compilar lo hace correctamente ahora se puede editar y compilar el proyecto usando qtcreator. Para esto se ejecuta en la terminal el comando qtcreator y este comando abre el programa qtcreator como se muestra en la Figura \ref{fig:Figura_Interfaz_Incio}.
+
+%%Ilustración 3: Inicio de QtCreator
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.22]{imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg}}
+	\caption{Pantalla de bienvenida de QtCreator.}
+	\label{fig:Figura_Inicio_QtCreator}
+\end{figure}
+
+Una vez dentro del programa se abre el proyecto dando clic en ``File" luego ``Open File or Project", y se abre el archivo ``CmakeList.txt" del paquete creado en este caso ``qgui", como se muestra en la Figura \ref{fig:Figura_Abrir_GUI}.
+
+%%Ilustración 4: Ventana para compilar paquete en QtCreator.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.44]{imagenes/Implementacion/HMI/04_Abrir_GUI.jpg}}
+	\caption{Ventana para compilar paquete en QtCreator.}
+	\label{fig:Figura_Abrir_GUI}
+\end{figure}
+
+Posteriormente se abre una ventana para elegir las opciones de compilación donde se selecciona la carpeta en la cual se guardará la compilación, aquí se selecciona la carpeta ``build" dentro de la carpeta ``catkin\_ws", como se muestra en la Figura \ref{fig:Figura_Seleccionar_carpeta_compilacion}.
+
+%%Ilustración 5: Ingreso de la carpeta de compilación.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/HMI/05_Seleccionar_carpeta_compilacion.jpg}}
+	\caption{Ingreso de la carpeta de compilación.}
+	\label{fig:Figura_Seleccionar_carpeta_compilacion}
+\end{figure}
+
+Al darle ``next", aparecerá una ventana que pide el comando de compilación cmake, para que compile se le ingresa el siguiente comando en ``Arguments", el cual le indica como y donde compilar:
+
+\begin{itemize}
+	\item cmake ../src -DCMAKE\_INSTALL\_PREFIX=../install -DCATKIN\_DEVEL\_PREFIX=../devel
+\end{itemize}
+
+Este comando se puede consultar mas a detalle en la sección ``catkin\_make" de la wiki de ROS \cite{catkin_make}.
+
+Luego se le da clic en el botón ``Run CMake", esta acción compila el proyecto y al darle ``Finish" si se compiló correctamente se abren los archivos relacionados al proyecto para poderse editar finalmente como se muestra en la Figura \ref{fig:Figura_Qt_CMake}.
+
+%%Ilustración 6: Ingreso y compilación con el comando CMake.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/HMI/06_Qt_CMake.jpg}}
+	\caption{Ingreso y compilación con el comando CMake.}
+	\label{fig:Figura_Qt_CMake}
+\end{figure}
+
+Una vez realizado esto exitosamente se muestra una ventana como la de la Figura \ref{fig:Figura_Ventana_Proyecto_QT}, cabe mencionar que este procedimiento se puede aplicar para cualquier paquete del la carpeta ``catkin\_ws".
+
+%%Ilustración 7: Ventana en Qt con el paquete qgui.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.33]{imagenes/Implementacion/HMI/07_Ventana_Proyecto_QT.jpg}}
+	\caption{Ventana en Qt con el paquete qgui.}
+	\label{fig:Figura_Ventana_Proyecto_QT}
+\end{figure}
+
+La edición del paquete se describe a detalle igualmente en la wiki de ROS en la sección de ``qt\_build" \cite{qt_build}, pero a grandes rasgos este proyecto se divide en 4 partes:
+
+\begin{itemize}
+	\item El programa principal del proyecto.
+	\item El programa de la funcionalidad del código del la Ventana Gráfica.
+	\item El programa de las funciones para interactuar con ROS.
+	\item El framework para realizar la edición de la HMI gráficamente.
+\end{itemize}
+
+Estos 3 programas y el framework de edición trabajan en conjunto y cada uno está contenido dentro de otro de mayor nivel como se explica a continuación.
+
+\subsubsection{Programa Principal}
+
+El programa principal se encarga de crear el objeto de la ventana y que esta sea visible, además que cuando esta se cierra da la indicación que el programa ha terminado, esto al igual que los demás programas anteriormente mencionados este también usa hilos de ejecución por medio de la librería QThread, para que puedan ejecutarse varios procesos a la vez dentro de un mismo código, logrando de tal forma que el usuario pueda interactuar con la interfaz al mismo tiempo que esta realiza distintos cálculos o enviá mensajes al ecosistema de ROS. Este programa en general contiene todo porque de aquí llaman a los demás programas anteriormente mencionados.
+
+\subsubsection{Ventana Gráfica}
+
+Este programa muestra la interfaz gráfica creada en el framework de edición de Qt y al ser un programa de c++ se compone de 2 archivos el ``main\_window.cpp", y el ``main\_window.hpp", en el primero se le informa que variables van a existir dentro de la clase y que métodos se van a definir y en el segundo se le da la funcionalidad a cada uno de los métodos, del tal manera en esta parte del programa se programan que acciones van a realizar los elementos colocados en la interfaz gráfica, por ejemplo cuando se selecciona una opción de la trayectoria en la interfaz creada para este proyecto se muestra una imagen de la trayectoria, implicando esto que al inicializarse esta ventana lee la imagen y luego la guarda para después mostrarla y en general este proceso de lectura, guardado y ejecución se implementa a lo largo de todo este programa. Cabe mencionar que este programa es afectado por lo que se edita en el framework o editor de la interfaz gráfica y este programa de la ventana gráfica está contenido dentro del Programa Principal.
+
+\subsubsection{Programa de ROS}
+
+Este programa al igual que el anterior se compone de 2 archivos el ``qnode .cpp", y el ``qnode.hpp", los cuales hacen una clase e igual dan funcionalidad y manejan definiciones respectivamente. En cuanto a lo que realiza este programa es inicializar la comunicación con ROS cuando le es pedido desde la interfaz gráfica, el cual al ser manejado por un hilo de ejecución no bloquea la interfaz gráfica, también aquí se crea el nodo para trabajar con ROS, se definen a que tópicos se suscribe este nodo, que tópicos publica y además se definen métodos públicos que pueden ser llamados por la interfaz gráfica para realizar una cierta acción en el entorno de ROS. Cabe mencionar que este programa está contenido dentro del ventana gráfica y por defecto contiene el sistema de llamado de mensajes de consola de ROS.
+
+\subsubsection{Framework de Trabajo}
+
+El framework de trabajo es una herramienta muy útil ya que se puede editar fácilmente y de manera visual como se visualizará la interfaz, destacando 2 ventajas: la primera que queda visualmente como se bosqueja la interfaz gráfica en vez de modificar posiciones o contenedores para que se ajusten y la segunda que sin un gran conocimiento de todas las librerías de la interfaz gráfica se puedan usar los elementos provistos por el framework que además de todo mejoran los tiempos de desarrollo de la interfaz, ya que se auto genera el código de la visualización de la interfaz y solo queda por programar su funcionalidad. Cabe mencionar que este framework crea un archivo que está contenido en el programa de la ventana gráfica para que los elementos queden justo como en el editor de la interfaz el cual se muestra en la Figura \ref{fig:Figura_Editor_Qt}.
+
+%Ilustración 8: Framework de Qt para GUI.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/HMI/08_Editor_Qt.jpg}}
+	\caption{Framework de Qt para GUI.}
+	\label{fig:Figura_Editor_Qt}
+\end{figure}
+
+\subsubsection{Puntos importantes a considerar}
+
+Como recomendación se propone primero editar la interfaz gráfica sin intentar añadir un slot (método a ejecutar cada que hay un evento en cierto elemento de la interfaz; por ejemplo darle clic a un pushbutton) a los componentes ya que daña el proyecto, posteriormente compilarlo y después con este procedimiento ya aparecerán los nuevos componentes reconocidos automáticamente por el sistema para asi realizar una mejor edición del código. En el caso de usar slots para darle funcionalidad a cada componente se recomienda conectarlos manualmente como se muestra en la siguiente instrucción:
+
+\begin{itemize}
+	\item QObject::connect(ui.pushButton\_Graficar, SIGNAL(clicked()),
+	\item this, SLOT(pushButton\_Graficar\_clicked()));
+\end{itemize}
+
+Donde  ``ui.pushButton\_Graficar", es el botón en la interfaz gráfica, ``clicked()", es la acción de darle clic a ese botón y ``pushButton\_Graficar\_clicked()", es la acción que se ejecutará al darle clic en el botón ``ui.pushButton\_Graficar".
+
+\subsubsection{Modificación del Programa}
+
+Dado que este paquete ya venia con una funcionalidad predeterminada se módico el código base, así como la interfaz gráfica para ajustarlo a los requerimientos del trabajo, con lo cual siguiendo la lógica del programa descrita anteriormente, se consiguió enviar los tópicos necesarios para que se lograra interactuar con los robots así como con el graficador. Los tópicos que se crearon para dar dicha funcionalidad son los siguientes
+
+\begin{itemize}
+	\item lane de tipo std\_msgs::Int32 para seleccionar la trayectoria.
+	\item turn\_on de tipo std\_msgs::Bool para decidir si los móviles avanzan.
+	\item graph de tipo std\_msgs::Bool para decidir si se grafica.
+	\item clear\_graph de tipo std\_msgs::Bool para limpiar la gráfica y puntos almacenados.
+	\item save\_data de tipo std\_msgs::Bool para guardar los datos graficados.
+\end{itemize}
+
+Es importante mencionar que para el correcto funcionamiento del programa primero se leyó y comentó lo que realizaba el código para tener una mejor comprensión del mismo y así poder editarlo correctamente sin presentar errores.
+
+\subsubsection{Resultados de la ejecución}
+
+A continuación se muestran los resultados de la ejecución de la interfaz, donde destacan 3 ventanas principales las cuales son:
+
+\begin{itemize}
+	\item Ventana para elegir trayectoria y encender o apagar al robot.
+	\item Ventana para visualizar el historial de la trayectoria elegida.
+	\item Ventana para graficar, limpiar gráficas o guardar datos.
+\end{itemize}
+
+En la primera ventana como se muestra en las Figuras \ref{fig:Figura_Interfaz_Incio} y \ref{fig:Figura_Interfaz_Trayectoria1} se elige la trayectoria deseada por el usuario y con esta elección se podrá ver la imagen de la trayectoria a seguir, sin embargo esta se cargará hasta que se presione el botón cargar trayectoria, para que de esta manera se puedan inspeccionar libremente las trayectorias antes de cargarlas, cabe mencionar que la trayectoria predeterminadamente es la 0 en la cual nunca se avanza.
+
+%%Ilustración 9: Configuración de la interfaz sin Trayectoria seleccionada.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg}}
+	\caption{Ventana incial de la interfaz.}
+	\label{fig:Figura_Interfaz_Incio}
+\end{figure}
+
+%Ilustración 10: Configuración de la interfaz con trayectoria 1 seleccionada y apagado.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/HMI/10_Interfaz_Trayectoria1.jpg}}
+	\caption{Configuración de la interfaz con la trayectoria 1 seleccionada y apagada.}
+	\label{fig:Figura_Interfaz_Trayectoria1}
+\end{figure}
+
+Para hacer que el móvil avance se selecciona la opción encendido y en ese momento aparecerá la opción marcada y los móviles empezaran a seguir la trayectoria escogida como se muestra en las Figuras \ref{fig:Figura_Interfaz_Trayectoria2} y  \ref{fig:Figura_Interfaz_Trayectoria3}, para apagarlo basta con volver a presionar el botón.
+
+%Ilustración 11: Configuración de la interfaz con trayectoria 2 seleccionada y encendido.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/HMI/11_Interfaz_Trayectoria2.jpg}}
+	\caption{Configuración de la interfaz con la trayectoria 2 seleccionada y encendida.}
+	\label{fig:Figura_Interfaz_Trayectoria2}
+\end{figure}
+
+%Ilustración 12: Configuración de la interfaz con trayectoria 3 seleccionada y encendido.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/HMI/12_Interfaz_Trayectoria3.jpg}}
+	\caption{Configuración de la interfaz con la trayectoria 3 seleccionada y encendida.}
+	\label{fig:Figura_Interfaz_Trayectoria3}
+\end{figure}
+
+En la segunda ventana se muestra el historial de todas las trayectorias cargadas, así como los mensajes de prueba para verificar que la interfaz este enviando bien la información a través de ROS, esto se muestra en la Figura \ref{fig:Figura_Interfaz_Mensajes} sin nunca haber cargado ninguna trayectoria y en la Figura \ref{fig:Figura_Interfaz_Mensajes_2} con un historial de trayectorias cargadas ( donde además se puede consultar cual es la trayectoria a seguir actualmente) .
+
+%Ilustración 13: Interfaz con los mensajes de prueba enviados.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/HMI/13_Interfaz_Mensajes.jpg}}
+	\caption{Interfaz con los mensajes de prueba enviados.}
+	\label{fig:Figura_Interfaz_Mensajes}
+\end{figure}
+
+%Ilustración 14: Interfaz con el historial de trayectorias seleccionadas.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/HMI/14_Interfaz_Mensajes.jpg}}
+	\caption{Interfaz con el historial de trayectorias seleccionadas.}
+	\label{fig:Figura_Interfaz_Mensajes_2}
+\end{figure}
+
+En la tercera ventana como se observa en la Figura \ref{fig:Figura_Interfaz_Graficar} se dan las opciones para controlar cuando se grafica o no, si se quiere limpiar la gráfica para realizar varios guardados sin repetir la información, y para guardar los datos de los valores de posición y error en un archivo con formato .npy y .xlsx .
+
+%Ilustración 15: Interfaz mostrando las opciones de graficación.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/HMI/15_Interfaz_Graficar.jpg}}
+	\caption{Interfaz mostrando las opciones de graficación.}
+	\label{fig:Figura_Interfaz_Graficar}
+\end{figure}
+
+\section{Especificaciones del Sistema}
+
+En esta sección se habla de las especificaciones de algunos de los componentes de cada Área Funcional como los tiempos de las baterias LiPo, la velocidad de los motores, la resolución de los sensores (LIDAR y enconders), etcétera.
+
+\subsubsection{Especificaciones del Área de Trabajo}
+
+El Área de Trabajo fue fabricada de MDF y sus dimensiones son las siguientes: 2.4m x 2.4m x .30m (Longitud - Ancho - Altura).
+
+
+\subsubsection{Especificaciones de la Alimentanción}
+
+Cada bateria de los robots dura aproximadamente \textit{dos horas} de uso continuo, y tarda en cargarse aproximadamente \textit{una hora y media}.
+
+
+\subsubsection{Especificaciones del Procesamiento}
+Editar
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.155]{imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg}}
+	\caption{Nodos de Rosgraph.}
+	\label{fig:Nodos_Rosgraph}
+\end{figure}
+

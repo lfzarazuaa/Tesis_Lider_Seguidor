@@ -1,0 +1,39 @@
+
+\section{Modelo Dinamico}
+
+Miura y Shimoyama[23] estudiaron la aproximación del modelo dinámico de un bípedo a la de un péndulo invertido después Kajita [24] estudió la validación de este método a diferentes tipos de robots puesto que [23] trabajó con un caso en particular.\\
+
+Se aproximó la dinamica del robot con el método de péndulo invertido. La masa está concentrada en el centro de masa (CoM) de el robot, y la base del péndulo coincide con el soporte del pie del robot, como se ilustra en la figura siguiente.
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics{figs/dinamica.jpg}
+	\caption{Pendulo Invertido}
+	\label{fig:dinamica}
+\end{figure}
+
+
+Mediante las ecuaciones Lagrange:
+
+\begin{equation}
+	\tau_{x_a}(\theta)=m\left[g+\left(\frac{\tau_{x_a}(\theta)}{Lm}-gsen(\theta)\right)sen(\theta)-\frac{v^2}{L}cos(\theta)\right]x_a
+\end{equation}
+  
+  
+Cabe destacar que este modelo interactua solo con un torque máximo requerido dado por
+
+
+  
+  
+\begin{equation}
+	\tau_{x_a}\left(\theta\right)=\frac{mgx_{a}\left(1-sen^2\left(\theta\right)\right)}{1-\frac{sen\left(\theta\right)}{L}x_a}
+\end{equation}
+
+\begin{equation}
+		\tau_{x_b}\left(\theta\right)=\frac{mgx_{b}\left(1-sen^2\left(\theta\right)\right)}{1-\frac{sen\left(\theta\right)}{L}x_b}
+\end{equation}
+
+
+Pero este modelo no considera las fuerzas laterales que son el resultado de conservar el equilibrio.
+

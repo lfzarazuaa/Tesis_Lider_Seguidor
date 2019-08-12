@@ -1,0 +1,141 @@
+\select@language {spanish}
+\contentsline {chapter}{Nomenclatura}{\es@scroman {xix}}{chapter*.1}
+\contentsline {chapter}{Glosario}{\es@scroman {xxi}}{chapter*.2}
+\contentsline {chapter}{Resumen/Abstract}{\es@scroman {xxiii}}{chapter*.3}
+\contentsline {chapter}{Objetivos}{\es@scroman {xxv}}{chapter*.4}
+\contentsline {chapter}{Introducci\'on}{\es@scroman {xxvii}}{chapter*.5}
+\contentsline {section}{Antecedentes}{\es@scroman {xxviii}}{section*.6}
+\contentsline {subsection}{Nacionales}{\es@scroman {xxviii}}{section*.6}
+\contentsline {subsection}{Internacionales}{\es@scroman {xxx}}{figure.0.2}
+\contentsline {section}{Planteamiento del problema}{\es@scroman {xxxi}}{figure.0.3}
+\contentsline {section}{Organizaci\'on del reporte}{\es@scroman {xxxii}}{figure.0.3}
+\contentsline {chapter}{\numberline {1}Marco de referencia}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Marco te\'orico}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Robots m\'oviles terrestres}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Cinem\'atica de robots m\'oviles}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}AMCL}{4}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}VFH (Vector Field Histogram)}{5}{subsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.4.1}Primer nivel: Mapa 2D}{6}{subsubsection.1.1.4.1}
+\contentsline {subsubsection}{\numberline {1.1.4.2}Segundo nivel: Histograma polar}{6}{subsubsection.1.1.4.2}
+\contentsline {subsubsection}{\numberline {1.1.4.3}Tercer nivel: Comando de direcci\'on}{7}{subsubsection.1.1.4.3}
+\contentsline {subsection}{\numberline {1.1.5}Esquemas l\IeC {\'\i }der - seguidor}{8}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}Marco Procedimental}{9}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Sistema mecatr\'onico}{9}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Dise\~no mecatr\'onico}{10}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Proceso de an\'alisis jer\'arquico (AHP)}{11}{subsection.1.2.3}
+\contentsline {chapter}{\numberline {2}Dise\~no del Sistema}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Dise\~no Conceptual}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Necesidades y requerimientos}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Descomposici\'on por \'areas funcionales }{16}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}\'Area Funcional 1: Estructura}{17}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}\'Area Funcional 2: Procesamiento}{17}{subsubsection.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2.3}\'Area Funcional 3: Percepci\'on}{18}{subsubsection.2.1.2.3}
+\contentsline {subsubsection}{\numberline {2.1.2.4}\'Area Funcional 4: Alimentaci\'on}{18}{subsubsection.2.1.2.4}
+\contentsline {subsubsection}{\numberline {2.1.2.5}\'Area Funcional 5: Movimiento}{18}{subsubsection.2.1.2.5}
+\contentsline {subsection}{\numberline {2.1.3}Caracter\IeC {\'\i }sticas y/o necesidades principales de cada \'area funcional}{19}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet" Robot Kit }{20}{subsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Rosbot}{21}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Turtlebot3 Burger}{21}{subsubsection.2.1.4.2}
+\contentsline {subsubsection}{\numberline {2.1.4.3}TX1 ``Jet'' Robot Kit}{22}{subsubsection.2.1.4.3}
+\contentsline {subsection}{\numberline {2.1.5}Tablas de selecci\'on de los robots m\'oviles}{23}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Criterios para el dise\~no y selecciones de interfaces gr\'aficas}{25}{subsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.6.1}Criterios a evaluar}{25}{subsubsection.2.1.6.1}
+\contentsline {subsubsection}{\numberline {2.1.6.2}1. Amabilidad}{25}{subsubsection.2.1.6.2}
+\contentsline {subsubsection}{\numberline {2.1.6.3}2. Interactividad}{25}{subsubsection.2.1.6.3}
+\contentsline {subsubsection}{\numberline {2.1.6.4}3. Redundancia \'optima en el proceso de comunicaci\'on}{25}{subsubsection.2.1.6.4}
+\contentsline {subsubsection}{\numberline {2.1.6.5}4. Eficiencia y Utilidad}{25}{subsubsection.2.1.6.5}
+\contentsline {subsubsection}{\numberline {2.1.6.6}Tabla de Criterios}{26}{subsubsection.2.1.6.6}
+\contentsline {subsubsection}{\numberline {2.1.6.7}Lista de opciones de interfaz}{27}{subsubsection.2.1.6.7}
+\contentsline {subsubsection}{\numberline {2.1.6.8}Dise\~no de arquitectura general del software}{27}{subsubsection.2.1.6.8}
+\contentsline {subsubsection}{\numberline {2.1.6.9}Concepto Final}{30}{subsubsection.2.1.6.9}
+\contentsline {section}{\numberline {2.2}Dise\~no Detallado}{32}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\'Area Funcional 1: Estructura (Soporte de componentes)}{33}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Elementos primordiales de la estructura}{33}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Elementos utilizados en cada piso}{35}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Dimensiones}{37}{subsubsection.2.2.1.3}
+\contentsline {subsection}{\numberline {2.2.2}\'Area Funcional 2: Procesamiento (Comunicaci\'on de componentes)}{38}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Primera parte: Dispositivos destinados para el procesamiento}{39}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Segunda parte: Funciones a desarrollar en cada tarjeta}{44}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Tercera parte: Dise\~no del software}{45}{subsubsection.2.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Seguimiento de trayectorias}{45}{subsubsection.2.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Esquema L\IeC {\'\i }der - Seguidor}{49}{subsubsection.2.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Evasi\'on de obst\'aculos}{52}{subsubsection.2.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Comunicaci\'on}{54}{subsubsection.2.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.2.8}Control de motores}{56}{subsubsection.2.2.2.8}
+\contentsline {subsection}{\numberline {2.2.3}\'Area Funcional 3: Percepci\'on (Comunicaci\'on entorno - robot)}{57}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Datos propioceptivos}{58}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Sensores integrados}{58}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Encoders rotatorios}{58}{subsubsection.2.2.3.3}
+\contentsline {subsubsection}{\numberline {2.2.3.4}Encoder \'optico rotatorio, de tipo relativo (o incremental)}{59}{subsubsection.2.2.3.4}
+\contentsline {subsubsection}{\numberline {2.2.3.5}Encoder \'optico absoluto}{59}{subsubsection.2.2.3.5}
+\contentsline {subsubsection}{\numberline {2.2.3.6}Aceler\'ometros}{60}{subsubsection.2.2.3.6}
+\contentsline {subsubsection}{\numberline {2.2.3.7}Datos exteroceptivos}{60}{subsubsection.2.2.3.7}
+\contentsline {subsubsection}{\numberline {2.2.3.8}Sensores implementados}{61}{subsubsection.2.2.3.8}
+\contentsline {subsubsection}{\numberline {2.2.3.9}Esc\'aner l\'aser de medici\'on de distancias}{61}{subsubsection.2.2.3.9}
+\contentsline {subsubsection}{\numberline {2.2.3.10}Sensor Lidar LDS-01}{62}{subsubsection.2.2.3.10}
+\contentsline {subsubsection}{\numberline {2.2.3.11}Dimensiones}{63}{subsubsection.2.2.3.11}
+\contentsline {subsubsection}{\numberline {2.2.3.12}Montaje del sensor}{63}{subsubsection.2.2.3.12}
+\contentsline {subsubsection}{\numberline {2.2.3.13}Acondicionamiento}{64}{subsubsection.2.2.3.13}
+\contentsline {subsection}{\numberline {2.2.4}\'Area Funcional 4: Alimentaci\'on (Suministro de energ\IeC {\'\i }a)}{65}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Caracter\IeC {\'\i }sticas T\'ecnicas de la Bater\IeC {\'\i }a Li-Po.}{67}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Ensamble de la bater\IeC {\'\i }a LiPo con la estructura}{68}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}\'Area Funcional 5: Movimiento (Desplazamiento del robot)}{68}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Locomoci\'on}{68}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Actuadores Dynamixel}{69}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}An\'alisis interno del motor}{70}{subsubsection.2.2.5.3}
+\contentsline {subsubsection}{\numberline {2.2.5.4}Caracter\IeC {\'\i }sticas del motor}{72}{subsubsection.2.2.5.4}
+\contentsline {subsection}{\numberline {2.2.6}Integraci\'on del Sistema}{78}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}Elementos de Software}{80}{subsubsection.2.2.6.1}
+\contentsline {subsection}{\numberline {2.2.7}HMI}{82}{subsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.7.1}Comunicaci\'on peer to peer}{83}{subsubsection.2.2.7.1}
+\contentsline {subsection}{\numberline {2.2.8}Validaci\'on y an\'alisis de resultados}{84}{subsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.8.1}Procesamiento}{85}{subsubsection.2.2.8.1}
+\contentsline {subsubsection}{\numberline {2.2.8.2}Seguimiento de trayectoria}{85}{subsubsection.2.2.8.2}
+\contentsline {subsubsection}{\numberline {2.2.8.3}L\IeC {\'\i }der seguidor}{88}{subsubsection.2.2.8.3}
+\contentsline {subsubsection}{\numberline {2.2.8.4}Evasi\'on de obst\'aculos}{89}{subsubsection.2.2.8.4}
+\contentsline {chapter}{\numberline {3}Integraci\'on del Sistema}{91}{chapter.3}
+\contentsline {section}{\numberline {3.1}Implementaci\'on del \'Area Funcional Estructura}{91}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Armado de los robots m\'oviles}{92}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Instrucciones de Armado}{97}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Resultados del proceso de armado}{97}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Verificaci\'on de ensamble del sistema}{100}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Implementaci\'on del \'Area Funcional Movimiento}{100}{section.3.2}
+\contentsline {section}{\numberline {3.3}Implementaci\'on del \'Area Funcional Percepci\'on}{101}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Sensor LIDAR}{101}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Sensores del motor DYNAMIXEL}{105}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Implementaci\'on del \'Area Funcional Alimentaci\'on}{107}{section.3.4}
+\contentsline {section}{\numberline {3.5}Implementaci\'on del \'Area Funcional Procesamiento}{108}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Pasos previos}{108}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Comunicaci\'on}{110}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Prueba A: Verificaci\'on de la matriz de fuerza}{114}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}An\'alisis de resultados}{116}{subsubsection.3.5.3.1}
+\contentsline {subsection}{\numberline {3.5.4}Prueba B: Validar el seguimiento de trayectoria}{116}{subsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.4.1}An\'alisis de resultados}{118}{subsubsection.3.5.4.1}
+\contentsline {subsection}{\numberline {3.5.5}Prueba C: Validar el algoritmo L\IeC {\'\i }der-Seguidor}{118}{subsection.3.5.5}
+\contentsline {subsubsection}{\numberline {3.5.5.1}An\'alisis de resultados}{119}{subsubsection.3.5.5.1}
+\contentsline {subsection}{\numberline {3.5.6}Prueba D:Validar la evasi\'on de obst\'aculos}{120}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.7}Validaci\'on de seguimiento y evasi\'on}{124}{subsection.3.5.7}
+\contentsline {subsubsection}{\numberline {3.5.7.1}An\'alisis de resultados}{125}{subsubsection.3.5.7.1}
+\contentsline {subsection}{\numberline {3.5.8}Prueba E: Validar la integraci\'on de evasi\'on y seguimiento}{125}{subsection.3.5.8}
+\contentsline {subsubsection}{\numberline {3.5.8.1}An\'alisis de resultados}{126}{subsubsection.3.5.8.1}
+\contentsline {subsection}{\numberline {3.5.9}Realizaci\'on de la HMI}{126}{subsection.3.5.9}
+\contentsline {subsubsection}{\numberline {3.5.9.1}Programa Principal}{131}{subsubsection.3.5.9.1}
+\contentsline {subsubsection}{\numberline {3.5.9.2}Ventana Gr\'afica}{132}{subsubsection.3.5.9.2}
+\contentsline {subsubsection}{\numberline {3.5.9.3}Programa de ROS}{132}{subsubsection.3.5.9.3}
+\contentsline {subsubsection}{\numberline {3.5.9.4}Framework de Trabajo}{133}{subsubsection.3.5.9.4}
+\contentsline {subsubsection}{\numberline {3.5.9.5}Puntos importantes a considerar}{134}{subsubsection.3.5.9.5}
+\contentsline {subsubsection}{\numberline {3.5.9.6}Modificaci\'on del Programa}{134}{subsubsection.3.5.9.6}
+\contentsline {subsubsection}{\numberline {3.5.9.7}Resultados de la ejecuci\'on}{135}{subsubsection.3.5.9.7}
+\contentsline {section}{\numberline {3.6}Especificaciones del Sistema}{139}{section.3.6}
+\contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{139}{subsubsection.3.6.0.1}
+\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentanci\'on}{139}{subsubsection.3.6.0.2}
+\contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{139}{subsubsection.3.6.0.3}
+\contentsline {chapter}{\numberline {4}An\'alisis de Costo}{141}{chapter.4}
+\contentsline {section}{\numberline {4.1}Costos variables}{141}{section.4.1}
+\contentsline {section}{\numberline {4.2}Costos fijos}{142}{section.4.2}
+\contentsline {section}{\numberline {4.3}Costo total}{144}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusiones}{145}{chapter.5}
+\contentsline {part}{Ap\'endices}{155}{part.1}
+\contentsline {chapter}{Ap\'endice 1}{157}{chapter*.7}
+\contentsline {part}{Anexos}{163}{part.2}
+\contentsline {chapter}{Anexo 1. Criterios de selecci\'on en \'Areas funcionales}{165}{chapter*.8}

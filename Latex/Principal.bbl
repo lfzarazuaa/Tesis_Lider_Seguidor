@@ -1,0 +1,235 @@
+\begin{thebibliography}{}
+
+\bibitem[Alvaro, 2013]{U_P_Cartagena}
+Alvaro, G. (2013).
+\newblock Ros: Robot operating system.
+\newblock {\em Universidad Polit\'ecnica de Cartagena}.
+
+\bibitem[AutoModelCar, 2016]{e-Manual-specifications}
+AutoModelCar (2016).
+\newblock {\em Robotis e-Manual}.
+\newblock
+  http://emanual.robotis.com/docs/en/platform/turtlebot3/specifications/hardware-specifications.
+
+\bibitem[Berlin, 2018]{AutoModelCar}
+Berlin, F.~U. (2018).
+\newblock {\em Automodel Car}.
+\newblock Dahlem Center for Machine Learning and Robotics, Freie
+  Universit$\ddot{a}$t Berlin.
+\newblock https://github.com/AutoModelCar/AutoModelCarWiki/wiki/Navigation.
+
+\bibitem[Bishop, 2008]{bishop_2008}
+Bishop, R.~H. (2008).
+\newblock {\em The mechatronics handbook}.
+\newblock London.
+
+\bibitem[Borenstein and Koren, 1991]{borenstein_koren_1991}
+Borenstein, J. and Koren, Y. (1991).
+\newblock The vector field histogram-fast obstacle avoidance for mobile robots.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 7(3):278 to 288.
+
+\bibitem[Bugarin~Carlos and Aguilar~Bustos, 2014]{control_visual}
+Bugarin~Carlos, E. and Aguilar~Bustos, A.~Y. (2014).
+\newblock Control visual para la formaci\'on de robots m\'oviles tipo uniciclo
+  bajo el esquema l\'ider seguidor.
+\newblock {\em UNAM}.
+
+\bibitem[Darpa, 2007]{darpa}
+Darpa (2007).
+\newblock Route network definition file (rndf) and mission data file (mdf)
+  formats.
+\newblock {\em Grandchallenge}, 1:4 to 9.
+\newblock
+  https://www.grandchallenge.org/grandchallenge/docs/RNDF\_MDF\_Formats\_031407.pdf.
+
+\bibitem[Garc\'ia~Tovar et~al., 2017]{repartidor_autonomo}
+Garc\'ia~Tovar, V.~E., Guzm\'an~Mart\'inez, S., P\'erez~Nicol\'as, P., and
+  Ter\'an~Chapul, R.~E. (2017).
+\newblock Robot repartidor auton\'onomo.
+
+\bibitem[G\'erard~Bruno, 2005]{gerard_bruno_2005}
+G\'erard~Bruno, o.~H. (2005).
+\newblock {\em El Proceso de An\'alisis Jer\'arquico (AHP) como Herramienta
+  para la Toma de Decisiones en la Selecci\'on de Proveedores}.
+\newblock PhD thesis, Univesidad Mayor de San Marcos.
+\newblock
+  http://sisbib.unmsm.edu.pe/bibvirtualdata/Tesis/Basic/toskano\_hg/cap3.PDF.
+
+\bibitem[Gerkey et~al., 2018]{gerkey_lu_ferguson_hoy}
+Gerkey, B.~P., Lu, D.~V., Ferguson, M., and Hoy, A. (2018).
+\newblock Amcl.
+\newblock http://wiki.ros.org/amcl.
+
+\bibitem[GTK, 2018]{Bateria-de-polimero-de-litio}
+GTK (2018).
+\newblock {\em Bater\'ia de pol\'imero de litio}.
+\newblock Shenzhen Foxell Technologies Co., Ltd.
+\newblock
+  https://es.aliexpress.com/item/1-unids-11-1-V-5C-1800-mAh-li-po-bater-a-de-pol-mero-de/32830921404.html.
+
+\bibitem[Harashima et~al., 1996]{harashima_1996}
+Harashima, F., Tomizuka, M., and Fukuda, T. (1996).
+\newblock {\em Mechatronics, What is it, why and how?}
+\newblock IEEE/ASME Transactions on Mechatronics.
+
+\bibitem[Jet, 2017]{servocity.com}
+Jet (2017).
+\newblock Tx1 jet robot kit.
+\newblock https://www.servocity.com/tx1-jet-robot-kit.
+
+\bibitem[Ju\'arez~Palafox et~al., 2005]{robot_movil_upiita}
+Ju\'arez~Palafox, J., Muro~Maldonado, D., and Franco~Gonz\'alez, A. (2005).
+\newblock Construcci\'on y control de un robot m\'ovil.
+
+\bibitem[Juli\'a~Crist\'obal, 2005]{seguimiento_de_robots}
+Juli\'a~Crist\'obal, M. (2005).
+\newblock Seguimiento de robots mediante visi\'on artificial. aplicaci\'on al
+  mantenimiento de formaciones basada en comportamientos.
+
+\bibitem[Kumar, 2016]{install_ubuntu}
+Kumar, P. (2016).
+\newblock {\em Install Ubuntu}.
+\newblock https://www.linuxtechi.com/install-ubuntu-16-04-with-screenshots/.
+
+\bibitem[Lagunes~Fortiz, 2014]{sistemas_navegacion}
+Lagunes~Fortiz, M.~A. (2014).
+\newblock Sistema de navegaci\'on evasor de obsta\'aculos en un robot m\'ovil.
+
+\bibitem[Madhevan and Sreekumar, 2013]{lfa2}
+Madhevan, B. and Sreekumar, M. (2013).
+\newblock Tracking algorithm using leader follower approach for multi robots.
+\newblock {\em Procedia Engineering}, 64:1426 to 1435.
+
+\bibitem[Molina~Villa and Rodr\'iguez~V\'asquez, 2014]{flotilla_de_robots}
+Molina~Villa, M.~A. and Rodr\'iguez~V\'asquez, E.~L. (2014).
+\newblock Flotilla de robots para trabajos en robotica cooperativa.
+
+\bibitem[Petrinic and Petrovic, 2013]{lfa1}
+Petrinic, T. and Petrovic, I. (2013).
+\newblock A leader-follower approach to formation control of multiple
+  non-holonomic mobile robots.
+\newblock In {\em 2013 36th International Convention on Information and
+  Communication Technology, Electronics and Microelectronics (MIPRO)}, page 931
+  to 935.
+
+\bibitem[Rangel et~al., 2016]{turtlebot3}
+Rangel, Cortina, A., Park, J.~Y., and Lloyd (2016).
+\newblock Turtlebot 3 burger [us].
+
+\bibitem[Raspberrypi.org, 2013]{ssh}
+Raspberrypi.org (2013).
+\newblock {\em SSH (Secure Shell)}.
+\newblock https://www.raspberrypi.org/documentation/remote-access/ssh/.
+
+\bibitem[Ribeiro, 2005]{ribeiro_2005}
+Ribeiro, M.~I. (2005).
+\newblock Obstacle avoidance.
+\newblock http://users.isr.ist.utl.pt/~mir/pub/ObstacleAvoidance.pdf.
+
+\bibitem[Riveros~Guevara and Solaque~Guzm\'an, 2013]{formacion_robots}
+Riveros~Guevara, A. and Solaque~Guzm\'an, L.~E. (2013).
+\newblock Formaci\'on de robots m\'oviles mediante el uso de controladores.
+\newblock {\em USBMed}, page 63 to 64.
+
+\bibitem[Ro-Botica, 2016]{DYNAMIXEL_Motor}
+Ro-Botica (2016).
+\newblock {\em DYNAMIXEL XL430-W250}.
+\newblock Accensit.
+\newblock
+  http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/control-table-of-eeprom-area.
+
+\bibitem[Ro-Botica, 2018]{DYNAMIXEL}
+Ro-Botica (2018).
+\newblock {\em Motores DYNAMIXEL}.
+\newblock Accensit.
+\newblock http://ro-botica.com/tienda/ROBOTIS-DYNAMIXEL.
+
+\bibitem[Robotis, 2016a]{e-Manual-Features}
+Robotis (2016a).
+\newblock {\em e-Manual Features}.
+\newblock http://emanual.robotis.com/docs/en/platform/turtlebot3/features/.
+
+\bibitem[Robotis, 2016b]{e-Manual-structure}
+Robotis (2016b).
+\newblock {\em e-Manual specifications}.
+\newblock
+  http://emanual.robotis.com/docs/en/platform/turtlebot3/specifications/.
+
+\bibitem[Robotis, 2016c]{install-ubuntu}
+Robotis (2016c).
+\newblock {\em install-ubuntu-on-remote-pc}.
+\newblock Jekyll and Minimal Mistakes.
+\newblock
+  http://emanual.robotis.com/docs/en/platform/turtlebot3/pcsetup/install-ubuntu-on-remote-pc.
+
+\bibitem[Robotis, 2016d]{raspberry_pi3}
+Robotis (2016d).
+\newblock Raspberry pi 3 model b.
+\newblock https://www.raspberrypi.org/products/raspberry-pi-3-model-b/.
+
+\bibitem[Robotis, 2018a]{LIPO-Battery}
+Robotis (2018a).
+\newblock {\em LIPO Battery 11.1V}.
+\newblock Purdue University.
+\newblock http://www.robotis.us/lipo-battery-11-1v-1800mah-lb-012/.
+
+\bibitem[Robotis, 2018b]{opencr}
+Robotis (2018b).
+\newblock Opencr.
+\newblock http://emanual.robotis.com/docs/en/parts/controller/opencr10/.
+
+\bibitem[ROS, 2014a]{catkin_make}
+ROS (2014a).
+\newblock catkin make.
+\newblock http://wiki.ros.org/catkin/commands/catkin\_make.
+
+\bibitem[ROS, 2014b]{qt_build}
+ROS (2014b).
+\newblock qt-build.
+\newblock http://wiki.ros.org/qt\_ros.
+
+\bibitem[RullyFoote, 2019]{Topics}
+RullyFoote (2019).
+\newblock Topics.
+\newblock http://wiki.ros.org/topics.
+
+\bibitem[Siegwart et~al., 2011]{siegwart_nourbakhsh_scaramuzza_2011}
+Siegwart, R., Nourbakhsh, I.~R., and Scaramuzza, D. (2011).
+\newblock {\em Introduction to autonomous mobile robots}.
+\newblock MIT.
+
+\bibitem[Store, 2017]{rosbot}
+Store, H. (2017).
+\newblock Rosbot 2.0.
+\newblock
+  https://store.husarion.com/collections/dev-kits/products/rosbot?variant=8799150276662.
+
+\bibitem[Thrun et~al., 2010]{thrun_burgard_fox_2010}
+Thrun, S., Burgard, W., and Fox, D. (2010).
+\newblock {\em Probabilistic robotics}.
+\newblock MIT Press.
+
+\bibitem[Ulrich and Borenstein, 1998]{ulrich_borenstein_1998}
+Ulrich, I. and Borenstein, J. (1998).
+\newblock Vfh : reliable obstacle avoidance for fast mobile robots.
+\newblock {\em Proceedings. 1998 IEEE International Conference on Robotics and
+  Automation (Cat. No.98CH36146)}, page 1572 to 1577.
+\newblock https://ieeexplore.ieee.org/document/677362.
+
+\bibitem[Vidal et~al., 2003]{formation_control}
+Vidal, R., Shakernia, O., and Sastry, S. (2003).
+\newblock Formation control of nonholonomic mobile robots with omnidirectional
+  visual servoing and motion segmentation.
+\newblock {\em ieeexplore}.
+
+\bibitem[Xiaohai et~al., 2005]{backstepping}
+Xiaohai, L., Jizong, X., and Zijun, C. (2005).
+\newblock Backstepping based multiple mobile robots formation control.
+\newblock {\em ieeexplore}.
+
+\bibitem[YoonSeok et~al., 2017]{ROS_book}
+YoonSeok, P., HanCheol, C., RyuWoon, J., and TaeHoon, L. (2017).
+\newblock {\em ROS Robot Programming}.
+\newblock ROBOTIS Co,Ltd.
+
+\end{thebibliography}

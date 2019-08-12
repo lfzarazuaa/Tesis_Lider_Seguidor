@@ -1,0 +1,206 @@
+\chapter{Marco de referencia}
+
+\section{Marco teórico}
+
+\subsection{Robots móviles terrestres}
+
+Una manera de entender este tipo de robots es por medio de las distintas áreas de conocimiento que se integran para su desarrollo. Lo primero en tomar en cuenta es ¿cómo van a moverse? y ¿qué mecanismo de movimiento usarán? La cinemática, la dinámica y la teoría del control de los mecanismos utilizados, son necesarios para el desplazamiento correcto de los robots. El diseño e implementación de sistemas perceptuales robustos, visión computacional y sistemas sensoriales, son necesarios para la obtención de la información del entorno y con base en esta información la toma de decisiones. \\
+De igual manera, es necesario tener conociminetos acerca de localización y navegación que implican algoritmos informáticos, de inteligencia artificial y teoría probabilística, para el cumplimiernto de tareas de manera autónoma. 
+\\Todos estos elementos forman el llamado ciclo \textit{``Ve, piensa, actúa"}, tal y se muestra en la Figura \ref{fig:Figura_Ve_piensa_actua}, [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg}}
+	\caption{\textit{Ciclo: Ve, piensa, actúa}. Componentes que conforman un robot móvil autónomo}
+	\label{fig:Figura_Ve_piensa_actua}
+\end{figure}
+
+\subsection{Cinemática de robots móviles}
+
+El análisis cinemático es esencial para el buen diseño de los robots móviles y para el diseño de controladores, dada cierta configuración de un robot móvil. Para comenzar a entender el movimiento de los robots móviles primero es necesario representar la posición de un robot en un marco de referencia[\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
+La posición de P en el marco de referencia global se especifica mediante las coordenadas x e y, y la diferencia angular entre los marcos de referencia global y local viene dada por $\theta$. Se puede describir la posición del robot como un vector con estos tres elementos, teniendo en cuenta el uso del subíndice I para aclarar la base de esta postura como el marco de referencia global:
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg}}
+	\caption{Marco de referencia global y el marco de referencia local del robot.}
+	\label{fig:Figura_Marco_de_Referencia}
+\end{figure}
+
+\[\xi_{l}=
+\begin{bmatrix}
+x\\
+y\\
+\theta\\
+\end{bmatrix}\]
+
+Para describir el movimiento del motor en términos de componentes del movimiento, se recurre a la matriz de rotación ortogonal:
+\[ R\left(\theta\right)=
+\begin{bmatrix}
+\cos\left(\theta\right)&\sin\left(\theta\right)&0\\
+-\sin\left(\theta\right)&\cos\left(\theta\right)&0\\
+0&0&1\\
+\end{bmatrix}\]
+Dicha matriz puede ser usada para rastrear el movimiento del robot en ambos marcos de referencia, es decir permite cambiar del marco de referencia local de robot al global y viceversa. Las expresiones son:
+\begin{center}
+	$\dot{\xi_{R}}=R\left(\theta\right) \dot{\xi_{I}}$
+	
+	$\dot{\xi_{I}}=R\left(\theta\right)^{-1} \dot{\xi_{R}}$
+\end{center}
+
+
+A su vez $\dot{\xi_{I}}$ se compone de las siguientes variables:
+\[\dot{\xi_{I}}=
+\begin{bmatrix}
+\dot{x}\\
+\dot{y}\\
+\dot{\theta}\\
+\end{bmatrix}
+\]
+
+%%$\dot{\xi_{I}}=f(l,r,\theta, \dot{ \fi_{l} }, \dot{ \fi_{r} })$
+
+Las cuales se representan en la siguiente figura:
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg}}
+	\caption{Parámetros de una configuración diferencial.}
+	\label{fig:Figura_Parametros_diferencial}
+\end{figure}
+
+Parte de la cinemática de los robots móviles es determinar la maniobrabilidad del robot $\delta_{M}$, la cual se compone de la suma del grado de conducción $\delta_{s}$ y el grado de movilidad $\delta_{m}$. Para el caso de la configuración diferencial los valores son:
+\begin{center}
+	$\delta_{m}=2$
+	
+	$\delta_{s}=0$
+	
+	$\delta_{M}=\delta_{m}+\delta_{s}=2$
+\end{center}
+
+%\subsection{Matriz de fuerza}
+
+\subsection{AMCL}
+AMCL es una librería de ROS \textit{(ver definicón de ROS en la sección del Glosario)}, la cual hace uso de un sistema de localización probabilístico para un robot, en un entorno de dos dimensiones (2D). Esta librería implementa el enfoque de localización adaptativo de Monte Carlo [\citenum{thrun_burgard_fox_2010}], junto con los siguientes algoritmos. 
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg}}
+	\caption{Algoritmo AMCL.}
+	\label{fig:Figura_Ecuaciones_AMCL}
+\end{figure}
+
+De manera general, para un mapa ya establecido este algoritmo estima la \textit{posición} y \textit{orientación} de un robot a medida que este empieza a moverse, usando un \textit{filtrado de partículas} para representar todas las posibles posiciones, en donde si los datos son confiable y se relacionan con el estado predicho el filtrado de partículas tiende a converger a una posición en particular.
+
+
+\subsection{VFH (Vector Field Histogram)}
+
+Es un método para la \textit{detección} y \textit{evasión de obstáculos}, permitiendo al mismo tiempo continuar con su objetivo (seguir una trayectoria). El método toma como entrada los datos capturados por sensores de tipo láser o ultrasónicos y con base en ello forma tres niveles de representación de datos. El primero es un mapa de dos dimensiones divido por celdas. El segundo es un histograma polar, construido alrededor de la posición momentánea del robot y el tercero es la dirección que debe seguir el robot.
+
+\subsubsection{Primer nivel: Mapa 2D}
+
+De los datos obtenidos por los sensores se va formando un mapa de celdas alrededor del robot, el valor de cada celda es dado por:
+
+\begin{equation}\label{Mapa 2d}
+m_{(i,j)}=(c_{(i,j)}^* )^2 (a-bd_{(i,j)}^2 )
+\end{equation}
+\begin{center}
+	$c_{(i,j)}^*$:valor de certeza en dicha celda
+	
+	$d_{i,j}$:distancia entre la celda i,j y el centro del vehículo
+	
+	$a,b$:constantes positivas que cumplan $a-bd_{max}=0$
+\end{center}
+\subsubsection{Segundo nivel: Histograma polar}
+
+Una vez obtenido el mapa 2D se procede a simplificar estos datos, primero se define una resolución arbitraria $\alpha$ de modo que $n=\dfrac{360}{\alpha}$.Posteriormente se definen $k$ sectores que corresponden a un ángulo discreto $\rho$ tal que $\rho=k\alpha$. Para cada sector $k$, el histograma polar $h_{k}$ es calculado siguiendo la ecuación \ref{histograma polar}.
+
+\begin{equation}\label{histograma polar}
+h_{k}=\sum_{i,j}m_{i,j}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg}}
+	\caption{Ejemplo de histograma polar.}
+	\label{fig:Figura_Ejemplo_Histrograma_Polar}
+\end{figure}
+
+\subsubsection{Tercer nivel: Comando de dirección}
+Para el cálculo del comando de dirección se tienen distintas opciones. La primera es, una vez encontradas las aperturas, las cuales se definen por los sectores límite $k_{r}$  $k_{l}$ y según un umbral (definido por el usuario) se pueden elegir distintas direcciones.
+\begin{equation}\label{Comando_de_direccion_1}
+c_{d}=\dfrac{k_{r}+k_{l}}{2}
+\end{equation}
+\begin{equation}\label{Comando_de_direccion_2}
+c_{r}=k_{r}+\dfrac{s_{max}}{2}
+\end{equation}
+\begin{equation}\label{Comando_de_direccion_3}
+c_{l}=k_{l}-\dfrac{s_{max}}{2}
+\end{equation}
+\begin{equation}\label{Comando_de_direccion_4}
+c_{t}=k_{t} \,si\,k_{t}  \epsilon [c_{r},c_{l}]
+\end{equation}
+
+Para la ecuación \ref{Comando_de_direccion_1} se elige la dirección centrada, para la ecuación \ref{Comando_de_direccion_2} se elige la dirección del lado derecho, para la ecuación \ref{Comando_de_direccion_3} se elige la dirección del lado izquierdo y para la ecuación \ref{Comando_de_direccion_4} con dirección al objetivo.
+
+La otra opción es definir una función de costo de la siguiente forma y elegir el candidato con menor costo.
+\begin{equation}\label{Comando_de_direccion_5}
+g(c)=\mu_{1} \Delta(c,k_{t})+\mu_{2} \Delta(c,k_{R})+\mu_{3} \Delta(c,k_{R-1})
+\end{equation}
+Donde $\mu_{k}$ son valores positivos y el operador $\Delta$ representa la diferencia angular entre ambos valores, $c$ es la dirección candidato, $k_{t}$ es la dirección del objetivo y $k_{R}$ son las direcciones del robot.
+
+\subsection{Esquemas líder - seguidor}
+
+Dentro de la literatura que trata este tipo de control se puede dar uno cuenta que la definición del esquema líder - seguidor no es homogénea y depende de cada autor, ya que son muchos los métodos presentados en textos científicos que incluyen las palabras, \textit{``líder"}, y/o \textit{``seguidor"}, en sus títulos o resúmenes, y cada uno de ellos adapta o define bajo sus propios términos y métodos la definición. A continuación se presentan dos definiciones de diferentes autores con la intensión de hacer una comparación entre a lo que se le puede denominar \textit{esquema líder - seguidor}.\\
+
+1. Uno de los robots es asignado como el \textit{líder} y otro como \textit{seguidor}. El líder sigue una trayectoria predefinida, mientras que los seguidores mantienen una posición y dirección con cierta distancia respecto al líder [\citenum{lfa1}].
+Dicha definición es muy parecida a lo que también es conocido como estructuras virtuales [\citenum{flotilla_de_robots}] dentro de los MRS. \\
+
+Una definición mas general y con la posibilidad de complementarla con nuevas ideas es la siguiente:\\
+
+2. Usando el enfoque \textit{líder - seguidor (LFA)}, un robot actúa como el líder cuyo movimiento define el trayecto para el grupo de seguidores. Todos los seguidores usaran el trayecto definido para alcanzar una meta o lograr una tarea definida [\citenum{lfa2}].\\
+
+Existen más definiciones con ideas muy similares a las dos anteriores definiciones y que dependiendo del contexto es como implementan su propia definición del esquema líder - seguidor, pero siempre partiendo de la misma premisa de que un \textit{``ente"}, debe dictar el comportamiento de \textit{``otro u otros entes"}.
+\section{Marco Procedimental}
+
+El \textit{Marco Procedimental} corresponde a los conceptos y técnicas implementadas a lo largo del desarrollo del proyecto, permitiendo definir e identificar los problemas, acotarlos y visualizarlos de manera sistemática con la finalidad de obtener así elementos fundamentales para la resolución de cada uno de los problemas identificados. 
+
+\subsection{Sistema mecatrónico}
+
+El concepto de mecatrónica surge en Japón en los años setenta con la siguiente definición:
+
+\textit{``La mecatrónica es la integración sinérgica de la ingeniería mecánica con la electrónica y el control informático inteligente en el diseño y la fabricación de productos y procesos industriales} [\citenum{harashima_1996}]".
+
+Tal definición ha ido evolucionando y generando nuevos métodos de diseño, los cuales han permitido crear productos inteligentes. Actualmente es complicado dar una definición completa de lo que es la mecatrónica, sin embargo, se entiende que la mecatrónica abarca diversas disciplinas de la ingeniería y la cual permite caracterizar los elementos que la componen en: sistemas de modelos físicos, sensores y actuadores, señales y sistemas, sistemas computacionales, y software y adquisición de datos.
+
+Con esto en mente un sistema mecatrónico para Bishop [\citenum{bishop_2008}] puede ser:
+
+\begin{itemize}
+	\item Máquinas mecatrónicas
+	\item Vehículos mecatrónicos
+	\item Mecatrónica de precisión
+	\item Micro mecatrónica
+	\item Sistemas mecatrónicos
+\end{itemize}
+
+Esto demuestra que la integración con la electrónica comprende muchas clases de sistemas técnicos. En varios casos, la parte mecánica del proceso está acoplada con una parte de procesamiento eléctrico, térmico, termodinámico, químico o de información. Esto es especialmente cierto para los convertidores de energía como máquinas donde, además de la energía mecánica, aparecen otros tipos de energía. Por lo tanto, los sistemas mecatrónicos en un sentido más amplio comprenden procesos mecánicos y también no mecánicos. Sin embargo, la parte mecánica normalmente domina el sistema.
+
+Esto es debido a que se requiere una energía auxiliar para cambiar las propiedades fijas de los sistemas mecánicos pasivos, mediante el avance o el control de retroalimentación [\citenum{bishop_2008}].
+
+\subsection{Diseño mecatrónico}
+
+Parte de la identificación de un problema o necesidad es asignar \textit{funciones} necesarias para resolver dichos problemas y asociarlas con las características iniciales con las que se cuentan en la etapa de \textit{Diseño Conceptual}, en la que se analiza diferentes alternativas acerca de como satisfacer dichas funciones y en donde también, se evalúan para elegir la mejor alternativa. Posteriormente se formaliza ese concepto en la parte \textit{Diseño Detallado} cuyo objetivo es tener una aproximación bastante cercana del producto final y cómo se debería construir. Siempre con la validaciones de todas las funciones propuestas.\\
+
+El diseño mecatrónico no es lineal, sino concurrente y requiere de un desarrollo sistemático y el uso de herramientas modernas de diseño, como lo son[\citenum{bishop_2008}]:
+
+\begin{itemize}
+	\item Herramientas para CAD/CAE
+	\item Procesos de modelado matemático
+	\item Simulaciones en tiempo real
+	\item Simulaciones de hardware en lazo cerrado
+	\item Prototipado de sistemas de control.
+\end{itemize}
+
+\subsection{Proceso de análisis jerárquico (AHP)}
+
+El proceso de análisis jerárquico AHP \textit{}(Analytic Hierarchy Proccess) es un proceso diseñado e implementado en [\citenum{gerard_bruno_2005}]. AHP está diseñado para resolver problemas complejos con criterios múltiples, en este proceso el diseñador, subjetivamente proporciona evaluaciones respecto a la importancia entre cada criterio considerado y después se realiza una comparación directa entre las alternativas para obtener la mejor propuesta. El resultado de este procedimiento es una jerarquización que muestra los aspectos más relevantes de cada una de las alternativas. 

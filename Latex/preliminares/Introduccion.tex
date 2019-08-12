@@ -1,0 +1,81 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Introducción}
+
+Los seres humanos siempre hemos buscado la manera de simplificar la ejecución de tareas, por lo que hemos encontrado diferentes soluciones, unas mejores que otras, pero en donde sin duda destaca la robótica, la cuál, ofrece una solución para los problemas que el ser humano desea resolver en diversos escenarios de su cotidianidad. Desafortunadamente no todas las tareas pueden ser realizadas por un solo robot y es ahí, dónde surge la robótica cooperativa, proporcionando métodos, teoremas e investigaciones para su desarrollo [\citenum{formacion_robots}].
+
+La coordinación de robots, en especial el control aplicado a la coordinación, empezó a ser estudiado y aplicado por la comunidad científica, quienes notaron significantes ventajas al implementar un grupo de robots para la realización de tareas [\citenum{control_visual}], como: la eficiencia a la hora de realizar una tarea (dando como resultado la reducción de costos materiales, económicos, energéticos, etc.), el mejoramiento del desempeño y la robustez; permitiéndo realizar tareas como exploración, mantenimiento, inspección, vigilancia, búsqueda de objetos, operaciones de seguridad, construcción de mapas, reconocimiento de terrenos desconocidos o peligrosos, transportación, búsqueda y rescate, entre otras, abriendo paso a un amplio número de aplicaciones desarrolladas en diversos ambientes con la ayuda de diferentes tipos de robots (terrestres, aéreos, espaciales, marinos), según sea el caso. Quedando como única limitante la imaginación humana [\citenum{flotilla_de_robots}].
+
+Un aspecto que es de vital importancia en la robótica colaborativa es lograr controlar grupos de robots de manera simultánea, ya que éstos, deben de trabajar de forma sincronizada. Para lograrlo y que los robots se muevan uniformemente manteniendo una formación, es necesario abordar el problema a través de técnicas de control cooperativo, entre las más conocidas encontramos: las \textit{estructuras virtuales}, las configuraciones \textit{líder - seguidor} y las \textit{aproximaciones basadas en comportamientos} [\citenum{formacion_robots}]. Cada una de estas técnicas han venido siendo estudiadas, y aplicadas por diferentes sectores de la sociedad, en donde sin duda destaca el sector militar y espacial.
+
+\section*{Antecedentes}
+\addcontentsline{toc}{section}{Antecedentes}
+
+\subsection*{Nacionales}
+\addcontentsline{toc}{subsection}{Nacionales}
+
+A nivel institucional, en 2017 se llevó acabo en la UPIITA el Trabajo Terminal de Mecatrónica titulado ``Robot Repartido Autónomo". Dicho trabajo se desarrollo en el sistema operativo robótico ROS (Robotic Operating System) y ejecutado a través de una tarjeta Nvidia Jetson y un sensor LIDAR para la recabación de datos. Como su nombre lo dice, el trabajo consistió en un robot capaz de cargar hasta 15 kg y el cual dentro de un sistema de navegación (área de trabajo) generaba una trayectoria de manera autónoma con la finalidad de llegar a trayectorias ``meta" y entregar cualquier producto que no sobrepasará la carga máxima que era capaz de soportar el robot.
+
+A pesar de que este trabajo no comparte ninguna similitud con la robótica colaborativa, es un trabajo de gran ayuda para el desarrollo del proyecto, ya que se implementaron herramientas como Odometría, o el algoritmo de Localización Monte Carlo (MCL por sus siglas en ingles Monte Carlo Localization) para la ubicación del robot dentro del medio de trabajo, al igual que la generación de campos estáticos, para su navegación autónoma.
+
+\begin{figure}[H]
+	\centering \fbox{\includegraphics[scale=0.5]{imagenes/MarcodeReferencia/Antecedentes/02_Robot_Repartidor.jpg}}
+	\caption{(a) Robot Repartidor Autónomo. (b) Generación de trayectoria [\citenum{repartidor_autonomo}].}
+	\label{fig:Robot_Repartidor}
+\end{figure}
+
+De igual manera, dentro de la UPIITA en 2014, se llevo acabo el Trabajo Terminal de Mecatrónica, titulado ``Sistema de Navegación Evasor de Obstáculos en un Robot Móvil", el cuál implementaba un robot Turtlebot2 y tenía como objetivo llegar de un punto inicial a un punto final, evadiendo obstáculos estáticos en el camino. En este trabajo se implementaron distintos algoritmos de control, como: algoritmo generador de celdas de ocupación probabilística en un mapa 2D, algoritmo de planeamiento global utilizando información 2D del mapa del área de trabajo, junto con un algoritmo de planeamiento local reactivo.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.25]{imagenes/MarcodeReferencia/Antecedentes/03_Ejecucion_del_Sistema.jpg}}
+	\caption{Ejecución del Sistema de Navegación Evasor de Obstáculos implementando un robot Turtlebot2 [\citenum{sistemas_navegacion}].}
+	\label{fig:Sistema_Navegacion_repartidor}
+\end{figure}
+
+Por otra parte, la UNAM en conjunto con el Instituto Tecnológico de Ensenada, Baja California desarrollaron en 2013 una investigación que se tituló control visual para la formación de robots móviles tipo uniciclo bajo el esquema líder - seguidor el cual habla sobre una propuesta de control visual para la formación de robot móviles, en donde considera una sola cámara fija observando el espacio de trabajo de los robots, y daba información sobre los movimientos y las posiciones de los robots,y esta información es compartida tanto por el líder tanto como por el seguidor [\citenum{control_visual}].
+
+%%Por parte de la configuración líder-seguidor, los trabajos que se han desarrollados en el país son principalmente de investigación como el que se desarrolló en la UPIITA en 2005 que se tituló Construcción y control de un robot móvil, el cuál describía una metodología del diseño, construcción y control de un móvil de ruedas en su locomoción, capaz de seguir trayectorias previamente establecidas[\citenum{robot_movil_upiita}].  A pesar de que este trabajo no va enfocado a la configuración líder-seguidor, da las bases para el desarrollo de los móviles.
+
+%%La UNAM en conjunto con el Instituto Tecnológico de Ensenada, Baja California desarrollaron en 2013 una investigación que se tituló Control visual para la formación de robots móviles tipo uniciclo bajo el esquema líder-seguidor  el cual habla sobre una propuesta de control visual para la formación de robot móviles, en donde considera una sola cámara fija observando el espacio de trabajo de los robots, y daba información sobre los movimientos y posiciones de los robots, y está información es compartida tanto por el líder como por el seguidor[\citenum{control_visual}].
+
+
+
+\subsection*{Internacionales}
+\addcontentsline{toc}{subsection}{Internacionales}
+En la Universidad Militar Nueva Granada (Bogotá, Colombia) en el 2014, llevó acabó una investigación que se tituló `` Flotilla de robots para trabajos en robótica cooperativa" el cual habla de un diseño de un sistema de control descentralizado, el cual permite orientar un grupo de robots mientras se desplazan manteniendo una formación predeterminada. Basándose en el control líder-seguidor[\citenum{flotilla_de_robots}].
+
+Por parte del Instituto de Ingeniería Eléctrica y Electrónica (IEEE por sus siglas en inglés) se llevó acabó un trabajo llamado ''Backstepping based multiple mobile robots formation control" (formación de múltiples robots móviles basado en el control Backstepping) que es un trabajo de investigación basado en el control de formación de múltiples robots móviles, liderados por un robot que se denomina ''líder", en donde se presenta un modelo cinemático para el sistema ''líder-seguidor" el cual utiliza coordenadas cartesianas en lugar de coordenadas polares, tomando la idea del integrador backstepping, en donde se deriva un control global estable para todo el sistema[\citenum{formation_control}].
+
+La Universidad Politécnica Superior de Elche desarrollo un trabajo de investigación llamado ``Seguimiento de robots mediante visión artificial. Aplicación al mantenimiento de formaciones" donde se describe el desarrollo e implementación de algoritmos de navegación que permite a un robot móvil seguir la ruta realizada por otro robot (líder) de forma que un conjunto de robots siga la determinada trayectoria, manteniendo una formación entre ellos. El trabajo implementa diferentes algoritmos de control de movimientos, de manera que el robot que sigue a el líder se mantiene a una distancia (posición y orientación) determinada con respecto a el robot líder[\citenum{seguimiento_de_robots}].
+
+El Departamento de Ingeniería Electrónica y Ciencia de la Comunicación de La Universidad de California desarrolló un trabajo de investigación llamado ``Formation Control of Nonholomic Mobile Robots with Omnidirectional Visual Servoing and Motion Segmentaion"  (Control para la formación de robots móviles no- holonómicos con servo visión omnidireccional y movimiento segmentado) el cual habla acerca de un conjunto de robots móviles omnidireccionales basado en el diseño líder-seguidor usando visión omnidireccional, donde se especifica la formación deseada en un plano y esta es traducida en un control servo visual para cada seguidor. En el trabajo también muestran que la dinámica de la linealización de retroalimentación del líder-seguidor sufre en consecuencia de las restricciones no -- holonómicas de los robots y la no linealidad del modelo[\citenum{formation_control}].
+
+\begin{figure}[H]
+	\centering \fbox{\includegraphics[scale=0.25]{imagenes/MarcodeReferencia/Antecedentes/01_Antecedentes_Control_Formacion.jpg}}
+	\caption{Control de la formación en un plano. Trabajo de investigación de la Universidad de California [\citenum{formation_control}].}
+	\label{fig:Antecedentes_Control_Formacion}
+\end{figure}
+
+\section*{Planteamiento del problema}
+\addcontentsline{toc}{section}{Planteamiento del problema}
+En el presente trabajo se aborda el desarrollo de un esquema de control \textit{líder - seguidor}, implementado a dos robots móviles terrestres, los cuáles tendrán el objetivo de llegar a diferentes puntos o trayectorias dentro de un área de trabajo, evadiendo obstáculos que pudieran haber dentro del escenario de pruebas o en la trayectoria. \\
+
+La tarea a cumplir por parte del \textit{robot líder} es la de seguir alguna trayectoria proporcionada por el usuario (por medio de una interfaz gráfica) y evadir los obstáculos fijos dentro de un área de trabajo controlada, mientras que la tarea a cumplir por parte del \textit{robot seguidor}, es imitar el comportamiento del líder de manera autónoma.
+\\\\Todo esto con el objetivo de aportar conocimiento en el rubro de la robótica colaborativa, en especial en la robótica aplicada al control líder - seguidor, con fundamentos en el desarrollo del proyecto SIP 20181591.
+
+\section*{Organización del reporte}
+\addcontentsline{toc}{section}{Organización del reporte}
+El presente trabajo se divide en 6 capítulos principales , que son: \textit{Marco de Referencia, Diseño Conceptual, Diseño Detallado, Integración del Sistema, Costo} y \textit{Conclusiones}. 
+
+En el primer capítulo llamado \textit{Marco de Referecia} se  fundamenta  toda  la  metodología  del  diseño  del  control de los robots móviles y del control líder - seguidor. Se describen las características fundamentales del sistema operativo ROS \textit{(Robotic Operating System)}, así como sus librerías AMCL \textit{(Adaptive Monte Carlo Localization)} y VFH \textit{(Vector Field Histogram)}.
+
+En  el  segundo  capítulo llamado \textit{Diseño Conceptual} se  analizan  las  principales  Áreas  Funcionales  que  conforman a cada  robot,  como  los  son \textit{Estructura,  Procesamiento,  Alimentación,  Movimiento}  y  \textit{Percepción},  y  de  las  cuáles  se  habla  de  cada  una  de  ellas, explicando  su  interpretación,  necesidad,  y  requerimiento,  al  igual  que  se  describe  la  razón  por  la  cual  se  escogieron  dichas  áreas  funcionales  dentro  de  los  robots  móviles  y  todo  lo  que  conllevan, aplicándoles \textit{tablas de selección} con la finalidad de seleccionar los mejores componentes que conforman cada área. 
+
+En el tercer capítulo llamado \textit{Diseño Detallado} se aborda más a fondo cada una de las áreas funcionales junto con cada uno de sus componentes y se dan sus las especificaciones técnicas haciendo la integración de cada área funcional que conforma el total del sistema. De igual manera, se muestran diagramas de flujo de los distintos algoritmos de control.
+
+En el cuarto capítulo llamado \textit{Integración del Sistema} se habla acerca de la implementación físicamente todo lo que se ha venido trabajando en los capítulos anteriores y de la misma manera se aborda la integración del sistema por cada área funcional, complementándolo con fotos, gráficas, e imágenes reales del proyecto.
+
+En el capítulo \textit{Costo} se lleva acabo un análisis del costo total de proyecto, partiendo de sus costos fijos y costos variables. 
+
+En el sexto y último capítulo se \textit{Conclusiones} se detalla los pormenores del proyecto y se explican todos los objetivos que se cumplieron así como de las posibles mejoras y trabajos a futuro. 
+

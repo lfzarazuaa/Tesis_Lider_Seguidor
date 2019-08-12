@@ -1,0 +1,85 @@
+% -----------------------------------------------------------------------------------||Principal.tex||
+%Inicio del documento se define la clase y Mecatexis Tesis: UPIITA-IPN   
+%Copyright (C) 2017 Juan Carlos Guzmán Salgado, Griselda Sánchez Otero, Diego Alonso Flores
+%|---------------------------------------------------------------------------------------------------||
+\typeout{Copyright Juan Carlos Guzmán Salgado Griselda Sánchez Otero   Diego Alonso Flores Hernández}
+\documentclass[letterpaper,11pt]{upiita}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{configuracion/upiitatesis}
+\frontmatter
+%|-------------------------------------------------------------------|DATOS DE LA PORTADA|
+\title{Coordinación de dos robots móviles terrestres bajo un esquema líder seguidor}
+\unidad{\Upiita}
+\materia{Trabajo Terminal II}
+\academia{Mecatr\'onica}
+\grado{Ingeniero en Mecatr\'onica}     
+\mes{Mayo}                            
+\anio{2019}                             
+%|----------------------------------------------------------------|PRESIDENTE - SECRETARIO|
+\Presidente{Dra. Blanca Rosa Briseño Tepepa}
+\Titular{M. en C. Griselda Sánchez Otero}
+%|-------------------------------------------------------------------|INICIO DEL DOCUMENTO|
+\nalumnos{3}
+\alumnoa{Mauricio Sánchez Ortega}
+\alumnob{David Alejandro Toro Sandoval}
+\alumnoc{Luis Fernando Zarazua Aguilar}
+\nasesores{2}
+\asesora{Dr. Juan Luis Mata Machuca}
+\asesorb{M. en C. Mauricio M\'endez Martínez}
+\makeindex
+%|---------------------------------------------------------------------------------------||
+\setcounter{secnumdepth}{3} % para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+%|-------------------------------------------------------------------|INICIO DEL DOCUMENTO|
+\begin{document}
+%%creacion de caratuls y hoja de actas
+\pdfbookmark{Inicio}{Inicio}
+\portada
+\acta
+\cambiamargen
+\dedicatoria             
+\agradecimientos 
+\tabladecontenido
+\listadefiguras
+\listadetablas
+%|--------------------------------------------------------------------------|PRELIMINARES|
+\include{preliminares/Nomenclatura}          
+%\include{preliminares/Simbologia}            
+\include{preliminares/Glosario}            
+\include{preliminares/Resumen}              
+\include{preliminares/Objetivos}            
+\include{preliminares/Introduccion}          
+\mainmatter
+%|----------------------------------------------------------------------------|CAPITULOS|
+\include{capitulos/Marcoreferencia}
+\include{capitulos/Diseconceptual}
+\include{capitulos/Disedetallado}
+\include{capitulos/Integracion}
+\include{capitulos/Costos}
+\include{capitulos/Conclusiones}
+\newpage
+%|-------------------------------------------------------------------------|BIBLIOGRAFIA|
+\pdfbookmark{Referencias}{Referencias}
+\bibliographystyle{apalike} \nocite{*}
+ \bibliography{xbiblioteca}
+ 
+%|----------------------------------------------------------------------------|APENDICES|
+\backmatter
+\part{Apéndices}
+\appendix
+\include{apendices/apendice1}
+%\include{apendices/apendicen}
+\part{Anexos}
+%|-------------------------------------------------------------------------------|ANEXOS|
+\anexo
+\include{apendices/anexo1}
+%\include{apendices/anexo2}
+%\include{apendices/anexo3}
+\newpage
+%|--------------------------------------------------------------------|INDICE ALFABETICO|
+\IndiceAlfabetico
+\end{document}
+%----------------------------------------------------------------------------------------
