@@ -16,12 +16,12 @@
 \contentsline {subsection}{\numberline {1.1.3}AMCL}{5}{subsection.1.1.3}% 
 \contentsline {subsection}{\numberline {1.1.4}VFH (Vector Field Histogram)}{6}{subsection.1.1.4}% 
 \contentsline {subsubsection}{\numberline {1.1.4.1}Primer nivel: Mapa 2D}{6}{subsubsection.1.1.4.1}% 
-\contentsline {subsubsection}{\numberline {1.1.4.2}Segundo nivel: Histograma polar}{6}{subsubsection.1.1.4.2}% 
+\contentsline {subsubsection}{\numberline {1.1.4.2}Segundo nivel: Histograma polar}{7}{subsubsection.1.1.4.2}% 
 \contentsline {subsubsection}{\numberline {1.1.4.3}Tercer nivel: Comando de direcci\'on}{7}{subsubsection.1.1.4.3}% 
 \contentsline {subsection}{\numberline {1.1.5}Esquemas l\IeC {\'\i }der - seguidor}{8}{subsection.1.1.5}% 
 \contentsline {section}{\numberline {1.2}Marco Procedimental}{9}{section.1.2}% 
-\contentsline {subsection}{\numberline {1.2.1}Sistema mecatr\'onico}{9}{subsection.1.2.1}% 
-\contentsline {subsection}{\numberline {1.2.2}Dise\~no mecatr\'onico}{10}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Sistema mecatr\'onico}{10}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}Dise\~no mecatr\'onico}{11}{subsection.1.2.2}% 
 \contentsline {subsection}{\numberline {1.2.3}Proceso de an\'alisis jer\'arquico (AHP)}{11}{subsection.1.2.3}% 
 \contentsline {chapter}{\numberline {2}Dise\~no del Sistema}{13}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Dise\~no Conceptual}{13}{section.2.1}% 
