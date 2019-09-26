@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Ejecuci\'on del Sistema de Navegaci\'on Evasor de Obst\'aculos implementando un robot Turtlebot2 [\citenum {sistemas_navegacion}].}}{\es@scroman {xxxi}}{figure.0.2}% 
 \contentsline {figure}{\numberline {3}{\ignorespaces Control de la formaci\'on en un plano. Trabajo de investigaci\'on de la Universidad de California [\citenum {formation_control}].}}{\es@scroman {xxxiii}}{figure.0.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces \textit {Ciclo: Ve, piensa, act\'ua}. Componentes que conforman un robot m\'ovil aut\'onomo}}{2}{figure.1.1}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \textit {Ciclo: Ve, piensa, act\'ua}. Componentes que conforman un robot m\'ovil aut\'onomo.}}{2}{figure.1.1}% 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Marco de referencia global y el marco de referencia local del robot.}}{3}{figure.1.2}% 
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Par\'ametros de una configuraci\'on diferencial.}}{4}{figure.1.3}% 
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Algoritmo AMCL.}}{5}{figure.1.4}% 

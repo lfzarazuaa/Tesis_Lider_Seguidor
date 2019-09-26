@@ -4,21 +4,24 @@
 
 \subsection{Robots móviles terrestres}
 
-Una manera de entender este tipo de robots es por medio de las distintas áreas de conocimiento que se integran para su desarrollo. Lo primero en tomar en cuenta es ¿cómo van a moverse? y ¿qué mecanismo de movimiento usarán? La cinemática, la dinámica y la teoría del control de los mecanismos utilizados, son necesarios para el desplazamiento correcto de los robots. El diseño e implementación de sistemas perceptuales robustos, visión computacional y sistemas sensoriales, son necesarios para la obtención de la información del entorno y con base en esta información la toma de decisiones. \\
-De igual manera, es necesario tener conociminetos acerca de localización y navegación que implican algoritmos informáticos, de inteligencia artificial y teoría probabilística, para el cumplimiernto de tareas de manera autónoma. 
-\\Todos estos elementos forman el llamado ciclo \textit{``Ve, piensa, actúa"}, tal y se muestra en la Figura \ref{fig:Figura_Ve_piensa_actua}, [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
+Una manera de entender este tipo de robots es por medio de las distintas áreas de conocimiento que se integran para su desarrollo. Lo primero en tomar en cuenta es ¿cómo van a moverse? y ¿qué mecanismo de movimiento usarán? La cinemática, la dinámica y la teoría del control de los mecanismos utilizados, son necesarios para el desplazamiento correcto de los robots. El diseño e implementación de los sistemas perceptuales robustos, la visión computacional y los sistemas sensoriales, son necesarios para la obtención de la información del entorno y con base en esta información la toma de decisiones.
+
+De igual manera, es necesario tener conocimientos acerca de localización y navegación que implican algoritmos informáticos, de inteligencia artificial y teoría probabilística, para el cumplimiernto de tareas de manera autónoma.
+
+Todos estos elementos forman el llamado ciclo \textit{``Ve, piensa, actúa"}, tal como se muestra en la Figura \ref{fig:Figura_Ve_piensa_actua}  [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg}}
-	\caption{\textit{Ciclo: Ve, piensa, actúa}. Componentes que conforman un robot móvil autónomo}
+	\caption{\textit{Ciclo: Ve, piensa, actúa}. Componentes que conforman un robot móvil autónomo.}
 	\label{fig:Figura_Ve_piensa_actua}
 \end{figure}
 
 \subsection{Cinemática de robots móviles}
 
-El análisis cinemático es esencial para el buen diseño de los robots móviles y para el diseño de controladores, dada cierta configuración de un robot móvil. Para comenzar a entender el movimiento de los robots móviles primero es necesario representar la posición de un robot en un marco de referencia[\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
-La posición de P en el marco de referencia global se especifica mediante las coordenadas x e y, y la diferencia angular entre los marcos de referencia global y local viene dada por $\theta$. Se puede describir la posición del robot como un vector con estos tres elementos, teniendo en cuenta el uso del subíndice I para aclarar la base de esta postura como el marco de referencia global:
+El análisis cinemático es esencial para el buen diseño de los robots móviles y para el diseño de controladores, dada cierta configuración de un robot móvil. Para comenzar a entender el movimiento de los robots móviles primero es necesario representar la posición de un robot en un marco de referencia [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
+
+En la Figura \ref{fig:Figura_Marco_de_Referencia} la posición de $``P"$ en el marco de referencia global se especifica mediante las coordenadas $``x"$ e  $``y"$, y la diferencia angular entre los marcos de referencia global y local viene dada por $``\theta"$. Se puede describir la posición del robot $(\xi_{l})$ como un vector conformado por estos tres elementos, teniendo en cuenta el uso del subíndice $``I"$ el cual nos indica el marco de referencia global.
 
 \begin{figure}[H]
 	\centering
@@ -33,19 +36,30 @@ x\\
 y\\
 \theta\\
 \end{bmatrix}\]
+\begin{center}
+$\xi_{l}$ Posición conforme a un marco de referencia $l$.
+\end{center}
 
-Para describir el movimiento del motor en términos de componentes del movimiento, se recurre a la matriz de rotación ortogonal:
+
+Para describir la cinemática del robot se calcula el movimiento del motor en términos de las componentes del movimiento, recurriendo así a la matriz de rotación ortogonal:
 \[ R\left(\theta\right)=
 \begin{bmatrix}
 \cos\left(\theta\right)&\sin\left(\theta\right)&0\\
 -\sin\left(\theta\right)&\cos\left(\theta\right)&0\\
 0&0&1\\
 \end{bmatrix}\]
-Dicha matriz puede ser usada para rastrear el movimiento del robot en ambos marcos de referencia, es decir permite cambiar del marco de referencia local de robot al global y viceversa. Las expresiones son:
+
+Dicha matriz puede ser usada para inspeccionar el movimiento del robot en ambos marcos de referencia, es decir el uso de esta matriz permite cambiar del marco de referencia local de robot al global y viceversa. Las expresiones para obtener el movimiento conforme a cada marco de referencia son:
 \begin{center}
 	$\dot{\xi_{R}}=R\left(\theta\right) \dot{\xi_{I}}$
 	
 	$\dot{\xi_{I}}=R\left(\theta\right)^{-1} \dot{\xi_{R}}$
+	
+	$\xi_{R}$: Velocidad conforme al marco de referencia global.
+	
+	$\xi_{I}$: Velocidad conforme al marco de referencia del robot.
+	
+	$R\left(\theta\right)^{-1}$: Inversa de la matriz de rotación.
 \end{center}
 
 
@@ -57,10 +71,17 @@ A su vez $\dot{\xi_{I}}$ se compone de las siguientes variables:
 \dot{\theta}\\
 \end{bmatrix}
 \]
+\begin{center}
+	$\dot{x}$: Velocidad en $``x"$ conforme al marco de referencia propuesto.
+	
+	$\dot{y}$: Velocidad en $``y"$ conforme al marco de referencia propuesto.
+	
+	$\dot{\theta}$: Velocidad angular conforme al marco de referencia propuesto.
+\end{center}
 
 %%$\dot{\xi_{I}}=f(l,r,\theta, \dot{ \fi_{l} }, \dot{ \fi_{r} })$
 
-Las cuales se representan en la siguiente figura:
+Estas velocidades se representan en el robot como se indica en la Figura \ref{fig:Figura_Parametros_diferencial}.
 
 \begin{figure}[H]
 	\centering
@@ -69,7 +90,7 @@ Las cuales se representan en la siguiente figura:
 	\label{fig:Figura_Parametros_diferencial}
 \end{figure}
 
-Parte de la cinemática de los robots móviles es determinar la maniobrabilidad del robot $\delta_{M}$, la cual se compone de la suma del grado de conducción $\delta_{s}$ y el grado de movilidad $\delta_{m}$. Para el caso de la configuración diferencial los valores son:
+Parte de la cinemática de los robots móviles también es determinar la maniobrabilidad del robot $\delta_{M}$, la cual se compone de la suma del grado de conducción $\delta_{s}$ y el grado de movilidad $\delta_{m}$. Para el caso de una configuración diferencial los valores son:
 \begin{center}
 	$\delta_{m}=2$
 	
@@ -81,7 +102,7 @@ Parte de la cinemática de los robots móviles es determinar la maniobrabilidad de
 %\subsection{Matriz de fuerza}
 
 \subsection{AMCL}
-AMCL es una librería de ROS \textit{(ver definicón de ROS en la sección del Glosario)}, la cual hace uso de un sistema de localización probabilístico para un robot, en un entorno de dos dimensiones (2D). Esta librería implementa el enfoque de localización adaptativo de Monte Carlo [\citenum{thrun_burgard_fox_2010}], junto con los siguientes algoritmos. 
+AMCL es una librería de \hyperref[sec:ROS]{ROS\ref*{sec:ROS}}\textit{ \hyperref[sec:ROS]{(ver definicón de ROS en la sección\ref*{sec:ROS}} \hyperref[sec:Glosario]{Glosario)\ref*{sec:Glosario}}}, la cual hace uso de un sistema de localización probabilístico para un robot, en un entorno de dos dimensiones (2D). Esta librería implementa el enfoque de localización adaptativo de Monte Carlo [\citenum{thrun_burgard_fox_2010}], junto con los siguientes algoritmos. 
 
 \begin{figure}[H]
 	\centering
