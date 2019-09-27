@@ -31,17 +31,17 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}\'Area Funcional 2: Procesamiento}{17}{subsubsection.2.1.2.2}% 
 \contentsline {subsubsection}{\numberline {2.1.2.3}\'Area Funcional 3: Percepci\'on}{18}{subsubsection.2.1.2.3}% 
 \contentsline {subsubsection}{\numberline {2.1.2.4}\'Area Funcional 4: Alimentaci\'on}{18}{subsubsection.2.1.2.4}% 
-\contentsline {subsubsection}{\numberline {2.1.2.5}\'Area Funcional 5: Movimiento}{18}{subsubsection.2.1.2.5}% 
+\contentsline {subsubsection}{\numberline {2.1.2.5}\'Area Funcional 5: Movimiento}{19}{subsubsection.2.1.2.5}% 
 \contentsline {subsection}{\numberline {2.1.3}Caracter\IeC {\'\i }sticas y/o necesidades principales de cada \'area funcional}{19}{subsection.2.1.3}% 
-\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet" Robot Kit }{21}{subsection.2.1.4}% 
+\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet'' Robot Kit }{21}{subsection.2.1.4}% 
 \contentsline {subsubsection}{\numberline {2.1.4.1}Rosbot}{21}{subsubsection.2.1.4.1}% 
 \contentsline {subsubsection}{\numberline {2.1.4.2}Turtlebot3 Burger}{22}{subsubsection.2.1.4.2}% 
 \contentsline {subsubsection}{\numberline {2.1.4.3}TX1 ``Jet'' Robot Kit}{23}{subsubsection.2.1.4.3}% 
 \contentsline {subsection}{\numberline {2.1.5}Tablas de selecci\'on de los robots m\'oviles}{23}{subsection.2.1.5}% 
-\contentsline {subsection}{\numberline {2.1.6}Criterios para el dise\~no y selecciones de interfaces gr\'aficas}{25}{subsection.2.1.6}% 
-\contentsline {subsubsection}{\numberline {2.1.6.1}Criterios a evaluar}{25}{subsubsection.2.1.6.1}% 
-\contentsline {subsubsection}{\numberline {2.1.6.2}1. Amabilidad}{25}{subsubsection.2.1.6.2}% 
-\contentsline {subsubsection}{\numberline {2.1.6.3}2. Interactividad}{25}{subsubsection.2.1.6.3}% 
+\contentsline {subsection}{\numberline {2.1.6}Criterios para el dise\~no y selecciones de interfaces gr\'aficas}{26}{subsection.2.1.6}% 
+\contentsline {subsubsection}{\numberline {2.1.6.1}Criterios a evaluar}{26}{subsubsection.2.1.6.1}% 
+\contentsline {subsubsection}{\numberline {2.1.6.2}1. Amabilidad}{26}{subsubsection.2.1.6.2}% 
+\contentsline {subsubsection}{\numberline {2.1.6.3}2. Interactividad}{26}{subsubsection.2.1.6.3}% 
 \contentsline {subsubsection}{\numberline {2.1.6.4}3. Redundancia \'optima en el proceso de comunicaci\'on}{26}{subsubsection.2.1.6.4}% 
 \contentsline {subsubsection}{\numberline {2.1.6.5}4. Eficiencia y Utilidad}{26}{subsubsection.2.1.6.5}% 
 \contentsline {subsubsection}{\numberline {2.1.6.6}Tabla de Criterios}{27}{subsubsection.2.1.6.6}% 
