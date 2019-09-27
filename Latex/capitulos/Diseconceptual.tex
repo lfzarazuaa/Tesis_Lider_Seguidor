@@ -2,49 +2,49 @@
 \chapter{Diseño del Sistema}
 %\blindtext
 \section{Diseño Conceptual}
-En esta capítulo se definen las necesidades y requerimientos del problema planteado, posteriormente el problema se divide en las principales áreas funcionales para resolver el problema y se plantean las diferentes formas de resolver cada una de las funciones donde son evaluadas y con base en ello un concepto final es obtenido.
+En este capítulo se definen las necesidades y requerimientos del problema planteado, posteriormente el problema se divide en las principales áreas funcionales para resolver el problema y se plantean las diferentes formas de resolver cada una de las funciones donde  estas son evaluadas y con base en esta evaluación un concepto final es obtenido.
 
 \subsection{Necesidades y requerimientos}
 
-Es necesario identificar el problema planteado a resolver y extraer las necesidades de la persona o personas que hayan planteado dicho problema. Una vez identificadas dichas necesidades se prosigue a generar requerimientos los cuales surgen de traducir las necesidades en sentencias cuantificables, para que a partir de ellas se hagan propuestas de diseño las cuales posteriormente son evaluadas. Dado que el enfoque es para investigación, las necesidades no son tan estrictas y son pocas, sin embargo, al hacer una interpretación de estas, surgen muchos requerimientos, los cuales permite acotar el proyecto.
+Es necesario identificar el problema planteado a resolver y extraer las necesidades de la persona o personas que hayan planteado para dicho problema. Una vez identificadas dichas necesidades se prosigue a generar requerimientos los cuales surgen de traducir las necesidades en sentencias cuantificables, para que a partir de ellas se hagan propuestas de diseño las cuales posteriormente son evaluadas. Dado que el enfoque es para investigación, las necesidades no son tan estrictas y son pocas, sin embargo, al hacer una interpretación de estas, surgen muchos requerimientos, los cuales permite acotar el proyecto.
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|p{5cm}|p{9cm}|}
 		\hline
-		Necesidad	& 	Interpretación	\\ \hline
-		Tener dos robots móviles con ruedas para el desarrollo del proyecto SIP. & Selección dos robots móviles terrestres para su compra o manufactura, con el objetivo de desarrollar un proyecto de investigación.\\ \hline
+		Necesidad & Interpretación \\ \hline
+		Tener dos robots móviles con ruedas para el desarrollo del proyecto SIP. & Selección de dos robots móviles terrestres para su compra o manufactura, con el objetivo de desarrollar un proyecto de investigación.\\ \hline
 		Los robots deberán ser usados para futuras aplicaciones y/o proyectos. & Robots con la documentación suficiente para poder ser replicados y reutilizados con una estructura modular, que permitan futuras adaptaciones .\\ \hline
-		Controlar dos robots móviles terrestres bajo un esquema líder $-$ seguidor. & Coordinación de dos robots móviles bajo la implementación de un esquema de control líder $-$ seguidor.\\ \hline
-		Los robots deberán evadir obstáculos de manera autónoma y mantener una comunicación continua entre ambos robots. & El robot líder deberá seguir una trayectoria seleccionada y evadir los obstáculos que puedan estar dentro de esta trayectoria mientras que el robot seguidor deberá alcanzar los mismos puntos que el robot líder con base en la información proporcionada por este último.\\ \hline
-		Un interfaz humano máquina con la cual poder compartir datos del proceso. & Interfaz gráfica que se le sea posible, iniciar y visualizar el progreso del proceso del control y seguimiento de trayectoria y la configuración líder $-$ seguidor.	\\ \hline
+		Controlar dos robots móviles terrestres bajo un esquema líder$-$seguidor. & Coordinación de dos robots móviles bajo la implementación de un esquema de control líder$-$seguidor.\\ \hline
+		Los robots deberán evadir obstáculos de manera autónoma y mantener una comunicación continua entre ambos robots. & El robot líder deberá seguir una trayectoria seleccionada y evadir los obstáculos que puedan estar dentro de esta trayectoria, mientras que el robot seguidor deberá alcanzar los mismos puntos que el robot líder con base en la información proporcionada por este último.\\ \hline
+		Una interfaz humano máquina con la cual se puedan compartir datos del proceso. & Interfaz gráfica que le sea posible, iniciar y visualizar el progreso del proceso del control y seguimiento de trayectoria y la configuración líder$-$seguidor.	\\ \hline
 	\end{tabular}
 	\caption{Tabla de Necesidades}
 	\label{tab:Tabla_1_Necesidades}
 \end{table}
 
-Con la interpretación de la Tabla \ref{tab:Tabla_1_Necesidades} se plantean los siguientes requerimientos técnicos:
+Con la interpretación de la Tabla \ref{tab:Tabla_1_Necesidades} se procede a plantear los requerimientos técnicos enlistados a continuacion:
 
 \begin{itemize}
-	\item Control basado en el esquema líder - seguidor.
+	\item Control basado en el esquema líder-seguidor.
 	\item Móvil terrestre, con ruedas.
 	\item Batería con duración mínima de 10 minutos (uso continuo).
 	\item Estructura estable para el soporte de circuitos y movimiento del robot móvil y para futuras aplicaciones.
 	\item Material ligero.
 	\item Ambiente controlado. (Obstáculos fijos y trayectorias predefinidas).
 	\item Superficie lisa y plana.
-	\item Lugar cerrado, con luz de día.
+	\item Lugar cerrado, con luz controlada.
 	\item Tarjeta de procesamiento de información con arquitectura mínima de 32 bits, con lenguaje de programación de medio/alto nivel (Python, C++).
 	\item Capacidad de soportar procesamiento en paralelo como lo es ROS.
-	\item Capacidad para procesar información de distintos sensores y protocolos de comunicación, USB, WIFI, I2C.
-	\item Capacidad para para adquirir datos confiables.
+	\item Capacidad para procesar información de distintos sensores y protocolos de comunicación, USB, WIFI, $I^{2}C$.
+	\item Capacidad para adquirir datos confiables.
 	\item Resolución menor a 5cm y 10° o su equivalente en coordenadas rectangulares.
 	\item No susceptibles a ruido de agentes externos.
 	\item Establecer un protocolo de comunicación inalámbrico con suficiente velocidad y alcance para asegurar una buena comunicación entre todos los agentes del sistema.
 	\item Interfaz gráfica de rápido procesamiento capaz de establecer comunicación bidireccional con ambos robots móviles y desplegar los datos transmitidos por los robots.
 	\item El movimiento deberá ser con pausas no mayores a 3s, es decir, la trayectoria deseada deberá fluir lo mejor posible.
 	\item Respuesta rápida de los motores para establecer la velocidad deseada según la salida generada por el sistema de control.
-	\item Establecimiento de algoritmos específicos para la maniobra de evasión de los obstáculos y el control de seguimiento de trayecto basado el control líder - seguidor, tomando en cuenta las capacidades de las tarjetas de procesamiento.
+	\item Establecimiento de algoritmos específicos para la maniobra de evasión de los obstáculos y el control de seguimiento de trayectoria basado el control líder-seguidor, tomando en cuenta las capacidades de las tarjetas de procesamiento.
 \end{itemize}
 
 Adicionalmente se tienen los siguientes requerimientos administrativos:
@@ -53,13 +53,13 @@ Adicionalmente se tienen los siguientes requerimientos administrativos:
 	\item Costo total menor a $\$$50,000.00 MXN.
 	\item Software de uso libre, para evitar el pago de licencias.
 	\item Componentes fácilmente reemplazables.
-	\item HMI en inglés y español
-	\item Duración máxima para finalizar el proyecto 1 año.
+	\item HMI en inglés y español.
+	\item Duración máxima para finalizar el proyecto en 1 año.
 \end{itemize}
 
 \subsection{Descomposición por áreas funcionales }
 
-Para tener una comprensión mayor del proyecto se procede a descomponerlo en áreas funcionales, lo cual permite visualizar una tarea complicada en funciones más sencillas que contribuirán a resolver el problema principal.
+Para tener una comprensión mayor del proyecto se procede a descomponerlo en áreas funcionales como se observa en la Figura \ref{fig:Figura_Areas_Funcionales}, lo cual permite visualizar una tarea complicada en funciones más sencillas que contribuirán a resolver el problema principal.
 
 \begin{figure}[H]
 	\centering
@@ -69,7 +69,12 @@ Para tener una comprensión mayor del proyecto se procede a descomponerlo en área
 \end{figure}
 
 \subsubsection{Área Funcional 1: Estructura}
-La primera área de interés es una plataforma o es estructura, del móvil donde alberga todas las herramientas que cumplirán con las funciones posteriores, esta estructura será la encargada de soportar todos los circuitos, sensores y procesadores capaces de satisfacer nuestras necesidades. Es importante mencionar que no se realizara un diseño de ella, sino que se pretende analizar las propuestas existentes comercialmente o con acceso a un manual para su construcción. Nuestra razón es que al estar en el mercado sabemos que soporta todos los elementos que conlleva un móvil, ya que se hace la selección orientada a robots móviles para el desarrollo de investigación. No es necesario algo realmente robusto hablando estructuralmente. Dentro de los móviles que seleccionemos cada uno posee características específicas, aunque similares, es ahí donde entrará la metodología mecatrónica para seleccionar una opción adecuada que se encuentre disponible en el mercado o que se tenga documentación para construirse, cubriendo los requerimientos antes mencionados, como lo es el límite de presupuesto.
+La primera área de interés es una plataforma o estructura del móvil, donde alberga todas las herramientas que cumplirán con las funciones posteriores, esta estructura será la encargada de soportar todos los circuitos, sensores y procesadores capaces de satisfacer nuestras necesidades.
+
+Es importante mencionar que no se realizará un diseño de ella, sino que se pretenden analizar las propuestas existentes comercialmente o con acceso a un manual para su construcción. Nuestra razón es que al estar en el mercado sabemos que soporta todos los elementos que conlleva un móvil, ya que se hace la selección orientada a robots móviles que cumplan los requisitos de la mejor manera, con un proceso de diseño concurrente, una línea de producción, un sistema de pruebas, documentación y al ser comerciales con costos atractivos. Para el desarrollo de este proyecto no es necesario algo realmente robusto hablando estructuralmente, pues el objetivo es la implementación del esquema líder-seguidor.
+
+Dentro de los móviles que seleccionamos cada uno posee características específicas, aunque similares, es ahí donde entrará la metodología mecatrónica para seleccionar una opción adecuada que se encuentre disponible en el mercado o que tenga documentación para construirse, cubriendo los requerimientos antes mencionados, como lo es el límite de presupuesto.
+
 \subsubsection{Área Funcional 2: Procesamiento}
 
 La localización, detección y evasión de obstáculos, la comunicación entre robots e interfaz (HMI), el seguimiento de trayectorias, así como la sinergia de las demás áreas funcionales están englobadas en el \textit{Área de Procesamiento} también llamada \textit{``Pensamiento propio del robot"}.Está es el área encargada de lograr el objetivo principal de esté trabajo con la ayuda de tarjetas de procesamiento. Como entrada se manejan los datos obtenidos por la función percepción. El control, en términos de un diagrama IDEF0 es la selección del algoritmo a usar para cumplir cada una de estas funciones. Adicionalmente se necesitará establecer algún tipo de comunicación preferentemente inalámbrico entre ambos móviles y la computadora central, lo cual permitirá al robot seguidor conocer los puntos de interés por alcanzar, proporcionados por el líder. Así mismo, monitorear diversos parámetros durante la ejecución del esquema líder seguidor.
