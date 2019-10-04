@@ -25,9 +25,9 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Integraci\'on de todas las \'Areas Funcionales.}}{33}{figure.2.9}% 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Ensamble de 2 pisos o chapas en forma de celda (base estructural).}}{35}{figure.2.10}% 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Estructura tipo multiplataforma.}}{35}{figure.2.11}% 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Dimensiones del Turtlebot3.[\citenum {e-Manual-specifications}]}}{39}{figure.2.12}% 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Tarjeta ARM Cortex M7[\citenum {opencr}].}}{44}{figure.2.13}% 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Tarjeta Raspberry PI 3, Modelo B[\citenum {raspberry_pi3}].}}{45}{figure.2.14}% 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Dimensiones del Turtlebot3 [\citenum {e-Manual-specifications}].}}{39}{figure.2.12}% 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Tarjeta ARM Cortex M7 [\citenum {opencr}].}}{44}{figure.2.13}% 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Tarjeta Raspberry PI 3, Modelo B [\citenum {raspberry_pi3}].}}{45}{figure.2.14}% 
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Entrada y salida del programa que genera la matriz de fuerza.}}{47}{figure.2.15}% 
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Algoritmo Generador de la Matriz de Fuerza.}}{47}{figure.2.16}% 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Diagrama de Flujo para la rutina ``Obtener al vecino m\'as cercano".}}{48}{figure.2.17}% 

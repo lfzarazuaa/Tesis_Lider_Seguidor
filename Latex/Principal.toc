@@ -57,11 +57,11 @@
 \contentsline {subsubsection}{\numberline {2.2.2.1}Primera parte: Dispositivos destinados para el procesamiento}{40}{subsubsection.2.2.2.1}% 
 \contentsline {subsubsection}{\numberline {2.2.2.2}Segunda parte: Funciones a desarrollar en cada tarjeta}{45}{subsubsection.2.2.2.2}% 
 \contentsline {subsubsection}{\numberline {2.2.2.3}Tercera parte: Dise\~no del software}{46}{subsubsection.2.2.2.3}% 
-\contentsline {subsubsection}{\numberline {2.2.2.4}Seguimiento de trayectorias}{46}{subsubsection.2.2.2.4}% 
-\contentsline {subsubsection}{\numberline {2.2.2.5}Esquema L\IeC {\'\i }der - Seguidor}{50}{subsubsection.2.2.2.5}% 
-\contentsline {subsubsection}{\numberline {2.2.2.6}Evasi\'on de obst\'aculos}{53}{subsubsection.2.2.2.6}% 
-\contentsline {subsubsection}{\numberline {2.2.2.7}Comunicaci\'on}{55}{subsubsection.2.2.2.7}% 
-\contentsline {subsubsection}{\numberline {2.2.2.8}Control de motores}{57}{subsubsection.2.2.2.8}% 
+\contentsline {paragraph}{Seguimiento de trayectorias}{46}{subsubsection.2.2.2.3}% 
+\contentsline {paragraph}{Esquema L\IeC {\'\i }der - Seguidor}{50}{figure.2.20}% 
+\contentsline {paragraph}{Evasi\'on de obst\'aculos}{53}{figure.2.26}% 
+\contentsline {paragraph}{Comunicaci\'on}{55}{figure.2.30}% 
+\contentsline {paragraph}{Control de motores}{57}{figure.2.32}% 
 \contentsline {subsection}{\numberline {2.2.3}\'Area Funcional 3: Percepci\'on (Comunicaci\'on entorno - robot)}{58}{subsection.2.2.3}% 
 \contentsline {subsubsection}{\numberline {2.2.3.1}Datos propioceptivos}{59}{subsubsection.2.2.3.1}% 
 \contentsline {subsubsection}{\numberline {2.2.3.2}Sensores integrados}{59}{subsubsection.2.2.3.2}% 

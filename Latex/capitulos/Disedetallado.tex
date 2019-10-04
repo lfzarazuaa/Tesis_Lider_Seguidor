@@ -1,7 +1,7 @@
 % !TeX encoding = ISO-8859-1
 \section{Diseño Detallado}
 \label{sec:Diseno_Detallado}
-En este capítulo se analiza con más profundidad cada una de las áreas funcionales antes mencionadas junto con las características y datos técnicos de cada uno de lo elementos que las conforman. De igual manera, se aborda la integración de cada una de las áreas con el sistema final que forman a los robots, tal y como se puede observar a continuación.
+En este capítulo se analiza con más profundidad cada una de las áreas funcionales previamente mencionadas junto con las características y datos técnicos de cada uno de los elementos que conforman las distintas áreas funcionales. De igual manera, se aborda la integración de cada una de las áreas funcionales con el sistema final que forman a los robots, tal y como se puede observar en la Figura \ref{fig:Integracion}.
 
 \begin{figure}[H]
 	\centering
@@ -10,20 +10,20 @@ En este capítulo se analiza con más profundidad cada una de las áreas funcionale
 	\label{fig:Integracion}
 \end{figure}
 
-La Figura \ref{fig:Integracion} muestra la interacción de las distintas áreas funcionales que conforman a cada uno de los robots y su implementación con sus distintos componentes que su conjunto conforman al sistema robótico que se va a utlizar para llevar acabo la coordinación, navegación y ejecución de tareas proporcionadas por un usuario. 
+La Figura \ref{fig:Integracion} muestra la interacción de las distintas áreas funcionales aplicadas a cada uno de los robots, así como su implementación con los distintos componentes los cuales en conjunto conforman al sistema robótico líder-seguidor que se va a utilizar para llevar acabo la coordinación, navegación y ejecución de tareas proporcionadas por un usuario.
 
-Ajustándose a la dicha figura la primera Área Funcional que hay que analizar es la \textit{Estructura} que tiene como principal objetivo albergar los distintos componentes que conforman a los robots, es decir, es la encargada de alojar todos los demás sistemas que conforman a los robots, como por ejemplo, en el caso del Procesamiento, se necesita que dentro de la estructura exista un lugar donde establecer y resguardar las tarjetas de procesamiento \textit{(Raspberry PI y ARM Cortex)} y que estás vayan seguras para que no sufran ningún desperfecto que se pudiera traducir en algún error en  los robots.
+Ajustándose a la Figura \ref{fig:Integracion} la primera Área Funcional que hay que analizar es la de \textit{Estructura} que tiene como principal objetivo albergar los distintos componentes que conforman a los robots, es decir, es la encargada de alojar todas las partes físicas de las distintas áreas funcionales pertinentes a los robots, como por ejemplo, en el caso del Procesamiento, se necesita que dentro de la estructura exista un lugar donde establecer y resguardar las tarjetas de procesamiento \textit{(Raspberry PI y ARM Cortex)} y que estás vayan a estar seguras para que no sufran ningún desperfecto que se pudiera traducir en algún error en los robots.
 
 \subsection{Área Funcional 1: Estructura (Soporte de componentes)}
 
-La Estructura está directamente relacionada con el tamaño y el peso de las distintas piezas que conforman los robots, así como el tipo de locomoción, en donde, los robots móviles Turtlebot3 Burger se acoplan perfectamente a estas necesidades y previos requisitos ya antes mencionado, gracias a que cuenta con una estructura modular y compacta que hace posible la distribución de los distintos componentes del robot a través de sus diferentes plataformas y cuya estructura es capaz de soportar hasta 15 kg de peso, partiendo de que la estructura en conjunto con la batería LiPo y el sensor LIDAR es de apenas 1 kg. [\citenum{e-Manual-Features}] [\citenum{e-Manual-specifications}] [\citenum{AutoModelCar}]
+La Estructura está directamente relacionada con el tamaño y el peso de las distintas piezas que conforman los robots, así como el tipo de locomoción, en donde, los robots móviles Turtlebot3 Burger se acoplan perfectamente a estas necesidades y previos requisitos ya antes mencionados, gracias a que cuentan con una estructura modular y compacta que hace posible la distribución de los distintos componentes del robot a través de sus diferentes plataformas y cuya estructura es capaz de soportar hasta 15 kg de peso quedando libres 14kg para futuras implementaciones. Asimismo cabe mencionar que la estructura en conjunto con la batería LiPo y el sensor LIDAR es de apenas 1 kg [\citenum{e-Manual-Features}] [\citenum{e-Manual-specifications}] [\citenum{AutoModelCar}].
 
-Por otro lado, al tener una estructura modular dentro del robot, y el Turtlebot3 Burger ser clasificado como un robot móvil de Código Abierto, se puede adaptar a cualquier tipo de locomoción, aunque el desarrollo del proyecto se llevará acabo con la configuración con la que ya viene integrada, que es de tipo diferencial y que en la sección de Movimiento se hablará a detalle.
+Por otro lado, al tener una estructura modular dentro del robot, y que el Turtlebot3 Burger este clasificado como un robot móvil de Código Abierto, con flexibilidad en el diseño mecánico, se puede adaptar a cualquier tipo de locomoción, aunque el desarrollo del proyecto se llevará acabo con la configuración con la que ya viene integrada, que es de tipo diferencial sobre la cual en la sección de Movimiento se hablará a detalle.
 
 \subsubsection{Elementos primordiales de la estructura}
 
 \subsubsection*{Chapas}
-Los pisos o chapas que conforman los diferentes niveles del Turtlebot3 dentro de la estructura, son como se muestra a continuación, los cuales están fabricados de plástico ABS y tienen distintos orificios que sirven para ahorrar material y con ello peso, y, por otra parte, para adaptar diferentes componentes, haciendo los pisos de la estructura universales para cualquier requerimiento, adaptación o aplicación.
+Los pisos o chapas que conforman los diferentes niveles del Turtlebot3 dentro de la estructura, son como se muestran en la Figura \ref{fig:Figura_Ensamble_2_pisos}, los cuales están fabricados de plástico ABS y tienen distintos orificios que sirven para ahorrar material y con ello peso, y que por otra parte, sirven para adaptar diferentes componentes, haciendo los pisos de la estructura universales para cualquier requerimiento, adaptación o aplicación.
 
 \begin{figure}[H]
 	\centering
@@ -32,7 +32,7 @@ Los pisos o chapas que conforman los diferentes niveles del Turtlebot3 dentro de
 	\label{fig:Figura_Ensamble_2_pisos}
 \end{figure}
 
-Al ser un robot denominado multiplataforma o multicapa ofrece entre otras bondades un mejor uso del espacio y mejor maniobrabilidad a la hora de ensamblar los componentes que conforman al robot. Cuenta con 4 plataformas las cuales distribuyen los distintos componentes en cada una de ellas y sus chapas o pisos en forma de celdas permite la implementación de diferentes componentes y funciones de acuerdo a cada tarea ejecutada por el robot.
+Al ser un robot denominado multiplataforma o multicapa como se observa en la Figura \ref{fig:Figura_Estructura_multiplataforma} ofrece entre otras bondades un mejor uso del espacio y mejor maniobrabilidad a la hora de ensamblar los componentes que conforman al robot. Cuenta con 4 plataformas las cuales distribuyen los distintos componentes en cada una de estas y sus chapas o pisos en forma de celdas permiten la colocación y posterior implementación de diferentes componentes y funciones de acuerdo a cada tarea ejecutada por el robot que sea requerida.
 
 \begin{figure}[H]
 	\centering
@@ -46,11 +46,11 @@ Al ser un robot denominado multiplataforma o multicapa ofrece entre otras bondad
 \subsubsection*{Elementos generales}
 Para el ensamble de cada piso de la estructura, se utilizaron los siguientes elementos:
 \begin{itemize}
-	\item Dos chapas tipo ``waffle" (Figura \ref{fig:Figura_Ensamble_2_pisos})
+	\item Dos chapas tipo ``waffle" (ver Figura \ref{fig:Figura_Ensamble_2_pisos}).
 	\item 16 tornillos M3 de 4mm de longitud.
-	\item 16 tuercas M3 de 8mm.
+	\item 16 tuercas M3 de 8mm de longitud.
 \end{itemize}
-4 tornillos M3 de 8mm en la parte superior de la chapa, y por la parte inferior ajustar con 4 tuercas M3.
+Se colocaron 4 tornillos M3 de 8mm en la parte superior de la chapa, y por la parte inferior para ajustar se usaron 4 tuercas M3 como se muestra en la Figura \ref{fig:Figura_Estructura_multiplataforma}.
 \subsubsection*{Elementos específicos por cada piso}
 \begin{enumerate}
 	\item Piso 1
@@ -117,25 +117,27 @@ Para el ensamble de cada piso de la estructura, se utilizaron los siguientes ele
 
 \subsubsection{Dimensiones}
 
-Como ya se ha mencionado el Turtlebot3, es un robot compacto con apenas una longitud (L) de 138 mm, una anchura (W) de 178 mm y una altura (H) de 192 mm tomando como referencia el las llantas.
+Como ya se ha mencionado el Turtlebot3, es un robot compacto con apenas una longitud (L) de 138 mm, una anchura (W) de 178 mm y una altura (H) de 192 mm tomando como referencia las llantas, tal como se muestra en la Figura \ref{fig:Figura_Estructura_Turtlebot3}.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/05_Estructura_Turtlebot3.jpg}}
-	\caption{Dimensiones del Turtlebot3.[\citenum{e-Manual-specifications}]}
+	\caption{Dimensiones del Turtlebot3 [\citenum{e-Manual-specifications}].}
 	\label{fig:Figura_Estructura_Turtlebot3}
 \end{figure}
 
 
 \subsection{Área Funcional 2: Procesamiento (Comunicación de componentes)}
 
-El procesamiento es un área funcional de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales (Figura \ref{fig:Figura_Areas_Funcionales}), puesto que además de ser el área con mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control Líder - Seguidor. Para desarrollar esta área funcional se dividió en tres secciones con el objetivo de volver más transparente el proceso de diseño.
+El Área Funcional de procesamiento es de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales (ver la Figura \ref{fig:Figura_Areas_Funcionales}), puesto que además de ser el área funcional con mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control líder-seguidor. Para desarrollar esta área funcional se dividió en tres secciones con el objetivo de volver más transparente el proceso de diseño.
 
-La primera parte consiste en la descripción de las tarjetas encargadas del procesamiento, razón por la cual se mencionan las distintas tarjetas y sus características mas relevantes, es decir se define el recurso disponible para realizar procesamiento. En la segunda parte se definen las funciones que deberán cumplir cada una de las tarjetas, y finalmente se describe como se están proponiendo cumplir dichas funciones.
+La primera parte consiste en la descripción de las tarjetas encargadas del procesamiento, razón por la cual se mencionan las distintas tarjetas y sus características más relevantes, es decir se define el recurso disponible para realizar el procesamiento. 
+
+En la segunda parte se definen las funciones que deberán cumplir cada una de las tarjetas, y finalmente en la tercera parte se describe como se están proponiendo cumplir dichas funciones.
 
 \subsubsection{Primera parte: Dispositivos destinados para el procesamiento}
 
-Recordando el ciclo ``Ve, piensa, actúa", el procesamiento funciona como la parte del pensar, es a través de este pensar que los robots podrán ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existirá procesamiento.
+Recordando el ciclo ``Ve, piensa, actúa", el procesamiento funciona como la parte del pensar, es a través de este pensar que los robots podrán ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existirá o se llevará a cabo el procesamiento.
 
 \begin{enumerate}
 	\item Líder: Raspberry Pi 3 Model B .
@@ -145,7 +147,7 @@ Recordando el ciclo ``Ve, piensa, actúa", el procesamiento funciona como la part
 	\item Computadora de monitoreo.
 \end{enumerate}
 
-Las características técnicas más relevantes de cada una de las tarjetas se muestran a continuación.
+Las características técnicas más relevantes de cada una de las tarjetas se muestran en las Tablas \ref{tab:Tabla_Caracteristicas_Tarjeta_ARM_1} y \ref{tab:Tabla_Caracteristicas_Tarjeta_Raspberry_PI}.
 
 \begin{table}[H]
 	\centering
@@ -215,7 +217,7 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		\end{enumerate}
 		\\ \hline
 	\end{tabular}
-	\caption{Características de la Tarjeta ARM Cortex M7 [\citenum{opencr}]}
+	\caption{Características de la Tarjeta ARM Cortex M7 [\citenum{opencr}].}
 	\label{tab:Tabla_Caracteristicas_Tarjeta_ARM_2}
 \end{table}
 
@@ -250,14 +252,14 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		\end{enumerate}
 		\\ \hline
 	\end{tabular}
-	\caption{Características de la Tarjeta ARM Cortex M7 [\citenum{opencr}]}
+	\caption{Características de la Tarjeta ARM Cortex M7 [\citenum{opencr}].}
 	\label{tab:Tabla_Caracteristicas_Tarjeta_ARM_3}
 \end{table}
 
 \begin{figure}[t]
 	\centering
 	\fbox{\includegraphics[scale=1.5]{imagenes/Detallado/07_Tarjeta_ARM.jpg}}
-	\caption{Tarjeta ARM Cortex M7[\citenum{opencr}].}
+	\caption{Tarjeta ARM Cortex M7 [\citenum{opencr}].}
 	\label{fig:Figura_Tarjeta_ARM}
 \end{figure}
 
@@ -292,56 +294,55 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		Fuente de poder Micro USB hasta 2.5 A \\
 		\hline
 	\end{tabular}
-	\caption{Características de la tarjeta Raspberry PI 3, Modelo B [\citenum{raspberry_pi3}]}
-	\label{tab:Tabla_Caracteristicas_Tarjeta_Raspberry PI}
+	\caption{Características de la tarjeta Raspberry PI 3, Modelo B [\citenum{raspberry_pi3}].}
+	\label{tab:Tabla_Caracteristicas_Tarjeta_Raspberry_PI}
 \end{table}
 
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=1]{imagenes/Detallado/08_Tarjeta_Raspberry_PI_3.jpg}}
-	\caption{Tarjeta Raspberry PI 3, Modelo B[\citenum{raspberry_pi3}].}
+	\caption{Tarjeta Raspberry PI 3, Modelo B [\citenum{raspberry_pi3}].}
 	\label{fig:Figura_Tarjeta_Raspberry_PI_3}
 \end{figure}
 
 \subsubsection{Segunda parte: Funciones a desarrollar en cada tarjeta}
 
-Una vez definido dónde, sigue hablar del que, es decir que áreas funcionales están relacionadas con las tarjetas de procesamiento y de que se encargan dichas áreas funcionales.
-El procesamiento es la principal área funcional, pero de ella se derivan las siguientes, las cuales se recuperan del diseño conceptual:
+Una vez definidos que elementos son necesarios, sigue hablar que realizarán, es decir que áreas funcionales están relacionadas con las tarjetas de procesamiento y de que se encargan dichas áreas funcionales. El procesamiento es la principal área funcional, pero de ella se derivan las siguientes subáreas, las cuales se recuperan del diseño conceptual:
 
 \begin{description}
-	\item[Framework:] Una herramienta de software para facilitar ciertos aspectos en la manera en que se procesan los datos y el funcionamiento del sistema en general.
-	\item[Esquemas de control:] Que se encarga de definir la dirección de los turtlebot3 para mantener la trayectoria deseada, el esquema líder seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
-	\item[Comunicación:] Encargada de transmitir mensaje entre los distintitos agentes.
+	\item[Framework:] Es una herramienta de software que se ejecuta en cada una de las unidades de procesamiento para facilitar ciertos aspectos como la manera en que se procesan los datos y el funcionamiento del sistema en general.
+	\item[Esquemas de control:] Son los encargados de definir la dirección de los turtlebot3 para mantener la trayectoria deseada, el esquema líder-seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
+	\item[Comunicación:] Es la encargada de transmitir mensaje entre los distintivos agentes.
 \end{description}
 
-Estas áreas funcionales estarán distribuidas de la siguiente manera en cada una de las tarjetas.
+Estas áreas funcionales estarán distribuidas en cada una de las tarjetas siguiendo la lista a continuación.
 
 \begin{itemize}
-	\item RBP Líder
+	\item RBP Líder.
 	\begin{itemize}
-		\item Seguimiento de trayectoria
-		\item Evasión de obstáculos
+		\item Seguimiento de trayectoria.
+		\item Evasión de obstáculos.
 	\end{itemize}
-	\item Open CR Líder
+	\item Open CR Líder.
 	\begin{itemize}
-		\item Control de motores
+		\item Control de motores.
 	\end{itemize}
-	\item RBP Seguidor
+	\item RBP Seguidor.
 	\begin{itemize}
-		\item Seguimiento al líder
+		\item Seguimiento al líder.
 	\end{itemize}
-	\item Open CR Seguidor
+	\item Open CR Seguidor.
 	\begin{itemize}
-		\item Control de motores
+		\item Control de motores.
 	\end{itemize}
 \end{itemize}
 
-Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ``como se cumplirán".
+Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ''como se cumplirán".
 
 \subsubsection{Tercera parte: Diseño del software}
 
-\subsubsection{Seguimiento de trayectorias}
+\paragraph{Seguimiento de trayectorias}
 
 Para el seguimiento de trayectorias se optó por seleccionar la matriz de fuerzas [\citenum{AutoModelCar}], es así como se le denomina a un mapa de vectores que cubre toda el área del lugar donde el líder se desplazará, este algoritmo resulta muy adecuado debido se tiene la opción de usar una librería de ROS para localización en ambientes cerrados. Dicha librería hace uso de un algoritmo probabilístico llamado AMCL el cual se detalla en el marco teórico. Este algoritmo permite conocer la posición de los turtlebot3 con una incertidumbre de 10$cm^{2}$. Este hecho facilita el uso de la matriz de fuerzas, ya que una vez determinada las dimensiones del área de pruebas se procede a definir la trayectoria a seguir por el turtlebot3 líder, esto se hace discretizando la trayectoria propuesta y listando dichos puntos en un archivo con extensión .txt siguiendo uno de los formatos creados para una de las competencias de DARPA[\citenum{darpa}]. Posteriormente esta serie de puntos son procesados por el algoritmo que genera la matriz de fuerzas y es guardado en un archivo con extensión npy.
 
@@ -390,7 +391,7 @@ Una vez obtenida la matriz de fuerza se debe implementar un código para que el l
 \end{figure}
 
 Este nodo es el encargado de suscribirse a su posición proveniente de la AMCL y con base a ella reorientarse para mantener la trayectoria junto con la ayuda de la matriz de fuerza.
-\subsubsection{Esquema Líder - Seguidor}
+\paragraph{Esquema Líder - Seguidor}
 El implementar uno de los esquemas líder-seguidor propuestos en el marco de referencia implicaría mantener una posición relativa al líder $d_1$, bajo cualquiera de los métodos de control citados en el marco de referencia, lo cual podría causar colisiones con obstáculos. Para este caso en particular el seguidor más que mantener una posición relativa al líder, debe mantenerse sobre la trayectoria dictada por el líder.
 
 Para evitar este problema y lograr que el seguidor se mantenga en la ruta, se pensó en mantener una velocidad lineal constante e igual para cada robot móvil, y enviar al seguidor los puntos de ruta por los que el líder pase, e irlos almacenando, sin ningún lazo cerrado encargado de mantener una posición relativa entre líder y seguidor. Con dichos puntos de ruta el seguidor, usando el mismo principio para reorientarse que usa el líder, y de este modo alcanzará los puntos almacenados en el seguidor y por tener la misma velocidad se mantendrá una distancia constante sobre la trayectoria entre líder y seguidor, a la cual llamaremos $d_2$. La siguiente figura da un ejemplo más claro de la diferencia entre $d_1$ y $d_2$.
@@ -451,7 +452,7 @@ Una vez definido el tipo de esquema líder-seguidor a usar sigue el diseño del al
 	\label{fig:Figura_Diagrama_metodos_FollowerRobot_C}
 \end{figure}
 
-\subsubsection{Evasión de obstáculos}
+\paragraph{Evasión de obstáculos}
 
 Para la evasión de obstáculos es necesario un método que se ajuste a la forma de operar de la matriz de fuerza por lo que como posibilidad se tiene el algoritmo por campos potenciales y el VFH. De [\citenum{ribeiro_2005}] se tiene un análisis de los pros y contras de los distintos algoritmos para la evasión de obstáculos, basado en ese estudio se elige el VFH, ya era una forma que requería menor costo computacional y no afectaba de manera tan brusca el seguimiento de trayectoria y no se corre el riesgo de dejar al robot dentro de un mínimo local como sucede con los campos potenciales.
 
@@ -486,7 +487,7 @@ El segundo se encarga de evaluar las posibles direcciones considerando también l
 	\label{fig:Figura_Diagrama_de_flujo_direccion}
 \end{figure}
 
-\subsubsection{Comunicación}
+\paragraph{Comunicación}
 
 La comunicación se realizará por medio de WiFi entre los distintos dispositivos, es decir el turtlebot3 líder, el turtlebot3 seguidor y la computadora de monitoreo tendrán una comunicación de manera continua. Como se explicó en la parte del diseño conceptual la arquitectura para el desarrollo de este proyecto será de tipo distribuida, ya que cada dispositivo antes mencionados, procesará distintos tipos de información y realizaran diversas tareas, que para un sistema centralizado teóricamente sería complicado y demandante computacionalmente mientras que para esta arquitectura el procesamiento de información se distribuye y reduce la demanda de poder computacional para un dispositivo en particular.
 
@@ -528,7 +529,7 @@ Se obtiene la IP de la PC remota y se modifica en la computadora del Turtlebot3 
 	\label{fig:Figura_Ejemplo_de_Configuracion_WIFI}
 \end{figure}
 
-\subsubsection{Control de motores}
+\paragraph{Control de motores}
 
 Para lograr que los robots móviles se comporten como se desea es necesario hacer uso de la cinemática inversa de su configuración. Estas ecuaciones fueron planteadas en el marco teórico. El enfoque es hacia el cálculo de la velocidad necesaria en cada una de las llantas para obtener así el cambio en la dirección y siempre mantener una velocidad lineal constante en todo momento. Esto se explica a continuación.
 
