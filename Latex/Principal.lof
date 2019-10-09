@@ -31,58 +31,58 @@
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Entrada y salida del programa que genera la matriz de fuerza.}}{47}{figure.2.15}% 
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Algoritmo Generador de la Matriz de Fuerza.}}{47}{figure.2.16}% 
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Diagrama de Flujo para la rutina ``Obtener al vecino m\'as cercano".}}{48}{figure.2.17}% 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Diagrama UML del objeto ForceController a implementar en nodo L\IeC {\'\i }der.}}{48}{figure.2.18}% 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Diagrama UML del objeto ForceController a implementar en nodo L\IeC {\'\i }der.}}{49}{figure.2.18}% 
 \contentsline {figure}{\numberline {2.19}{\ignorespaces Diagrama de flujo del nodo L\IeC {\'\i }der.}}{49}{figure.2.19}% 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto ForceController.}}{49}{figure.2.20}% 
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\'on de las distancias entre el l\IeC {\'\i }der y el seguidor.}}{50}{figure.2.21}% 
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Diagrama UML del objeto FollowerRobot a implementar en nodo seguidor.}}{51}{figure.2.22}% 
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto ForceController.}}{50}{figure.2.20}% 
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Representaci\'on de las distancias entre el l\IeC {\'\i }der y el seguidor.}}{51}{figure.2.21}% 
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Diagrama UML del objeto FollowerRobot a implementar en nodo seguidor.}}{52}{figure.2.22}% 
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Diagrama de flujo del nodo seguidor.}}{52}{figure.2.23}% 
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto FollowerRobot parte I.}}{52}{figure.2.24}% 
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto FollowerRobot parte I.}}{53}{figure.2.24}% 
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto FollowerRobot parte II.}}{53}{figure.2.25}% 
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto FollowerRobot parte III.}}{53}{figure.2.26}% 
-\contentsline {figure}{\numberline {2.27}{\ignorespaces UML para nodo detector.}}{54}{figure.2.27}% 
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Diagrama de flujo nodo detector.}}{54}{figure.2.28}% 
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Diagrama de flujo m\'etodo nodo detector.}}{55}{figure.2.29}% 
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Diagrama de flujo para direcci\'on.}}{55}{figure.2.30}% 
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Configuraci\'on del IP's para la comunicaci\'on v\IeC {\'\i }a WiFi.[\citenum {turtlebot3}]}}{57}{figure.2.31}% 
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Ejemplo de configuraci\'on WIFI. [\citenum {install-ubuntu}]}}{57}{figure.2.32}% 
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Funcionamiento del encoder absoluto.}}{61}{figure.2.33}% 
-\contentsline {figure}{\numberline {2.34}{\ignorespaces Funcionamiento del sensor l\'aser.}}{63}{figure.2.34}% 
-\contentsline {figure}{\numberline {2.35}{\ignorespaces Dimensiones del sensor LIDAR. Vista superior y lateral.}}{64}{figure.2.35}% 
-\contentsline {figure}{\numberline {2.36}{\ignorespaces Vista Frontal del sensor LIDAR.}}{64}{figure.2.36}% 
-\contentsline {figure}{\numberline {2.37}{\ignorespaces Pines del sensor LIDAR.}}{65}{figure.2.37}% 
-\contentsline {figure}{\numberline {2.38}{\ignorespaces Ubicaci\'on de la alimentaci\'on. Primera capa del Turtlebot3.}}{67}{figure.2.38}% 
-\contentsline {figure}{\numberline {2.39}{\ignorespaces Bater\IeC {\'\i }a Li-Po, con sus respectiva entrada y salida. [\citenum {LIPO-Battery}]}}{68}{figure.2.39}% 
-\contentsline {figure}{\numberline {2.40}{\ignorespaces Ensamble de la bater\IeC {\'\i }a LiPo en la primera capa del Turtlebot3.}}{69}{figure.2.40}% 
-\contentsline {figure}{\numberline {2.41}{\ignorespaces Ensamble del rin y la llanta de los robots.}}{69}{figure.2.41}% 
-\contentsline {figure}{\numberline {2.42}{\ignorespaces Ensamble de los actuadores con la estructura.}}{70}{figure.2.42}% 
-\contentsline {figure}{\numberline {2.43}{\ignorespaces Estructura de la locomoci\'on de los robots.}}{70}{figure.2.43}% 
-\contentsline {figure}{\numberline {2.44}{\ignorespaces Explosionado del motor del Dynamixel.}}{71}{figure.2.44}% 
-\contentsline {figure}{\numberline {2.45}{\ignorespaces Caracter\IeC {\'\i }sticas del actuador.}}{72}{figure.2.45}% 
-\contentsline {figure}{\numberline {2.46}{\ignorespaces Sistema de locomoci\'on en conjunto con los actuadores Dynamixel XL 430 - W250.}}{72}{figure.2.46}% 
-\contentsline {figure}{\numberline {2.47}{\ignorespaces Sistema de locomoci\'on en conjunto con los actuadores Dynamixel XL 430 - W250. Vista frontal e inferior.}}{73}{figure.2.47}% 
-\contentsline {figure}{\numberline {2.48}{\ignorespaces Nomenclatura de los actuadores Dynamixel. [\citenum {DYNAMIXEL}]}}{73}{figure.2.48}% 
-\contentsline {figure}{\numberline {2.49}{\ignorespaces Gr\'afica de funcionamiento del motor DYNAMYXEL. [\citenum {DYNAMIXEL}]}}{77}{figure.2.49}% 
-\contentsline {figure}{\numberline {2.50}{\ignorespaces Interfaz de programaci\'on de los actuadores Dynamixel.}}{78}{figure.2.50}% 
-\contentsline {figure}{\numberline {2.51}{\ignorespaces Capa 1. Implementaci\'on de la capa con los actuadores y la bater\IeC {\'\i }a LiPo.}}{79}{figure.2.51}% 
-\contentsline {figure}{\numberline {2.52}{\ignorespaces Capa 2. Implementaci\'on de la capa 1, capa 2 y tarjeta Open CR.}}{79}{figure.2.52}% 
-\contentsline {figure}{\numberline {2.53}{\ignorespaces Capa 3. Implementaci\'on de la capa 1, capa 2, capa 3 y tarjeta Raspberry Pi 3.}}{80}{figure.2.53}% 
-\contentsline {figure}{\numberline {2.54}{\ignorespaces Vista isom\'etrica del robot con todas las capas ensambladas.}}{80}{figure.2.54}% 
-\contentsline {figure}{\numberline {2.55}{\ignorespaces Explosionado y distribuci\'on de los componentes que conforman al robot.}}{81}{figure.2.55}% 
-\contentsline {figure}{\numberline {2.56}{\ignorespaces Esquema general de funcionamiento del sistema de control para el seguimiento de trayectorias y evasi\'on de obst\'aculos.}}{82}{figure.2.56}% 
-\contentsline {figure}{\numberline {2.57}{\ignorespaces Esquema general de funcionamiento del sistema de control para el seguidor.}}{82}{figure.2.57}% 
-\contentsline {figure}{\numberline {2.58}{\ignorespaces Comunicaci\'on entre t\'opicos de los distintos nodos.}}{83}{figure.2.58}% 
-\contentsline {figure}{\numberline {2.59}{\ignorespaces Conexi\'on t\IeC {\'\i }pica de ROS.}}{84}{figure.2.59}% 
-\contentsline {figure}{\numberline {2.60}{\ignorespaces Ejemplo de comunicaci\'on de ROS con agentes externos.}}{85}{figure.2.60}% 
-\contentsline {figure}{\numberline {2.61}{\ignorespaces Trayectoria propuesta 1 (unidades en metros).}}{87}{figure.2.61}% 
-\contentsline {figure}{\numberline {2.62}{\ignorespaces Trayectoria propuesta 2 (unidades en metros).}}{87}{figure.2.62}% 
-\contentsline {figure}{\numberline {2.63}{\ignorespaces Matriz de fuerza para trayectoria propuesta 1 (unidades en metros).}}{88}{figure.2.63}% 
-\contentsline {figure}{\numberline {2.64}{\ignorespaces Matriz de fuerza para trayectoria propuesta 2 (unidades en metros).}}{88}{figure.2.64}% 
-\contentsline {figure}{\numberline {2.65}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on de seguimiento de trayectoria (unidades en metros).}}{89}{figure.2.65}% 
-\contentsline {figure}{\numberline {2.66}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on del l\IeC {\'\i }der (unidades en metros).}}{90}{figure.2.66}% 
-\contentsline {figure}{\numberline {2.67}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on del seguidor (unidades en metros).}}{90}{figure.2.67}% 
-\contentsline {figure}{\numberline {2.68}{\ignorespaces Obst\'aculos para la validaci\'on del algoritmo propuesto.}}{91}{figure.2.68}% 
-\contentsline {figure}{\numberline {2.69}{\ignorespaces Puntos de ruta alcanzados por el l\IeC {\'\i }der durante la evasi\'on de obst\'aculos (unidades en metros).}}{91}{figure.2.69}% 
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Diagrama de flujo de los m\'etodos del objeto FollowerRobot parte III.}}{54}{figure.2.26}% 
+\contentsline {figure}{\numberline {2.27}{\ignorespaces UML para nodo detector.}}{55}{figure.2.27}% 
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Diagrama de flujo nodo detector.}}{55}{figure.2.28}% 
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Diagrama de flujo m\'etodo nodo detector.}}{56}{figure.2.29}% 
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Diagrama de flujo para direcci\'on.}}{56}{figure.2.30}% 
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Configuraci\'on del IP's para la comunicaci\'on v\IeC {\'\i }a WiFi.[\citenum {turtlebot3}]}}{58}{figure.2.31}% 
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Ejemplo de configuraci\'on WIFI. [\citenum {install-ubuntu}]}}{58}{figure.2.32}% 
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Funcionamiento del encoder absoluto.}}{62}{figure.2.33}% 
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Funcionamiento del sensor l\'aser.}}{64}{figure.2.34}% 
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Dimensiones del sensor LIDAR. Vista superior y lateral.}}{65}{figure.2.35}% 
+\contentsline {figure}{\numberline {2.36}{\ignorespaces Vista Frontal del sensor LIDAR.}}{65}{figure.2.36}% 
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Pines del sensor LIDAR.}}{66}{figure.2.37}% 
+\contentsline {figure}{\numberline {2.38}{\ignorespaces Ubicaci\'on de la alimentaci\'on. Primera capa del Turtlebot3.}}{68}{figure.2.38}% 
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Bater\IeC {\'\i }a Li-Po, con sus respectiva entrada y salida. [\citenum {LIPO-Battery}]}}{69}{figure.2.39}% 
+\contentsline {figure}{\numberline {2.40}{\ignorespaces Ensamble de la bater\IeC {\'\i }a LiPo en la primera capa del Turtlebot3.}}{70}{figure.2.40}% 
+\contentsline {figure}{\numberline {2.41}{\ignorespaces Ensamble del rin y la llanta de los robots.}}{70}{figure.2.41}% 
+\contentsline {figure}{\numberline {2.42}{\ignorespaces Ensamble de los actuadores con la estructura.}}{71}{figure.2.42}% 
+\contentsline {figure}{\numberline {2.43}{\ignorespaces Estructura de la locomoci\'on de los robots.}}{71}{figure.2.43}% 
+\contentsline {figure}{\numberline {2.44}{\ignorespaces Explosionado del motor del Dynamixel.}}{72}{figure.2.44}% 
+\contentsline {figure}{\numberline {2.45}{\ignorespaces Caracter\IeC {\'\i }sticas del actuador.}}{73}{figure.2.45}% 
+\contentsline {figure}{\numberline {2.46}{\ignorespaces Sistema de locomoci\'on en conjunto con los actuadores Dynamixel XL 430 - W250.}}{73}{figure.2.46}% 
+\contentsline {figure}{\numberline {2.47}{\ignorespaces Sistema de locomoci\'on en conjunto con los actuadores Dynamixel XL 430 - W250. Vista frontal e inferior.}}{74}{figure.2.47}% 
+\contentsline {figure}{\numberline {2.48}{\ignorespaces Nomenclatura de los actuadores Dynamixel. [\citenum {DYNAMIXEL}]}}{74}{figure.2.48}% 
+\contentsline {figure}{\numberline {2.49}{\ignorespaces Gr\'afica de funcionamiento del motor DYNAMYXEL. [\citenum {DYNAMIXEL}]}}{78}{figure.2.49}% 
+\contentsline {figure}{\numberline {2.50}{\ignorespaces Interfaz de programaci\'on de los actuadores Dynamixel.}}{79}{figure.2.50}% 
+\contentsline {figure}{\numberline {2.51}{\ignorespaces Capa 1. Implementaci\'on de la capa con los actuadores y la bater\IeC {\'\i }a LiPo.}}{80}{figure.2.51}% 
+\contentsline {figure}{\numberline {2.52}{\ignorespaces Capa 2. Implementaci\'on de la capa 1, capa 2 y tarjeta Open CR.}}{80}{figure.2.52}% 
+\contentsline {figure}{\numberline {2.53}{\ignorespaces Capa 3. Implementaci\'on de la capa 1, capa 2, capa 3 y tarjeta Raspberry Pi 3.}}{81}{figure.2.53}% 
+\contentsline {figure}{\numberline {2.54}{\ignorespaces Vista isom\'etrica del robot con todas las capas ensambladas.}}{81}{figure.2.54}% 
+\contentsline {figure}{\numberline {2.55}{\ignorespaces Explosionado y distribuci\'on de los componentes que conforman al robot.}}{82}{figure.2.55}% 
+\contentsline {figure}{\numberline {2.56}{\ignorespaces Esquema general de funcionamiento del sistema de control para el seguimiento de trayectorias y evasi\'on de obst\'aculos.}}{83}{figure.2.56}% 
+\contentsline {figure}{\numberline {2.57}{\ignorespaces Esquema general de funcionamiento del sistema de control para el seguidor.}}{83}{figure.2.57}% 
+\contentsline {figure}{\numberline {2.58}{\ignorespaces Comunicaci\'on entre t\'opicos de los distintos nodos.}}{84}{figure.2.58}% 
+\contentsline {figure}{\numberline {2.59}{\ignorespaces Conexi\'on t\IeC {\'\i }pica de ROS.}}{85}{figure.2.59}% 
+\contentsline {figure}{\numberline {2.60}{\ignorespaces Ejemplo de comunicaci\'on de ROS con agentes externos.}}{86}{figure.2.60}% 
+\contentsline {figure}{\numberline {2.61}{\ignorespaces Trayectoria propuesta 1 (unidades en metros).}}{88}{figure.2.61}% 
+\contentsline {figure}{\numberline {2.62}{\ignorespaces Trayectoria propuesta 2 (unidades en metros).}}{88}{figure.2.62}% 
+\contentsline {figure}{\numberline {2.63}{\ignorespaces Matriz de fuerza para trayectoria propuesta 1 (unidades en metros).}}{89}{figure.2.63}% 
+\contentsline {figure}{\numberline {2.64}{\ignorespaces Matriz de fuerza para trayectoria propuesta 2 (unidades en metros).}}{89}{figure.2.64}% 
+\contentsline {figure}{\numberline {2.65}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on de seguimiento de trayectoria (unidades en metros).}}{90}{figure.2.65}% 
+\contentsline {figure}{\numberline {2.66}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on del l\IeC {\'\i }der (unidades en metros).}}{91}{figure.2.66}% 
+\contentsline {figure}{\numberline {2.67}{\ignorespaces Resultados extra\IeC {\'\i }dos de la simulaci\'on del seguidor (unidades en metros).}}{91}{figure.2.67}% 
+\contentsline {figure}{\numberline {2.68}{\ignorespaces Obst\'aculos para la validaci\'on del algoritmo propuesto.}}{92}{figure.2.68}% 
+\contentsline {figure}{\numberline {2.69}{\ignorespaces Puntos de ruta alcanzados por el l\IeC {\'\i }der durante la evasi\'on de obst\'aculos (unidades en metros).}}{92}{figure.2.69}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Caja con los diferentes componentes del robot.}}{94}{figure.3.1}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Caja de componentes 1. \textit {MicroSD, Raspberry Pi 3, motores Dynamixel y Tarjera OpenCR Cortex M7}}}{95}{figure.3.2}% 

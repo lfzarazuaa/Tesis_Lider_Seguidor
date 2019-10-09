@@ -59,40 +59,40 @@
 \contentsline {subsubsection}{\numberline {2.2.2.3}Tercera parte: Dise\~no del software}{46}{subsubsection.2.2.2.3}% 
 \contentsline {paragraph}{Seguimiento de trayectorias}{46}{subsubsection.2.2.2.3}% 
 \contentsline {paragraph}{Esquema L\IeC {\'\i }der - Seguidor}{50}{figure.2.20}% 
-\contentsline {paragraph}{Evasi\'on de obst\'aculos}{53}{figure.2.26}% 
-\contentsline {paragraph}{Comunicaci\'on}{55}{figure.2.30}% 
-\contentsline {paragraph}{Control de motores}{57}{figure.2.32}% 
-\contentsline {subsection}{\numberline {2.2.3}\'Area Funcional 3: Percepci\'on (Comunicaci\'on entorno - robot)}{58}{subsection.2.2.3}% 
-\contentsline {subsubsection}{\numberline {2.2.3.1}Datos propioceptivos}{59}{subsubsection.2.2.3.1}% 
-\contentsline {subsubsection}{\numberline {2.2.3.2}Sensores integrados}{59}{subsubsection.2.2.3.2}% 
-\contentsline {subsubsection}{\numberline {2.2.3.3}Encoders rotatorios}{59}{subsubsection.2.2.3.3}% 
-\contentsline {subsubsection}{\numberline {2.2.3.4}Encoder \'optico rotatorio, de tipo relativo (o incremental)}{60}{subsubsection.2.2.3.4}% 
-\contentsline {subsubsection}{\numberline {2.2.3.5}Encoder \'optico absoluto}{60}{subsubsection.2.2.3.5}% 
-\contentsline {subsubsection}{\numberline {2.2.3.6}Aceler\'ometros}{61}{subsubsection.2.2.3.6}% 
-\contentsline {subsubsection}{\numberline {2.2.3.7}Datos exteroceptivos}{61}{subsubsection.2.2.3.7}% 
-\contentsline {subsubsection}{\numberline {2.2.3.8}Sensores implementados}{62}{subsubsection.2.2.3.8}% 
-\contentsline {subsubsection}{\numberline {2.2.3.9}Esc\'aner l\'aser de medici\'on de distancias}{62}{subsubsection.2.2.3.9}% 
-\contentsline {subsubsection}{\numberline {2.2.3.10}Sensor Lidar LDS-01}{63}{subsubsection.2.2.3.10}% 
-\contentsline {subsubsection}{\numberline {2.2.3.11}Dimensiones}{64}{subsubsection.2.2.3.11}% 
-\contentsline {subsubsection}{\numberline {2.2.3.12}Montaje del sensor}{64}{subsubsection.2.2.3.12}% 
-\contentsline {subsubsection}{\numberline {2.2.3.13}Acondicionamiento}{65}{subsubsection.2.2.3.13}% 
-\contentsline {subsection}{\numberline {2.2.4}\'Area Funcional 4: Alimentaci\'on (Suministro de energ\IeC {\'\i }a)}{66}{subsection.2.2.4}% 
-\contentsline {subsubsection}{\numberline {2.2.4.1}Caracter\IeC {\'\i }sticas T\'ecnicas de la Bater\IeC {\'\i }a Li-Po.}{68}{subsubsection.2.2.4.1}% 
-\contentsline {subsubsection}{\numberline {2.2.4.2}Ensamble de la bater\IeC {\'\i }a LiPo con la estructura}{69}{subsubsection.2.2.4.2}% 
-\contentsline {subsection}{\numberline {2.2.5}\'Area Funcional 5: Movimiento (Desplazamiento del robot)}{69}{subsection.2.2.5}% 
-\contentsline {subsubsection}{\numberline {2.2.5.1}Locomoci\'on}{69}{subsubsection.2.2.5.1}% 
-\contentsline {subsubsection}{\numberline {2.2.5.2}Actuadores Dynamixel}{70}{subsubsection.2.2.5.2}% 
-\contentsline {subsubsection}{\numberline {2.2.5.3}An\'alisis interno del motor}{71}{subsubsection.2.2.5.3}% 
-\contentsline {subsubsection}{\numberline {2.2.5.4}Caracter\IeC {\'\i }sticas del motor}{73}{subsubsection.2.2.5.4}% 
-\contentsline {subsection}{\numberline {2.2.6}Integraci\'on del Sistema}{79}{subsection.2.2.6}% 
-\contentsline {subsubsection}{\numberline {2.2.6.1}Elementos de Software}{81}{subsubsection.2.2.6.1}% 
-\contentsline {subsection}{\numberline {2.2.7}HMI}{83}{subsection.2.2.7}% 
-\contentsline {subsubsection}{\numberline {2.2.7.1}Comunicaci\'on peer to peer}{84}{subsubsection.2.2.7.1}% 
-\contentsline {subsection}{\numberline {2.2.8}Validaci\'on y an\'alisis de resultados}{85}{subsection.2.2.8}% 
-\contentsline {subsubsection}{\numberline {2.2.8.1}Procesamiento}{86}{subsubsection.2.2.8.1}% 
-\contentsline {subsubsection}{\numberline {2.2.8.2}Seguimiento de trayectoria}{86}{subsubsection.2.2.8.2}% 
-\contentsline {subsubsection}{\numberline {2.2.8.3}L\IeC {\'\i }der seguidor}{89}{subsubsection.2.2.8.3}% 
-\contentsline {subsubsection}{\numberline {2.2.8.4}Evasi\'on de obst\'aculos}{90}{subsubsection.2.2.8.4}% 
+\contentsline {paragraph}{Evasi\'on de obst\'aculos}{54}{figure.2.26}% 
+\contentsline {paragraph}{Comunicaci\'on}{56}{figure.2.30}% 
+\contentsline {paragraph}{Control de motores}{58}{figure.2.32}% 
+\contentsline {subsection}{\numberline {2.2.3}\'Area Funcional 3: Percepci\'on (Comunicaci\'on entorno - robot)}{59}{subsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.3.1}Datos propioceptivos}{60}{subsubsection.2.2.3.1}% 
+\contentsline {subsubsection}{\numberline {2.2.3.2}Sensores integrados}{60}{subsubsection.2.2.3.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3.3}Encoders rotatorios}{60}{subsubsection.2.2.3.3}% 
+\contentsline {subsubsection}{\numberline {2.2.3.4}Encoder \'optico rotatorio, de tipo relativo (o incremental)}{61}{subsubsection.2.2.3.4}% 
+\contentsline {subsubsection}{\numberline {2.2.3.5}Encoder \'optico absoluto}{61}{subsubsection.2.2.3.5}% 
+\contentsline {subsubsection}{\numberline {2.2.3.6}Aceler\'ometros}{62}{subsubsection.2.2.3.6}% 
+\contentsline {subsubsection}{\numberline {2.2.3.7}Datos exteroceptivos}{62}{subsubsection.2.2.3.7}% 
+\contentsline {subsubsection}{\numberline {2.2.3.8}Sensores implementados}{63}{subsubsection.2.2.3.8}% 
+\contentsline {subsubsection}{\numberline {2.2.3.9}Esc\'aner l\'aser de medici\'on de distancias}{63}{subsubsection.2.2.3.9}% 
+\contentsline {subsubsection}{\numberline {2.2.3.10}Sensor Lidar LDS-01}{64}{subsubsection.2.2.3.10}% 
+\contentsline {subsubsection}{\numberline {2.2.3.11}Dimensiones}{65}{subsubsection.2.2.3.11}% 
+\contentsline {subsubsection}{\numberline {2.2.3.12}Montaje del sensor}{65}{subsubsection.2.2.3.12}% 
+\contentsline {subsubsection}{\numberline {2.2.3.13}Acondicionamiento}{66}{subsubsection.2.2.3.13}% 
+\contentsline {subsection}{\numberline {2.2.4}\'Area Funcional 4: Alimentaci\'on (Suministro de energ\IeC {\'\i }a)}{67}{subsection.2.2.4}% 
+\contentsline {subsubsection}{\numberline {2.2.4.1}Caracter\IeC {\'\i }sticas T\'ecnicas de la Bater\IeC {\'\i }a Li-Po.}{69}{subsubsection.2.2.4.1}% 
+\contentsline {subsubsection}{\numberline {2.2.4.2}Ensamble de la bater\IeC {\'\i }a LiPo con la estructura}{70}{subsubsection.2.2.4.2}% 
+\contentsline {subsection}{\numberline {2.2.5}\'Area Funcional 5: Movimiento (Desplazamiento del robot)}{70}{subsection.2.2.5}% 
+\contentsline {subsubsection}{\numberline {2.2.5.1}Locomoci\'on}{70}{subsubsection.2.2.5.1}% 
+\contentsline {subsubsection}{\numberline {2.2.5.2}Actuadores Dynamixel}{71}{subsubsection.2.2.5.2}% 
+\contentsline {subsubsection}{\numberline {2.2.5.3}An\'alisis interno del motor}{72}{subsubsection.2.2.5.3}% 
+\contentsline {subsubsection}{\numberline {2.2.5.4}Caracter\IeC {\'\i }sticas del motor}{74}{subsubsection.2.2.5.4}% 
+\contentsline {subsection}{\numberline {2.2.6}Integraci\'on del Sistema}{80}{subsection.2.2.6}% 
+\contentsline {subsubsection}{\numberline {2.2.6.1}Elementos de Software}{82}{subsubsection.2.2.6.1}% 
+\contentsline {subsection}{\numberline {2.2.7}HMI}{84}{subsection.2.2.7}% 
+\contentsline {subsubsection}{\numberline {2.2.7.1}Comunicaci\'on peer to peer}{85}{subsubsection.2.2.7.1}% 
+\contentsline {subsection}{\numberline {2.2.8}Validaci\'on y an\'alisis de resultados}{86}{subsection.2.2.8}% 
+\contentsline {subsubsection}{\numberline {2.2.8.1}Procesamiento}{87}{subsubsection.2.2.8.1}% 
+\contentsline {subsubsection}{\numberline {2.2.8.2}Seguimiento de trayectoria}{87}{subsubsection.2.2.8.2}% 
+\contentsline {subsubsection}{\numberline {2.2.8.3}L\IeC {\'\i }der seguidor}{90}{subsubsection.2.2.8.3}% 
+\contentsline {subsubsection}{\numberline {2.2.8.4}Evasi\'on de obst\'aculos}{91}{subsubsection.2.2.8.4}% 
 \contentsline {chapter}{\numberline {3}Integraci\'on del Sistema}{93}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Implementaci\'on del \'Area Funcional Estructura}{93}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Armado de los robots m\'oviles}{94}{subsection.3.1.1}% 
