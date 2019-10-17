@@ -553,30 +553,30 @@ Estas ecuaciones (\ref{Ecuacion_cinematica},\ref{Phi2},\ref{Ecuacion_cinematica3
 
 \subsection{Área Funcional 3: Percepción (Comunicación entorno - robot)}
 
-Como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, la tercera área funcional a analizar es la Percepción, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los móviles para poderlos ubicar en el espacio (odometría - información propioceptiva), o el recabación de la información del ambiente, para poder ubicar los obstáculos dentro del área de trabajo (información exteroceptiva).
+Como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, la tercer área funcional a analizar es la de Percepción, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los móviles para poderlos ubicar en el espacio ya sea por odometría (información propioceptiva), o por la recabación de la información del ambiente, para poder ubicar los obstáculos dentro del área de trabajo (información exteroceptiva), así mismo cabe indicar que estas dos formas trabajan en conjunto siendo una más efectiva para la detección del móvil en la zona de trabajo y la otra para dar ajustes más precisos como cual ha sido el desplazamiento total, de esta manera se evita que por el ruido del sensor lidar el móvil de repente aparezca en otro lugar muy lejano (para el programa) como suele pasar si no se usa odometría.
 
-Para la recabación de la información propioceptiva se necesita un control preciso de los actuadores del móvil para lograr orientar a los móviles de manera correcta, y así, en conjunto con un buena lectura de los datos que se puedan obtener de la rotación de las ruedas poder llevar a cabo una estimación de la posición de los móviles durante la navegación. Los datos recabados por los sensores posteriormente serán leídos por el hardware (área funcional de procesamiento), el cual se encargará de su procesamiento para realizar una tarea en específico.
-Para poder llevar a cabo la solución de esta área funcional se planea separar de manera general en las dos clasificaciones de información y así desglosar cada uno de sus elementos que conllevan.
+Para la recabación de la información propioceptiva se necesita un control preciso de los actuadores del móvil para lograr orientar a los móviles de manera correcta, y así, en conjunto con un buena lectura de los datos obtenidos de la rotación de las ruedas se lleve a cabo una estimación más precisa de la posición de los móviles durante la navegación. Los datos recabados por los sensores posteriormente serán leídos por el hardware implementado en el área funcional de procesamiento, siendo así el hardware él que se encargará de su procesamiento para realizar una tarea en específico.
+Para poder llevar a cabo la solución de esta área funcional se plantea separar de manera general en las dos clasificaciones de información obtenida por los sensores y así desglosar cada uno de los elementos que conllevan.
 
 \subsubsection{Datos propioceptivos}
 
-Este tipo de datos son los obtenidos a partir de variables internas del móvil por lo cual su medición es únicamente relativa a la posición del móvil y a las variables físicas donde este se encuentre, este concepto tiene su origen en la propiocepción, el cual es el sentido que informa al organismo de la posición de los músculos, en otras palabras, es la capacidad de sentir la posición relativa de partes corporales contiguas. Análogamente a este concepto en el estudio de sensores se ocupa este término para diferenciar entre los sensores que dependen del entorno para poder realizar su medición de una manera relativa, a los que no.
+Este tipo de datos son los obtenidos a partir de variables internas del móvil, por lo cual su medición es únicamente referente a la posición relativa del móvil y a las variables físicas donde este se encuentre, este concepto tiene su origen en la propiocepción, el cual es el sentido que informa al organismo de la posición de los músculos, en otras palabras, es la capacidad de sentir la posición relativa de partes corporales contiguas. Análogamente a este concepto en el estudio de la información de sensores se ocupa este término para diferenciar entre los sensores que dependen del entorno para poder realizar su medición de una manera relativa, y los que no.
 
-De esta manera se tiene como principal ventaja que los sensores propioceptivos no dependen de estímulos externos, por su característica de medir únicamente los datos o variables referentes a los estados internos del móvil. Sin embargo, por esta característica es difícil obtener datos en concreto confiables, siendo por lo tanto una desventaja el nivel de error total almacenado, el cual se puede estimar con un muestreo de los sensores, pero nunca se llegará a tener el valor verdadero sino solo un margen de incertidumbre, asimismo este podría ser reducido en gran manera si se captara la información externa como en el caso de los sensores exteroceptivos.
+De esta manera se tiene como principal ventaja que los sensores propioceptivos no dependen de estímulos externos, por su característica de medir únicamente los datos o variables referentes a los estados internos del móvil. Sin embargo, por esta misma característica es difícil obtener datos en concreto confiables, siendo por lo tanto una desventaja el nivel de error total almacenado o acumulado, el cual se puede estimar con un muestreo de los sensores, pero nunca se llegará a tener el valor verdadero sino solo con un margen de incertidumbre, así mismo este error podría ser reducido en gran manera si se captara la información externa como en el caso de los sensores exteroceptivos.
 
 \subsubsection{Sensores integrados}
 
 \subsubsection{Encoders rotatorios}
 
-En robótica, los encoders se utilizan habitualmente para llevar a cabo tareas odométricas, la cual permite estimar la posición de un robot móvil con respecto a una posición inicial conocida, basándose en el número de revoluciones de cada rueda del robot, y en la dirección en que se mueven las ruedas. Los encoders más empleados son los rotatorios (o de eje), que son dispositivos electromecánicos que convierten la posición angular de un eje en un código digital. Los encoders pueden ser magnéticos, mecánicos y de otros tipos, si bien los más comunes son los ópticos.
+En robótica, los encoders se utilizan habitualmente para llevar a cabo tareas odométricas, las cuales permiten estimar la posición de un robot móvil con respecto a una posición inicial conocida, basándose en el número de revoluciones de cada rueda del robot, y en la dirección en que se mueven las ruedas. Los encoders más empleados son los rotatorios (o de eje), que son dispositivos electromecánicos que convierten la posición angular de un eje en un código digital. Los encoders pueden ser magnéticos, mecánicos y de otros tipos, si bien los más comunes son los ópticos.
 
 \subsubsection{Encoder óptico rotatorio, de tipo relativo (o incremental)}
 
-Este tipo de encoder está formado por un disco con agujeros (o ranuras) cerca de su borde y se coloca de modo que el eje del disco coincida con el eje del motor y el de la rueda (normalmente son el mismo). El número de agujeros en el disco determina la precisión del encoder. A un lado del disco se coloca un led infrarrojo, mientras que, al otro lado, y enfrente del led emisor, se coloca un fototransistor receptor de infrarrojos. Cuando el disco gira, los agujeros hacen que el fototransistor reciba luz de manera intermitente, generándose así una secuencia de pulsos. Se acostumbra a tener un par de Leds que midan ranuras desfasadas 90 grados, cada una hecha como se describió anteriormente, esto con el fin de conocer el sentido de giro del motor y así poder calcular mediante un sistema relativo la posición del motor. A pesar de que se puede programar mediante una técnica de interrupciones o de poleo la lectura del giro, una forma económica y fácil de obtener es mediante un flip-flop D con una señal conectada al pin de reloj y el otro al pin de datos, al ser 2 señales cuadradas desfasadas 90 grados cuando detecta un cambio de estado en el pin de reloj, actualiza con el dato del segundo, el cual por su funcionamiento coincide siempre con el giro (1-Sentido horario, 0-Sentido anti horario).
+Este tipo de encoder está formado por un disco con agujeros (o ranuras) cerca de su borde y se coloca de modo que el eje del disco coincida con el eje del motor y el de la rueda (que normalmente son el mismo). El número de agujeros en el disco determina la precisión del encoder. A un lado del disco se coloca un led infrarrojo, mientras que, al otro lado, y enfrente del led infrarrojo, se coloca un fototransistor receptor de infrarrojos. Cuando el disco gira, los agujeros hacen que el fototransistor reciba luz de manera intermitente, generándose así una secuencia de pulsos. Se acostumbra a tener un par de leds que midan ranuras desfasadas 90 grados, cada una con una configuración como se describió anteriormente, esto con el fin de conocer el sentido de giro del motor y así poder calcular mediante un sistema relativo la posición del motor sin conocer la posición inicial. A pesar de que se puede programar mediante una técnica de interrupciones o leyendo constantemente la lectura del giro, una forma económica y fácil de obtener es mediante un flip-flop D con una señal conectada a la entradade reloj y el otro a la entrada de datos, al ser 2 señales cuadradas desfasadas 90 grados cuando detecta un cambio de estado en el pin de reloj, actualiza con el dato del segundo, el cual por su construcción coincide siempre con el giro (1-Sentido horario, 0-Sentido anti horario).
 
 \subsubsection{Encoder óptico absoluto}
 
-Son más apropiados para casos en los que se producen rotaciones más lentas, o poco frecuentes, como por ejemplo averiguar la rotación de un volante en un vehículo automatizado. El disco está formado por patrones codificados de zonas opacas y zonas transparentes. El funcionamiento es similar a los encoders relativos, pero en lugar de utilizarse un único LED y un único foto receptor, se utilizan varios. Por medio de estos sensores se tiene la posición absoluta sin necesidad de ningún calculo como ocurre en el relativo, pero su construcción es mas compleja y al ser más señales su tiempo de respuesta no es tan alto como en el relativo.
+Son más apropiados para casos en los que se producen rotaciones más lentas, o poco frecuentes, como por ejemplo averiguar la rotación de un volante en un vehículo automatizado. El disco está formado por patrones codificados de zonas opacas y zonas transparentes. El funcionamiento es similar a los encoders relativos, pero en lugar de utilizarse un único led y un único foto receptor, se utilizan varios como se observa en la Figura \ref{fig:Figura_Encoder_absoluto}. Por medio de estos sensores se tiene la posición absoluta sin necesidad de ningún cálculo como ocurre en el relativo, además de conocer siempre su posición inicial, pero su construcción es más compleja y al ser más señales su tiempo de respuesta no es tan alto como en el relativo.
 
 \begin{figure}[H]
 	\centering
@@ -587,36 +587,35 @@ Son más apropiados para casos en los que se producen rotaciones más lentas, o po
 
 \subsubsection{Acelerómetros}
 
-Los acelerómetros son dispositivos que detectan cambios en la velocidad. La mayoría no están preparados para medir velocidad constante, sino que solamente miden aceleración o deceleración. En un principio estaban restringidos al ámbito científico e industrial, debido a su alto coste. Sin embargo, gracias a su abaratamiento, cada vez se encuentran más presentes en aparatos de uso cotidiano, como ordenadores portátiles (que se suspenden en caso de caídas), mandos de consolas de videojuegos, o incluso teléfonos móviles.
+Los acelerómetros son dispositivos que detectan cambios en la velocidad. La mayoría no están preparados para medir velocidad constante, sino que solamente miden aceleración o desaceleración. En un principio estaban restringidos al ámbito científico e industrial, debido a su alto coste. Sin embargo, gracias a su abaratamiento, cada vez se encuentran más presentes en aparatos de uso cotidiano, como ordenadores portátiles (que se suspenden en caso de caídas), mandos de consolas de videojuegos, o incluso teléfonos móviles.
 
-Dentro de la robótica móvil, uno de los principales usos de un acelerómetro es la detección de movimiento. Los acelerómetros presentan la ventaja de que pueden detectar desplazamientos del robot incluso cuando las ruedas del robot están detenidas.
-Otros posibles usos del acelerómetro son la detección de colisiones o la teleoperación robótica.
+Dentro de la robótica móvil, uno de los principales usos de un acelerómetro es la detección de movimiento. Los acelerómetros presentan la ventaja de que pueden detectar desplazamientos del robot incluso cuando las ruedas del robot están detenidas. Otros posibles usos del acelerómetro son la detección de colisiones o la teleoperación robótica.
 
 Algunas desventajas de los acelerómetros es que detectan con dificultad las aceleraciones de pequeña magnitud (como por ejemplo al realizar giros muy lentos) y que son muy sensibles a irregularidades en el suelo.
 
 \subsubsection{Datos exteroceptivos}
 
 Este tipo de datos son los que nos dan información del medio exterior, así como los propioceptivos tienen su origen en el cuerpo humano, también este concepto tiene su origen a partir del sistema exteroceptivo, el cual es el encargado de recibir estímulos externos al cuerpo como el frío, el calor, la presión, el dolor, etc., realizándolos por medio de los 5 sentidos entre otros.
-Las medidas de este tipo de sensores normalmente son interpretadas por el móvil para extraer características del entorno y a partir de estas se elaborar un croquis del entorno, conocer los elementos que lo conforman, ver si es un entorno apropiado, etc.
+Las medidas de este tipo de sensores normalmente son interpretadas por el móvil para extraer características del entorno y a partir de estas elaborar un croquis del entorno, conocer los elementos que lo conforman, ver si es un entorno apropiado, etc.
 
 \subsubsection{Sensores implementados}
 
 \subsubsection{Escáner láser de medición de distancias}
 
-La palabra laser responde a las siglas Light Amplification by Stimulated Emission of Radiation. Entre sonar (competencia del Lidar) y láser existe una diferencia fundamental: la velocidad de propagación. Para el sonido es 0,3 m/ms, mientras que para las señales electromagnéticas es 0,3 m/ns, es decir, 1 millón de veces más rápido. Por ejemplo, en una distancia de 3 m, un sonar tardaría 10 ms, mientras que un láser mediría la distancia en 10 ns. Es evidente que para medir el tiempo de vuelo de señales electromagnéticas se necesita una tecnología más avanzada que para medir el tiempo de vuelo de un sonar. Esto explica que el precio de un láser sea mucho más elevado que el de un sonar.
+La palabra LASER responde a las siglas Light Amplification by Stimulated Emission of Radiation. Entre el sonar (competencia del Lidar) y el LASER existe una diferencia fundamental: la velocidad de propagación. Para el sonido es 0.3 m/ms, mientras que para las señales electromagnéticas es 0.3 m/ns, es decir, 1 millón de veces más rápido. Por ejemplo, en una distancia de 3 m, un sonar tardaría 10 ms, mientras que un láser mediría la distancia en 10 ns. Es evidente que para medir el tiempo de vuelo de señales electromagnéticas se necesita una tecnología más avanzada que para medir el tiempo de vuelo de un sonar. Esto explica que el precio de un láser sea mucho más elevado que el de un sonar.
 
-El sensor LIDAR basa su funcionamiento en la medida del tiempo de vuelo. Para determinar la distancia a la que se encuentra un objeto, el sensor emite un pulso de luz infrarroja. Cuando el pulso incide sobre el objeto más cercano, regresa hacia el sensor y se determina el tiempo transcurrido. Conocido el tiempo de ida y vuelta del pulso (tiempo de vuelo), se calcula fácilmente la distancia al objeto detectado. De este modo se puede medir la distancia en una sola dirección, pero gracias a que dispone internamente de un espejo rotatorio, se logra un efecto de barrido en dos dimensiones. La amplitud del barrido en este modelo es siempre de 360°. También se puede observar que, si los pulsos emitidos no indicen sobre ningún objeto cercano, el láser devuelve la distancia máxima, dando lugar a un conjunto de medidas que forman un semicírculo. Al conjunto de medidas que obtiene el láser se le denomina barrido láser.
+Como ya se mencionó el sensor LIDAR basa su funcionamiento en la medida del tiempo de vuelo como se observa en la Figura \ref{fig:Figura_Funcionamiento_Lidar}. Para determinar la distancia a la que se encuentra un objeto, el sensor emite un pulso de luz infrarroja. Cuando el pulso incide sobre el objeto más cercano, regresa hacia el sensor y se determina el tiempo transcurrido. Conocido el tiempo de ida y vuelta del pulso (tiempo de vuelo), se calcula fácilmente la distancia al objeto detectado. De este modo se puede medir la distancia en una sola dirección, pero gracias a que dispone internamente de un espejo rotatorio, se logra un efecto de barrido en dos dimensiones. La amplitud del barrido en este modelo es siempre de 360°. También se puede observar que, si los pulsos emitidos no indicen sobre ningún objeto cercano, el láser devuelve la distancia máxima, dando lugar a un conjunto de medidas que forman un semicírculo. Al conjunto de medidas que obtiene el láser se le denomina barrido láser.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/28_Funcionamiento_Lidar.jpg}}
-	\caption{Funcionamiento del sensor láser.}
+	\caption{Funcionamiento del sensor LIDAR.}
 	\label{fig:Figura_Funcionamiento_Lidar}
 \end{figure}
 
-\subsubsection{Sensor Lidar LDS-01}
+\subsubsection{Sensor LIDAR LDS-01}
 
-Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las cuales son usadas para llevar a cabo el algoritmo SLAM y así obtener su posición.
+Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las cuales son usadas en este proyecto para llevar a cabo el algoritmo SLAM para su localización y VFH para esquivar objetos.
 
 \begin{table}[H]
 	\centering
@@ -626,27 +625,27 @@ Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las 
 		\hline
 		Voltaje de Operación & 5V $\pm$ 5$\%$ \\
 		\hline
-		Fuente de Luz &	Diodo semiconductor de laser ($\lambda$=785nm) \\
+		Fuente de Luz & Diodo semiconductor de láser ($\lambda$=785nm) \\
 		\hline
-		Seguridad del laser &	IEC60825-1 Clase 1 \\
+		Seguridad del láser & IEC60825-1 Clase 1 \\
 		\hline
-		Consumo de corriente &	400 mA o menor (Corriente pico 1A) \\
+		Consumo de corriente & 400 mA o menor (Corriente pico 1A) \\
 		\hline
-		Detección de distancia &	120mm $-$ 3,500mm \\
+		Detección de distancia & 120mm $-$ 3,500mm \\
 		\hline
-		Interfaz &	
+		Interfaz &
 		\begin{itemize}
 			\item 3.3V USART(230,400 bps)
 			\item 42bytes por 6 grados, Opción full dúplex.
 		\end{itemize} \\
 		\hline
-		Resistencia a la luz &	10,000 lux o menos \\
+		Resistencia a la luz & 10,000 lux o menos \\
 		\hline
-		Frecuencia de Muestreo &	1.8kHz \\
+		Frecuencia de Muestreo & 1.8kHz \\
 		\hline
-		Dimensiones &	69.5(Ancho) X 95.5(Largo) X 39.5(Alto)mm \\
+		Dimensiones & 69.5(Ancho) X 95.5(Largo) X 39.5(Alto)mm \\
 		\hline
-		Masa &	Debajo de 125g \\
+		Masa & Debajo de 125g \\
 		\hline
 	\end{tabular}
 	\caption{Características del sensor LIDAR.}
@@ -654,6 +653,8 @@ Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las 
 \end{table}
 
 \subsubsection{Dimensiones}
+
+En la Figuras \ref{fig:Figura_Dimensiones_Lidar} y \ref{fig:Figura_Vista_Frontal_lidar} se pueden observar las distintas dimensiones del sensor LIDAR, las cuales son importantes de considerar ya que dependiendo del tamaño del LIDAR y de otros elementos se puede llegar a la elección de la medida ideal para cada móvil.
 
 \begin{figure}[H]
 	\centering
@@ -673,11 +674,11 @@ Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las 
 
 El sensor LIDAR se coloca en la parte superior con 4 soportes removibles para facilitar su reemplazo en cualquier caso que se necesitará, además que favorece a no tener que retirar toda la capa. En cuanto a su función de obtener las distancias para cada grado de su alrededor es más factible colocarla en la posición superior ya que así ningún soporte le impide realizar la medición correcta.
 
-En su colocación los 4 soportes ofrecen un nivel de seguridad mayor, ya que para poder definir un plano en sus 3 dimensiones se necesitan 3 puntos que pasen por él, dando de esta forma un sistema completamente definido, sin embargo, al tener 4 puntos de sujeción se sobre define este haciendo forzosamente que el 4 punto solo se pueda colocar si pertenece al plano, en este caso al pertenecer si ocurriera que algún punto se quitará el sistema seguiría completamente definido.
+En su colocación los 4 soportes ofrecen un nivel de seguridad mayor, ya que para poder definir un plano en sus 3 dimensiones se necesitan 3 puntos que pasen por él, dando de esta forma un sistema completamente definido, sin embargo, al tener 4 puntos de sujeción se sobre define este haciendo forzosamente que el 4 punto solo se pueda colocar si pertenece al plano, en este caso al pertenecer si ocurriera que algún punto se quitará el sistema seguiría completamente definido y por lo tanto estable ante cualquier eventualidad referente a esto. En la sección de Implementación se habla más a detalle del proceso de montaje.
 
 \subsubsection{Acondicionamiento}
 
-Para conectar el sensor LIDAR a la tarjeta Raspberry pi 3 se usa un convertidor de protocolo USB al protocolo UART, esto debido a que el LIDAR recibe comandos de 40 bytes con los cuales decide cada cuantos grados va a realizar un escaneo, asimismo como la intensidad a la que se usa el láser y a su vez el sensor LIDAR regresa la distancia medida. Al finalizar de recibir los 40 bytes se comprueba mediante una suma que los datos fueron correctos y se prosigue en caso contrario vuelven a enviar los datos.
+Para conectar el sensor LIDAR a la tarjeta Raspberry Pi 3 se usa un convertidor de protocolo USB al protocolo UART como se observa en la Figura \ref{fig:Figura_Pines_del_lidar}, esto debido a que el LIDAR recibe comandos de 40 bytes con los cuales decide cada cuantos grados va a realizar un escaneo, asimismo como la intensidad a la que se usa el láser, todo esto para obtener del LIDAR la distancia medida de la mejor manera posible. Al finalizar de recibir los 40 bytes se comprueba mediante una suma que los datos fueron correctos y se prosigue en caso contrario vuelven a enviar los datos.
 
 \begin{figure}[H]
 	\centering
@@ -686,7 +687,7 @@ Para conectar el sensor LIDAR a la tarjeta Raspberry pi 3 se usa un convertidor 
 	\label{fig:Figura_Pines_del_lidar}
 \end{figure}
 
-La descripción de los pines se muestra a continuación en cual se considera tanto el motor que se encarga del giro del LIDAR, así como el circuito de control del láser.
+La descripción de los pines se muestra a continuación en la Tablas \ref{tab:Tabla_Pines_sensor_lidar}, \ref{tab:Tabla_Pines_motor_lidar} y \ref{tab:Tabla_Comandos_lidar} en las cuales se considera tanto el motor que se encarga del giro del LIDAR, así como el circuito de control del láser.
 
 \begin{table}[H]
 	\centering
@@ -696,13 +697,13 @@ La descripción de los pines se muestra a continuación en cual se considera tanto
 		\hline
 		6 & Vcc (+5.0V) & Fuente de alimentación (positiva). \\
 		\hline
-		5 & Tx & Salida serial del Lidar. \\
+		5 & Tx & Salida serial del LIDAR. \\
 		\hline
-		4 & PWM & Salida del Lidar para controlar al motor. \\
+		4 & PWM & Salida del LIDAR para controlar al motor. \\
 		\hline
 		3 & GND & Tierra. \\
 		\hline
-		2 & RX & Entrada serial del Lidar \\
+		2 & RX & Entrada serial del LIDAR \\
 		\hline
 		1 & BOOT0 & Pin para entrar en modo booteo. \\
 		\hline
@@ -737,37 +738,39 @@ La descripción de los pines se muestra a continuación en cual se considera tanto
 		e & Pausar la operación. \\
 		\hline
 	\end{tabular}
-	\caption{Comandos para operación del lidar.}
+	\caption{Comandos para operación del LIDAR.}
 	\label{tab:Tabla_Comandos_lidar}
 \end{table}
 
 \subsection{Área Funcional 4: Alimentación (Suministro de energía)}
 
-La cuarta Área Funcional es la de Alimentación, la cual es la encargada de abastecer de energía a tres áreas funcionales fundamentales para el móvil. Cada una de estas áreas tiene sus propios elementos para poder llevar acabo sus tareas; en el caso de nuestra segunda área funcional denominada ``Procesamiento", es necesario abastecer a dos tarjetas, las cuales son la Raspberry Pi y la ARM Cortex M7, cada una con sus respectivas entradas y salidas que se abordan a detalle en la sección de Procesamiento. Hablando de la tercera área funcional denomina ``Percepción", es necesario alimentar de acuerdo a las especificaciones técnicas un sensor LIDAR el cual nos dará toda la información del entorno y nos brindará los datos exteroceptivos del ambiente que posteriormente estos datos serán evaluados y procesados en la segunda área funcional. En cuanto al movimiento, quinta y última área funcional, los encargados de llevar acabo está tarea son dos actuadores Dynamixel (uno en cada llanta) que son los responsables de la locomoción del móvil y de la ejecución de toda la información antes proporcionada por las distintas áreas funcionales. Teniendo en cuenta que estos actuares al igual que el sensor LIDAR, brindarán información acerca del movimiento (rotación) de las llantas que posteriormente está información servirá para conocer la posición y orientación de los móviles (Odometría) que de la misma manera que las otras características posteriormente mencionadas tendrán que ser alimentados por la misma fuente de energía.
+La cuarta área funcional es la de Alimentación, la cual es la encargada de abastecer de energía a tres áreas funcionales fundamentales para el móvil por medio de una batería como se muestra en la Figura \ref{fig:Figura_Ubicacion_Alimentacion}. Cada una de estas áreas tiene sus propios elementos para poder llevar acabo sus tareas; en el caso de nuestra segunda área funcional denominada ``Procesamiento", es necesario abastecer a dos tarjetas, las cuales son la Raspberry Pi 3 y la ARM Cortex M7, cada una con sus respectivas entradas y salidas que se abordan a detalle en la sección de Procesamiento. Hablando de la tercera área funcional denominada ``Percepción", es necesario alimentar de acuerdo a las especificaciones técnicas el sensor LIDAR, el cual nos dará toda la información del entorno y nos brindará los datos exteroceptivos del ambiente que posteriormente serán evaluados y procesados en la segunda área funcional. En cuanto al movimiento, la quinta y última área funcional, los encargados de llevar acabo está tarea son dos actuadores Dynamixel (uno en cada llanta) que son los responsables de la locomoción del móvil y de la ejecución de toda la información antes proporcionada por las distintas áreas funcionales. Teniendo en cuenta que estos actuadores (por el encoder interno) al igual que el sensor LIDAR, brindarán información acerca del movimiento (rotación) de las llantas y posteriormente esta información nos servirá para conocer la posición y orientación de los móviles (odometría). Teniendo así que todos estos elementos y aspectos mencionados tendrán que ser alimentados por una fuente.
+
+La encargada de abastecer energía a todos los elementos que conforman cada área funcional es una batería LiPo (batería de Polímero de Litio) ubicada en la primera capa dentro del Turtlebot3 como se muestra en la Figura \ref{fig:Figura_Ubicacion_Alimentacion}.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.20]{imagenes/Detallado/32_Ubicacion_Alimentacion.jpg}}
-	\caption{Ubicación de la alimentación. Primera capa del Turtlebot3.}
+	\caption{Ubicación de la batería de alimentación. Primera capa del Turtlebot3.}
 	\label{fig:Figura_Ubicacion_Alimentacion}
 \end{figure}
 
-La encargada de abastecer energía a todos los elementos que conforman cada área funcional es una batería LiPo (batería de Polímero de Litio) ubicada en la primera capa dentro del Turtlebot3 y en donde también se encuentra toda la parte de la locomoción. La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cuenta con sólo una salida, que es la que abastece a todo el robot y una entrada, que es la que sirve para que se pueda cargar.
+La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cuenta con solo una salida, que es la que abastece a todo el robot y una entrada como se muestra en la Figura \ref{fig:Figura_Bateria_LiPo}, que es la que sirve para que se pueda cargar, adicionalmente para cargarla se usa un cargador de baterías LiPo en conjunto con una fuente de voltaje.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=1.05]{imagenes/Detallado/33_Bateria_LiPo.jpg}}
-	\caption{Batería Li-Po, con sus respectiva entrada y salida. [\citenum{LIPO-Battery}]}
+	\caption{Batería LiPo, con su entrada y salida [\citenum{LIPO-Battery}].}
 	\label{fig:Figura_Bateria_LiPo}
 \end{figure}
 
-\subsubsection{Características Técnicas de la Batería Li-Po.}
+\subsubsection{Características Técnicas de la Batería LiPo.}
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|}
 		\hline
-		Nombre & Caracteristica \\
+		Nombre & Característica \\
 		\hline
 		Nombre de la marca & GTK \\
 		\hline
@@ -800,12 +803,14 @@ La encargada de abastecer energía a todos los elementos que conforman cada área 
 
 \subsubsection{Ensamble de la batería LiPo con la estructura}
 
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.12]{imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg}}
-	\caption{Ensamble de la batería LiPo en la primera capa del Turtlebot3.}
-	\label{fig:Figura_Ensamble_Bateria_LiPo}
-\end{figure}
+ En la Figura \ref{fig:Figura_Ensamble_Bateria_LiPo} se muestra el proceso de ensamble de la batería en el Turtlebot3 burger, un proceso que se debe tener en mente, ya que el manual del Turtlebot3 burger aconseja retirar la batería de la estructura cada vez que se quiera recargar.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\fbox{\includegraphics[scale=0.12]{imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg}}
+ 	\caption{Ensamble de la batería LiPo en la primera capa del Turtlebot3.}
+ 	\label{fig:Figura_Ensamble_Bateria_LiPo}
+ \end{figure}
 
 \subsection{Área Funcional 5: Movimiento (Desplazamiento del robot)}
 
