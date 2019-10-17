@@ -764,7 +764,7 @@ La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cue
 	\label{fig:Figura_Bateria_LiPo}
 \end{figure}
 
-\subsubsection{Características Técnicas de la Batería LiPo.}
+\subsubsection{Características Técnicas de la batería LiPo.}
 
 \begin{table}[H]
 	\centering
@@ -814,9 +814,9 @@ La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cue
 
 \subsection{Área Funcional 5: Movimiento (Desplazamiento del robot)}
 
-\subsubsection{Locomoción}
+%\subsubsection{Locomoción}
 
-El movimiento o locomoción forma una parte fundamental del proyecto ya que es la última función antes de que nuestro robot ejecute la información proporcionada, una vez esta haya pasado por las 4 funciones previas que engloban el proyecto.
+El movimiento o locomoción forma una parte fundamental del proyecto, ya que es la última función antes de que nuestro robot ejecute la información proporcionada, una vez esta haya pasado por las 4 funciones previas que engloban el proyecto. En la Figura \ref{fig:Figura_Ensamble_llanta} se muestra el proceso de ensamble para cada llanta.
 
 \begin{figure}[H]
 	\centering
@@ -825,14 +825,7 @@ El movimiento o locomoción forma una parte fundamental del proyecto ya que es la
 	\label{fig:Figura_Ensamble_llanta}
 \end{figure}
 
-El sistema de locomoción está en la primera capa dentro de la estructura de nuestros robots, y tiene como eje fundamental dos actuadores Dynamixel XL 430 - W250 en cada llanta, lo que se traduce a una configuración cinemática de tracción diferencial.
-
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/36_Ensamble_Actuadores.jpg}}
-	\caption{Ensamble de los actuadores con la estructura.}
-	\label{fig:Figura_Ensamble_Actuadores}
-\end{figure}
+El sistema de locomoción está en la primera capa dentro de la estructura de nuestros robots, y tiene como eje fundamental dos actuadores Dynamixel XL 430 - W250 en cada llanta, lo que se traduce a una configuración cinemática de tracción diferencial como se muestra en las Figuras  \ref{fig:Figura_Estructura_de_la_locomocion} y \ref{fig:Figura_Ensamble_Actuadores}.
 
 \begin{figure}[H]
 	\centering
@@ -841,13 +834,20 @@ El sistema de locomoción está en la primera capa dentro de la estructura de nues
 	\label{fig:Figura_Estructura_de_la_locomocion}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/36_Ensamble_Actuadores.jpg}}
+	\caption{Ensamble de los actuadores con la estructura.}
+	\label{fig:Figura_Ensamble_Actuadores}
+\end{figure}
+
 \subsubsection{Actuadores Dynamixel}
 
-Para el control de la posición y velocidad del móvil se utilizan los motores Dynamixel XL430-W250-T los cuales cuentan ya con un controlador interno el cual puede ajustarse en 6 distintos modos, para este caso principalmente se usará el control de velocidad, el controlador se maneja usando el protocolo UART, por lo cual se conecta al Open CR que se encarga de mandarle la información de una manera que el motor pueda interpretar directamente [\citenum{DYNAMIXEL}].
+Para el control de la posición y velocidad del móvil se utilizan los motores Dynamixel XL430-W250-T los cuales cuentan con un controlador interno, el cual puede ajustarse en 6 distintos modos, para este caso principalmente se usará el control de velocidad, esto se logrará transmitiendo la información por medio del protocolo UART, por lo cual cada motor se conecta al Open CR que se encarga de mandarle la información de una manera que el motor pueda interpretar directamente [\citenum{DYNAMIXEL}].
 
 \subsubsection{Análisis interno del motor}
 
-El motor este ensamblado como se muestra en la figura, de tal manera que eléctricamente lo compone un motor de CD, una tarjeta controladora que se encarga de recibir y ejecutar las instrucciones, así como de leer los valores del sensor de corriente y del encoder para determinar su posición.
+El motor este ensamblado como se muestra en la Figura \ref{fig:Figura_Ensamble_del_motor}, de tal manera que eléctricamente lo compone un motor de CD, una tarjeta controladora y un encoder. La tarjeta controladora se encarga de recibir y ejecutar las instrucciones, así como de leer los valores del sensor de corriente y el encoder es el sensor para determinar su posición.
 
 \begin{figure}[H]
 	\centering
@@ -874,7 +874,9 @@ Los tipos de control que puede realizar son los siguientes:
 	\label{fig:Figura_Caracteristicas_del_motor}
 \end{figure}
 
-Los actuadores Dynamixel son los actuadores más avanzado a nivel de robótica personal de alto rendimiento, también llamados actuadores inteligentes ya que ofrecen la posibilidad de programar entre 50 y 57 comandos permitiendo definir el comportamiento del actuador en comparación con el típico servomotor que sólo entiende la orden de ``ángulo objetivo" proporcionado por una señal PWM.
+Los actuadores Dynamixel son de los actuadores más avanzados para robótica económica de alto rendimiento, también llamados actuadores inteligentes, ya que ofrecen la posibilidad de programar entre 50 y 57 comandos permitiendo definir el comportamiento del actuador de una mejor manera otorgándoles funciones especiales como las que se muestran en la Figura \ref{fig:Figura_Caracteristicas_del_motor}, en comparación con el servomotor, más comúnmente usado, que solo interpreta la orden de ``ángulo objetivo" proporcionado por una señal PWM.
+
+En las Figuras \ref{fig:Figura_Sistema_de_Locomocion} y \ref{fig:Figura_Sistema_de_Locomocion_B}, se muestran los motores ya ensamblados para formar la configuración diferencial.
 
 \begin{figure}[H]
 	\centering
@@ -889,17 +891,19 @@ Los actuadores Dynamixel son los actuadores más avanzado a nivel de robótica per
 	\caption{Sistema de locomoción en conjunto con los actuadores Dynamixel XL 430 - W250. Vista frontal e inferior.}
 	\label{fig:Figura_Sistema_de_Locomocion_B}
 \end{figure}
+
 \subsubsection{Características del motor}
-Los actuadores Dynamixel son capaces de proporcionar valiosa información de retroalimentación permitiendo leer y procesar información en tiempo real captada por sus sensores embebidos, los cuales son sumamente útiles para hacer Odometría con los móviles. Entre la información que pueden proporcionar los actuadores Dynamixel se encuentra leer la posición actual del motor, la velocidad, la temperatura interna, el par o la tensión de alimentación.
+
+Los actuadores Dynamixel son capaces de proporcionar valiosa información de retroalimentación permitiendo leer y procesar información en tiempo real captada por sus sensores embebidos, los cuales son sumamente útiles para hacer odometría con los móviles. Entre la información que pueden proporcionar los actuadores Dynamixel se encuentra leer la posición actual del motor, la velocidad, la temperatura interna, el par y la tensión de alimentación.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{imagenes/Detallado/42_Nomenclatura_DYNAMYXEL.jpg}}
-	\caption{Nomenclatura de los actuadores Dynamixel. [\citenum{DYNAMIXEL}]}
+	\caption{Nomenclatura de los actuadores Dynamixel [\citenum{DYNAMIXEL}].}
 	\label{fig:Figura_Nomenclatura_DYNAMYXEL}
 \end{figure}
 
-En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de acuerdo a la Figura \ref{fig:Figura_Nomenclatura_DYNAMYXEL}, son los actuadores del más bajo desempeño dentro de las tres posibles clasificaciones de los actuadores, y cuyas especificaciones y características técnicas se mencionan a continuación.
+En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de acuerdo a la Figura \ref{fig:Figura_Nomenclatura_DYNAMYXEL}, son los actuadores del más bajo desempeño dentro de las tres posibles clasificaciones de los actuadores, y cuyas especificaciones y características técnicas se mencionan a continuación en la Tabla \ref{tab:Tabla_Caracteristicas_actuador_Dynamixel_1} en conjunto con sus curvas características que se muestran en la Figura \ref{fig:Figura_Grafica_DYNAMYXEL}.
 
 \begin{table}[H]
 	\centering
@@ -938,7 +942,7 @@ En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de a
 		\end{itemize}
 		\\ \hline
 	\end{tabular}
-	\caption{Características técnicas del actuador Dynamixel XL 430 W250.[\citenum{DYNAMIXEL_Motor}]}
+	\caption{Características técnicas del actuador Dynamixel XL 430 W250 [\citenum{DYNAMIXEL_Motor}].}
 	\label{tab:Tabla_Caracteristicas_actuador_Dynamixel_1}
 \end{table}
 
@@ -987,7 +991,7 @@ En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de a
 		\end{itemize}
 		\\ \hline
 	\end{tabular}
-	\caption{Características técnicas del actuador Dynamixel XL 430 W250 [\citenum{DYNAMIXEL_Motor}]}.
+	\caption{Características técnicas del actuador Dynamixel XL 430 W250 [\citenum{DYNAMIXEL_Motor}].}.
 	\label{tab:Tabla_Caracteristicas_actuador_Dynamixel_2}
 \end{table}
 
@@ -1031,18 +1035,18 @@ En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de a
 		\end{itemize}
 		\\ \hline
 	\end{tabular}
-	\caption{Características técnicas del actuador Dynamixel XL 430 W250.[\citenum{DYNAMIXEL_Motor}]}
+	\caption{Características técnicas del actuador Dynamixel XL 430 W250 [\citenum{DYNAMIXEL_Motor}].}
 	\label{tab:Tabla_Caracteristicas_actuador_Dynamixel_3}
 \end{table}
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg}}
-	\caption{Gráfica de funcionamiento del motor DYNAMYXEL. [\citenum{DYNAMIXEL}]}
+	\caption{Gráfica de funcionamiento del motor DYNAMYXEL [\citenum{DYNAMIXEL}].}
 	\label{fig:Figura_Grafica_DYNAMYXEL}
 \end{figure}
 
-Entre cualidades de nuestro actuador tenemos:
+Entre cualidades del motor DYNAMYXEL XL 430 W250 actuador tenemos:
 
 \begin{enumerate}
 	\item Torque mejorado y diseño compacto.
@@ -1054,7 +1058,7 @@ Entre cualidades de nuestro actuador tenemos:
 	\item Eficiencia energética con tiempo mejorado de operación.
 \end{enumerate}
 
-Y en cuanto al ambiente de programación, nuestros actuadores Dynamixel pueden ser programados en:
+Y en cuanto al ambiente de programación, los actuadores DYNAMYXEL pueden ser programados mediante:
 
 \begin{itemize}
 	\item OpenCM ID.
@@ -1063,7 +1067,7 @@ Y en cuanto al ambiente de programación, nuestros actuadores Dynamixel pueden se
 \end{itemize}
 
 Basándonos en este último, el Dynamixel Workbench es un metapaquete que contiene cuatro paquetes fundamentales, los cuales son; Administrador único (single manager), Controlador, Operador y Caja de herramientas (Toolbox).
-El paquete de Administrador único (single manager) provee de paquetes que pueden programar todas las series del Dynamixel, incluidas la serie X, y la PRO utilizando la biblioteca del Toolbox desarrollada en la base de Dynamixel SDK. Estos paquetes no sólo muestran el estado del Dynamixel, sino que también, permiten cambiar los valores de las direcciones de la tabla de control por comandos de línea o mediante la interfaz gráfica. El paquete de controladores nos presenta como utilizar los actuadores Dynamixel en diferentes modos de operación con la librería de Dynamixel Workbench Toolbox.
+El paquete de Administrador único (single manager) provee de paquetes que pueden programar todas las series del Dynamixel, incluidas la serie X, y la PRO utilizando la biblioteca del Toolbox desarrollada en la base de Dynamixel SDK. Estos paquetes no sólo muestran el estado del Dynamixel, sino que también, permiten cambiar los valores de las direcciones de la tabla de control por comandos de línea o mediante la interfaz gráfica. El paquete de controladores nos presenta como utilizar los actuadores Dynamixel en diferentes modos de operación con la librería de Dynamixel Workbench Toolbox. La interfaz gráfica de Dynamixel Workbench se muestra en la Figura \ref{fig:Figura_Interfaz_de_programacion_DYNAMYXEL}.
 
 \begin{figure}[H]
 	\centering
@@ -1074,8 +1078,8 @@ El paquete de Administrador único (single manager) provee de paquetes que pueden
 
 \subsection{Integración del Sistema}
 
-Una vez conociendo todos los elementos que conforman a los robots móviles, se dará paso a la integración de todos los componentes dentro de la primera área funcional que es la de estructura.
-La primera plataforma o capa es destinada al montaje de los dos actuadores Dynamixel, en conjunto con la batería Li-Po que suministra energía a todo el robot.
+Una vez conociendo todos los elementos que conforman a los robots móviles, se dará paso a la integración de todos los componentes dentro de la primera área funcional que es la de Estructura.
+La primera plataforma o capa es destinada al montaje de los dos actuadores Dynamixel, en conjunto con la batería Li-Po que suministra energía a todo el robot como se muestra en la Figura \ref{fig:Figura_Capa_1}.
 
 \begin{figure}[H]
 	\centering
@@ -1084,7 +1088,7 @@ La primera plataforma o capa es destinada al montaje de los dos actuadores Dynam
 	\label{fig:Figura_Capa_1}
 \end{figure}
 
-La segunda capa es la destinada para el montaje la tarjeta OpenCR que es la encargada de mandar las señales de control a los actuadores y leer señales externas que ayuden al funcionamiento del robot como pueden ser sensores o interfaces por medio de botones mecánicos.
+La segunda capa como se muestra en la Figura \ref{fig:Figura_Capa_2} es la destinada para el montaje la tarjeta OpenCR que es la encargada de mandar las señales de control a los actuadores y leer señales externas que ayuden al funcionamiento del robot como pueden ser sensores o interfaces por medio de botones mecánicos.
 
 \begin{figure}[H]
 	\centering
@@ -1093,7 +1097,7 @@ La segunda capa es la destinada para el montaje la tarjeta OpenCR que es la enca
 	\label{fig:Figura_Capa_2}
 \end{figure}
 
-En la tercera capa se coloca la Raspberry Pi 3 encargada de ejecutar el sistema operativo ROS y el conector usb para leer el sensor lidar. Y por último en la última capa se coloca el sensor lidar sin ningún elemento extra para que este pueda escanear su alrededor sin ninguna interferencia otorgándole de esta manera un correcto funcionamiento al sensor.
+En la tercera capa como se muestra en la Figura \ref{fig:Figura_Capa_3} se coloca la Raspberry Pi 3 encargada de ejecutar el sistema operativo ROS y el conector usb para leer el sensor lidar. Y por último en la última capa se coloca el sensor lidar sin ningún elemento extra para que este pueda escanear su alrededor sin ninguna interferencia otorgándole de esta manera un correcto funcionamiento al sensor.
 
 \begin{figure}[H]
 	\centering
@@ -1102,7 +1106,7 @@ En la tercera capa se coloca la Raspberry Pi 3 encargada de ejecutar el sistema 
 	\label{fig:Figura_Capa_3}
 \end{figure}
 
-Ya explicadas las distintas capas que conforman todo el sistema del robot, se muestra ensamble del robot utilizando un total de 193 piezas en la parte estructural y 12 piezas que involucran la parte electrónica.
+Ya explicadas las distintas capas que conforman todo el sistema del robot, se muestra ensamble del robot en las Figuras \ref{fig:Figura_Vista_Isometrica_completa} y \ref{fig:Figura_Distribucion_de_los_componentes} utilizando un total de 193 piezas en la parte estructural y 12 piezas que involucran la parte electrónica.
 
 \begin{figure}[H]
 	\centering
@@ -1120,8 +1124,8 @@ Ya explicadas las distintas capas que conforman todo el sistema del robot, se mu
 
 \subsubsection{Elementos de Software}
 
-Respecto a la parte de procesamiento, las áreas funcionales se desarrollan en diferentes nodos de ROS, es decir un programa no cumplirá una función, sino que dicha función estará dividida en distintos nodos, en cada una de las áreas funcionales se mencionaron los nombres de los nodos en los cuales se iban a desarrollar las áreas funcionales, la manera en que los diversos nodos se comunican es por medio de tópicos, los cuales también fueron listados en la sección de transmisión de mensajes. Una manera simple de mostrar la integración de estos nodos es a través de los siguientes diagramas, los cuales presentan los nodos activos para cada turtlebot3.
-Se proponen, para el líder y seguidor la interconexión de los siguientes nodos:
+Respecto a la parte de procesamiento, las áreas funcionales se desarrollan en diferentes nodos de ROS, es decir un programa no cumplirá una función completa, sino que dicha función estará dividida en distintos nodos, en cada una de las áreas funcionales se mencionaron los nombres de los nodos en los cuales se iban a desarrollar las áreas funcionales, la manera en que los diversos nodos se comunican es por medio de tópicos, los cuales también fueron listados en la sección de transmisión de mensajes. Una manera simple de mostrar la integración de estos nodos es a través de los siguientes diagramas, los cuales presentan los nodos activos para cada Turtlebot 3 burger.
+Se proponen, para el líder y seguidor la interconexión de los siguientes nodos mostrados en las Figuras \ref{fig:Figura_Esquema_General_Trayectorias} y \ref{fig:Figura_Esquema_General_Seguidor}.
 
 \begin{figure}[H]
 	\centering
@@ -1137,9 +1141,9 @@ Se proponen, para el líder y seguidor la interconexión de los siguientes nodos:
 	\label{fig:Figura_Esquema_General_Seguidor}
 \end{figure}
 
-La manera de formar esta integración es muy directa, ya que dentro de cada nodo hay objetos que se suscriben a tópicos, y otros que publican la información procesada, por lo que estos de manera natural pueden y están hechos para trabajar en conjunto. Para mandar a llamar todos los nodos se hace uso de otro tipo de archivo de ROS, archivos con extensión launch los cuales permiten mandar a llamar nodos de manera automática. Para lograr la integración que se propone en los diagramas pasados, se debe primero llamar el nodo que inicializa los motores y el sensor LIDAR, el cual viene por defecto en los turtlebot3, posteriormente se debe mandar a llamar el mapa para la localización, una vez inicializado el mapa se llaman los nodos líder y seguidor, en los cuales se ejecuta la parte medular del proyecto, finalmente se llaman por medio de otro launch el localizador del líder y el localizador del seguidor, una vez inicializados todos los nodos antes mencionados se lleva a cabo la función principal del proyecto.
+La manera de formar esta integración es muy directa, ya que dentro de cada nodo hay objetos que se suscriben a tópicos, y otros que publican la información procesada, por lo que estos de manera natural pueden y están hechos para trabajar en conjunto. Para mandar a llamar todos los nodos se hace uso de otro tipo de archivo de ROS, archivos con extensión .launch los cuales permiten mandar a llamar nodos de manera automática. Para lograr la integración que se propone en los diagramas de las Figuras \ref{fig:Figura_Esquema_General_Trayectorias} y \ref{fig:Figura_Esquema_General_Seguidor}, se debe primero llamar el nodo que inicializa los motores y el sensor LIDAR, el cual viene por defecto en los Turtlebot 3 burger, posteriormente se debe mandar a llamar el mapa para la localización, una vez inicializado el mapa se llaman los nodos líder y seguidor, en los cuales se ejecuta la parte medular del proyecto, finalmente se llaman por medio de otro launch el localizador del líder y el localizador del seguidor, una vez inicializados todos los nodos antes mencionados se lleva a cabo la función principal del proyecto.
 
-Los diagramas antes presentados muestran la integración de los nodos, sin embargo, dentro de cada nodo existen tópicos (variables compartidas) las cuales también forman parte de la integración de dichos códigos, el siguiente diagrama muestra como esos tópicos se comunican y cómo van transformando la información cada vez que pasan por algún nodo.
+Los diagramas antes presentados muestran la integración de los nodos, sin embargo, dentro de cada nodo existen tópicos (variables compartidas) las cuales también forman parte de la integración de dichos códigos, el siguiente diagrama en la Figura \ref{fig:Figura_Comunicacion_entre_topicos} muestra como esos tópicos se comunican y cómo van transformando la información cada vez que pasan por algún nodo.
 
 \begin{figure}[H]
 	\centering
@@ -1147,12 +1151,15 @@ Los diagramas antes presentados muestran la integración de los nodos, sin embarg
 	\caption{Comunicación entre tópicos de los distintos nodos.}
 	\label{fig:Figura_Comunicacion_entre_topicos}
 \end{figure}
+
 \subsection{HMI}
-La interfaz o HMI por sus siglas en inglés (Human Machine Interface) forma parte indirectamente del Área Funcional de Procesamiento como se puede observar en la Figura \ref{fig:Integracion}, y esto debido a que, aunque la interfaz no se encuentre dentro de los robots, trabaja directamente con el Procesamiento de los móviles, y se caracterizada por ser el puente de comunicación entre el usuario y el robot líder, en donde el usuario seleccionará y enviará a través de una computara datos acerca de una tarea a ejecutar, (en este caso la selección de una trayectoria) y el robot líder decodificará y ejecutará dicha tarea en conjunto con el robot seguidor. 
+
+La interfaz o HMI por sus siglas en inglés (Human Machine Interface) forma parte indirectamente del área funcional de Procesamiento como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, esto debido a que aunque la interfaz no se encuentre dentro de los robots, trabaja directamente con el procesamiento de los móviles, y se caracteriza por ser el puente de comunicación entre el usuario, el robot líder y el robot seguidor, en donde el usuario seleccionará y enviará a través de una computadora datos acerca de una tarea a ejecutar (en este caso la selección de una trayectoria), y el robot líder decodificará y ejecutará dicha tarea en conjunto con el robot seguidor al cual también se le dirá en que momento detenerse si así lo desea el usuario.
 
 \subsubsection{Comunicación peer to peer}
 
-Como ya se ha hablado con anterioridad, el uso del termino ?nodo? dentro de ROS, se compone de una serie de procesos conectados en un mismo tiempo de ejecución a un determinado número de anfitriones, cuando muchos nodos se están ejecutando al mismo tiempo, se realiza una comunicación ''peer-to-peer?, que, en otras palabras, es la topología de enlace entre los distintos nodos. Este tipo de topología requiere de una master que permita que los procesos se encuentren los unos con otros.  
+Como ya se ha hablado con anterioridad en el glosario, el uso del término ``nodo" dentro de ROS, ejecuta una serie de procesos conectados en un mismo tiempo de ejecución a un determinado número de anfitriones, dependiendo del número de nodos. Cuando muchos nodos se están ejecutando al mismo tiempo, se realiza una comunicación ``peer-to-peer", que, en otras palabras, es la topología de enlace entre los distintos nodos. Este tipo de topología requiere de un maestro que permita que los procesos se encuentren los unos con otros. Esto se ejemplifica en la Figura \ref{fig:ConexionROS}.
+
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.75]{imagenes/Interfaz/ConexionROS.jpg}}
@@ -1160,7 +1167,7 @@ Como ya se ha hablado con anterioridad, el uso del termino ?nodo? dentro de ROS,
 	\label{fig:ConexionROS}
 \end{figure}
 
-Para el desarrollo de la interfaz es importante entender como trabaja este tipo de comunicación, ya que la interfaz que se implementará desde una computadora funcionará como anfitrión (teniendo un único anfitrión), que enviará mensajes mediante la publicación en un topic (entendiéndose topic como el intercambio de información de los nodos) y llamando a los nodos interesados a procedimientos remotos, suscribiendo su información a el tipo de Topic en proceso. 
+Para el desarrollo de la interfaz gráfica es importante entender como trabaja este tipo de comunicación, ya que la interfaz gráfica que se implementará desde una computadora funcionará como anfitrión (teniendo un único anfitrión), que enviará mensajes mediante la publicación en un tópico (entendiéndose tópico como el intercambio de información de los nodos) y llamando a los nodos interesados a procedimientos remotos, suscribiendo su información a el tipo de tópico en proceso como se muestra en la Figura \ref{fig:EjemploCOM}.
 
 \begin{figure}[H]
 	\centering
@@ -1169,9 +1176,9 @@ Para el desarrollo de la interfaz es importante entender como trabaja este tipo 
 	\label{fig:EjemploCOM}
 \end{figure}
 
-La Figura \ref{fig:ConexionROS}, sirve como ejemplo para el desarrollo de la interfaz (agente externo) y su comunicación con ROS, ya que a diferencia de utilizar una cámara como se muestra en el ejemplo, la propuesta para la recabación de los datos exteroceptivos de cada robot móvil, es mediante la implementación de un sensor LIDAR y que en la parte de percepción se aborda a detalle, pero la lógica del diagrama es la similar.
+La Figura \ref{fig:ConexionROS}, sirve como ejemplo para el desarrollo de la interfaz (agente externo) y su comunicación con ROS, ya que a diferencia de utilizar una cámara como se muestra en el ejemplo de la Figura \ref{fig:EjemploCOM}, la propuesta para la recabación de los datos exteroceptivos de cada robot móvil, es mediante la implementación de un sensor LIDAR y que en la parte de percepción se aborda a detalle, pero la lógica del diagrama es la similar.
 
-Dentro del Meta Sistema Operativo ROS, existe algunas herramientas para poder desarrollar e implementar interfaces gráficas.
+Dentro del Meta Sistema Operativo ROS, existe algunas herramientas para poder desarrollar e implementar interfaces gráficas siendo Qt un ejemplo de estas.
 
 \subsection{Validación y análisis de resultados}
 
