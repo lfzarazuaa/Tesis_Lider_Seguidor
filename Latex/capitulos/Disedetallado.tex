@@ -1182,16 +1182,16 @@ Dentro del Meta Sistema Operativo ROS, existe algunas herramientas para poder de
 
 \subsection{Validación y análisis de resultados}
 
-Es de suma importancia que en cualquier proceso de investigación y diseño antes de la construcción y exista una validación, ya que se corre el riesgo de que las propuestas de diseño diverjan de la realidad, no sean factibles o simplemente no funcionales, es por esta razón que se necesita realizar una simulación lo mas cercana a la realidad en la que se puedan probar los algoritmos implementados en el área funcional de procesamiento.
-El objetivo que se persigue en esta validación es determinar si los algoritmos implementados en un turtlebot3 virtual cumplen su función o no.
+Es de suma importancia que en cualquier proceso de investigación y diseño antes de la construcción exista una validación, ya que se corre el riesgo de que las propuestas de diseño diverjan de la realidad, no sean factibles o simplemente infuncional, es por esta razón que se necesita realizar una simulación lo más cercana a la realidad en la que se puedan probar los algoritmos implementados en el área funcional de procesamiento.
+El objetivo que se persigue en esta validación es determinar si los algoritmos implementados en un Turtlebot 3 burger virtual cumplen su función o no.
 
 \subsubsection{Procesamiento}
 
-Cada validación consistió en la programación de los nodos propuestos para cada sección del área funcional en el lenguaje de programación Python; el cual es relevante mencionar que es compatible con las tarjetas de procesamiento de los turtlebot3. Una vez hechos los programas fueron implementados en un ambiente de simulación llamado \textit{Gazebo} en el cual se incluyó el modelo 3D del turtlebot3, con sus características físicas y restricciones mecánicas como lo son velocidad máxima en cada motor. Posteriormente los datos de cada una de las simulaciones fueron grabados con un comando de ROS(Rosbags) y graficados con ayuda de Excel. Dichos datos son presentados en las siguientes secciones junto con un breve análisis de ellos. Todos los datos aquí graficados pueden ser consultados en la parte de apéndices.
+Cada validación consistió en la programación de los nodos propuestos para cada sección del área funcional en el lenguaje de programación Python; del cual es relevante mencionar que es compatible con las tarjetas de procesamiento de los Turtlebot 3 burger. Una vez hechos los programas fueron implementados en un ambiente de simulación llamado \textit{Gazebo} incluyendo allí el modelo 3D del Turtlebot 3 burger, con sus características físicas y restricciones mecánicas como lo son velocidad máxima en cada motor. Posteriormente los datos de cada una de las simulaciones fueron grabados con el comando de ROS (Rosbags) y graficados con ayuda de Excel. Dichos datos son presentados graficados en las siguientes secciones junto con un breve análisis. Todos los datos aquí graficados pueden ser consultados en la parte de apéndices.
 
 \subsubsection{Seguimiento de trayectoria}
 
-Lo primero por validar aquí es el funcionamiento del generador de la matriz de fuerza para esta validación se propusieron dos trayectorias, las cuales se muestran en las Figuras \ref{fig:Figura_Trayectoria_propuesta_1} y \ref{fig:Figura_Trayectoria_propuesta_2}, donde cada eje coordenado tiene dimensiones en m, una vez propuestas las trayectorias se llevó a cabo la generación de la matriz de fuerzas, Figuras \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2}, estas figuras también tiene sus ejes coordenados en m. Como se puede observar de las gráficas \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2} los vectores generados siguen las trayectorias propuestas, por lo cual se toma como válido el algoritmo.
+Lo primero por validar en el proyecto es el funcionamiento del generador de la matriz de fuerza para esta validación se propusieron dos trayectorias, las cuales se muestran en las Figuras \ref{fig:Figura_Trayectoria_propuesta_1} y \ref{fig:Figura_Trayectoria_propuesta_2}, donde cada eje coordenado tiene dimensiones en metros, una vez propuestas las trayectorias se llevó a cabo la generación de la matriz de fuerzas como se observa en las Figuras \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2}, estas figuras también tiene sus ejes coordenados en metros. Como se puede observar de las gráficas \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2} los vectores generados siguen las trayectorias propuestas cuando estan dentro de la trayectoria y se orientan al punto más cercano cuando estan fuera de trayectoria, por lo cual se toma como válido el algoritmo.
 
 \begin{figure}[H]
 	\centering
@@ -1203,7 +1203,7 @@ Lo primero por validar aquí es el funcionamiento del generador de la matriz de f
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.47]{imagenes/Validacion/02_Trayectoria_propuesta_2.jpg}}
-	\caption{Trayectoria propuesta 2  (unidades en metros).}
+	\caption{Trayectoria propuesta 2 (unidades en metros).}
 	\label{fig:Figura_Trayectoria_propuesta_2}
 \end{figure}
 
@@ -1221,7 +1221,7 @@ Lo primero por validar aquí es el funcionamiento del generador de la matriz de f
 	\label{fig:Figura_Matriz_de_fuerza_2}
 \end{figure}
 
-Ahora se validará que el turtlebot3 en el ambiente virtual sea capaz de seguir la trayectoria de la Figura \ref{fig:Figura_Trayectoria_propuesta_1}. Recordemos que la simulación es realizada en Gazebo y los datos son grabados y posteriormente presentados en gráficas hechas con Excel. Para esta simulación se hizo uso del nodo líder, nodo AMCL y nodo tb3 virtual. Los datos obtenidos de la simulación se muestran en la Figura  \ref{fig:Figura_Puntos_Alcanzados_lider}.
+A continuación se validará que el Turtlebot 3 burger en el ambiente virtual sea capaz de seguir la trayectoria de la Figura \ref{fig:Figura_Trayectoria_propuesta_1}. Recordando que la simulación es realizada en Gazebo y los datos son grabados y posteriormente presentados en gráficas hechas con Excel. Para esta simulación se hizo uso del nodo líder, nodo AMCL y nodo tb3 virtual. Los datos obtenidos de la simulación se muestran en la Figura \ref{fig:Figura_Puntos_Alcanzados_lider}.
 
 \begin{figure}[H]
 	\centering
@@ -1230,11 +1230,11 @@ Ahora se validará que el turtlebot3 en el ambiente virtual sea capaz de seguir l
 	\label{fig:Figura_Puntos_Alcanzados}
 \end{figure}
 
-La figura \ref{fig:Figura_Puntos_Alcanzados_lider} muestra los puntos de ruta alcanzados por el líder durante la simulación, en dicha gráfica cada eje coordenado representa m. Para validar este parte de procesamiento se hace una comparación entre las Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Trayectoria_propuesta_1}, a simple vista se puede observar que los puntos representados en la Figura \ref{fig:Figura_Puntos_Alcanzados_lider} asemejan la trayectoria propuesta en la figura \ref{fig:Figura_Trayectoria_propuesta_1}, por lo tanto, se valida el funcionamiento de algoritmo en particular.
+La Figura \ref{fig:Figura_Puntos_Alcanzados_lider} muestra los puntos de ruta alcanzados por el líder durante la simulación, en dicha gráfica cada eje coordenado se representa en metros. Para validar esta parte de procesamiento se hace una comparación entre las Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Trayectoria_propuesta_1}, a simple vista se puede observar que los puntos representados en la Figura \ref{fig:Figura_Puntos_Alcanzados_lider} se asemejan a la trayectoria propuesta en la Figura \ref{fig:Figura_Trayectoria_propuesta_1}, por lo tanto, se valida el funcionamiento de algoritmo de seguimiento de trayectoria.
 
-\subsubsection{Líder seguidor}
+\subsubsection{Líder Seguidor}
 
-Para validar el esquema líder seguidor se inició haciendo que el líder siguiera una de las trayectorias propuestas, con todos los nodos mencionados en la validación de seguimiento de trayectorias y después ejecutar el nodo del seguidor. Los resultados de la simulación son mostrados en las siguientes dos Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Puntos_Alcanzados_seguidor}, las cuales tienen las mismas dimensiones. Comparando las coordenadas por las que el líder y seguidor pasan se valida el diseño de este nodo ya que las coordenadas son muy similares, entre líder y seguidor.
+Para validar el esquema líder seguidor se inició haciendo que el líder siguiera una de las trayectorias propuestas, con todos los nodos mencionados en la validación de seguimiento de trayectorias y después ejecutar el nodo del seguidor. Los resultados de la simulación son mostrados en las Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Puntos_Alcanzados_seguidor}, las cuales tienen las mismas dimensiones. Comparando las coordenadas por las que el líder y seguidor pasan se valida el diseño de este nodo ya que las coordenadas son muy similares, entre líder y seguidor.
 
 \begin{figure}[H]
 	\centering
@@ -1264,8 +1264,8 @@ Para la evasión de obstáculos en el ambiente de simulación se colocaron dos obje
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.23]{imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg}}
-	\caption{Puntos de ruta alcanzados por el líder durante la evasión de obstáculos  (unidades en metros).}
+	\caption{Puntos de ruta alcanzados por el líder durante la evasión de obstáculos (unidades en metros).}
 	\label{fig:Figura_Puntos_de_ruta_alcanzados}
 \end{figure}
 
-Durante la ejecución el robot líder fue capaz de evadir efectivamente los obstáculos, y cuando le era posible incorporarse a la trayectoria nuevamente, se valida este algoritmo ya que cumple con la función de la evasión. 
+Durante la ejecución el robot líder fue capaz de evadir efectivamente los obstáculos, y cuando no había obstáculo se reincorporaba a la trayectoria nuevamente, por lo tanto se valida este algoritmo ya que cumple con la función de la evasión. 

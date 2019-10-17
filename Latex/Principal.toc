@@ -90,7 +90,7 @@
 \contentsline {subsection}{\numberline {2.2.8}Validaci\'on y an\'alisis de resultados}{89}{subsection.2.2.8}% 
 \contentsline {subsubsection}{\numberline {2.2.8.1}Procesamiento}{90}{subsubsection.2.2.8.1}% 
 \contentsline {subsubsection}{\numberline {2.2.8.2}Seguimiento de trayectoria}{90}{subsubsection.2.2.8.2}% 
-\contentsline {subsubsection}{\numberline {2.2.8.3}L\IeC {\'\i }der seguidor}{93}{subsubsection.2.2.8.3}% 
+\contentsline {subsubsection}{\numberline {2.2.8.3}L\IeC {\'\i }der Seguidor}{93}{subsubsection.2.2.8.3}% 
 \contentsline {subsubsection}{\numberline {2.2.8.4}Evasi\'on de obst\'aculos}{94}{subsubsection.2.2.8.4}% 
 \contentsline {chapter}{\numberline {3}Integraci\'on del Sistema}{97}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Implementaci\'on del \'Area Funcional Estructura}{97}{section.3.1}% 

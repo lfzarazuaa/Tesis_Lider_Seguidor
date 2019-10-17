@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  17 OCT 2019 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  17 OCT 2019 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2596,8 +2596,8 @@ File: imagenes/Validacion/05_Puntos_Alcanzados.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/Validacion/05_Puntos_Alcanzados.jpg  used on 
 input line 1228.
 (pdftex.def)             Requested size: 213.67776pt x 171.27946pt.
-LaTeX Info: Redefining \. on input line 1232.
-LaTeX Info: Redefining \% on input line 1232.
+LaTeX Info: Redefining \. on input line 1231.
+LaTeX Info: Redefining \% on input line 1231.
  [92 <./imagenes/Validacion/03_Matriz_de_fuerza_1.jpg> <./imagenes/Validacion/0
 4_Matriz_de_fuerza_2.jpg>]
 <imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg, id=2115, 427.3566pt x 342.
@@ -2608,9 +2608,6 @@ File: imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg Graphic file (type jpg
 Package pdftex.def Info: imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg  us
 ed on input line 1241.
 (pdftex.def)             Requested size: 213.67776pt x 171.27946pt.
-
-Underfull \vbox (badness 3471) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 1245.
 LaTeX Info: Redefining \% on input line 1245.
  [93 <./imagenes/Validacion/05_Puntos_Alcanzados.jpg>]
@@ -2649,8 +2646,7 @@ LaTeX Info: Redefining \% on input line 60.
 alidacion/09_Puntos_de_ruta_alcanzados.jpg>]
 \openout2 = `capitulos/Integracion.aux'.
 
- (./capitulos/Integracion.tex
-[96
+ (./capitulos/Integracion.tex [96
 
 
 
@@ -3781,7 +3777,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: 3A2C018A1FAAD8C02C2070587CFFC62C;11988.
+(rerunfilecheck)             Checksum: 129CBE3CD35115CDEB3DA7046AFD4A1B;11988.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3832,7 +3828,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (218 pages, 12346949 bytes).
+Output written on Principal.pdf (218 pages, 12347127 bytes).
 PDF statistics:
  2854 PDF objects out of 2984 (max. 8388607)
  2414 compressed objects within 25 object streams
