@@ -124,29 +124,29 @@
 \contentsline {figure}{\numberline {3.38}{\ignorespaces Gr\'afica de las posiciones alcanzadas y el error.}}{125}{figure.3.38}% 
 \contentsline {figure}{\numberline {3.39}{\ignorespaces Error del seguidor en la trayectoria A.}}{126}{figure.3.39}% 
 \contentsline {figure}{\numberline {3.40}{\ignorespaces Error del seguidor en la trayectoria B.}}{126}{figure.3.40}% 
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Nodo Laser\_Distance.}}{127}{figure.3.41}% 
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Nodo Distancia L\'aser.}}{127}{figure.3.41}% 
 \contentsline {figure}{\numberline {3.42}{\ignorespaces Detecci\'on del obst\'aculo cercano colocado en el primer cuadrante.}}{128}{figure.3.42}% 
 \contentsline {figure}{\numberline {3.43}{\ignorespaces Detecci\'on del obst\'aculo cercano colocado en el segundo cuadrante.}}{128}{figure.3.43}% 
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Funci\'on follow para decidir que ejecutar.}}{129}{figure.3.44}% 
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Funci\'on Follow para ejecutar VFH o seguimiento de trayectoria.}}{130}{figure.3.44}% 
 \contentsline {figure}{\numberline {3.45}{\ignorespaces Funci\'on de seguimiento de trayectoria.}}{130}{figure.3.45}% 
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Algoritmo para aplicar VFH.}}{130}{figure.3.46}% 
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Algoritmo para aplicar VFH.}}{131}{figure.3.46}% 
 \contentsline {figure}{\numberline {3.47}{\ignorespaces Funci\'on para ir a un sector libre.}}{131}{figure.3.47}% 
-\contentsline {figure}{\numberline {3.48}{\ignorespaces Error del L\IeC {\'\i }der durante la evasi\'on.}}{132}{figure.3.48}% 
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Error del L\IeC {\'\i }der durante la evasi\'on.}}{133}{figure.3.48}% 
 \contentsline {figure}{\numberline {3.49}{\ignorespaces Error del Seguidor durante la evasi\'on.}}{133}{figure.3.49}% 
 \contentsline {figure}{\numberline {3.50}{\ignorespaces RQt para graficar distintos t\'opicos con respecto al tiempo.}}{134}{figure.3.50}% 
-\contentsline {figure}{\numberline {3.51}{\ignorespaces RQt mostrando y filtrando los distintos tipos de mensajes.}}{134}{figure.3.51}% 
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Pantalla de bienvenida de QtCreator.}}{135}{figure.3.52}% 
+\contentsline {figure}{\numberline {3.51}{\ignorespaces RQt mostrando y filtrando los distintos tipos de mensajes.}}{135}{figure.3.51}% 
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Pantalla de bienvenida de QtCreator.}}{136}{figure.3.52}% 
 \contentsline {figure}{\numberline {3.53}{\ignorespaces Ventana para compilar paquete en QtCreator.}}{136}{figure.3.53}% 
-\contentsline {figure}{\numberline {3.54}{\ignorespaces Ingreso de la carpeta de compilaci\'on.}}{136}{figure.3.54}% 
-\contentsline {figure}{\numberline {3.55}{\ignorespaces Ingreso y compilaci\'on con el comando CMake.}}{137}{figure.3.55}% 
+\contentsline {figure}{\numberline {3.54}{\ignorespaces Ingreso de la carpeta de compilaci\'on.}}{137}{figure.3.54}% 
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Ingreso y compilaci\'on con el comando CMake.}}{138}{figure.3.55}% 
 \contentsline {figure}{\numberline {3.56}{\ignorespaces Ventana en Qt con el paquete qgui.}}{138}{figure.3.56}% 
-\contentsline {figure}{\numberline {3.57}{\ignorespaces Framework de Qt para GUI.}}{140}{figure.3.57}% 
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Framework de Qt para GUI.}}{141}{figure.3.57}% 
 \contentsline {figure}{\numberline {3.58}{\ignorespaces Ventana incial de la interfaz.}}{143}{figure.3.58}% 
-\contentsline {figure}{\numberline {3.59}{\ignorespaces Configuraci\'on de la interfaz con la trayectoria 1 seleccionada y apagada.}}{143}{figure.3.59}% 
+\contentsline {figure}{\numberline {3.59}{\ignorespaces Configuraci\'on de la interfaz con la trayectoria 1 seleccionada y apagada.}}{144}{figure.3.59}% 
 \contentsline {figure}{\numberline {3.60}{\ignorespaces Configuraci\'on de la interfaz con la trayectoria 2 seleccionada y encendida.}}{144}{figure.3.60}% 
-\contentsline {figure}{\numberline {3.61}{\ignorespaces Configuraci\'on de la interfaz con la trayectoria 3 seleccionada y encendida.}}{144}{figure.3.61}% 
+\contentsline {figure}{\numberline {3.61}{\ignorespaces Configuraci\'on de la interfaz con la trayectoria 3 seleccionada y encendida.}}{145}{figure.3.61}% 
 \contentsline {figure}{\numberline {3.62}{\ignorespaces Interfaz con los mensajes de prueba enviados.}}{145}{figure.3.62}% 
-\contentsline {figure}{\numberline {3.63}{\ignorespaces Interfaz con el historial de trayectorias seleccionadas.}}{145}{figure.3.63}% 
+\contentsline {figure}{\numberline {3.63}{\ignorespaces Interfaz con el historial de trayectorias seleccionadas.}}{146}{figure.3.63}% 
 \contentsline {figure}{\numberline {3.64}{\ignorespaces Interfaz mostrando las opciones de graficaci\'on.}}{146}{figure.3.64}% 
 \contentsline {figure}{\numberline {3.65}{\ignorespaces Nodos de Rosgraph.}}{147}{figure.3.65}% 
 \addvspace {10\p@ }

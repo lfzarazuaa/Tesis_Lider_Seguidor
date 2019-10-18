@@ -504,11 +504,11 @@ Para solucionar esta problemática, un nodo adicional fue hecho, este nodo se enc
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/Procesamiento/18_nodo_laser_distance.jpg}}
-	\caption{Nodo Laser\_Distance.}
+	\caption{Nodo Distancia Láser.}
 	\label{fig:Figura_Nodo_laser_distance}
 \end{figure}
 
-En el programa donde se implementó el VFH fue necesario validarlo colocando obstáculos en el ambiente de simulación, y corroborando que el histograma efectivamente reflejara la posición angular de los obstáculos respecto al robot. Las figuras \ref{fig:Figura_Deteccion_obstaculo_A} y \ref{fig:Figura_Deteccion_obstaculo_B} muestran los resultados las pruebas.
+En el programa donde se implementó el VFH fue necesario validarlo colocando obstáculos en el ambiente de simulación, y corroborando que el histograma efectivamente reflejara la posición angular de los obstáculos respecto al robot. Las Figuras \ref{fig:Figura_Deteccion_obstaculo_A} y \ref{fig:Figura_Deteccion_obstaculo_B} muestran los resultados las pruebas.
 
 %Ilustración 19. Detección del obstáculo cercano colocado en el primer cuadrante.
 \begin{figure}[H]
@@ -526,17 +526,17 @@ En el programa donde se implementó el VFH fue necesario validarlo colocando obst
 	\label{fig:Figura_Deteccion_obstaculo_B}
 \end{figure}
 
-Para integrar los nuevos nodos junto con el código del seguimiento de trayectoria fue necesario primeramente implementar la matriz de fuerza que permite al nodo saber la orientación que debe tomar el móvil para mantenerse dentro de la trayectoria propuesta, este algoritmo se programó en una función que llamamos Follow mostrado en la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_A}, que sigue el siguiente algoritmo, obtiene su posición por el callback que genera el nodo amcl, una vez conocida la posición, se discretiza en un a matriz para poder ser accedida, dado que es una matriz discretizada para evitar un error de índices en la programación, se definen los límites máximos y mínimos, tomando en cuenta las dimensiónes del mapa.  Con los índices definidos se procede a extraer la diferencia de la distancia entre el punto de origen del robot y el punto al que se desea llegar, en caso de que no se haya seleccionado una trayectoria el robot se detiene.
+Para integrar los nuevos nodos junto con el código del seguimiento de trayectoria fue necesario primeramente implementar la matriz de fuerza que permite al nodo saber la orientación que debe tomar el móvil para mantenerse dentro de la trayectoria propuesta, este algoritmo se programó en un método llamado ``Follow" mostrado en la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_A}, que sigue el siguiente algoritmo, obtiene su posición por el callback que genera el nodo amcl, una vez conocida la posición, se discretiza en un a matriz para poder ser accedida, dado que es una matriz discretizada para evitar un error de índices en la programación, se definen los límites máximos y mínimos, tomando en cuenta las dimensiones del mapa. Con los índices definidos se procede a extraer la diferencia de la distancia entre el punto de origen del robot y el punto al que se desea llegar, en caso de que no se haya seleccionado una trayectoria el robot se detiene.
 
-Para incluir la evasión de obstáculos se propuso tener una distancia mínima mostrado en la Figura \ref{fig:Figura_Nodo_laser_distance}, con la cual se inicia la evasión. En el caso en cual se tiene una distancia mayor a la propuesta, se ejecuta el algoritmo de la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_B}, el cual tiene como propósito alinearse con el ángulo deseado y la orientación propia del robot, posteriormente este ángulo se compara con su complemento para determinar el sentido en que girar para tener movimientos más cortos, debido a que el sistema puede dar oscilaciones muy grandes y con esto dañar los motores, además se incluyen condiciones para que la velocidad angular quede dentro de un margen, así mismo si es muy grande el ángulo de error(45°) la velocidad lineal se vuelve cero. Estas velocidades son publicadas para que el robot tome estos valores, posteriormente se le da un retardo a la ejecución del código para tener tiempo suficiente de recopilar los datos.
+Para incluir la evasión de obstáculos se propuso tener una distancia mínima mostrada en la Figura \ref{fig:Figura_Nodo_laser_distance}, con la cual se decide si se inicia la evasión. En el caso en cual se tiene una distancia mayor a la propuesta, se ejecuta el algoritmo de la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_B}, el cual tiene como propósito alinear con el ángulo deseado con la orientación propia del robot, posteriormente este ángulo se compara con su complemento para determinar el sentido en que girar para tener movimientos más cortos, debido a que el sistema puede dar oscilaciones muy grandes y con esto dañar los motores, además se incluyen condiciones para que la velocidad angular quede dentro de un margen, así mismo si es muy grande el ángulo de error (45°) la velocidad lineal se vuelve cero grantizando la rotación en su propio eje para cambios angulares grandes. Estas velocidades son publicadas para que el robot tome estos valores de velocidad, posteriormente se le da un retardo a la ejecución del código para tener tiempo suficiente de recopilar los datos.
 
-En el caso en que la distancia es menor a la propuesta como se muestra en las Figuras \ref{fig:Figura_Algoritmo_seguimiento_parte_C} y \ref{fig:Figura_Algoritmo_seguimiento_parte_D} se verifica si no hay un obstáculo en la dirección por la que el robot de ir. De no haber obstáculo sobre el ángulo deseado se ejecuta la rutina anterior, en el caso de que si lo haya se hace una búsqueda para encontrar el primer camino libre en sentido antihorario, agregando 15° más para evitar colisionar, finalmente la nueva velocidad es publicada. Esto se ejecuta controlado por la interfaz que indica el avance o paro del robot.
+En el caso en que la distancia es menor a la propuesta como se muestra en las Figuras \ref{fig:Figura_Algoritmo_seguimiento_parte_C} y \ref{fig:Figura_Algoritmo_seguimiento_parte_D} se verifica si no hay un obstáculo en la dirección por la que el robot debe ir. De no haber obstáculo sobre el ángulo deseado se ejecuta la rutina anterior, en el caso de que si lo haya se hace una búsqueda para encontrar el primer camino libre en sentido antihorario, agregando 15° más para evitar colisionar y ahora alinea la orientación del robot con el nuevo angulo libre, finalmente la nueva velocidad es publicada. Esto se ejecuta controlado por la interfaz que indica el avance o paro del robot.
 
 %Ilustración 21. Algoritmo de seguimiento de trayectoria parte A.
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.265]{imagenes/Implementacion/Procesamiento/21_Algoritmo_seguimiento_parte_A.jpg}}
-	\caption{Función follow para decidir que ejecutar.}
+	\caption{Función Follow para ejecutar VFH o seguimiento de trayectoria.}
 	\label{fig:Figura_Algoritmo_seguimiento_parte_A}
 \end{figure}
 
@@ -564,17 +564,16 @@ En el caso en que la distancia es menor a la propuesta como se muestra en las Fi
 	\label{fig:Figura_Algoritmo_seguimiento_parte_D}
 \end{figure}
 
-\subsection{Validación de seguimiento y evasión}
-La forma de validar los algoritmos de seguimiento de trayectorias y líder-seguidor consistió en una misma serie de pasos. Inicialmente fueron probados en un ambiente virtual, que incluye el espacio físico y un modelo funcional de los turtlebot3 burger, como si se tratase de los reales. De la simulación se verifican los programas, únicamente de forma visual, la prueba consiste en observar el comportamiento de los robots, y si estos siguen la trayectoria sin colisionar se confirma que fueron hechos correctamente. Posteriormente, los robots se prueban físicamente. Durante las pruebas físicas se guardan datos de posición, que junto con los datos de la trayectoria a seguir aplicando un algoritmo basado en un árbol kd se obtiene un error y con éste es finalmente validado, si existieron cambios son documentados.
+\subsubsection{Validación de seguimiento y evasión}
+La forma de validar los algoritmos de seguimiento de trayectorias y líder-seguidor consistió en una misma serie de pasos. Inicialmente fueron probados en un ambiente virtual, que incluye el espacio físico y un modelo funcional de los Turtlebot 3 burger, como si se tratase de los reales. De la simulación se verifican los programas, únicamente de forma visual, la prueba consiste en observar el comportamiento de los robots, y si estos siguen la trayectoria sin colisionar se confirma que fueron hechos correctamente. Posteriormente, los robots se prueban físicamente. Durante las pruebas físicas se guardan datos de posición, que junto con los datos de la trayectoria a seguir aplicando un algoritmo basado en un árbol kd se obtiene un error y con este es finalmente validado, si existieron cambios son documentados.
 
 Finalmente, para validar el algoritmo de evasión de obstáculos la prueba consiste en colocar dos obstáculos en la zona de pruebas y ejecutar los algoritmos de seguimiento de trayectoria, líder-seguidor y evasión. Para cada trayectoria los robots dan 3 recorridos, si falla únicamente una sola vez se considera exitoso.
 
 \subsubsection{Análisis de resultados}
-Como se observo en las Figuras los algoritmos de evasión funcionan correctamente ya que el histograma muestra datos correctos, para los diferentes casos en que se presenta el obstáculo.
+Como se observó en las Figuras \ref{fig:Figura_Deteccion_obstaculo_A} y \ref{fig:Figura_Deteccion_obstaculo_B} los algoritmos de evasión funcionan correctamente, ya que el histograma muestra datos correctos, para los diferentes casos en que se presenta el obstáculo.
 
 \subsection{Prueba E: Validar la integración de evasión y seguimiento}
-El objetivo de esta prueba fue validar el funcionamiento del sistema en conjunto, líder-seguir y evasión. Se realizó una prueba en el ambiente físico, colocando ambos robots a medio metro de distancia y dos obstáculos en posiciones por las que se estaba seguro de que el líder intentaría pasar, debido al seguimiento de trayectoria, se realizaron 3 recorrido para cada trayectoria, si únicamente colisionaba una vez por trayectoria se consideró válido, adicionalmente mostramos las gráficas de error.
-
+El objetivo de esta prueba fue validar el funcionamiento del sistema en conjunto, líder-seguidor y evasión. Se realizó una prueba en el ambiente físico, colocando ambos robots a medio metro de distancia y dos obstáculos en posiciones por las que se estaba seguro de que el líder intentaría pasar, debido al seguimiento de trayectoria, se realizaron 3 recorridos para cada trayectoria, si únicamente colisionaba una vez por trayectoria se consideró válido, adicionalmente mostramos las gráficas de error en las Figuras \ref{fig:25_Lider} y \ref{fig:26_Seguidor}.
 
 %Ilustración 25. Algoritmo de seguimiento de trayectoria parte C.
 \begin{figure}[H]
@@ -593,7 +592,7 @@ El objetivo de esta prueba fue validar el funcionamiento del sistema en conjunto
 \end{figure}
 
 \subsubsection{Análisis de resultados}
-Como se puede observar en las Figuras \ref{fig:25_Lider} y \ref{fig:26_Seguidor}, el error disminuye cuando se mantiene dentro de la trayectoria y aumenta cuando requiere alejarse de la trayectoria e iniciar la evasión, para ambos robots el comportamiento es el mismo, lo cual valida que realmente existe una evasión ya que el líder toma como prioridad no chocar a mantenerse sobre la trayectoria, como el seguidor realiza las acciones del líder, el seguidor como era de esperar no colisionó.
+Como se puede observar en las Figuras \ref{fig:25_Lider} y \ref{fig:26_Seguidor}, el error disminuye cuando se mantiene dentro de la trayectoria y aumenta cuando requiere alejarse de la trayectoria e iniciar la evasión, para ambos robots el comportamiento es el mismo, lo cual valida que realmente existe una evasión, ya que el líder toma como prioridad no chocar a mantenerse sobre la trayectoria, como el seguidor realiza las acciones del líder, el seguidor como era de esperar no colisionó.
 
 \subsection{Realización de la HMI}
 

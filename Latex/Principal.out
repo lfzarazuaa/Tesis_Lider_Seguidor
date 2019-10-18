@@ -114,18 +114,18 @@
 \BOOKMARK [2][-]{subsection.3.5.5}{Prueba C: Validar el algoritmo L\355der-Seguidor}{section.3.5}% 114
 \BOOKMARK [3][-]{subsubsection.3.5.5.1}{An\341lisis de resultados}{subsection.3.5.5}% 115
 \BOOKMARK [2][-]{subsection.3.5.6}{Prueba D:Validar la evasi\363n de obst\341culos}{section.3.5}% 116
-\BOOKMARK [2][-]{subsection.3.5.7}{Validaci\363n de seguimiento y evasi\363n}{section.3.5}% 117
-\BOOKMARK [3][-]{subsubsection.3.5.7.1}{An\341lisis de resultados}{subsection.3.5.7}% 118
-\BOOKMARK [2][-]{subsection.3.5.8}{Prueba E: Validar la integraci\363n de evasi\363n y seguimiento}{section.3.5}% 119
-\BOOKMARK [3][-]{subsubsection.3.5.8.1}{An\341lisis de resultados}{subsection.3.5.8}% 120
-\BOOKMARK [2][-]{subsection.3.5.9}{Realizaci\363n de la HMI}{section.3.5}% 121
-\BOOKMARK [3][-]{subsubsection.3.5.9.1}{Programa Principal}{subsection.3.5.9}% 122
-\BOOKMARK [3][-]{subsubsection.3.5.9.2}{Ventana Gr\341fica}{subsection.3.5.9}% 123
-\BOOKMARK [3][-]{subsubsection.3.5.9.3}{Programa de ROS}{subsection.3.5.9}% 124
-\BOOKMARK [3][-]{subsubsection.3.5.9.4}{Framework de Trabajo}{subsection.3.5.9}% 125
-\BOOKMARK [3][-]{subsubsection.3.5.9.5}{Puntos importantes a considerar}{subsection.3.5.9}% 126
-\BOOKMARK [3][-]{subsubsection.3.5.9.6}{Modificaci\363n del Programa}{subsection.3.5.9}% 127
-\BOOKMARK [3][-]{subsubsection.3.5.9.7}{Resultados de la ejecuci\363n}{subsection.3.5.9}% 128
+\BOOKMARK [3][-]{subsubsection.3.5.6.1}{Validaci\363n de seguimiento y evasi\363n}{subsection.3.5.6}% 117
+\BOOKMARK [3][-]{subsubsection.3.5.6.2}{An\341lisis de resultados}{subsection.3.5.6}% 118
+\BOOKMARK [2][-]{subsection.3.5.7}{Prueba E: Validar la integraci\363n de evasi\363n y seguimiento}{section.3.5}% 119
+\BOOKMARK [3][-]{subsubsection.3.5.7.1}{An\341lisis de resultados}{subsection.3.5.7}% 120
+\BOOKMARK [2][-]{subsection.3.5.8}{Realizaci\363n de la HMI}{section.3.5}% 121
+\BOOKMARK [3][-]{subsubsection.3.5.8.1}{Programa Principal}{subsection.3.5.8}% 122
+\BOOKMARK [3][-]{subsubsection.3.5.8.2}{Ventana Gr\341fica}{subsection.3.5.8}% 123
+\BOOKMARK [3][-]{subsubsection.3.5.8.3}{Programa de ROS}{subsection.3.5.8}% 124
+\BOOKMARK [3][-]{subsubsection.3.5.8.4}{Framework de Trabajo}{subsection.3.5.8}% 125
+\BOOKMARK [3][-]{subsubsection.3.5.8.5}{Puntos importantes a considerar}{subsection.3.5.8}% 126
+\BOOKMARK [3][-]{subsubsection.3.5.8.6}{Modificaci\363n del Programa}{subsection.3.5.8}% 127
+\BOOKMARK [3][-]{subsubsection.3.5.8.7}{Resultados de la ejecuci\363n}{subsection.3.5.8}% 128
 \BOOKMARK [1][-]{section.3.6}{Especificaciones del Sistema}{chapter.3}% 129
 \BOOKMARK [2][-]{subsubsection.3.6.0.1}{Especificaciones del \301rea de Trabajo}{section.3.6}% 130
 \BOOKMARK [3][-]{subsubsection.3.6.0.2}{Especificaciones de la Alimentanci\363n}{subsubsection.3.6.0.1}% 131
