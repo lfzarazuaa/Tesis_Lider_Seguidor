@@ -1,0 +1,19 @@
+Actividades faltantes a realizar.
+Actualizar Glosario.
+Revisar que todas las comillas esten bien en el PDF.
+Ordenar Alfabeticamente la Nomenclatura.
+Acomodar las imágenes en tamaño para que exista una buena distribución en las páginas.
+Fusionar las tablas que estan acomodadas por partes y distribuirlas de una manera correcta.
+Cambiar que diga Cuadro a Tabla.
+Revisar que las tablas no se salgan de los márgenes establecidos.
+Revisar y agregar documentos faltantes de anexos y apéndices.
+Incorporar diagramas de flujo en Diseño Detallado Implementación.
+Cambiar texto de descripción en Diseño Detallado Implementación.
+Cambiar Diagramas de flujo en Implementación Procesamento Prueba D.
+Cambiar texto de descripción en Implementación Procesamento Prueba D.
+Cambiar imagen de qgui en qtcreator en Implementación Procesamento Prueba E.
+Actualizar Implementación-Especificaciones del Sistema.
+Revisar que la bibliografia no tenga texto fuera de los márgenes.
+Arreglar problema con el vínculo de paragraph y subparagraph.
+Revisar portada con la maestra Griselda.
+Actualizar Dedicatoria y Agradecimientos.
