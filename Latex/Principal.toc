@@ -127,7 +127,7 @@
 \contentsline {subsubsection}{\numberline {3.5.8.7}Resultados de la ejecuci\'on}{142}{subsubsection.3.5.8.7}% 
 \contentsline {section}{\numberline {3.6}Especificaciones del Sistema}{146}{section.3.6}% 
 \contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{147}{subsubsection.3.6.0.1}% 
-\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentanci\'on}{147}{subsubsection.3.6.0.2}% 
+\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentaci\'on}{147}{subsubsection.3.6.0.2}% 
 \contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{147}{subsubsection.3.6.0.3}% 
 \contentsline {chapter}{\numberline {4}An\'alisis de Costo}{149}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Costos variables}{149}{section.4.1}% 

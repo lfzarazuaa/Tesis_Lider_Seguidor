@@ -441,7 +441,7 @@ De las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Re
 
 \subsection{Prueba B: Validar el seguimiento de trayectoria}
 
-Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del seguimiento de trayectoria. La prueba consistió en el uso del ambiente de simulación hecho en Gazebo para saber si funcionaba correctamente, en cuanto a la simulación se hizo la confirmación del seguimiento de trayectoria, ya que se pudo apreciar visualmente como el robot seguía la trayectoria, posteriormente se procedió a la prueba física. Una vez hecho esto se ejecutó el programa con ''roslaunch esquema\_lider\_seguidor lider.launch" por medio de la computadora remota iniciando la recabación de las posiciones con el comando, ''rosrecord tb3\_0/amcl\_pose tb3\_1/amcl\_pose", los datos que se recabaron fueron usados para calcular el error que existe entre los puntos por cuales fue definida la trayectoria y los puntos por los que el robot pasó, estos se muestran en las Figuras \ref{fig:Figura_Error_lider_A}, \ref{fig:Figura_Error_lider_B} y \ref{fig:Figura_Grafica_posiciones_alcanzadas}.
+Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del seguimiento de trayectoria. La prueba consistió en el uso del ambiente de simulación hecho en Gazebo para saber si funcionaba correctamente, en cuanto a la simulación se hizo la confirmación del seguimiento de trayectoria, ya que se pudo apreciar visualmente como el robot seguía la trayectoria, posteriormente se procedió a la prueba física. Una vez hecho esto se ejecutó el programa con ``roslaunch esquema\_lider\_seguidor lider.launch" por medio de la computadora remota iniciando la recabación de las posiciones con el comando, ``rosrecord tb3\_0/amcl\_pose tb3\_1/amcl\_pose", los datos que se recabaron fueron usados para calcular el error que existe entre los puntos por cuales fue definida la trayectoria y los puntos por los que el robot pasó, estos se muestran en las Figuras \ref{fig:Figura_Error_lider_A}, \ref{fig:Figura_Error_lider_B} y \ref{fig:Figura_Grafica_posiciones_alcanzadas}.
 
 %Ilustración 13. Error del líder en seguimiento de la trayectoria A.
 \begin{figure}[H]
@@ -596,9 +596,9 @@ Como se puede observar en las Figuras \ref{fig:25_Lider} y \ref{fig:26_Seguidor}
 
 \subsection{Realización de la HMI}
 
-Para lograr que el sistema tenga una mejor interacción con el usuario se optó por intregrarle una hmi (human machine interface), para esto se buscaron varias posibilidades de frameworks de trabajo que fueran compatibles con ROS y que tuvieran una considerable información de consulta en páginas web.
+Para lograr que el sistema tenga una mejor interacción con el usuario se optó por intregrarle una HMI (human machine interface), para esto se buscaron varias posibilidades de frameworks de trabajo que fueran compatibles con ROS y que tuvieran una considerable información de consulta en páginas web.
 
-Dadas estas características se utilizó el ambiente de trabajo QtCreator en el cual además de tener una extensa documentación e información de ayuda en internet, había sido utilizado para desarrollar una de las principales herramientas para el análisis de la información que posee el ecosistema de ROS, logrando estp por medio de la interfaz RQt realizada en Qt, en dicha interfaz se puden visualizar las conexiones entre nodos, los valores de los distintos tópicos, mandar información para probar las variables de los tópicos de los nodos como la velocidad de los motores del turtlebot3 burger y graficar la información de los nodos a través del tiempo entre muchas otras funciones como las que en las Figuras \ref{fig:Figura_RQt_Graficas} y \ref{fig:Figura_RQt_Mensajes}.
+Dadas estas características se utilizó el ambiente de trabajo QtCreator en el cual además de tener una extensa documentación e información de ayuda en internet, había sido utilizado para desarrollar una de las principales herramientas para el análisis de la información que posee el ecosistema de ROS, logrando esto por medio de la interfaz RQt realizada en Qt, en dicha interfaz se pueden visualizar las conexiones entre nodos, los valores de los distintos tópicos, mandar información para probar las variables de los tópicos de los nodos como la velocidad de los motores del Turtlebot 3 burger y graficar la información de los nodos a través del tiempo entre muchas otras funciones como las que en las Figuras \ref{fig:Figura_RQt_Graficas} y \ref{fig:Figura_RQt_Mensajes} se visualizan.
 
 %%Ilustración 1: RQt para graficar distintos tópicos contra del tiempo.
 \begin{figure}[H]
@@ -616,7 +616,7 @@ Dadas estas características se utilizó el ambiente de trabajo QtCreator en el cu
 	\label{fig:Figura_RQt_Mensajes}
 \end{figure}
 
-Con el objetivo de usar Qt como interfaz gráfica para mandar ordenes a los robots líder y seguidor se usaron los siguientes paquetes:
+Con el objetivo de usar Qt, dada su versatilidad con ROS, como interfaz gráfica para mandar ordenes a los robots líder y seguidor se usaron los siguientes paquetes:
 
 \begin{itemize}
 	\item qtcreator
@@ -624,7 +624,7 @@ Con el objetivo de usar Qt como interfaz gráfica para mandar ordenes a los robot
 	\item ros-kinetic-qt-build
 \end{itemize}
 
-Y para instalarlos se usaron las siguientes instrucciones:
+Y para instalarlos en una computadora con Ubuntu 16.04 se usaron las siguientes instrucciones en la terminal de comandos de Ubuntu:
 
 \begin{itemize}
 	\item sudo apt-get install qtcreator
@@ -632,15 +632,15 @@ Y para instalarlos se usaron las siguientes instrucciones:
 	\item sudo apt-get install ros-kinetic-qt-build
 \end{itemize}
 
-Una vez instalados se crearon los paquetes como se describen en la página web de la wiki de ros en la sección qt\_build \cite{qt_build}, asimismo cabe mencionar que para generar el paquete de ROS relacionado a la interfaz se usó la instrucción en la terminal en la carpeta catkin\_ws de la siguiente forma:
+Una vez instalados se crearon los paquetes como se describen en la página web de la wiki de ros en la sección qt\_build \cite{qt_build}, como detalle importante cabe mencionar que para generar el paquete de ROS relacionado con la interfaz se usó la instrucción en la terminal en la carpeta catkin\_ws de la siguiente forma:
 
 \begin{itemize}
-	\item catkin\_create\_qt\_pkg qgui
+	\item catkin\_create\_qt\_pkg gui\_lider\_seguidor
 \end{itemize}
 
-Donde ``catkin\_create\_qt\_pkg", es la instrucción para generar el paquete y ``qgui", es el nombre del paquete asignado por el usuario.
+Donde ``catkin\_create\_qt\_pkg", es la instrucción para generar el paquete y ``gui\_lider\_seguidor", es el nombre del paquete asignado por el usuario.
 
-Una vez compilado correctamente el paquete de la interfaz ahora se puede compilar como cualquier otro paquete usando la instrucción catkin\_make y si esta instrucción al compilar lo hace correctamente ahora se puede editar y compilar el proyecto usando qtcreator. Para esto se ejecuta en la terminal el comando qtcreator y este comando abre el programa qtcreator como se muestra en la Figura \ref{fig:Figura_Interfaz_Incio}.
+Una vez compilado correctamente el paquete de la interfaz ahora se puede compilar como cualquier otro paquete usando la instrucción catkin\_make y si esta instrucción realiza la compilación correctamente entonces se puede editar y compilar el proyecto usando qtcreator. Para esto se ejecuta en la terminal el comando qtcreator y este comando abre el programa qtcreator como se muestra en la Figura \ref{fig:Figura_Interfaz_Incio}.
 
 %%Ilustración 3: Inicio de QtCreator
 \begin{figure}[H]
@@ -650,7 +650,7 @@ Una vez compilado correctamente el paquete de la interfaz ahora se puede compila
 	\label{fig:Figura_Inicio_QtCreator}
 \end{figure}
 
-Una vez dentro del programa se abre el proyecto dando clic en ``File" luego ``Open File or Project", y se abre el archivo ``CmakeList.txt" del paquete creado en este caso ``qgui", como se muestra en la Figura \ref{fig:Figura_Abrir_GUI}.
+Una vez dentro del programa se abre el proyecto dando clic en ``File" luego ``Open File or Project", y se abre el archivo ``CmakeList.txt" del paquete creado, en este caso ``gui\_lider\_seguidor", como se muestra en la Figura \ref{fig:Figura_Abrir_GUI}.
 
 %%Ilustración 4: Ventana para compilar paquete en QtCreator.
 \begin{figure}[H]
@@ -676,9 +676,9 @@ Al darle ``next", aparecerá una ventana que pide el comando de compilación cmake
 	\item cmake ../src -DCMAKE\_INSTALL\_PREFIX=../install -DCATKIN\_DEVEL\_PREFIX=../devel
 \end{itemize}
 
-Este comando se puede consultar mas a detalle en la sección ``catkin\_make" de la wiki de ROS \cite{catkin_make}.
+Este comando se puede consultar más a detalle en la sección ``catkin\_make" de la wiki de ROS \cite{catkin_make}.
 
-Luego se le da clic en el botón ``Run CMake", esta acción compila el proyecto y al darle ``Finish" si se compiló correctamente se abren los archivos relacionados al proyecto para poderse editar finalmente como se muestra en la Figura \ref{fig:Figura_Qt_CMake}.
+Luego se le da clic en el botón ``Run CMake", esta acción compila el proyecto y al darle ``Finish", si se compiló correctamente se abren los archivos relacionados con el proyecto para poderse editar finalmente como se muestra en la Figura \ref{fig:Figura_Qt_CMake}.
 
 %%Ilustración 6: Ingreso y compilación con el comando CMake.
 \begin{figure}[H]
@@ -711,7 +711,7 @@ Estos 3 programas y el framework de edición trabajan en conjunto y cada uno está
 
 \subsubsection{Programa Principal}
 
-El programa principal se encarga de crear el objeto de la ventana y que esta sea visible, además que cuando esta se cierra da la indicación que el programa ha terminado, esto al igual que los demás programas anteriormente mencionados este también usa hilos de ejecución por medio de la librería QThread, para que puedan ejecutarse varios procesos a la vez dentro de un mismo código, logrando de tal forma que el usuario pueda interactuar con la interfaz al mismo tiempo que esta realiza distintos cálculos o enviá mensajes al ecosistema de ROS. Este programa en general contiene todo porque de aquí llaman a los demás programas anteriormente mencionados.
+El programa principal se encarga de crear el objeto de la ventana y que esta sea visible, además que cuando esta se cierra da la indicación que el programa ha terminado, esto al igual que los demás programas anteriormente mencionados también usa hilos de ejecución por medio de la librería QThread, para que puedan ejecutarse varios procesos a la vez dentro de un mismo código, logrando de tal forma que el usuario pueda interactuar con la interfaz al mismo tiempo que esta realiza distintos cálculos o enviá mensajes al ecosistema de ROS en los tiempos adecuados. Este programa en general contiene todo porque de aquí llaman a los demás programas anteriormente mencionados.
 
 \subsubsection{Ventana Gráfica}
 
@@ -719,11 +719,11 @@ Este programa muestra la interfaz gráfica creada en el framework de edición de Q
 
 \subsubsection{Programa de ROS}
 
-Este programa al igual que el anterior se compone de 2 archivos el ``qnode .cpp", y el ``qnode.hpp", los cuales hacen una clase e igual dan funcionalidad y manejan definiciones respectivamente. En cuanto a lo que realiza este programa es inicializar la comunicación con ROS cuando le es pedido desde la interfaz gráfica, el cual al ser manejado por un hilo de ejecución no bloquea la interfaz gráfica, también aquí se crea el nodo para trabajar con ROS, se definen a que tópicos se suscribe este nodo, que tópicos publica y además se definen métodos públicos que pueden ser llamados por la interfaz gráfica para realizar una cierta acción en el entorno de ROS. Cabe mencionar que este programa está contenido dentro del ventana gráfica y por defecto contiene el sistema de llamado de mensajes de consola de ROS.
+Este programa al igual que el anterior se compone de 2 archivos el ``qnode .cpp", y el ``qnode.hpp", los cuales hacen una clase dando funcionalidad y manejan definiciones de la clase respectivamente. En cuanto a lo que realiza este programa es inicializar la comunicación con ROS cuando le es pedido desde la interfaz gráfica, lo cual al ser manejado por un hilo de ejecución no bloquea la interfaz gráfica, también aquí se crea el nodo para trabajar con ROS, se definen a que tópicos se suscribe este nodo, que tópicos publica y además se definen métodos públicos que pueden ser llamados por la interfaz gráfica para realizar una cierta acción en el entorno de ROS. Cabe mencionar que este programa está contenido dentro del programa de la ventana gráfica y por defecto contiene el sistema de llamado de mensajes de consola de ROS.
 
 \subsubsection{Framework de Trabajo}
 
-El framework de trabajo es una herramienta muy útil ya que se puede editar fácilmente y de manera visual como se visualizará la interfaz, destacando 2 ventajas: la primera que queda visualmente como se bosqueja la interfaz gráfica en vez de modificar posiciones o contenedores para que se ajusten y la segunda que sin un gran conocimiento de todas las librerías de la interfaz gráfica se puedan usar los elementos provistos por el framework que además de todo mejoran los tiempos de desarrollo de la interfaz, ya que se auto genera el código de la visualización de la interfaz y solo queda por programar su funcionalidad. Cabe mencionar que este framework crea un archivo que está contenido en el programa de la ventana gráfica para que los elementos queden justo como en el editor de la interfaz el cual se muestra en la Figura \ref{fig:Figura_Editor_Qt}.
+El framework de trabajo es una herramienta muy útil, ya que se puede editar fácilmente y de manera interactiva como se visualizará la interfaz, destacando 2 ventajas: la primera que queda visualmente como se bosqueja la interfaz gráfica en vez de modificar posiciones o contenedores para que se ajusten y la segunda que sin un gran conocimiento de todas las librerías de la interfaz gráfica se puedan usar los elementos provistos por el framework que además de todo mejoran los tiempos de desarrollo de la interfaz, ya que se auto genera el código de la visualización de la interfaz y solo queda por programar su funcionalidad. Cabe mencionar que este framework crea un archivo que está contenido en el programa de la ventana gráfica para que los elementos queden justo como en el editor de la interfaz el cual se muestra en la Figura \ref{fig:Figura_Editor_Qt}.
 
 %Ilustración 8: Framework de Qt para GUI.
 
@@ -736,7 +736,7 @@ El framework de trabajo es una herramienta muy útil ya que se puede editar fácil
 
 \subsubsection{Puntos importantes a considerar}
 
-Como recomendación se propone primero editar la interfaz gráfica sin intentar añadir un slot (método a ejecutar cada que hay un evento en cierto elemento de la interfaz; por ejemplo darle clic a un pushbutton) a los componentes ya que daña el proyecto, posteriormente compilarlo y después con este procedimiento ya aparecerán los nuevos componentes reconocidos automáticamente por el sistema para asi realizar una mejor edición del código. En el caso de usar slots para darle funcionalidad a cada componente se recomienda conectarlos manualmente como se muestra en la siguiente instrucción:
+Como recomendación se propone primero editar la interfaz gráfica sin intentar añadir un slot (método a ejecutar cada que hay un evento en cierto elemento de la interfaz; por ejemplo darle clic a un pushbutton) a los componentes ya que daña el proyecto al generar código erróneo, posteriormente compilarlo y después con este procedimiento ya aparecerán los nuevos componentes reconocidos automáticamente por el sistema para así realizar una mejor edición del código. En el caso de usar slots para darle funcionalidad a cada componente se recomienda conectarlos manualmente como se muestra en la siguiente instrucción:
 
 \begin{itemize}
 	\item QObject::connect(ui.pushButton\_Graficar, SIGNAL(clicked()),
@@ -747,7 +747,7 @@ Donde  ``ui.pushButton\_Graficar", es el botón en la interfaz gráfica, ``clicked
 
 \subsubsection{Modificación del Programa}
 
-Dado que este paquete ya venia con una funcionalidad predeterminada se módico el código base, así como la interfaz gráfica para ajustarlo a los requerimientos del trabajo, con lo cual siguiendo la lógica del programa descrita anteriormente, se consiguió enviar los tópicos necesarios para que se lograra interactuar con los robots así como con el graficador. Los tópicos que se crearon para dar dicha funcionalidad son los siguientes
+Dado que este paquete ya venia con una funcionalidad predeterminada se módico el código base, así como la interfaz gráfica para ajustarlo a los requerimientos del trabajo, con lo cual siguiendo la lógica del programa descrita anteriormente, se consiguió enviar los tópicos necesarios para que se lograra interactuar con los robots así como con el graficador. Los tópicos que se crearon para dar dicha funcionalidad son los siguientes:
 
 \begin{itemize}
 	\item lane de tipo std\_msgs::Int32 para seleccionar la trayectoria.
@@ -769,14 +769,14 @@ A continuación se muestran los resultados de la ejecución de la interfaz, donde 
 	\item Ventana para graficar, limpiar gráficas o guardar datos.
 \end{itemize}
 
-En la primera ventana como se muestra en las Figuras \ref{fig:Figura_Interfaz_Incio} y \ref{fig:Figura_Interfaz_Trayectoria1} se elige la trayectoria deseada por el usuario y con esta elección se podrá ver la imagen de la trayectoria a seguir, sin embargo esta se cargará hasta que se presione el botón cargar trayectoria, para que de esta manera se puedan inspeccionar libremente las trayectorias antes de cargarlas, cabe mencionar que la trayectoria predeterminadamente es la 0 en la cual nunca se avanza.
+En la primera ventana como se muestra en las Figuras \ref{fig:Figura_Interfaz_Incio} y \ref{fig:Figura_Interfaz_Trayectoria1} se elige la trayectoria deseada por el usuario y con esta elección se podrá ver la imagen de la trayectoria a seguir, sin embargo esta se cargará hasta que se presione el botón cargar trayectoria, para que de esta manera se puedan inspeccionar libremente las trayectorias antes de cargarlas, cabe mencionar que la trayectoria predeterminada es la 0 en la cual nunca se avanza.
 
 %%Ilustración 9: Configuración de la interfaz sin Trayectoria seleccionada.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg}}
-	\caption{Ventana incial de la interfaz.}
+	\caption{Ventana inicial de la interfaz.}
 	\label{fig:Figura_Interfaz_Incio}
 \end{figure}
 
@@ -789,7 +789,7 @@ En la primera ventana como se muestra en las Figuras \ref{fig:Figura_Interfaz_In
 	\label{fig:Figura_Interfaz_Trayectoria1}
 \end{figure}
 
-Para hacer que el móvil avance se selecciona la opción encendido y en ese momento aparecerá la opción marcada y los móviles empezaran a seguir la trayectoria escogida como se muestra en las Figuras \ref{fig:Figura_Interfaz_Trayectoria2} y  \ref{fig:Figura_Interfaz_Trayectoria3}, para apagarlo basta con volver a presionar el botón.
+Para hacer que el móvil avance se selecciona la opción encendido y en ese momento aparecerá la opción marcada y los móviles empezaran a seguir la trayectoria escogida como se muestra en las Figuras \ref{fig:Figura_Interfaz_Trayectoria2} y \ref{fig:Figura_Interfaz_Trayectoria3}, para apagarlo basta con volver a presionar el botón.
 
 %Ilustración 11: Configuración de la interfaz con trayectoria 2 seleccionada y encendido.
 
@@ -809,7 +809,7 @@ Para hacer que el móvil avance se selecciona la opción encendido y en ese moment
 	\label{fig:Figura_Interfaz_Trayectoria3}
 \end{figure}
 
-En la segunda ventana se muestra el historial de todas las trayectorias cargadas, así como los mensajes de prueba para verificar que la interfaz este enviando bien la información a través de ROS, esto se muestra en la Figura \ref{fig:Figura_Interfaz_Mensajes} sin nunca haber cargado ninguna trayectoria y en la Figura \ref{fig:Figura_Interfaz_Mensajes_2} con un historial de trayectorias cargadas ( donde además se puede consultar cual es la trayectoria a seguir actualmente) .
+En la segunda ventana se muestra el historial de todas las trayectorias cargadas, así como los mensajes de prueba para verificar que la interfaz este enviando bien la información a través de ROS, esto se muestra en la Figura \ref{fig:Figura_Interfaz_Mensajes} sin nunca haber cargado ninguna trayectoria y en la Figura \ref{fig:Figura_Interfaz_Mensajes_2} con un historial de trayectorias cargadas (donde además se puede consultar cual es la trayectoria a seguir actualmente).
 
 %Ilustración 13: Interfaz con los mensajes de prueba enviados.
 
@@ -842,24 +842,22 @@ En la tercera ventana como se observa en la Figura \ref{fig:Figura_Interfaz_Graf
 
 \section{Especificaciones del Sistema}
 
-En esta sección se habla de las especificaciones de algunos de los componentes de cada Área Funcional como los tiempos de las baterias LiPo, la velocidad de los motores, la resolución de los sensores (LIDAR y enconders), etcétera.
+En esta sección se habla de las especificaciones de algunos de los componentes de cada área funcional como los tiempos de las baterías LiPo, la velocidad de los motores, la resolución de los sensores (LIDAR y encoders), etcétera.
 
 \subsubsection{Especificaciones del Área de Trabajo}
 
 El Área de Trabajo fue fabricada de MDF y sus dimensiones son las siguientes: 2.4m x 2.4m x .30m (Longitud - Ancho - Altura).
 
+\subsubsection{Especificaciones de la Alimentación}
 
-\subsubsection{Especificaciones de la Alimentanción}
-
-Cada bateria de los robots dura aproximadamente \textit{dos horas} de uso continuo, y tarda en cargarse aproximadamente \textit{una hora y media}.
-
+Cada batería de los robots dura aproximadamente \textit{dos horas} de uso continuo, y tarda en cargarse aproximadamente \textit{una hora y media}.
 
 \subsubsection{Especificaciones del Procesamiento}
-Editar
+En la Figura \ref{fig:Nodos_Rosgraph} se muestran la red de nodos implementada para el proyecto.
+
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.155]{imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg}}
 	\caption{Nodos de Rosgraph.}
 	\label{fig:Nodos_Rosgraph}
 \end{figure}
-

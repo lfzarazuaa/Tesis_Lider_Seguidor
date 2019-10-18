@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  18 OCT 2019 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  18 OCT 2019 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,8 +1174,8 @@ Underfull \vbox (badness 1184) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
- [22])
-[23]
+ [22]
+[23])
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
  [24]
@@ -3262,9 +3262,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 618.
 LaTeX Info: Redefining \% on input line 618.
  [134 <./imagenes/Implementacion/HMI/01_RQt_Graficas.jpg>]
-LaTeX Info: Redefining \. on input line 644.
-LaTeX Info: Redefining \% on input line 644.
- [135 <./imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg>]
+Overfull \hbox (58.83427pt too wide) in paragraph at lines 641--642
+[]\OT1/cmr/m/n/10.95 Donde ``cat-kin[]create[]qt[]pkg", es la ins-truc-ci^^Son 
+pa-ra ge-ne-rar el pa-que-te y ``gui[]lider[]seguidor",
+ []
+
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+[135 <./imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg>]
 <imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg, id=2433, 914.66719pt x 58
 4.1825pt>
 File: imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg Graphic file (type jp
@@ -3336,11 +3341,11 @@ File: imagenes/Implementacion/HMI/08_Editor_Qt.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/HMI/08_Editor_Qt.jpg  used on 
 input line 732.
 (pdftex.def)             Requested size: 292.46991pt x 168.02904pt.
-LaTeX Info: Redefining \. on input line 748.
-LaTeX Info: Redefining \% on input line 748.
+LaTeX Info: Redefining \. on input line 747.
+LaTeX Info: Redefining \% on input line 747.
  [141 <./imagenes/Implementacion/HMI/08_Editor_Qt.jpg>]
-LaTeX Info: Redefining \. on input line 773.
-LaTeX Info: Redefining \% on input line 773.
+LaTeX Info: Redefining \. on input line 770.
+LaTeX Info: Redefining \% on input line 770.
  [142]
 <imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg, id=2478, 903.375pt x 584.18
 25pt>
@@ -3426,13 +3431,13 @@ ementacion/HMI/15_Interfaz_Graficar.jpg>]
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 847.
 
-<imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg, id=2507, 1449.1
+<imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg, id=2508, 1449.1
 6406pt x 1233.10687pt>
 File: imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg Graphic fil
 e (type jpg)
 <use imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Especificaciones/01_rosgraph_n
-ode.jpg  used on input line 861.
+ode.jpg  used on input line 860.
 (pdftex.def)             Requested size: 224.6181pt x 191.1296pt.
 )
 LaTeX Info: Redefining \. on input line 61.
@@ -3644,7 +3649,7 @@ LaTeX Info: Redefining \% on input line 71.
 \openout2 = `apendices/apendice1.aux'.
 
  (./apendices/apendice1.tex
-<imagenes/Apendice/01_Nodos_A.jpg, id=2590, 667.74469pt x 629.35126pt>
+<imagenes/Apendice/01_Nodos_A.jpg, id=2591, 667.74469pt x 629.35126pt>
 File: imagenes/Apendice/01_Nodos_A.jpg Graphic file (type jpg)
 <use imagenes/Apendice/01_Nodos_A.jpg>
 Package pdftex.def Info: imagenes/Apendice/01_Nodos_A.jpg  used on input line 5
@@ -3656,7 +3661,7 @@ has been already used, duplicate ignored
                    \relax 
 l.6 ...tion{Configuración de nodos en ROS parte A}
                                                   
-<imagenes/Apendice/02_Nodos_B.jpg, id=2591, 663.22781pt x 630.85687pt>
+<imagenes/Apendice/02_Nodos_B.jpg, id=2592, 663.22781pt x 630.85687pt>
 File: imagenes/Apendice/02_Nodos_B.jpg Graphic file (type jpg)
 <use imagenes/Apendice/02_Nodos_B.jpg>
 Package pdftex.def Info: imagenes/Apendice/02_Nodos_B.jpg  used on input line 1
@@ -3674,7 +3679,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./imagenes/Apendice/01_Nodos_A.jpg>]
-<imagenes/Apendice/03_Nodos_C.jpg, id=2596, 664.73344pt x 655.69969pt>
+<imagenes/Apendice/03_Nodos_C.jpg, id=2597, 664.73344pt x 655.69969pt>
 File: imagenes/Apendice/03_Nodos_C.jpg Graphic file (type jpg)
 <use imagenes/Apendice/03_Nodos_C.jpg>
 Package pdftex.def Info: imagenes/Apendice/03_Nodos_C.jpg  used on input line 1
@@ -3691,7 +3696,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
  [166 <./imagenes/Apendice/02_Nodos_B.jpg>]
-<imagenes/Apendice/04_Nodos_D.jpg, id=2601, 603.0028pt x 649.67719pt>
+<imagenes/Apendice/04_Nodos_D.jpg, id=2602, 603.0028pt x 649.67719pt>
 File: imagenes/Apendice/04_Nodos_D.jpg Graphic file (type jpg)
 <use imagenes/Apendice/04_Nodos_D.jpg>
 Package pdftex.def Info: imagenes/Apendice/04_Nodos_D.jpg  used on input line 2
@@ -3701,7 +3706,7 @@ Package pdftex.def Info: imagenes/Apendice/04_Nodos_D.jpg  used on input line 2
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [167 <./imagenes/Apendice/03_Nodos_C.jpg>]
-<imagenes/Apendice/05_Nodos_E.jpg, id=2607, 609.02531pt x 657.2053pt>
+<imagenes/Apendice/05_Nodos_E.jpg, id=2608, 609.02531pt x 657.2053pt>
 File: imagenes/Apendice/05_Nodos_E.jpg Graphic file (type jpg)
 <use imagenes/Apendice/05_Nodos_E.jpg>
 Package pdftex.def Info: imagenes/Apendice/05_Nodos_E.jpg  used on input line 3
@@ -3721,14 +3726,14 @@ E.jpg>]
 \openout2 = `apendices/anexo1.aux'.
 
  (./apendices/anexo1.tex
-<imagenes/Anexos/01_Seleccion_Percepcion.jpg, id=2629, 284.56313pt x 396.7322pt
+<imagenes/Anexos/01_Seleccion_Percepcion.jpg, id=2630, 284.56313pt x 396.7322pt
 >
 File: imagenes/Anexos/01_Seleccion_Percepcion.jpg Graphic file (type jpg)
 <use imagenes/Anexos/01_Seleccion_Percepcion.jpg>
 Package pdftex.def Info: imagenes/Anexos/01_Seleccion_Percepcion.jpg  used on i
 nput line 6.
 (pdftex.def)             Requested size: 227.6508pt x 317.38617pt.
-<imagenes/Anexos/02_Seleccion_Estructura.jpg, id=2630, 289.83281pt x 397.485pt>
+<imagenes/Anexos/02_Seleccion_Estructura.jpg, id=2631, 289.83281pt x 397.485pt>
 
 File: imagenes/Anexos/02_Seleccion_Estructura.jpg Graphic file (type jpg)
 <use imagenes/Anexos/02_Seleccion_Estructura.jpg>
@@ -3739,7 +3744,7 @@ nput line 15.
 
 
  <./imagenes/Anexos/01_Seleccion_Percepcion.jpg>]
-<imagenes/Anexos/03_Seleccion_Procesamiento.jpg, id=2636, 274.77657pt x 386.945
+<imagenes/Anexos/03_Seleccion_Procesamiento.jpg, id=2637, 274.77657pt x 386.945
 62pt>
 File: imagenes/Anexos/03_Seleccion_Procesamiento.jpg Graphic file (type jpg)
 <use imagenes/Anexos/03_Seleccion_Procesamiento.jpg>
@@ -3752,7 +3757,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
  [174 <./imagenes/Anexos/02_Seleccion_Estructura.jpg>]
-<imagenes/Anexos/04_Seleccion_Motores.jpg, id=2641, 311.66437pt x 386.94562pt>
+<imagenes/Anexos/04_Seleccion_Motores.jpg, id=2642, 311.66437pt x 386.94562pt>
 File: imagenes/Anexos/04_Seleccion_Motores.jpg Graphic file (type jpg)
 <use imagenes/Anexos/04_Seleccion_Motores.jpg>
 Package pdftex.def Info: imagenes/Anexos/04_Seleccion_Motores.jpg  used on inpu
@@ -3781,7 +3786,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: 69DD5583218B148D0AAA2EE17501A642;12003.
+(rerunfilecheck)             Checksum: DA11ACBDB6881D6B5A38445D79ADB7E1;12002.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3808,10 +3813,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12140 strings out of 492609
- 199029 string characters out of 6132833
- 316747 words of memory out of 5000000
- 14871 multiletter control sequences out of 15000+600000
+ 12139 strings out of 492609
+ 199014 string characters out of 6132833
+ 316748 words of memory out of 5000000
+ 14870 multiletter control sequences out of 15000+600000
  15535 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,45p,1701b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3836,10 +3841,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (220 pages, 12350131 bytes).
+Output written on Principal.pdf (220 pages, 12350378 bytes).
 PDF statistics:
- 2876 PDF objects out of 2984 (max. 8388607)
- 2434 compressed objects within 25 object streams
+ 2877 PDF objects out of 2984 (max. 8388607)
+ 2435 compressed objects within 25 object streams
  695 named destinations out of 1000 (max. 500000)
  1897 words of extra memory for PDF output out of 10000 (max. 10000000)
 
