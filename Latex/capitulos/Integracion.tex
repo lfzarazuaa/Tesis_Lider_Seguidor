@@ -3,9 +3,21 @@
 %\blindtext
 \section{Implementación del Área Funcional Estructura}
 
-La resolución de está área funcional estuvo relacionada con el armado del robot, que como ya se había mencionado posteriormente en capítulos pasados, está área funcional tenía como requerimiento alberga a todas las demás áreas funcionales que conforma a cada robot, lo cual no presentó mayor dificultad porque cada robot ya viene diseñado con tal objetivo para únicamente centrarse en armar.
+La resolución de esta área funcional estuvo relacionada con el armado del robot, que como ya se había mencionado anteriormente en capítulos pasados, está área funcional tenía como requerimiento albergar a todas las demás áreas funcionales, lo cual no presentó mayor dificultad porque cada robot ya viene diseñado cumpliendo con el objetivo de centrarse en armar y aplicar el esquema líder-seguidor, sin realizar un diseño exhaustivo del sistema mecánico.
+\subsection{Recomendaciones a considerar}
 
-A continuación se detalla cada parte del proceso.
+Para el armado de estructura y de las partes electrónicas se siguieron las instrucciones tal y como se indican en el manual de ensamble del Turtlebot 3 burger \cite{e-Manual-structure}, con algunos consejos que a continuación se mencionan.
+
+\begin{itemize}
+	\item Antes de armar el Turtlebot 3 burger tener todo el software de inicio instalado.
+	\item En el caso particular de la Raspberry Pi 3 usar un cargador de 5.0V a 2A (al menos) para instalar el sistema operativo.
+	\item Tener un desarmador imantando como el proporcionado que sujete bien los tornillos.
+	\item Ir verificando que cada capa este bien sujetada.
+	\item Hacer las pruebas de hardware para cada capa.
+	\item Colocar de manera correcta todos los cables de conexión por los orificios indicados.
+	\item Armarla en un lugar seguro en cual no pierdan piezas pequeñas.
+	\item Consultar el video de armado para un mejor armado.
+\end{itemize}
 
 \subsection{Armado de los robots móviles}
 
@@ -17,7 +29,7 @@ A continuación se detalla cada parte del proceso.
 	\label{fig:Figura_Caja_Componentes}
 \end{figure}
 
-Los componentes del turtlebot3 burger vienen en 4 cajas enumeradas y mostradas en la Figura \ref{fig:Figura_Caja_Componentes}, cada caja, con distintas piezas y componentes. En la \textit{caja 1} como se muestra en la Figura \ref{fig:Figura_Caja_1}, viene una tarjeta microSD de 16GB, una tarjeta Raspberry Pi 3, un par de motores Dynamixel y una tarjeta OpenCR Cortex M7. En la \textit{caja 2} mostrada en la Figura \ref{fig:Figura_Caja_2} viene una bateria LiPo junto con su cargador, un desarmador, un sensor LIDAR, un conector USB2LDS y soportes para pcb's. En la \textit{caja 3} como se muestra en la Figura \ref{fig:Figura_Caja_3} vienen todos los pisos del robot denominados ``Waffle - Plate". En la \textit{caja 4} mostrada en la Figura \ref{fig:Figura_Caja_4} viene el sistema de tracción, es decir, las llantas, sus respectivas ruedas, así como los tornillos y piezas de ensamble de todo el robot, cables y una rueda loca.
+Los componentes del Turtlebot 3 burger vienen en 4 cajas enumeradas y mostradas en la Figura \ref{fig:Figura_Caja_Componentes}, cada caja cuenta con distintas piezas y componentes. En la \textit{caja 1} como se muestra en la Figura \ref{fig:Figura_Caja_1}, viene una tarjeta microSD de 16GB, una tarjeta Raspberry Pi 3, un par de motores Dynamixel y una tarjeta OpenCR Cortex M7. En la \textit{caja 2} mostrada en la Figura \ref{fig:Figura_Caja_2} viene una batería LiPo junto con su cargador, un desarmador, un sensor LIDAR, un conector USB2LDS y soportes para pcb's. En la \textit{caja 3} como se muestra en la Figura \ref{fig:Figura_Caja_3} vienen todos los pisos del robot denominados ``Waffle - Plate". En la \textit{caja 4} mostrada en la Figura \ref{fig:Figura_Caja_4} viene el sistema de tracción, es decir, las llantas, sus respectivas ruedas, así como los tornillos y piezas de ensamble de todo el robot, cables y una rueda loca.
 
 \begin{figure}[H]
 	\centering
@@ -52,7 +64,7 @@ Además de estas cuatro cajas, también viene en una caja más no numerada donde vi
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg}}
-	\caption{Fuente de voltaje para bateria LiPo.}
+	\caption{Fuente de voltaje para batería LiPo.}
 	\label{fig:Figura_Fuente_de_carga}
 \end{figure}
 
@@ -73,7 +85,7 @@ La primera parte del armado consistió en unir cada uno de los pisos con ayuda de
 	\label{fig:Figura_Wafles_Ensamblados}
 \end{figure}
 
-Los problemas que en esta parte se presentaron fueron que a pesar de que en el instructivo de armado viene paso por paso como van las piezas y cada una de las tapas, muchas veces este no era tan claro aunado a que todas las partes del robot son muy parecidas, dando lugar a piezas mal colocadas y por ende mal ensambladas a la hora de unir cada uno de los pisos.
+Los problemas que se presentaron en esta parte fueron que a pesar de que en el instructivo de armado viene paso por paso como van las piezas y cada una de las tapas, muchas veces este no era tan claro aunado a que todas las partes del robot son muy parecidas, dando lugar a piezas mal colocadas y por ende mal ensambladas a la hora de unir cada uno de los pisos.
 
 %%Ensamble del robot.
 \begin{figure}[H]
@@ -83,25 +95,10 @@ Los problemas que en esta parte se presentaron fueron que a pesar de que en el i
 	\label{fig:Figura_Ensamble_Robot}
 \end{figure}
 
-\subsection{Instrucciones de Armado}
-
-Para el armado de estructura y de las partes electrónicas se siguieron las instrucciones tal y como se indican el manual de ensamble del turtlebot3 burger \cite{e-Manual-structure}, con algunos consejos que a continuación se mencionan.
-
-\begin{itemize}
-	\item Antes de armar el turtlebot3 burger tener todo el software de inicio instalado.
-	\item En el caso particular de la Raspberry Pi 3 usar un cargador de 5.0V a 2A para instalar el sistema operativo.
-	\item Tener un desarmador imantando como el proporcionado que sujete bien los tornillos.
-	\item Ir verificando que cada capa este bien sujetada.
-	\item Hacer las pruebas de hardware para cada capa.
-	\item Colocar de manera correcta todos los cables de conexión por los orificios indicados.
-	\item Armarla en un lugar seguro en cual no pierdan piezas pequeñas.
-	\item Consultar el video de armado para un mejor armado.
-\end{itemize}
-
 \subsection{Resultados del proceso de armado}
 
-En las Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura_Piso_3} y \ref{fig:Figura_Ensamble_Final} se puede observar como se ve en físico cada uno del los pisos del turtlebot3 burger así como el orden en el que fueron ensamblados.
-.
+En las Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura_Piso_3} y \ref{fig:Figura_Ensamble_Final} se puede observar como se ve en físico cada uno del los pisos del Turtlebot 3 burger así como el orden en el que fueron ensamblados.
+
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/10_Piso_1.jpg}}
@@ -131,29 +128,30 @@ En las Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura
 	\label{fig:Figura_Ensamble_Final}
 \end{figure}
 
-Cabe destacar que el armado de cada robot representó un trabajo muy minucioso ya que cada tornillo y tuerca tenían que estar en el lugar adecuado, cada piso y componente por lo mismo la tarea duró aproximadamente 5 horas de trabajo contínuo para cada turtlebot3 burger.
-
+Cabe destacar que el armado de cada robot representó un trabajo muy minucioso, ya que cada tornillo y tuerca tenían que estar en el lugar adecuado, cada piso y componente bien encajados y posicionados dificultándose porque algunas piezas eran de ensamble múltiple por lo cual si una se movía se tenia que reiniciar el proceso y como eran muy pequeñas eran difíciles de insertar y se perdían fácilmente. Fue por estas razones que la tarea de ensamble duró aproximadamente 5 horas de trabajo continuo para cada Turtlebot 3 burger. Como se muestra en la Figura \ref{fig:Figura_Robots_Lider_Seguidor} el sensor LIDAR tuvo que ser bien posicionado antes de terminar de montarlo debido a su conexión con el piso inferior inmediato.
 
 %%Robots Líder ? Seguidor.
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=2.0]{imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg}}
-	\caption{Robot líder y robot seguidor seguidor.}
+	\caption{Robot líder y robot seguidor.}
 	\label{fig:Figura_Robots_Lider_Seguidor}
 \end{figure}
 
 \subsection{Verificación de ensamble del sistema}
 
-Una vez que el robot estuvo armado verificamos que todo estuviera bien conectado, es decir, que la batería LiPo alimentara a las dos tarjetas de procesamiento (Raspberry y OpenCR) y que estas alimentaran a los subsistemas que de ellas dependen como lo son los actuadores y el sensor LIDAR. El trabajo en conjunto del ensamble del robot junto con la programación e instalación de Raspbian a la Raspberry Pi 3.
+Una vez que el robot estuvo armado verificamos que todo estuviera bien conectado, es decir, que la batería LiPo alimentara a las dos tarjetas de procesamiento la Raspberry y la OpenCR y que estas alimentaran a los subsistemas que de ellas dependen como lo son los actuadores y el sensor LIDAR. El trabajo en conjunto del ensamble del robot junto con la programación e instalación del sistema operativo Raspbian a la Raspberry Pi 3 también nos proporcionó herramientas de validación para saber el estado de los elementos conectados a los móviles.
 
 \section{Implementación del Área Funcional Movimiento}
 
-Esta área funcional es la encargada de la unión de la estructura junto con su configuración mecánica. En la implementación se utilizaron 2 actuadores Dynamixel por cada robot conectados a una tarjeta OpenCR denominada tarjeta de control. Para ajustar el PID encargado de mantener estable las velocidades de los robots no fue necesario realzar un calculo de valores, ya que los motores contaban con la opción de autotune que permitía de forma automática obtener los valores de PID necesarios para lograr un control de velocidad y estos ya estaban previamente configurados, con un valor \textbf{P} de 1.1, \textbf{D} de 0.03 e \textbf{I} de 0.11.
+Esta área funcional es la encargada de la unión de la estructura junto con su configuración mecánica. En la implementación se utilizaron 2 actuadores Dynamixel por cada robot conectados a una tarjeta OpenCR denominada tarjeta de control. Para ajustar el controlador PID encargado de mantener estable las velocidades de los robots no fue necesario realzar un calculo de valores, ya que los motores contaban con la opción de autotune que permitía de forma automática obtener los valores de PID necesarios para lograr un control de velocidad y estos ya estaban previamente configurados, con un valor \textbf{P} de 1.1, \textbf{D} de 0.03 e \textbf{I} de 0.11. 
+
+En la Figura \ref{fig:Figura_Area movimientos} se muestra el ensamble mínimo para poder verificar el área funcional de movimiento usando los botones de la tarjeta OpenCR para controlar el movimiento del móvil.
 
 \begin{figure}[H]
 	\centering
-    \fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/11_Piso_2.jpg}}
-	\caption{Area funcional movimiento, que cuenta con los dos motores Dynamixel y la OpenCR.}
+	\fbox{\includegraphics[scale=0.30]{imagenes/Implementacion/Estructura/11_Piso_2.jpg}}
+	\caption{Implementación del área funcional movimiento.}
 	\label{fig:Figura_Area movimientos}
 \end{figure}
 
