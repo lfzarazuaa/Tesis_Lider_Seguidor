@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  17 OCT 2019 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  17 OCT 2019 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2934,8 +2934,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--296
 
  []
 
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
+LaTeX Info: Redefining \. on input line 298.
+LaTeX Info: Redefining \% on input line 298.
 [116]
 LaTeX Info: Redefining \. on input line 326.
 LaTeX Info: Redefining \% on input line 326.
@@ -3834,7 +3834,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (220 pages, 12349233 bytes).
+Output written on Principal.pdf (220 pages, 12349293 bytes).
 PDF statistics:
  2863 PDF objects out of 2984 (max. 8388607)
  2421 compressed objects within 25 object streams

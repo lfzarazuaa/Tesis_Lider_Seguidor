@@ -281,24 +281,24 @@ Para verificar su correcto funcionamiento solamente se conectó al móvil siguiend
 
 \subsection{Pasos previos}
 
-La sección de procesamiento requiere una configuración previa de las tarjetas y de la computadora remota. Todos los pasos que son necesarios para tener en funcionamiento los turtlebot3 burger se encuentran en su manual online, a continuación, se presentan algunos consejos de implementación o pasos adicionales que se tuvieron que realizar.
+La sección de procesamiento requiere una configuración previa de las tarjetas y de la computadora remota. Todos los pasos que son necesarios para tener en funcionamiento los Turtlebot 3 burger se encuentran en su manual online, a continuación, se presentan algunas recomendaciones de implementación o pasos adicionales que se tuvieron que realizar.
 
-En la computadora remota se instaló Ubuntu16.04, muchos son los tutoriales que explican cómo hacerlo y dependiendo de la computadora puede ser más o menos complejo, una buena fuente de referencia es la de la página web linuxtechi \cite{install_ubuntu}. La mejor forma de instalar ROS sobre la computadora remota es con el método que propone el manual online de los turtlebot3, todo el proceso es automático, ya que a diferencia de los métodos convencionales donde es necesario ejecutar una seria de comandos manualmente, este manual proporciona un script que va ejecutando los pasos uno después de otro hasta finalizar la instalación, además de que descarga todos los paquetes necesarios para el funcionamiento de los robots al ejecutar todas las instrucciones que nos dice.
+En la computadora remota se instaló Ubuntu16.04, muchos son los tutoriales que explican cómo hacerlo y dependiendo de la computadora puede ser más o menos complejo, una buena fuente de referencia es la de la página web linuxtechi \cite{install_ubuntu}. La mejor forma de instalar ROS sobre la computadora remota es con el método que propone el manual online de los Turtlebot 3 burger, todo el proceso es automático, ya que a diferencia de los métodos convencionales donde es necesario ejecutar una serie de comandos manualmente, este manual proporciona un script que va ejecutando los pasos uno después de otro hasta finalizar la instalación, además de que descarga todos los paquetes necesarios para el funcionamiento de los robots al ejecutar todas las instrucciones que nos dice.
 
-Para la Raspberry Pi 3 existen dos sistemas operativos compatibles con ROS, Raspbian y UbuntuMate, para este caso se optó por Raspbian ya que la forma de configurar el SSH está bien establecida en la documentación oficial de la Raspberry Pi \cite{ssh}, además en el mismo manual , se proporciona una versión de Raspbian con ROS instalado, lo cual reduce en aproximadamente en 2 horas el tiempo de instalación por tarjeta.
+Para la Raspberry Pi 3 existen dos sistemas operativos compatibles con ROS, Raspbian y UbuntuMate, para este caso se optó por Raspbian ya que la forma de configurar el SSH está bien establecida en la documentación oficial de la Raspberry Pi \cite{ssh}, además en el mismo manual online, se proporciona una versión de Raspbian con ROS instalado, lo cual reduce en aproximadamente en 2 horas el tiempo de instalación por tarjeta.
 
-Para la configuración de OpenCR, igual existen dos formas de configurarla, la primera por medio de de la computadora remota y sirve cuando se está ensamblando por primera vez el turtlebot3 burger y la segunda directo de la Raspberry Pi 3, la segunda opción es la mas sencilla cuando ya se tiene ensamblado el turtlebot3 burger pues no se tiene que desconectar. Para llevar a cabo este proceso en la Raspberry Pi 3 la cual está conectada por USB a la tarjeta OpenCR, se ejecuta el comando siguiente, el cual  descarga e instala el programa que va sobre la tarjeta OpenCR:\\
+Para la configuración de la tarjeta OpenCR, igual existen dos formas de configurarla, la primera por medio de la computadora remota y sirve cuando se está ensamblando por primera vez el Turtlebot 3 burger y la segunda directo de la Raspberry Pi 3, la segunda opción es la más sencilla cuando ya se tiene ensamblado el Turtlebot 3 burger pues no se tiene que desconectar. Para llevar a cabo este proceso en la Raspberry Pi 3 la cual está conectada por USB a la tarjeta OpenCR, se ejecuta el comando siguiente, el cual descarga e instala el programa que va sobre la tarjeta OpenCR:\\
 
 https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1
 /latest/opencr\_update.tar.bz2\&\& tar -xvf opencr\_update.tar.bz2
 \&\& cd ./opencr\_update \&\& ./update.sh \$OPENCR\_PORT \$OPENCR\_MODEL.opencr \&\& cd ..
 \\
 
-Para desarrollar la aplicación de una forma más fluida es necesario tener conocimientos previos en ROS y sus extensiones que facilitan las tareas de simulación y visualización de información como lo son Gazebo, Rviz y RQt. Todas estas extensiones se instalan predeterminadamente si se elige instalar la versión completa de ROS por lo que es recomendable hacerlo en la computadora principal. Las herramientas de ROS más usadas en el proyecto fueron los mensajes (messages), suscriptores (subscribers) y publicadores (publishers), y por medio de estas herramientas es como  podemos modularizar y compartir información entre nodos.
+Para desarrollar la aplicación de una forma más fluida es necesario tener conocimientos previos en ROS y sus extensiones que facilitan las tareas de simulación y visualización de información como lo son Gazebo, Rviz y RQt. Todas estas extensiones se instalan predeterminadamente si se elige instalar la versión completa de ROS por lo que es recomendable hacerlo en la computadora principal. Las herramientas de ROS más usadas en el proyecto fueron los mensajes (messages), suscriptores (subscribers) y publicadores (publishers), y por medio de estas herramientas es como podemos modularizar y compartir información entre nodos.
 
 Lo siguiente en la implementación fue hacer el modelo 3D del ambiente en que los robots virtuales serian simulados. Para ello se usó Gazebo, y los pasos para hacerlo fueron, en la opción de editar se seleccionó la figura que se asemeja a una pared, se trazó con las medias correctas y después en las opciones de cada una de las paredes, fue modificado su aspecto visual y altura, finalmente se guardó el diseño.
 
-También fue necesario configurar RViz para poder visualizar los datos de los dos robots en tiempo de ejecución, la manera de configurarlo fue editar el archivo base que proporcionan las librerías de Turtlebot3 burger y eliminar algunos tópicos que no eran necesarios para esta aplicación, los cuales son:
+También fue necesario configurar RViz para poder visualizar los datos de los dos robots en tiempo de ejecución, la manera de configurarlo fue editar el archivo base que proporcionan las librerías del Turtlebot 3 burger y eliminar algunos tópicos que no eran necesarios para esta aplicación, los cuales son:
 
 \begin{itemize}
 	\item /cost\_map
@@ -313,7 +313,7 @@ Además, se agregaron los tópicos del seguidor, que a continuación se enlistan:
 	\item /tb3\_1/amcl\_particles
 \end{itemize}
 
-Adicionalmente con ayuda de AMCL, una de las librerías de ROS, se realiza el mapa del ambiente virtual y del espacio real, esto con el fin de usarlo para posteriormente obtener su posición con ayuda de los sensores. Los comandos, que también estan presentes en el manual y se ejecutan sobre la terminal de la computadora remota son:
+Adicionalmente con ayuda del AMCL, una de las librerías de ROS, se realiza el mapa del ambiente virtual y del espacio real, esto con el fin de usarlo para posteriormente obtener su posición con ayuda de los sensores. Los comandos, que también están presentes en el manual y se ejecutan sobre la terminal de la computadora remota son:
 
 \begin{itemize}
 	\item roslaunch turtlebot3\_slam turtlebot3\_slam.launch slam\_methods:=gmapping
