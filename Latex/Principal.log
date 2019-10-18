@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  18 OCT 2019 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  18 OCT 2019 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3453,12 +3453,12 @@ LaTeX Info: Redefining \% on input line 61.
 ]
 Cap\'{\i }tulo 4.
 
-Underfull \hbox (badness 3954) in paragraph at lines 24--24
+Underfull \hbox (badness 3954) in paragraph at lines 32--32
 []|\OT1/cmr/m/n/10.95 Adaptador de HD-MI a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []|\OT1/cmr/m/n/10.95 24,808.75
  []
 
@@ -3466,20 +3466,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [149]
-Underfull \vbox (badness 1057) has occurred while \output is active []
+Underfull \vbox (badness 5504) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
  [150]
-Overfull \hbox (11.96872pt too wide) in paragraph at lines 99--112
+Overfull \hbox (11.96872pt too wide) in paragraph at lines 107--120
  [][] 
  []
 
 
 Underfull \vbox (badness 4454) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
  [151])
 LaTeX Info: Redefining \. on input line 62.
 LaTeX Info: Redefining \% on input line 62.
@@ -3815,7 +3815,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  12139 strings out of 492609
  199014 string characters out of 6132833
- 316748 words of memory out of 5000000
+ 316751 words of memory out of 5000000
  14870 multiletter control sequences out of 15000+600000
  15535 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3841,7 +3841,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (220 pages, 12350378 bytes).
+Output written on Principal.pdf (220 pages, 12350517 bytes).
 PDF statistics:
  2877 PDF objects out of 2984 (max. 8388607)
  2435 compressed objects within 25 object streams
