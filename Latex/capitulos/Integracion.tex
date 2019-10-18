@@ -342,7 +342,7 @@ Posteriormente se seleccionó el tipo de conexión como inalámbrica como se muestr
 	\label{fig:Figura_Tipo_de_conexion}
 \end{figure}
 
-Y por último se editaron las pestañas de las configuraciones inalámbricas y de seguridad como se muestran las Figuras \ref{fig:Figura_Configuracion_de_nombre} y \ref{fig:Figura_Configuracion_de_seguridad}.
+Y por último se editaron las pestañas de las configuraciones inalámbricas y de seguridad como se muestran en las Figuras \ref{fig:Figura_Configuracion_de_nombre} y \ref{fig:Figura_Configuracion_de_seguridad}.
 
 %Ilustración 3: Configuración del Modo y Nombre.
 \begin{figure}[H]
@@ -360,7 +360,7 @@ Y por último se editaron las pestañas de las configuraciones inalámbricas y de s
 	\label{fig:Figura_Configuracion_de_seguridad}
 \end{figure}
 
-Una vez establecida la comunicación se procedió a realizar pruebas con el propósito de determinar si la comunicación fue establecida correctamente. Para ellos se utilizó el comando ping de la terminal de Linux que envía paquetes de forma continua a cada turtlebot3 burger como se muestra en la Figura \ref{fig:Figura_Comando_ping}.
+Una vez establecida la comunicación se procedió a realizar pruebas con el propósito de determinar si la comunicación fue establecida correctamente. Para ellos se utilizó el comando ping de la terminal de Linux que envía paquetes de forma continua a cada Turtlebot 3 burger como se muestra en la Figura \ref{fig:Figura_Comando_ping}.
 
 %Ilustración 5: Muestra del resultado correcto de la ejecución del comando ping.
 \begin{figure}[H]
@@ -370,9 +370,9 @@ Una vez establecida la comunicación se procedió a realizar pruebas con el propós
 	\label{fig:Figura_Comando_ping}
 \end{figure}
 
-Como se pudo apreciar en la Figura \ref{fig:Figura_Comando_ping}, la comunicación fue establecida correctamente ya que se recibieron paquetes correctamente. Finalmente se prueba la comunicación de algunos tópicos simples, para verificar que la configuración entre la red y ROS es correcta, para ello se inicializa por medio de la computadora remota un turtlebot3 burger.
+Como se pudo apreciar en la Figura \ref{fig:Figura_Comando_ping}, la comunicación fue establecida correctamente, ya que se recibieron paquetes correctamente. Finalmente se prueba la comunicación de algunos tópicos simples para verificar que la configuración entre la red y ROS es correcta, para ello se inicializa por medio de la computadora remota un Turtlebot 3 burger.
 
-Además con apoyo de RQt, se puede visualizó el valor actual de algunos tópicos, en este caso se eligió el estado de la batería.
+Además con apoyo de RQt, se puede visualizar el valor actual de algunos tópicos, en este caso se eligió el estado de la batería como se muestra en la Figura \ref{RQt mostrando los datos del tópico battery.}.
 
 %Ilustración 6: RQt mostrando los datos del tópico battery.
 \begin{figure}[H]
@@ -382,7 +382,7 @@ Además con apoyo de RQt, se puede visualizó el valor actual de algunos tópicos, 
 	\label{fig:Figura_RQt_topico_bateria}
 \end{figure}
 
-Para la implementación de los algoritmos de control, todos fueron programados en el lenguaje Python con la lógica que fue propuesta en los diagramas de flujo, posteriormente fueron almacenados en un mismo paquete al que llamamos LiderSeguidor, con el objetivo de mantener un orden de la información para realizar la ejecución del algoritmo, el cual fue creado especialmente para este proyecto. Para manejar la información de forma independiente fue necesario agrupar por namespaces todos los tópicos propios de cada uno de los turtlebot3 burger, ya que en un principio cada turtlebot3 burger posee tópicos con el mismo nombre, en el caso de no usarse el namespace para nombrar los tópicos de forma distinta resulta muy complejo controlar los robots de forma individual ya que no se puede saber si la información se le enviá al líder o al seguidor.
+Para la implementación de los algoritmos de control, todos fueron programados en el lenguaje Python con la lógica que fue propuesta en los diagramas de flujo, posteriormente fueron almacenados en un mismo paquete al que llamamos esquema_lider_seguidor, con el objetivo de mantener un orden de la información para realizar la ejecución del algoritmo, el cual fue creado especialmente para este proyecto. Para manejar la información de forma independiente fue necesario agrupar por namespaces todos los tópicos propios de cada uno de los Turtlebot 3 burger, debido a que en un principio cada Turtlebot 3 burger posee tópicos con el mismo nombre, en el caso de no usarse el namespace para nombrar los tópicos de forma distinta resulta muy complejo controlar los robots de forma individual, ya que no se puede saber si la información se le envía al líder o al seguidor.
 
 \subsection{Prueba A: Verificación de la matriz de fuerza}
 
