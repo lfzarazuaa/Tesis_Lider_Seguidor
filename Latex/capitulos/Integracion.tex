@@ -372,7 +372,7 @@ Una vez establecida la comunicación se procedió a realizar pruebas con el propós
 
 Como se pudo apreciar en la Figura \ref{fig:Figura_Comando_ping}, la comunicación fue establecida correctamente, ya que se recibieron paquetes correctamente. Finalmente se prueba la comunicación de algunos tópicos simples para verificar que la configuración entre la red y ROS es correcta, para ello se inicializa por medio de la computadora remota un Turtlebot 3 burger.
 
-Además con apoyo de RQt, se puede visualizar el valor actual de algunos tópicos, en este caso se eligió el estado de la batería como se muestra en la Figura \ref{RQt mostrando los datos del tópico battery.}.
+Además con apoyo de RQt, se puede visualizar el valor actual de algunos tópicos, en este caso se eligió el estado de la batería como se muestra en la Figura \ref{fig:Figura_RQt_topico_bateria}.
 
 %Ilustración 6: RQt mostrando los datos del tópico battery.
 \begin{figure}[H]
@@ -382,11 +382,11 @@ Además con apoyo de RQt, se puede visualizar el valor actual de algunos tópicos,
 	\label{fig:Figura_RQt_topico_bateria}
 \end{figure}
 
-Para la implementación de los algoritmos de control, todos fueron programados en el lenguaje Python con la lógica que fue propuesta en los diagramas de flujo, posteriormente fueron almacenados en un mismo paquete al que llamamos esquema_lider_seguidor, con el objetivo de mantener un orden de la información para realizar la ejecución del algoritmo, el cual fue creado especialmente para este proyecto. Para manejar la información de forma independiente fue necesario agrupar por namespaces todos los tópicos propios de cada uno de los Turtlebot 3 burger, debido a que en un principio cada Turtlebot 3 burger posee tópicos con el mismo nombre, en el caso de no usarse el namespace para nombrar los tópicos de forma distinta resulta muy complejo controlar los robots de forma individual, ya que no se puede saber si la información se le envía al líder o al seguidor.
+Para la implementación de los algoritmos de control, todos fueron programados en el lenguaje Python con la lógica que fue propuesta en los diagramas de flujo, posteriormente fueron almacenados en un mismo paquete al que llamamos esquema\_lider\_seguidor, con el objetivo de mantener un orden de la información para realizar la ejecución del algoritmo, el cual fue creado especialmente para este proyecto. Para manejar la información de forma independiente fue necesario agrupar por namespaces todos los tópicos propios de cada uno de los Turtlebot 3 burger, debido a que en un principio cada Turtlebot 3 burger posee tópicos con el mismo nombre, en el caso de no usarse el namespace para nombrar los tópicos de forma distinta resulta muy complejo controlar los robots de forma individual, ya que no se puede saber si la información se le envía al líder o al seguidor.
 
 \subsection{Prueba A: Verificación de la matriz de fuerza}
 
-El objetivo de esta prueba fue verificar que la matriz fuese hecha correctamente, se prueba con un código que reconstruye la trayectoria a partir de la matriz, si la trayectoria tiene la forma de la original se puede asegurar que fue hecha correctamente. Las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C} muestran la reconstrucción, mientras que las \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C}, muestran la trayectoria original.
+El objetivo de esta prueba fue verificar que la matriz fuera hecha correctamente, esta se prueba con un código que reconstruye la trayectoria a partir de la matriz, si la trayectoria tiene la forma de la original se puede asegurar que fue hecha correctamente.Para este algoritmo se toman los puntos y se grafican a la dirección que indican ir, el conjunto de todos las direcciones graficadas generan un aproximado de la trayectoria original. Las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C} muestran la reconstrucción, mientras que las \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B} y \ref{fig:Figura_Reconstruccion_trayectoria_C}, muestran la trayectoria original.
 
 %Ilustración 7. Reconstrucción de la trayectoria A.
 \begin{figure}[H]
@@ -437,11 +437,11 @@ El objetivo de esta prueba fue verificar que la matriz fuese hecha correctamente
 \end{figure}
 
 \subsubsection{Análisis de resultados}
-De las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B}, \ref{fig:Figura_Reconstruccion_trayectoria_C}, \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B}, \ref{fig:Figura_Puntos_de_trayectoria_C} se logró observar que la reconstrucción conserva la forma de la trayectoria, lo cual indica que las matrices fueron hechas de forma correcta.
+De las Figuras \ref{fig:Figura_Reconstruccion_trayectoria_A}, \ref{fig:Figura_Reconstruccion_trayectoria_B}, \ref{fig:Figura_Reconstruccion_trayectoria_C}, \ref{fig:Figura_Puntos_de_trayectoria_A}, \ref{fig:Figura_Puntos_de_trayectoria_B} y \ref{fig:Figura_Puntos_de_trayectoria_C} se logró observar que la reconstrucción conserva la forma de la trayectoria, lo cual indica que las matrices fueron hechas de forma correcta.
 
 \subsection{Prueba B: Validar el seguimiento de trayectoria}
 
-Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del seguimiento de trayectoria. La prueba consistió en el usó del ambiente de simulación hecho en Gazebo para saber si funcionaba correctamente, en cuanto a la simulación se hizo la confirmación, ya que se pudo apreciar visualmente como el robot seguía la trayectoria, posteriormente se procedió a la prueba física. Una vez hecho esto se ejecutó el programa con ``roslaunch LiderSeguidor lider.launch" por medio de la computadora remota e inició la recabación de las posiciones con el comando ,``rosrecord tb3\_0/amcl\_pose tb3\_1/amcl\_pose", los datos que se recabaron son usados para calcular el error que existe entre los puntos por cuales fue definida la trayectoria y los puntos por los que el robot pasó, estos se muestran en las figuras 13, 14 y 15.
+Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del seguimiento de trayectoria. La prueba consistió en el uso del ambiente de simulación hecho en Gazebo para saber si funcionaba correctamente, en cuanto a la simulación se hizo la confirmación del seguimiento de trayectoria, ya que se pudo apreciar visualmente como el robot seguía la trayectoria, posteriormente se procedió a la prueba física. Una vez hecho esto se ejecutó el programa con ''roslaunch esquema\_lider\_seguidor lider.launch" por medio de la computadora remota iniciando la recabación de las posiciones con el comando, ''rosrecord tb3\_0/amcl\_pose tb3\_1/amcl\_pose", los datos que se recabaron fueron usados para calcular el error que existe entre los puntos por cuales fue definida la trayectoria y los puntos por los que el robot pasó, estos se muestran en las Figuras \ref{fig:Figura_Error_lider_A}, \ref{fig:Figura_Error_lider_B} y \ref{fig:Figura_Grafica_posiciones_alcanzadas}.
 
 %Ilustración 13. Error del líder en seguimiento de la trayectoria A.
 \begin{figure}[H]
@@ -469,11 +469,11 @@ Una vez que la matriz de fuerza fue verificada, se procedió con la prueba del se
 
 \subsubsection{Análisis de resultados}
 
-Se puede observar el error disminuir y posteriormente mantenerse dentro de un umbral de 7 cm, lo cual indica que el seguimiento de trayectoria efectivamente es ejecutado y realmente se hace un seguimiento de trayectoria.
+Se puede observar de las Figuras \ref{fig:Figura_Error_lider_A}, \ref{fig:Figura_Error_lider_B} y \ref{fig:Figura_Grafica_posiciones_alcanzadas} como el error disminuye y posteriormente se mantiene dentro de un umbral de 7 cm, lo cual indica que el seguimiento de trayectoria efectivamente es ejecutado y realmente se hace un seguimiento de trayectoria.
 
 \subsection{Prueba C: Validar el algoritmo Líder-Seguidor}
 
-Al realizar pruebas en la simulación del algoritmo líder-seguidor, se notaba como el robot seguidor en ocasiones realizaba los movimientos del líder con un desfase en la posición. Lo que se hizo para lograr un mejor seguimiento de los puntos de coordenada, fue aplicar una condición de distancia mínima (la cual se obtiene empíricamente) para poder cambiar la dirección del móvil una vez actualizada la posición del seguidor, esta condición se aplicó debido a que el algoritmo utilizado en el diseño detallado solo cambia su dirección con base a la actualización de la información, lo cual provoca que el seguidor solo cambie su orientación por el avance que ha tenido el líder, sin verse afectado por su posición actual, al asignar una condición de distancia mínima entonces se logra que en el punto al que cambia su orientación el líder sea el mismo o muy parecido al del seguidor.
+Al realizar pruebas en la simulación del algoritmo líder-seguidor, se notaba como el robot seguidor en ocasiones realizaba los movimientos del líder con un desfase en la posición. Lo que se hizo para lograr un mejor seguimiento de los puntos de coordenada, fue aplicar una condición de distancia mínima (la cual se obtiene empíricamente) para poder permitir cambiar la dirección del móvil una vez actualizada la posición del seguidor, esta condición se aplicó debido a que el algoritmo utilizado en su primera versión solo cambia su dirección con base a la actualización de la información, lo cual provoca que el seguidor solo cambie su orientación por el avance que ha tenido el líder, sin verse afectado por su posición actual, al asignar una condición de distancia mínima entonces se logra que en el punto al que cambia su orientación el líder sea el mismo o muy parecido al que llega el seguidor.
 
 %Ilustración 16. Error del seguidor en la trayectoria A.
 \begin{figure}[H]
@@ -493,7 +493,7 @@ Al realizar pruebas en la simulación del algoritmo líder-seguidor, se notaba com
 
 \subsubsection{Análisis de resultados}
 
-Nuevamente se tomaron datos de posición en este caso del seguidor, obteniendo un error respecto a la trayectoria, dicho error, después de llegar a la trayectoria se mantiene en cierto umbral, validando el seguimiento al líder, el cual a su vez sigue la trayectoria.
+Nuevamente se tomaron datos de posición en este caso del seguidor como se muestra en las Figuras \ref{fig:Figura_Error_Seguidor_A} y \ref{fig:Figura_Error_Seguidor_B}, obteniendo un error respecto a la trayectoria, dicho error, después de llegar a la trayectoria se mantiene en cierto umbral, validando así el seguimiento al líder, el cual a su vez sigue la trayectoria.
 
 \subsection{Prueba D:Validar la evasión de obstáculos}
 
