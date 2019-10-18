@@ -157,13 +157,13 @@ En la Figura \ref{fig:Figura_Area movimientos} se muestra el ensamble mínimo par
 
 \section{Implementación del Área Funcional Percepción}
 
-En la implementación de la tercera área funcional; percepción se utilizan 2 sensores (sensor LIDAR, encoder del actuador) que en conjunto logran percibir el entorno brindando así la posibilidad de conocer la posición de cada robot y determinar si hay un objeto cercano al robot para que este lo pueda esquivar.
+En la implementación de la tercera área funcional; percepción se utilizan 2 sensores el sensor LIDAR y el encoder del actuador que en conjunto logran percibir el entorno brindando así la posibilidad de conocer la posición de cada robot y determinar si hay un objeto cercano al robot para que este lo pueda esquivar.
 
 \subsection{Sensor LIDAR}
 
-El primer sensor involucrado es el sensor LIDAR, y por medio de este sensor se miden las distancias mínimas de cercanía hacia algún objeto (para este proyecto puede ser una pared u obstáculo), para cada uno de los 360 grados que rodean al robot.
+El primer sensor involucrado es el sensor LIDAR, y por medio de este sensor se miden las distancias mínimas de cercanía hacia algún objeto (para este proyecto puede ser una pared u obstáculo), calculando así las distanciás mínimas de cada uno de los 360 grados que rodean al robot.
 
-Para su implementación este sensor fue colocado en la capa superior de cada móvil como se observa en Figura \ref{fig:Figura_Montaje_LIDAR}, destacando que cada uno de estos sensores es independiente del otro y al verificar su correcto funcionamiento en robot se deben aplicar los mismos pasos para el otro robot, posteriormente se realizaron las pruebas en la interfaz gráfica proporcionada por el fabricante (previamente realizando la configuración básica del turtlebot3 burger a verificar, descrita a fondo en procesamiento) y con los resultados de la interfaz gráfica la cual muestra las distancias del sensor LIDAR reflejadas en un mapa 2D, podemos comprobar que el sensor esta trabajando correctamente.
+Para su implementación este sensor fue colocado en la capa superior de cada móvil como se observa en Figura \ref{fig:Figura_Montaje_LIDAR}, destacando que cada uno de estos sensores es independiente del otro y al verificar su correcto funcionamiento en el robot se deben aplicar los mismos pasos para el otro robot, posteriormente se realizaron las pruebas en la interfaz gráfica proporcionada por el fabricante (previamente realizando la configuración básica del Turtlebot 3 burger a verificar, descrita a fondo en procesamiento) y con los resultados de la interfaz gráfica la cual muestra las distancias del sensor LIDAR reflejadas en un mapa 2D, podemos comprobar que el sensor está trabajando correctamente.
 
 %%Ilustración 1: Montaje del sensor LIDAR en la estructura
 \begin{figure}[H]
@@ -172,18 +172,18 @@ Para su implementación este sensor fue colocado en la capa superior de cada móvi
 	\caption{Montaje del sensor LIDAR en la estructura.}
 	\label{fig:Figura_Montaje_LIDAR}
 \end{figure}
-Como se puede observar en la Figura  \ref{fig:Figura_Montaje_LIDAR} se debe tener cuidado en la orientación en la que se coloca el sensor LIDAR, colocándolo de tal forma como se muestra en la Figura  \ref{fig:Figura_Montaje_LIDAR}. Esto debido a que el sistema de referencia entre el móvil y los datos arrojados en la interfaz, los cuales son propuestos para que el sensor LIDAR tenga su origen en 0 grados en la parte frontal del móvil, sino respetara está condición provocaría  un desfase en el ángulo lo cual afectaría en la realización del mapa del entorno y que posteriormente se vería reflejado en un desfase angular en los demás móviles que no tuvieran la misma orientación que el móvil con el cual se realizó el escaneo del mapa.
+Como se puede observar en la Figura \ref{fig:Figura_Montaje_LIDAR} se debe tener cuidado en la orientación en la que se coloca el sensor LIDAR, colocándolo de tal forma como se muestra en la Figura \ref{fig:Figura_Montaje_LIDAR}. Esto debido a que el sistema de referencia entre el móvil y los datos arrojados en la interfaz, los cuales son propuestos considerando que el sensor LIDAR tenga su origen en 0 grados en la parte frontal del móvil, si se no respetara está condición provocaría un desfase en el ángulo lo cual afectaría en la realización del mapa del entorno y que posteriormente se vería reflejado en un desfase angular en los demás móviles que no tuvieran la misma orientación que el móvil con el cual se realizó el escaneo del mapa.
 
-Es importante también señalar que el sensor LIDAR como el mostrado en la Figura  \ref{fig:Figura_Sensor_LIDAR_tb3} cuenta al frente con un indicador de fase, el cual le comunica al controlador del LIDAR que ha pasado por el 0 absoluto del sensor, esto se realiza ya que no se sabe certeramente en que posición esta apuntando el  del sensor LIDAR cuando se inicia el escaneo.
+Es importante también señalar que el sensor LIDAR como el mostrado en la Figura \ref{fig:Figura_Sensor_LIDAR_tb3} cuenta al frente con un indicador de fase, el cual le comunica al controlador del LIDAR que ha pasado por el 0 absoluto del sensor, esto se realiza ya que no se sabe certeramente en que posición está apuntando el del sensor LIDAR cuando se inicia el escaneo.
 
-%%Ilustración 2: Sensor LIDAR del Turtlebot3 burger
+%%Ilustración 2: Sensor LIDAR del Turtlebot 3 burger
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.25]{imagenes/Implementacion/02_LIDAR_tb3.jpg}}
-	\caption{Sensor LIDAR del Turtlebot3 burger.}
+	\caption{Sensor LIDAR del Turtlebot 3 burger.}
 	\label{fig:Figura_Sensor_LIDAR_tb3}
 \end{figure}
-Para comprobar que el sensor esta funcionando correctamente se cuenta con un programa que inicializa los nodos necesarios para el funcionamiento básico del robot, el cual comunica el robot con la computadora principal además de obtener y mandar datos al sensor LIDAR y a los motores por medio de la tarjeta OpenCR.
+Para comprobar que el sensor está funcionando correctamente se cuenta con un programa que inicializa los nodos necesarios para el funcionamiento básico del robot, el cual comunica el robot con la computadora principal además de obtener y mandar datos al sensor LIDAR y a los motores por medio de la tarjeta OpenCR.
 
 Las instrucciones para correr esta verificación son las siguientes:
 
@@ -193,7 +193,7 @@ Las instrucciones para correr esta verificación son las siguientes:
 	\item roslaunch turtlebot3\_slam turtlebot3\_slam.launch (En la PC principal)
 \end{itemize}
 
-Al correr estos comandos habiendo configurado correctamente la comunicación por ROS entre el turtlebot3 y la PC principal y estando en la misma red con mismos parámetros se obtuvieron los resultados mostrados en la Figura \ref{fig:Figura_Distancias_LIDAR_RVIZ}, donde los puntos en amarillo son las distancias escaneadas por el LIDAR.
+Al correr estos comandos habiendo configurado correctamente la comunicación por ROS entre el Turtlebot 3 burger y la PC principal, y estando en la misma red con los mismos parámetros se obtuvieron los resultados mostrados en la Figura \ref{fig:Figura_Distancias_LIDAR_RVIZ}, donde los puntos en amarillo son las distancias escaneadas por el LIDAR.
 
 %%Ilustración 3: Distancias del LIDAR en RVIZ
 \begin{figure}[H]
@@ -202,13 +202,15 @@ Al correr estos comandos habiendo configurado correctamente la comunicación por 
 	\caption{Distancias del LIDAR en RVIZ}
 	\label{fig:Figura_Distancias_LIDAR_RVIZ}
 \end{figure}
+
+
 Adicionalmente se pueden ver los valores de las distancias si ejecutamos el comando:
 
 \begin{itemize}
 	\item rqt (En la PC principal)
 \end{itemize}
 
-Al abrirse la ventana como se muestra en la Figura \ref{fig:Figura_RQt_LIDAR_scan} se podrán observar los valores de los mensajes publicados y si se marca la casilla se puede leer y ver su valor en pantalla, para verificar los datos que da el sensor se marca la casilla /scan, la cual si no aparece significa que se tiene problemas en el sensor LIDAR o en la ejecución de los comandos.
+Al abrirse la ventana como se muestra en la Figura \ref{fig:Figura_RQt_LIDAR_scan} se podrán observar los valores de los mensajes publicados y si se marca la casilla se puede leer y ver su valor en pantalla, para verificar los datos que da el sensor se marca la casilla /scan, la cual si no aparece significa que se tiene problemas en el sensor LIDAR o la ejecución de los comandos ha sido incorrecta.
 
 %%Ilustración 4: Visualización en rqt de los valores del sensor LIDAR
 \begin{figure}[H]
@@ -220,7 +222,7 @@ Al abrirse la ventana como se muestra en la Figura \ref{fig:Figura_RQt_LIDAR_sca
 
 \subsection{Sensores del motor DYNAMIXEL}
 
-El segundo sensor involucrado es el encoder contenido en los motores DYNAMIXEL mostrado en la Figura \ref{fig:Figura_Motores_DYNAMIXEL_XL430}, este enconder lleva a cabo la tarea en conjunto con el microcontrolador del motor DYNAMIXEL, de estimar del desplazamiento que ha tenido el robot.
+El segundo sensor involucrado es el encoder contenido en los motores DYNAMIXEL mostrado en la Figura \ref{fig:Figura_Motores_DYNAMIXEL_XL430}, este enconder lleva a cabo la tarea en conjunto con el microcontrolador del motor DYNAMIXEL, de estimar el desplazamiento que ha tenido el robot.
 
 %%Ilustración 5: Motores DYNAMIXEL XL430
 \begin{figure}[H]
@@ -229,17 +231,18 @@ El segundo sensor involucrado es el encoder contenido en los motores DYNAMIXEL m
 	\caption{Motores DYNAMIXEL XL430.}
 	\label{fig:Figura_Motores_DYNAMIXEL_XL430}
 \end{figure}
+
 Para la implementación de este sensor se colocan los 2 motores en la estructura conectados a la tarjeta OpenCR como se muestra en la Figura \ref{fig:Figura_Ensamble_motores_OpenCR}.
 
 %%Ilustración 6: Ensamble de los motores, OpenCR y Bateria LiPo
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.43]{imagenes/Implementacion/06_OpenCR_Dynamixel.jpg}}
-	\caption{Ensamble de los motores, OpenCR y Batería LiPo.}
+	\caption{Ensamble de los motores, OpenCR y batería LiPo.}
 	\label{fig:Figura_Ensamble_motores_OpenCR}
 \end{figure}
 
-Una vez ensamblada esa capa se procedió a verificar el funcionamiento de los motores así como él de los enconders por medio del programa base que se le carga  a la OpenCR. Este programa hace dos pruebas con los motores una para lograr un desplazamiento lineal y otra para un desplazamiento angular (giro de 180° conforme al centro del robot) en la posición del robot.
+Una vez ensamblada esa capa se procedió a verificar el funcionamiento de los motores así como el funcionamiento de los enconders por medio del programa base que se le carga a la OpenCR. Este programa hace dos pruebas con los motores una para lograr un desplazamiento lineal y otra para un desplazamiento angular (giro de 180° conforme al centro del robot) en la posición del robot. En la Figura \ref{} se muestan los botones que se usan para probar el movimiento del Turtlebot 3 burger usando la OpenCR.
 
 %%Ilustración 7: Localización de los botones de prueba en la tarjeta OpenCR
 \begin{figure}[H]
@@ -262,7 +265,7 @@ El proceso de verificación del correcto funcionamiento de los encoders y el giro
 Si estas 2 pruebas se cumplen entonces los encoders están funcionando correctamente, ya que nos están dando la distancia desplazada real.
 
 \section{Implementación del Área Funcional Alimentación}
-Para la implementación de esta área funcional se usó una batería LiPo de11.1V y 1800mAH vista en la Figura \ref{fig:Figura_Bateria_LiPo_LB012}, la cual se carga totalmente aproximadamente en 1 hora y media, y es capaz de mantener en operación al robot por aproximadamente 2 horas en funcionamiento con uso moderado.
+Para la implementación de esta área funcional se usó una batería LiPo de 11.1V y 1800mAH vista en la Figura \ref{fig:Figura_Bateria_LiPo_LB012}, la cual se carga totalmente aproximadamente en 1 hora y media, y es capaz de mantener en operación al robot por aproximadamente 2 horas en funcionamiento con uso moderado.
 
 %%Batería LiPo LB-012
 \begin{figure}[H]
@@ -272,7 +275,7 @@ Para la implementación de esta área funcional se usó una batería LiPo de11.1V y 
 	\label{fig:Figura_Bateria_LiPo_LB012}
 \end{figure}
 
-Para verificar su correcto funcionamiento solamente se conectó al móvil siguiendo los primeros pasos de ensamble como se muestra en la Figura \ref{fig:Figura_Ensamble_motores_OpenCR} y se verificó que el Power  LED de la OpenCR estuviera prendido, este LED se muestra en la Figura \ref{fig:Figura_Botones_OpenCR}.
+Para verificar su correcto funcionamiento solamente se conectó al móvil siguiendo los primeros pasos de ensamble como se muestra en la Figura \ref{fig:Figura_Ensamble_motores_OpenCR} y se verificó que el Power LED de la OpenCR estuviera prendido, este LED se muestra en la Figura \ref{fig:Figura_Botones_OpenCR}.
 
 \section{Implementación del Área Funcional Procesamiento}
 

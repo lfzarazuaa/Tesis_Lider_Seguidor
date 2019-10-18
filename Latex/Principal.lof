@@ -97,16 +97,16 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Ensamble del segundo piso.}}{105}{figure.3.11}% 
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Ensamble del tercer piso.}}{105}{figure.3.12}% 
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Ensamble final del robot.}}{106}{figure.3.13}% 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Robot l\IeC {\'\i }der y robot seguidor.}}{106}{figure.3.14}% 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Area funcional movimiento, que cuenta con los dos motores Dynamixel y la OpenCR.}}{108}{figure.3.15}% 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Robot l\IeC {\'\i }der y robot seguidor.}}{107}{figure.3.14}% 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Implementaci\'on del \'area funcional movimiento.}}{108}{figure.3.15}% 
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Montaje del sensor LIDAR en la estructura.}}{109}{figure.3.16}% 
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Sensor LIDAR del Turtlebot3 burger.}}{110}{figure.3.17}% 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Sensor LIDAR del Turtlebot 3 burger.}}{110}{figure.3.17}% 
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Distancias del LIDAR en RVIZ}}{111}{figure.3.18}% 
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Visualizaci\'on en rqt de los valores del sensor LIDAR.}}{112}{figure.3.19}% 
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Motores DYNAMIXEL XL430.}}{112}{figure.3.20}% 
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Ensamble de los motores, OpenCR y Bater\IeC {\'\i }a LiPo.}}{113}{figure.3.21}% 
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Ensamble de los motores, OpenCR y bater\IeC {\'\i }a LiPo.}}{113}{figure.3.21}% 
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Localizaci\'on de los botones de prueba en la tarjeta OpenCR.}}{113}{figure.3.22}% 
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Bater\IeC {\'\i }a LiPo LB-012.}}{114}{figure.3.23}% 
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Bater\IeC {\'\i }a LiPo LB-012.}}{115}{figure.3.23}% 
 \contentsline {figure}{\numberline {3.24}{\ignorespaces Creaci\'on de una nueva red en Ubuntu.}}{118}{figure.3.24}% 
 \contentsline {figure}{\numberline {3.25}{\ignorespaces Elegir tipo de conexi\'on.}}{118}{figure.3.25}% 
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Configuraci\'on del Modo y Nombre.}}{119}{figure.3.26}% 
