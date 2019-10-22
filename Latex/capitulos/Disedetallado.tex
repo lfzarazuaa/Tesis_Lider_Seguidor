@@ -129,20 +129,20 @@ Como ya se ha mencionado el Turtlebot3, es un robot compacto con apenas una long
 
 \subsection{Área Funcional 2: Procesamiento (Comunicación de componentes)}
 
-El Área Funcional de procesamiento es de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales (ver la Figura \ref{fig:Figura_Areas_Funcionales}), puesto que además de ser el área funcional con mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control líder-seguidor. Para desarrollar esta área funcional se dividió en tres secciones con el objetivo de volver más transparente el proceso de diseño.
+El área funcional de procesamiento es de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales (ver la Figura \ref{fig:Figura_Areas_Funcionales}), puesto que además de ser el área funcional con mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control líder-seguidor. Para desarrollar esta área funcional se dividió en tres secciones con el objetivo de volver más transparente el proceso de diseño.
 
-La primera parte consiste en la descripción de las tarjetas encargadas del procesamiento, razón por la cual se mencionan las distintas tarjetas y sus características más relevantes, es decir se define el recurso disponible para realizar el procesamiento. 
+La primera parte consiste en la descripción de las tarjetas encargadas del procesamiento, razón por la cual se mencionan las distintas tarjetas y sus características más relevantes, es decir se define el recurso disponible para realizar el procesamiento.
 
-En la segunda parte se definen las funciones que deberán cumplir cada una de las tarjetas, y finalmente en la tercera parte se describe como se están proponiendo cumplir dichas funciones.
+En la segunda parte se definen las funciones que deberán cumplir cada una de las tarjetas, y finalmente en la tercera parte se describe como se está proponiendo cumplir dichas funciones.
 
 \subsubsection{Primera parte: Dispositivos destinados para el procesamiento}
 
-Recordando el ciclo ``Ve, piensa, actúa", el procesamiento funciona como la parte del pensar, es a través de este pensar que los robots podrán ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existirá o se llevará a cabo el procesamiento.
+Recordando el ciclo ''Ve, piensa, actúa", el procesamiento funciona como la parte del pensar, es a través de este pensar que los robots podrán ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existirá o se llevará a cabo el procesamiento.
 
 \begin{enumerate}
-	\item Líder: Raspberry Pi 3 Model B .
+	\item Líder: Raspberry Pi 3 Model B.
 	\item Líder: OpenCR.
-	\item Seguidor: Raspberry Pi 3 Model B .
+	\item Seguidor: Raspberry Pi 3 Model B.
 	\item Seguidor: OpenCR.
 	\item Computadora de monitoreo.
 \end{enumerate}
@@ -169,7 +169,7 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		\\ \hline
 		Programador &
 		\begin{enumerate}
-			\item ARM Cortex 10 pines  JTAG/SWD conector serial USB.
+			\item ARM Cortex 10 pines JTAG/SWD conector serial USB.
 			\item Dispositivo de Actualización de Firmware (Device Firmware Upgrade - DFU).
 		\end{enumerate}
 		\\ \hline
@@ -209,11 +209,11 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 			\item CAN x 1 (20010WS-04).
 		\end{enumerate}
 		\\ \hline
-		Botones y leds &
+		Botones y LEDs &
 		\begin{enumerate}
-			\item LD2 (rojo/verder) : comunicación USB.
+			\item LD2 (rojo/verde) : comunicación USB.
 			\item LED de usuario x 4 : LD3 (rojo), LD4 (verde), LD5 (azul).
-			\item Boton de usuario x 2.
+			\item Botón de usuario x 2.
 		\end{enumerate}
 		\\ \hline
 	\end{tabular}
@@ -230,14 +230,14 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		Alimentación &
 		\begin{enumerate}
 			\item Fuente de entrada externa.
-			\item 5 V (USB VBUS), 7-24 V (Bateria o SMPS).
-			\item Bateria por defecto : LI-PO 11.1V 1,800mAh 19.98Wh.
+			\item 5 V (USB VBUS), 7-24 V (Batería o SMPS).
+			\item Batería por defecto : LiPo 11.1V 1,800mAh 19.98Wh.
 			\item SMPS por defecto: 12V 5A.
 			\item Fuente de salida externa.
 			\item 12V max 5A(SMW250-02), 5V max 4A(5267-02A), 3.3V@800mA(20010WS-02).
-			\item Puerto de bateria externa para el reloj de tiempo real (RTC Real Time Clock) (Molex 53047-0210).
+			\item Puerto de batería externa para el reloj de tiempo real (RTC Real Time Clock) (Molex 53047-0210).
 			\item LED de encendido: LD1 (red, 3.3 V encendido).
-			\item Botón de reinicio x 1 (for power reset of board).
+			\item Botón de reinicio x 1 (para reset de la tarjeta).
 			\item Botón de encendido o apagado x 1.
 		\end{enumerate}
 		\\ \hline
@@ -294,7 +294,7 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 		Fuente de poder Micro USB hasta 2.5 A \\
 		\hline
 	\end{tabular}
-	\caption{Características de la tarjeta Raspberry PI 3, Modelo B [\citenum{raspberry_pi3}].}
+	\caption{Características de la tarjeta Raspberry Pi 3, Modelo B [\citenum{raspberry_pi3}].}
 	\label{tab:Tabla_Caracteristicas_Tarjeta_Raspberry_PI}
 \end{table}
 
@@ -312,7 +312,7 @@ Una vez definidos que elementos son necesarios, sigue hablar que realizarán, es 
 
 \begin{description}
 	\item[Framework:] Es una herramienta de software que se ejecuta en cada una de las unidades de procesamiento para facilitar ciertos aspectos como la manera en que se procesan los datos y el funcionamiento del sistema en general.
-	\item[Esquemas de control:] Son los encargados de definir la dirección de los turtlebot3 para mantener la trayectoria deseada, el esquema líder-seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
+	\item[Esquemas de control:] Son los encargados de definir la dirección de los Turtlebot 3 burger para mantener la trayectoria deseada, el esquema líder-seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
 	\item[Comunicación:] Es la encargada de transmitir mensaje entre los distintivos agentes.
 \end{description}
 
@@ -338,63 +338,95 @@ Estas áreas funcionales estarán distribuidas en cada una de las tarjetas siguien
 	\end{itemize}
 \end{itemize}
 
-Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ''como se cumplirán".
+Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ``como se cumplirán".
 
 \subsubsection{Tercera parte: Diseño del software}
 
 \paragraph{Seguimiento de trayectorias}
 
-Para el seguimiento de trayectorias se optó por seleccionar la matriz de fuerzas [\citenum{AutoModelCar}] como método de seguimiento, es así como se le denomina matriz de fuerzas a un mapa de vectores que cubre toda el área del lugar donde el líder se desplazará, este algoritmo resulta muy adecuado debido a que se tiene la opción de usar una librería de ROS para localización del móvil en ambientes cerrados. Dicha librería hace uso de un algoritmo probabilístico llamado AMCL el cual se detalla en el marco teórico. Este algoritmo permite conocer la posición de los turtlebot3 con una incertidumbre de 2.5$cm^{2}$. Este hecho facilita el uso de la matriz de fuerzas, ya que una vez determinadas las dimensiones del área de pruebas se procede a definir la trayectoria a seguir por el turtlebot3 líder, esto se hace discretizando la trayectoria propuesta y listando dichos puntos en un archivo con extensión .txt siguiendo uno de los formatos creados para una de las competencias de DARPA [\citenum{darpa}]. Posteriormente esta serie de puntos son procesados por el algoritmo que genera la matriz de fuerzas como se muestra en la Figura \ref{fig:Figura_IO_Matriz_de_Fuerza} y es guardado en un archivo con extensión npy el cual puede ser fácilmente leído e interpretado por Python.
+Para el seguimiento de trayectorias se optó por seleccionar la \textit{matriz de fuerzas} [\citenum{AutoModelCar}] como método de seguimiento, es así como se le denomina \textit{matriz de fuerzas} a un mapa de vectores que cubre toda el área del lugar donde el líder se desplazará, este algoritmo resulta muy adecuado debido a que se tiene la opción de usar una librería de ROS para localización del móvil en ambientes cerrados. Dicha librería hace uso de un algoritmo probabilístico llamado AMCL, el cual se detalla en el marco teórico. Este algoritmo permite conocer la posición de los Turtlebot 3 burger con una incertidumbre de 2.5$cm^{2}$. Este hecho facilita el uso de la matriz de fuerzas, ya que una vez determinadas las dimensiones del área de pruebas se procede a definir la trayectoria a seguir por el líder, esto se hace discretizando la trayectoria propuesta y listando dichos puntos en un archivo con extensión .txt siguiendo uno de los formatos creados para una de las competencias de DARPA [\citenum{darpa}]. Posteriormente esta serie de puntos son procesados por el algoritmo que genera la matriz de fuerzas como se muestra en la Figura \ref{fig:Figura_IO_Matriz_de_Fuerza} y es guardado en un archivo con extensión .npy el cual puede ser fácilmente leído e interpretado por Python. En la Figura \ref{fig:Figura_Algoritmo_Generador_de_Matriz} se observa el algoritmo usado en el programa principal para generar la matriz de fuerza y en la Figura \ref{fig:Figura_Vecino_mas_cercano} se muestra como se calcula para cada punto de la matriz el elemento destino o meta.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg}}
+	\fbox{\includegraphics[scale=0.35]{imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg}}
 	\caption{Entrada y salida del programa que genera la matriz de fuerza.}
 	\label{fig:Figura_IO_Matriz_de_Fuerza}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/10_Algoritmo_Generador_de_Matriz.jpg}}
+	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/10_Algoritmo_Matriz_de_Fuerza.jpg}}
 	\caption{Algoritmo Generador de la Matriz de Fuerza.}
 	\label{fig:Figura_Algoritmo_Generador_de_Matriz}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.9]{imagenes/Detallado/11_Vecino_mas_cercano.jpg}}
-	\caption{Diagrama de Flujo para la rutina ``Obtener al vecino más cercano".}
+	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/11_Vecino_Cercano.jpg}}
+	\caption{Diagrama de Flujo para la rutina ``Obtener el punto meta".}
 	\label{fig:Figura_Vecino_mas_cercano}
 \end{figure}
 
-Una vez obtenida la matriz de fuerza se debe implementar un código para que el líder pueda seguir dicha trayectoria. La implementación de este seguimiento de trayectoria se realiza en el ``Nodo MovimientoLíder". En la Figura \ref{fig:Figura_Diagrama_UML_ForceController}, se muestra el diagrama UML planteado para este nodo, asimismo en las Figuras \ref{fig:Figura_Diagrama_de_Flujo_Lider} y \ref{fig:Figura_Diagrama_metodos_ForceController} se muestran los diagramas de flujo que explican la funcionalidad de los métodos de la clase propuesta.
+Una vez obtenida la matriz de fuerza se debe implementar un código para que el líder pueda seguir dicha trayectoria. La implementación de este seguimiento de trayectoria se realiza en el ``Nodo MovimientoLíder". En la Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}, se muestra el diagrama UML planteado para este nodo, asimismo en las Figuras \ref{fig:Figura_Diagrama_de_Flujo_Lider}, \ref{fig:Figura_Diagrama_metodo_Follow}, \ref{fig:Figura_Diagrama_metodo_VFH}, \ref{fig:Figura_Diagrama_metodo_Move} y \ref{fig:Figura_Diagrama_Callbacks_Lider} se muestran los diagramas de flujo que explican la funcionalidad de los métodos de la clase propuesta.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/12_Diagrama_UML_ForceController.jpg}}
-	\caption{Diagrama UML del objeto ForceController a implementar en nodo Líder.}
-	\label{fig:Figura_Diagrama_UML_ForceController}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg}}
+	\caption{Diagrama UML del objeto MovementLeader a implementar en el nodo del líder.}
+	\label{fig:Figura_Diagrama_UML_MovementLeader}
 \end{figure}
 
+En la Figura \ref{fig:Figura_Diagrama_de_Flujo_Lider} se observa el programa principal del nodo encargado de asignarle el movimiento al líder, este programa al construir el objeto crea las variables para publicadores y subscriptores que se mencionan en el Diagrama UML en la Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}, y además configura todas las condiciones y funciones a ejecutar, como acción principal este programa ejecuta el método ``Follow" dándole movimiento al igual que para al líder en caso de ser necesario.
+
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/13_Diagrama_de_Flujo_Lider.jpg}}
-	\caption{Diagrama de flujo del nodo Líder.}
+	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg}}
+	\caption{Diagrama de flujo del programa principal del nodo del líder.}
 	\label{fig:Figura_Diagrama_de_Flujo_Lider}
 \end{figure}
 
+En la Figura \ref{fig:Figura_Diagrama_metodo_Follow} se muestra el diagrama de flujo del método ``Follow" el cual tiene como propósito principal decidir si ejecuta el seguimiento de trayectoria o esquiva algún obstáculo cercano en caso de tenerlo. Adicionalmente incluye controles sobre la trayectoria seleccionada.
+
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14_Diagrama_metodos_ForceController.jpg}}
-	\caption{Diagrama de flujo de los métodos del objeto ForceController.}
-	\label{fig:Figura_Diagrama_metodos_ForceController}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg}}
+	\caption{Diagrama de flujo del método ``Follow".}
+	\label{fig:Figura_Diagrama_metodo_Follow}
+\end{figure}
+
+En la Figura \ref{fig:Figura_Diagrama_metodo_VFH} se muestra el diagrama de flujo del método ``Vector Field Histogram" para su ejecución en el líder, esta es la segunda parte del algoritmo donde ya se cuenta con el Histograma generado. Este método tiene como función encontrar el ángulo más cercano a la trayectoria por donde pueda pasar el móvil sin chocar, y para ello encuentra el primer ángulo libre (más cercano a la trayectoria) donde se sabe que no hay obstáculo y lo propone como dirección a llegar.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg}}
+	\caption{Diagrama de flujo del método ``Vector Field Histogram".}
+	\label{fig:Figura_Diagrama_metodo_VFH}
+\end{figure}
+
+En la Figura \ref{fig:Figura_Diagrama_metodo_Move} se muestra el diagrama de flujo del método ``Move2angle", el cual a partir de la dirección a seguir, ya sea la que se da directamente del seguimiento de la trayectoria o a partir del VFH en caso de tener un obstáculo cercano, orienta al líder al ángulo meta por medio del control de su velocidad angular, cabe mencionar que para realizar un mejor seguimiento cuando el móvil está desorientado por más de 45° la velocidad lineal es cero para garantizar rotación en su propio eje lo cual reduce el error al tener una mejor maniobrabilidad.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg}}
+	\caption{Diagrama de flujo del método ``Move to angle".}
+	\label{fig:Figura_Diagrama_metodo_Move}
+\end{figure}
+
+En la Figura \ref{fig:Figura_Diagrama_Callbacks_Lider} se muestra el diagrama de flujo se muestran los diagramas de flujo de los ``Callbacks" que son métodos que interrumpen la ejecución del programa principal cada vez que se recibe un dato de los publicadores. El algoritmo general de los callbacks es recibir y guardar el dato como una variable global para que posteriormente pueda ser utilizada. En el caso específico del Histograma recibe un vector indicando si hay obstáculo o no con el cual el método de ``Follow" da la instrucción de seguir la trayectoria o esquivar el obstáculo, para evitar que la variable aún no este actualizada se prende una bandera que indica que ya fue recibido al menos un dato.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14D_Diagrama_Callbacks.jpg}}
+	\caption{Diagrama de flujo de los ``Callbacks".}
+	\label{fig:Figura_Diagrama_Callbacks_Lider}
 \end{figure}
 
 Este nodo es el encargado de suscribirse a su posición proveniente de la AMCL y con base a ella reorientarse para mantener la trayectoria junto con la ayuda de la matriz de fuerza.
+
 \paragraph{Esquema Líder - Seguidor}
 El implementar uno de los esquemas líder-seguidor propuestos en el marco de referencia implicaría mantener una posición relativa al líder $d_1$, bajo cualquiera de los métodos de control citados en el marco de referencia, lo cual podría causar colisiones con obstáculos. Para este caso en particular el seguidor más que mantener una posición relativa al líder, debe mantenerse sobre la trayectoria dictada por el líder.
 
-Para evitar este problema y lograr que el seguidor se mantenga en la ruta, se pensó en mantener una velocidad lineal constante e igual para cada robot móvil, y enviar al seguidor los puntos de ruta por los que el líder pase, e irlos almacenando, sin ningún lazo cerrado encargado de mantener una posición relativa entre líder y seguidor. Con dichos puntos de ruta el seguidor, usando el mismo principio para reorientarse que usa el líder, y de este modo alcanzará los puntos almacenados en el seguidor y por tener la misma velocidad se mantendrá una distancia constante sobre la trayectoria entre líder y seguidor, a la cual llamaremos $d_2$. La siguiente figura da un ejemplo más claro de la diferencia entre $d_1$ y $d_2$.
+Para evitar este problema y lograr que el seguidor se mantenga en la ruta, se pensó en mantener una velocidad lineal constante e igual para cada robot móvil, y enviar al seguidor los puntos de ruta por los que el líder pase, e irlos almacenando sin ningún lazo cerrado encargado de mantener una posición relativa entre líder y seguidor. Con dichos puntos de ruta el seguidor, usando el mismo principio para reorientarse que usa el líder, y de este modo alcanzará los puntos almacenados el seguidor y por tener la misma velocidad se mantendrá una distancia constante sobre la trayectoria entre líder y seguidor, a la cual llamaremos $d_2$. La siguiente figura da un ejemplo más claro de la diferencia entre $d_1$ y $d_2$.
 
 \begin{figure}[H]
 	\centering
@@ -403,129 +435,147 @@ Para evitar este problema y lograr que el seguidor se mantenga en la ruta, se pe
 	\label{fig:Figura_Representacion_distancias}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Representacion_distancias} se tiene al líder, de color rojo y al seguidor de color azul, la curva de color negro representa un tramo de la trayectoria a seguir, la cual está formada por $P_{n} (x_{n},y_{n})$ pares de coordenadas, siendo $P_{l}$ la coordenada donde se localiza el líder y $P_{s}$ donde se localiza el seguidor. Con esto definimos $d_{1}$ y $d_{2}$, de la siguiente manera:
-
-\begin{equation}\label{Distancia_lider_seguidor}
-d_2=\sum_{P_n=x_n,y_n}^{P_l=x_{l-1},y_{l-1}}=\sqrt{(x_{n+1}-x_n )^2+(y_{n+1}-y_n )^2}
-\end{equation}
+En la Figura \ref{fig:Figura_Representacion_distancias} se tiene al líder, de color rojo y al seguidor de color azul, la curva de color negro representa un tramo de la trayectoria a seguir, la cual está formada por $P_{n} (x_{n},y_{n})$ pares de coordenadas, siendo $P_{l}$ la coordenada donde se localiza el líder y $P_{s}$ donde se localiza el seguidor. Con esto definimos $d_{1}$ y $d_{2}$ en la ecuaciones \ref{Distancia_lider_seguidor(simplificado)} y \ref{Distancia_lider_seguidor}, de la siguiente manera:
 
 \begin{equation}\label{Distancia_lider_seguidor(simplificado)}
 d_1=\sqrt{(x_l-x_n )^2+(y_l-y_n )^2}
 \end{equation}
 
+\begin{equation}\label{Distancia_lider_seguidor}
+d_2=\sum_{P_n=x_n,y_n}^{P_l=x_{l-1},y_{l-1}}=\sqrt{(x_{n+1}-x_n )^2+(y_{n+1}-y_n )^2}
+\end{equation}
+
 La distancia $d_{1}$ es únicamente la distancia entre líder y seguidor, mientras que $d_{2}$ es la distancia que separa al líder del seguidor, sobre la trayectoria.
 
-Una vez definido el tipo de esquema líder-seguidor a usar sigue el diseño del algoritmo que cumpla lo propuesto, lo cual se llevará a cabo en el ``Nodo seguidor". Hablando en términos más específicos de ROS dicho nodo se suscribe a las posiciones publicadas por el líder y las propias como se ve en la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A} y ellas son almacenadas en una lista de python, que para este caso se llamará WPL (Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_C}), después usando el mismo tipo de lazo de control usado para la orientación del líder, se reorienta el seguidor en función de su posición y la lista con los puntos de referencia almacenados (Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_B}). Los siguientes diagramas muestran el funcionamiento de dicho nodo.
+Una vez definido el tipo de esquema líder-seguidor a usar sigue el diseño del algoritmo que cumpla lo propuesto, lo cual se llevará a cabo en el ``Nodo Seguidor$"$ con un Diagrama UML como el mostrado en la Figura \ref{fig:Figura_Diagrama_UML_FollowerRobot}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.2]{imagenes/Detallado/16_Diagrama_UML_FollowerRobot.jpg}}
-	\caption{Diagrama UML del objeto FollowerRobot a implementar en nodo seguidor.}
+	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/16_Diagrama_UML_FR.jpg}}
+	\caption{Diagrama UML del objeto FollowerRobot a implementar en el nodo seguidor.}
 	\label{fig:Figura_Diagrama_UML_FollowerRobot}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/17_Diagrama_de_flujo_seguidor.jpg}}
-	\caption{Diagrama de flujo del nodo seguidor.}
-	\label{fig:Figura_Diagrama_de_flujo_seguidor}
-\end{figure}
+ Hablando en términos más específicos de programación en ROS dicho nodo se suscribe a las posiciones publicadas por el líder y las propias en la construcción del objeto ``FollowerRobot$"$ como se ve en la Figura \ref{fig:Figura_Diagrama_de_flujo_seguidor}. Cada vez que se recibe una nueva posición del líder es almacenada en una lista de Python, que para este caso se llamará WPL(como se muestra en la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A}). 
+ En la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A} se muestran los Callbacks del nodo del seguidor de donde se obtienen la posición del líder para almacenarla en la lista WPL (LeaderCallback) y la instrucción de avanzar o no (Turn\_onCallback).
+ \begin{figure}[H]
+ 	\centering
+ 	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg}}
+ 	\caption{Diagrama de flujo del programa principal del nodo seguidor.}
+ 	\label{fig:Figura_Diagrama_de_flujo_seguidor}
+ \end{figure}
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/18_Callbacks_Seguidor.jpg}}
+ 	\caption{Diagrama de flujo de los Callbacks para obtención de datos.}
+ 	\label{fig:Figura_Diagrama_metodos_FollowerRobot_A}
+ \end{figure}
+
+ Después en el método FollowerCallback como se muestra en la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_B} usando el mismo tipo de lazo de control usado para la orientación del líder, se reorienta el seguidor en función de su posición y la lista con los puntos de referencia almacenados en la lista WPL, todo esto sucede cada que se recibe una nueva posición del seguidor por AMCL. 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.37]{imagenes/Detallado/18_Diagrama_metodos_FollowerRobot_A.jpg}}
-	\caption{Diagrama de flujo de los métodos del objeto FollowerRobot parte I.}
-	\label{fig:Figura_Diagrama_metodos_FollowerRobot_A}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/19_Diagrama_metodos_FollowerRobot_B.jpg}}
-	\caption{Diagrama de flujo de los métodos del objeto FollowerRobot parte II.}
+	\fbox{\includegraphics[scale=0.35]{imagenes/Detallado/19_Diagrama_Follower_Callback.jpg}}
+	\caption{Diagrama de flujo del método FollowerCallback.}
 	\label{fig:Figura_Diagrama_metodos_FollowerRobot_B}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/20_Diagrama_metodos_FollowerRobot_C.jpg}}
-	\caption{Diagrama de flujo de los métodos del objeto FollowerRobot parte III.}
-	\label{fig:Figura_Diagrama_metodos_FollowerRobot_C}
 \end{figure}
 
 \paragraph{Evasión de obstáculos}
 
-Para la evasión de obstáculos es necesario un método que se ajuste a la forma de operar de la matriz de fuerza por lo que como posibilidad se tiene el algoritmo por campos potenciales y el VFH. De [\citenum{ribeiro_2005}] se tiene un análisis de los pros y contras de los distintos algoritmos para la evasión de obstáculos, basado en ese estudio se elige el VFH, ya era una forma que requería menor costo computacional y no afectaba de manera tan brusca el seguimiento de trayectoria y no se corre el riesgo de dejar al robot dentro de un mínimo local como sucede con los campos potenciales.
+Para la evasión de obstáculos es necesario un método que se ajuste a la forma de operar de la matriz de fuerza por lo que como posibilidad se tiene el algoritmo por campos potenciales y el VFH. De Ribeiro en Evasión de Obstáculos [\citenum{ribeiro_2005}] se tiene un análisis de los pros y contras de los distintos algoritmos para la evasión de obstáculos, basado en ese estudio se elige el VFH, ya era una forma que requería menor costo computacional, no afectaba de manera tan brusca el seguimiento de trayectoria y no se corre el riesgo de dejar al robot dentro de un mínimo local como sucede con los campos potenciales.
 
-La manera de implementarlo fue la siguiente, este algoritmo se divide en dos nodos, el primero llamado NODO DETECTOR, genera el histograma (según los datos leídos por el sensor LIDAR) y se publican (Figura 35).
-El segundo se encarga de evaluar las posibles direcciones considerando también la dirección propia de la trayectoria obtenida de la matriz de fuerzas y en caso de no poder seguir por la dirección establecida por la matriz de fuerza se elige una cercana a ésta. Toda esta sección se une al NODO LÍDER (Figura 36).
+La manera de implementarlo fue la siguiente, dividiendo este algoritmo en dos nodos, el primer nodo llamado nodo de Distancia Mínima (mostrado en la Figura \ref{fig:Figura_Diagrama_UML_Distancia}) el cual tiene como único objetivo calcular y enviar la menor distancia entre el robot líder y cualquier obstáculo que tenga enfrente o al lado de él, el segundo es el nodo LaserVFH (mostrado en la Figura \ref{fig:Figura_Diagrama_UML_VFH}) que tiene como propósito generar un histograma polar binario en cual muestra los ángulos donde no hay obstáculo dado un cierto umbral y luego lo manda al nodo del líder. Como se puede observar en el nodo del líder en la función ``Follow" la primera parte decide si aplica VFH o seguimiento de trayectoria y esto lo lográ conociendo la distancia mínima a cualquier obstáculo, por su parte la segunda parte que es aplicar el VFH para encontrar el ángulo libre más cercano al ángulo dado por la trayectoria es posible gracias al histograma binario proporcionado por el nodo LaserVFH.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/21_Diagrama_UML_detector.jpg}}
-	\caption{UML para nodo detector.}
-	\label{fig:Figura_Diagrama_UML_detector}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/20_Diagrama_UML_Distancia.jpg}}
+	\caption{Diagrama UML para nodo de distancia mínima.}
+	\label{fig:Figura_Diagrama_UML_Distancia}
+\end{figure}
+
+El nodo de distancia mínima en su función principal mostrada en la Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_A} inicializa al nodo con su publicador de ``distancia mínima$"$ y además configura los límites de error debido a que en ciertas ocasiones el LIDAR entrega valores muy pequeños que no concuerdan con la distancia real entre el Turtlebot 3 burger y un objeto muy cercano, por lo cual la distancia debe ser mayor al radio de la estructura del Turtlebot 3 burger, el no considerar este efecto generaría que la distancia mínima siempre sea de 0 y nunca se avanzaría. Por último el constructor ejecuta el método ``Obtain\_min\_distance$"$ con la que se logra obtener la distancia mínima entre todos los ángulos frontales y laterales del Turtlebot 3 burger.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg}}
+	\caption{Diagrama de flujo del programa principal del nodo de distancia mínima.}
+	\label{fig:Figura_Diagrama_de_Flujo_Obstacle_A}
+\end{figure}
+
+Profundizando más en la obtención de la distancia mínima en la Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_B} se muestra el diagrama de flujo de como se obtiene la distancia mínima donde verifica primeramente si ROS se está ejecutando para proseguir con el programa, luego guarda en una lista todos los valores de las distancias en los ángulos que el líder podría chocar considerando que este siempre avanza hacia enfrente, luego calcula el valor mínimo de la lista y lo publica para que sea recibido en el nodo del líder.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.51]{imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg}}
+	\caption{Diagrama de flujo método para obtener la distancia mínima al obstáculo.}
+	\label{fig:Figura_Diagrama_de_Flujo_Obstacle_B}
+\end{figure}
+
+Centrándonos más en el diseño del algoritmo ``Vector Field Histogram", se propuso distribuirlo en 2 partes como ya se había mencionado previamente en el nodo del líder, la primera parte consiste en obtener el histograma binario a partir de las distancias entregadas por el LIDAR y su orientación, de la cual se muestra su diagrama UML y programa principal en las Figuras \ref{fig:Figura_Diagrama_UML_VFH} y \ref{fig:Figura_Diagrama_de_Flujo_VFH_A}. La segunda parte es usar el histograma binario para evadir el obstáculo como se explica en el nodo del líder.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/22_Diagrama_UML_VFH.jpg}}
+	\caption{Diagrama UML para nodo LaserVFH.}
+	\label{fig:Figura_Diagrama_UML_VFH}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/22_Diagrama_de_flujo_detector.jpg}}
-	\caption{Diagrama de flujo nodo detector.}
-	\label{fig:Figura_Diagrama_de_flujo_detector}
+	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg}}
+	\caption{Diagrama de flujo del programa principal del nodo LaserVFH.}
+	\label{fig:Figura_Diagrama_de_Flujo_VFH_A}
 \end{figure}
+
+Para generar el histograma binario se aplicó el proceso mostrado en la Figura \ref{fig:Figura_Diagrama_de_Flujo_VFH_B} donde a partir del histograma de distancias proporcionado por el LIDAR y la orientación del líder se genera un histograma binario base acoplado al marco de referencia global sobre el cual está la trayectoria, considerando así la orientación del líder para reorientar los ángulos del LIDAR que se obtienen conforme al marco de referencia del líder y un umbral de distancia a la cual se considera ángulo libre u ocupado. Posteriormente con el fin de ensanchar este histograma binario debido a que el móvil no es una partícula sino un cuerpo rígido, se calculan los puntos donde existe en el histograma un flanco de subida o de bajada obteniendo así los valles y las crestas, y a partir de estos ángulos se ensancha el histograma quitando ``N" ángulos libres iniciando en cada cresta o valle (``N" se acostumbra desde 20 hasta 35). Por último se envía el histograma ensanchado al nodo del líder.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.51]{imagenes/Detallado/23_Diagrama_metodos_detector.jpg}}
-	\caption{Diagrama de flujo método nodo detector.}
-	\label{fig:Figura_Diagrama_metodos_detector}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/24_Diagrama_de_flujo_direccion.jpg}}
-	\caption{Diagrama de flujo para dirección.}
-	\label{fig:Figura_Diagrama_de_flujo_direccion}
+	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg}}
+	\caption{Diagrama de flujo para generar histograma binario.}
+	\label{fig:Figura_Diagrama_de_Flujo_VFH_B}
 \end{figure}
 
 \paragraph{Comunicación}
 
-La comunicación se realizará por medio de WiFi entre los distintos dispositivos, es decir el turtlebot3 líder, el turtlebot3 seguidor y la computadora de monitoreo tendrán una comunicación de manera continua. Como se explicó en la parte del diseño conceptual la arquitectura para el desarrollo de este proyecto será de tipo distribuida, ya que cada dispositivo antes mencionados, procesará distintos tipos de información y realizaran diversas tareas, que para un sistema centralizado teóricamente sería complicado y demandante computacionalmente mientras que para esta arquitectura el procesamiento de información se distribuye y reduce la demanda de poder computacional para un dispositivo en particular.
+La comunicación se realizará por medio de WiFi entre los distintos dispositivos, es decir el Turtlebot 3 burger líder, el Turtlebot 3 burger seguidor y la computadora de monitoreo tendrán una comunicación de manera continua. Como se explicó en la parte del diseño conceptual la arquitectura para el desarrollo de este proyecto será de tipo distribuida, ya que cada dispositivo antes mencionado, procesará distintos tipos de información y realizaran diversas tareas, que para un sistema centralizado teóricamente sería complicado y demandante computacionalmente, mientras que para esta arquitectura el procesamiento de información se distribuye y reduce la demanda de poder computacional para un dispositivo en particular.
 
-Los mensajes que serán transferidos vía WiFi son los tópicos publicados durante la ejecución del esquema líder seguidor. A continuación, se presenta una lista de ellos y la información que contienen.
+Los mensajes que serán transferidos vía WiFi son los tópicos publicados durante la ejecución del esquema líder-seguidor. A continuación, se presenta una lista de ellos y la información que contienen.
 
 \begin{itemize}
 	\item $/map$
 	\item $/tb3_0/Histogram$
-	\item $/tb3_0/amcl_pose$
-	\item $/tb3_0/cmd_vel$
+	\item $/tb3_0/amcl\_pose$
+	\item $/tb3_0/cmd\_vel$
 	\item $/tb3_0/odom$
 	\item $/tb3_0/scan$
-	\item $/tb3_1/amcl_pose$
-	\item $/tb3_1/cmd_vel$
+	\item $/tb3_1/amcl\_pose$
+	\item $/tb3_1/cmd\_vel$
 	\item $/tb3_1/odom$
 	\item $/tb3_1/scan$
 \end{itemize}
 
 Para poder tener estos mensajes en comunicación con los distintos robots es necesario establecer una comunicación wifi entre los distintos robots y computadora de monitores. A continuación, se muestra como hacerlo.
 
-Se obtiene la IP de la PC remota y se modifica en la computadora del Turtlebot3 como sigue:
+Se obtiene la IP de la PC remota y se modifica en la computadora del Turtlebot 3 burger como sigue:
 
 \begin{itemize}
-	\item Ingresar el siguiente comando en cada Turtlebot3 y PC remota $>> \$ nano ~/.bashrc$
+	\item Ingresar el siguiente comando en cada Turtlebot 3 burger y PC remota $>> \$ nano ~/.bashrc$
 	\item Modifique la dirección de localhost en $ROS\_MASTER\_URI$ y $ROS\_HOSTNAME$ con la dirección IP obtenida de la ventana de terminal anterior.
 \end{itemize}
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/25_Configuracion_IP.jpg}}
-	\caption{Configuración del IP's para la comunicación vía WiFi.[\citenum{turtlebot3}]}
+	\caption{Configuración de la IP para la comunicación vía WiFi [\citenum{turtlebot3}].}
 	\label{fig:Figura_Configuracion_IP}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.28]{imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg}}
-	\caption{Ejemplo de configuración WIFI. [\citenum{install-ubuntu}]}
+	\caption{Ejemplo de configuración WIFI [\citenum{install-ubuntu}].}
 	\label{fig:Figura_Ejemplo_de_Configuracion_WIFI}
 \end{figure}
 
@@ -533,7 +583,7 @@ Se obtiene la IP de la PC remota y se modifica en la computadora del Turtlebot3 
 
 Para lograr que los robots móviles se comporten como se desea es necesario hacer uso de la cinemática inversa de su configuración. Estas ecuaciones fueron planteadas en el marco teórico. El enfoque es hacia el cálculo de la velocidad necesaria en cada una de las llantas para obtener así el cambio en la dirección y siempre mantener una velocidad lineal constante en todo momento. Esto se explica a continuación.
 
-Lo primero es considerar la velocidad lineal a la que los turtlebot3 deseamos que vayan $V_k$ y tomando como tope la velocidad máxima $V_max$, sabemos que estos van a 0.22$\dfrac{m}{s}$, tomando la ecuación de la cinemática inversa tenemos que para la velocidad del motor 1 y 2 de nuestros turtlebot3 obtenemos \ref{Ecuacion_cinematica} y \ref{Phi2} .
+Lo primero es considerar la velocidad lineal a la que los Turtlebot 3 burger deseamos que vayan $V_k$ y tomando como tope la velocidad máxima $V_max$, sabemos que estos van a 0.22$\dfrac{m}{s}$, tomando la ecuación de la cinemática inversa tenemos que para la velocidad del motor 1 y 2 de nuestros Turtlebot 3 burger obtenemos \ref{Ecuacion_cinematica} y \ref{Phi2} .
 
 \begin{equation}\label{Ecuacion_cinematica}
 \phi_{r}^{'}=\dfrac{V_{k}+\theta^{'}b}{r}
@@ -549,11 +599,11 @@ Debido a la restricción de velocidad máxima de los motores $(\phi_{max}^{'})$ el
 \theta^{'}=\dfrac{\phi_{max}^{'}r-V_{k}}{b}
 \end{equation}
 
-Estas ecuaciones (\ref{Ecuacion_cinematica},\ref{Phi2},\ref{Ecuacion_cinematica3}) son las implementadas por la librería que usa ROS para controlar el turtlebot3.
+Estas ecuaciones (\ref{Ecuacion_cinematica},\ref{Phi2},\ref{Ecuacion_cinematica3}) son las implementadas por la librería que usa ROS para controlar el Turtlebot 3 burger.
 
 \subsection{Área Funcional 3: Percepción (Comunicación entorno - robot)}
 
-Como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, la tercer área funcional a analizar es la de Percepción, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los móviles para poderlos ubicar en el espacio ya sea por odometría (información propioceptiva), o por la recabación de la información del ambiente, para poder ubicar los obstáculos dentro del área de trabajo (información exteroceptiva), así mismo cabe indicar que estas dos formas trabajan en conjunto siendo una más efectiva para la detección del móvil en la zona de trabajo y la otra para dar ajustes más precisos como cual ha sido el desplazamiento total, de esta manera se evita que por el ruido del sensor lidar el móvil de repente aparezca en otro lugar muy lejano (para el programa) como suele pasar si no se usa odometría.
+Como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, la tercera área funcional a analizar es la de Percepción, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los móviles para poderlos ubicar en el espacio ya sea por odometría (información propioceptiva), o por la recabación de la información del ambiente, para poder ubicar los obstáculos dentro del área de trabajo (información exteroceptiva), así mismo cabe indicar que estas dos formas trabajan en conjunto siendo una más efectiva para la detección del móvil en la zona de trabajo y la otra para dar ajustes más precisos como cual ha sido el desplazamiento total, de esta manera se evita que por el ruido del sensor lidar el móvil de repente aparezca en otro lugar muy lejano (para el programa) como suele pasar si no se usa odometría.
 
 Para la recabación de la información propioceptiva se necesita un control preciso de los actuadores del móvil para lograr orientar a los móviles de manera correcta, y así, en conjunto con un buena lectura de los datos obtenidos de la rotación de las ruedas se lleve a cabo una estimación más precisa de la posición de los móviles durante la navegación. Los datos recabados por los sensores posteriormente serán leídos por el hardware implementado en el área funcional de procesamiento, siendo así el hardware él que se encargará de su procesamiento para realizar una tarea en específico.
 Para poder llevar a cabo la solución de esta área funcional se plantea separar de manera general en las dos clasificaciones de información obtenida por los sensores y así desglosar cada uno de los elementos que conllevan.
