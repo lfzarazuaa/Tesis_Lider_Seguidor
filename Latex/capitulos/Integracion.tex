@@ -503,8 +503,8 @@ Para solucionar esta problemática, un nodo adicional fue hecho, este nodo se enc
 %Ilustración 18. Nodo Laser_Distance.
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/Procesamiento/18_nodo_laser_distance.jpg}}
-	\caption{Nodo Distancia Láser.}
+	\fbox{\includegraphics[scale=0.3]{imagenes/Implementacion/Procesamiento/18_Diagrama_de_Flujo_Obstacle.jpg}}
+	\caption{Método para calcular la distancia mínima y publicarla.}
 	\label{fig:Figura_Nodo_laser_distance}
 \end{figure}
 
@@ -522,46 +522,39 @@ En el programa donde se implementó el VFH fue necesario validarlo colocando obst
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.8]{imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg}}
-	\caption{Detección del obstáculo cercano colocado en el segundo cuadrante.}
+	\caption{Detección del obstáculo cercano colocado en el cuarto cuadrante.}
 	\label{fig:Figura_Deteccion_obstaculo_B}
 \end{figure}
 
 Para integrar los nuevos nodos junto con el código del seguimiento de trayectoria fue necesario primeramente implementar la matriz de fuerza que permite al nodo saber la orientación que debe tomar el móvil para mantenerse dentro de la trayectoria propuesta, este algoritmo se programó en un método llamado ``Follow" mostrado en la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_A}, que sigue el siguiente algoritmo, obtiene su posición por el callback que genera el nodo amcl, una vez conocida la posición, se discretiza en un a matriz para poder ser accedida, dado que es una matriz discretizada para evitar un error de índices en la programación, se definen los límites máximos y mínimos, tomando en cuenta las dimensiones del mapa. Con los índices definidos se procede a extraer la diferencia de la distancia entre el punto de origen del robot y el punto al que se desea llegar, en caso de que no se haya seleccionado una trayectoria el robot se detiene.
 
-Para incluir la evasión de obstáculos se propuso tener una distancia mínima mostrada en la Figura \ref{fig:Figura_Nodo_laser_distance}, con la cual se decide si se inicia la evasión. En el caso en cual se tiene una distancia mayor a la propuesta, se ejecuta el algoritmo de la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_B}, el cual tiene como propósito alinear con el ángulo deseado con la orientación propia del robot, posteriormente este ángulo se compara con su complemento para determinar el sentido en que girar para tener movimientos más cortos, debido a que el sistema puede dar oscilaciones muy grandes y con esto dañar los motores, además se incluyen condiciones para que la velocidad angular quede dentro de un margen, así mismo si es muy grande el ángulo de error (45°) la velocidad lineal se vuelve cero grantizando la rotación en su propio eje para cambios angulares grandes. Estas velocidades son publicadas para que el robot tome estos valores de velocidad, posteriormente se le da un retardo a la ejecución del código para tener tiempo suficiente de recopilar los datos.
-
-En el caso en que la distancia es menor a la propuesta como se muestra en las Figuras \ref{fig:Figura_Algoritmo_seguimiento_parte_C} y \ref{fig:Figura_Algoritmo_seguimiento_parte_D} se verifica si no hay un obstáculo en la dirección por la que el robot debe ir. De no haber obstáculo sobre el ángulo deseado se ejecuta la rutina anterior, en el caso de que si lo haya se hace una búsqueda para encontrar el primer camino libre en sentido antihorario, agregando 15° más para evitar colisionar y ahora alinea la orientación del robot con el nuevo angulo libre, finalmente la nueva velocidad es publicada. Esto se ejecuta controlado por la interfaz que indica el avance o paro del robot.
-
 %Ilustración 21. Algoritmo de seguimiento de trayectoria parte A.
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.265]{imagenes/Implementacion/Procesamiento/21_Algoritmo_seguimiento_parte_A.jpg}}
+	\fbox{\includegraphics[scale=0.265]{imagenes/Implementacion/Procesamiento/21_Diagrama_Metodo_Follow.jpg}}
 	\caption{Función Follow para ejecutar VFH o seguimiento de trayectoria.}
 	\label{fig:Figura_Algoritmo_seguimiento_parte_A}
 \end{figure}
 
+Para incluir la evasión de obstáculos se propuso tener una distancia mínima mostrada en la Figura \ref{fig:Figura_Nodo_laser_distance}, con la cual se decide si se inicia la evasión. En el caso en cual se tiene una distancia mayor a la propuesta, se ejecuta el algoritmo de la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_B}, el cual tiene como propósito alinear con el ángulo deseado con la orientación propia del robot, posteriormente este ángulo se compara con su complemento para determinar el sentido en que girar para tener movimientos más cortos, debido a que el sistema puede dar oscilaciones muy grandes y con esto dañar los motores, además se incluyen condiciones para que la velocidad angular quede dentro de un margen, así mismo si es muy grande el ángulo de error (45°) la velocidad lineal se vuelve cero grantizando la rotación en su propio eje para cambios angulares grandes. Estas velocidades son publicadas para que el robot tome estos valores de velocidad, posteriormente se le da un retardo a la ejecución del código para tener tiempo suficiente de recopilar los datos.
+
+
 %Ilustración 22. Algoritmo de seguimiento de trayectoria parte B.
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/22_Algoritmo_seguimiento_parte_B.jpg}}
-	\caption{Función de seguimiento de trayectoria.}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Implementacion/Procesamiento/22_Diagrama_Metodo_Move.jpg}}
+	\caption{Función de seguimiento de trayectoria por dirección.}
 	\label{fig:Figura_Algoritmo_seguimiento_parte_B}
 \end{figure}
+
+En el caso en que la distancia es menor a la propuesta como se muestra en la Figura \ref{fig:Figura_Algoritmo_seguimiento_parte_C} se verifica si no hay un obstáculo en la dirección por la que el robot debe ir. De no haber obstáculo sobre el ángulo deseado se ejecuta la rutina anterior con el mismo ángulo indicado por la trayectoria, en el caso de que si lo haya se hace una búsqueda para encontrar el primer camino libre en sentido antihorario, agregando 15° más para evitar colisionar si está muy cerca del obstáculo y ahora alinea la orientación del robot con el nuevo angulo libre, finalmente la nueva velocidad es publicada. Esto se ejecuta controlado por la interfaz que indica el avance o paro del robot.
 
 %Ilustración 23. Algoritmo de seguimiento de trayectoria parte C.
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.35]{imagenes/Implementacion/Procesamiento/23_Algoritmo_seguimiento_parte_C.jpg}}
+	\fbox{\includegraphics[scale=0.35]{imagenes/Implementacion/Procesamiento/23_Diagrama_Metodo_VFH.jpg}}
 	\caption{Algoritmo para aplicar VFH.}
 	\label{fig:Figura_Algoritmo_seguimiento_parte_C}
-\end{figure}
-
-%Ilustración 24. Algoritmo de seguimiento de trayectoria parte D.
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Implementacion/Procesamiento/24_Algoritmo_seguimiento_parte_D.jpg}}
-	\caption{Función para ir a un sector libre.}
-	\label{fig:Figura_Algoritmo_seguimiento_parte_D}
 \end{figure}
 
 \subsubsection{Validación de seguimiento y evasión}

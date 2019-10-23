@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Allevato, 2019]{names}
+Allevato, A. (2019).
+\newblock Names.
+\newblock http://wiki.ros.org/Names.
+
 \bibitem[Alvaro, 2013]{U_P_Cartagena}
 Alvaro, G. (2013).
 \newblock Ros: Robot operating system.
@@ -66,6 +71,11 @@ GTK (2018).
 \newblock Shenzhen Foxell Technologies Co., Ltd.
 \newblock
   https://es.aliexpress.com/item/1-unids-11-1-V-5C-1800-mAh-li-po-bater-a-de-pol-mero-de/32830921404.html.
+
+\bibitem[Guti\'errez, 2014]{framework}
+Guti\'errez, J. (2014).
+\newblock Qu\'e es un framework web.
+\newblock {\em ros.org}.
 
 \bibitem[Harashima et~al., 1996]{harashima_1996}
 Harashima, F., Tomizuka, M., and Fukuda, T. (1996).

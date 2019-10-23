@@ -16,44 +16,44 @@ The style file: apalike.bst
 A level-1 auxiliary file: apendices/apendice1.aux
 A level-1 auxiliary file: apendices/anexo1.aux
 Database file #1: xbiblioteca.bib
-You've used 42 entries,
+You've used 44 entries,
             1935 wiz_defined-function locations,
-            696 strings with 10165 characters,
-and the built_in function-call counts, 13040 in all, are:
-= -- 1301
-> -- 466
-< -- 35
-+ -- 157
-- -- 146
-* -- 893
-:= -- 2379
-add.period$ -- 129
-call.type$ -- 42
-change.case$ -- 266
-chr.to.int$ -- 37
-cite$ -- 42
-duplicate$ -- 578
-empty$ -- 859
-format.name$ -- 202
-if$ -- 2520
+            703 strings with 10265 characters,
+and the built_in function-call counts, 13555 in all, are:
+= -- 1353
+> -- 480
+< -- 37
++ -- 161
+- -- 150
+* -- 925
+:= -- 2480
+add.period$ -- 135
+call.type$ -- 44
+change.case$ -- 278
+chr.to.int$ -- 39
+cite$ -- 44
+duplicate$ -- 601
+empty$ -- 894
+format.name$ -- 208
+if$ -- 2616
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 216
-num.names$ -- 126
-pop$ -- 239
+missing$ -- 21
+newline$ -- 226
+num.names$ -- 132
+pop$ -- 247
 preamble$ -- 1
-purify$ -- 283
+purify$ -- 295
 quote$ -- 0
-skip$ -- 488
+skip$ -- 508
 stack$ -- 0
-substring$ -- 654
-swap$ -- 101
+substring$ -- 678
+swap$ -- 102
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 242
+type$ -- 254
 warning$ -- 0
-while$ -- 90
+while$ -- 94
 width$ -- 0
-write$ -- 519
+write$ -- 543

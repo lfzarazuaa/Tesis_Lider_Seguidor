@@ -113,22 +113,22 @@
 \contentsline {subsection}{\numberline {3.5.5}Prueba C: Validar el algoritmo L\IeC {\'\i }der-Seguidor}{131}{subsection.3.5.5}% 
 \contentsline {subsubsection}{\numberline {3.5.5.1}An\'alisis de resultados}{132}{subsubsection.3.5.5.1}% 
 \contentsline {subsection}{\numberline {3.5.6}Prueba D:Validar la evasi\'on de obst\'aculos}{133}{subsection.3.5.6}% 
-\contentsline {subsubsection}{\numberline {3.5.6.1}Validaci\'on de seguimiento y evasi\'on}{138}{subsubsection.3.5.6.1}% 
+\contentsline {subsubsection}{\numberline {3.5.6.1}Validaci\'on de seguimiento y evasi\'on}{137}{subsubsection.3.5.6.1}% 
 \contentsline {subsubsection}{\numberline {3.5.6.2}An\'alisis de resultados}{138}{subsubsection.3.5.6.2}% 
 \contentsline {subsection}{\numberline {3.5.7}Prueba E: Validar la integraci\'on de evasi\'on y seguimiento}{138}{subsection.3.5.7}% 
 \contentsline {subsubsection}{\numberline {3.5.7.1}An\'alisis de resultados}{139}{subsubsection.3.5.7.1}% 
-\contentsline {subsection}{\numberline {3.5.8}Realizaci\'on de la HMI}{140}{subsection.3.5.8}% 
-\contentsline {subsubsection}{\numberline {3.5.8.1}Programa Principal}{145}{subsubsection.3.5.8.1}% 
+\contentsline {subsection}{\numberline {3.5.8}Realizaci\'on de la HMI}{139}{subsection.3.5.8}% 
+\contentsline {subsubsection}{\numberline {3.5.8.1}Programa Principal}{144}{subsubsection.3.5.8.1}% 
 \contentsline {subsubsection}{\numberline {3.5.8.2}Ventana Gr\'afica}{145}{subsubsection.3.5.8.2}% 
-\contentsline {subsubsection}{\numberline {3.5.8.3}Programa de ROS}{146}{subsubsection.3.5.8.3}% 
+\contentsline {subsubsection}{\numberline {3.5.8.3}Programa de ROS}{145}{subsubsection.3.5.8.3}% 
 \contentsline {subsubsection}{\numberline {3.5.8.4}Framework de Trabajo}{146}{subsubsection.3.5.8.4}% 
 \contentsline {subsubsection}{\numberline {3.5.8.5}Puntos importantes a considerar}{147}{subsubsection.3.5.8.5}% 
-\contentsline {subsubsection}{\numberline {3.5.8.6}Modificaci\'on del Programa}{148}{subsubsection.3.5.8.6}% 
+\contentsline {subsubsection}{\numberline {3.5.8.6}Modificaci\'on del Programa}{147}{subsubsection.3.5.8.6}% 
 \contentsline {subsubsection}{\numberline {3.5.8.7}Resultados de la ejecuci\'on}{148}{subsubsection.3.5.8.7}% 
 \contentsline {section}{\numberline {3.6}Especificaciones del Sistema}{152}{section.3.6}% 
-\contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{153}{subsubsection.3.6.0.1}% 
-\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentaci\'on}{153}{subsubsection.3.6.0.2}% 
-\contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{153}{subsubsection.3.6.0.3}% 
+\contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{152}{subsubsection.3.6.0.1}% 
+\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentaci\'on}{152}{subsubsection.3.6.0.2}% 
+\contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{152}{subsubsection.3.6.0.3}% 
 \contentsline {chapter}{\numberline {4}An\'alisis de Costo}{155}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Costos variables}{155}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Costos fijos}{156}{section.4.2}% 
