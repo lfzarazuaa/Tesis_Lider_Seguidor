@@ -73,6 +73,7 @@ freely copied and distributed.}
 \def\contentsname{\'Indice General}
 %\def\listfigurename{\'Indice de Figuras}
 \def\listtablename{\'Indice de Tablas}
+%\def\tablename{Tabla}
 \def\IPN{INSTITUTO POLIT\'ECNICO NACIONAL}
 \def\Ipn{Instituto Polit\'ecnico Nacional}
 \def\upiita{Unidad Profesional Interdisciplinaria en Ingenier\'ia y Tecnolog\'ias Avanzadas}
@@ -399,7 +400,8 @@ para obtener el t\'itulo de\par} \vskip 0.5em {\Large \emph{\bf ``\@grado''}}
 \addto{\captionsspanish}{\def\contentsname{Contenido}}
 \addto{\captionsspanish}{\def\listtablename{\'Indice de Tablas}}
 \addto{\captionsspanish}{\def\bibname{Referencias}}
-\addto{\captionsspanish}{\def\figurename{Figura}}
+\addto{\captionsspanish}{\def\figurename{Figura}}%Cambiar de Imagen a Figura.
+\renewcommand\spanishtablename{Tabla}%Cambiar de Cuadro a Tabla
 \newcommand{\tabladecontenido}{
 \ifx\marcadorContenido\undefined \ifpdf
    \pdfbookmark{Contenido}{Contenido}

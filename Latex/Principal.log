@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  22 OCT 2019 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  22 OCT 2019 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3831,7 +3831,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  12178 strings out of 492609
  199482 string characters out of 6132833
- 317156 words of memory out of 5000000
+ 317155 words of memory out of 5000000
  14893 multiletter control sequences out of 15000+600000
  15535 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3857,7 +3857,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (228 pages, 13831163 bytes).
+Output written on Principal.pdf (228 pages, 13831017 bytes).
 PDF statistics:
  2948 PDF objects out of 2984 (max. 8388607)
  2495 compressed objects within 25 object streams
