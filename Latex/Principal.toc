@@ -13,37 +13,37 @@
 \contentsline {section}{\numberline {1.1}Marco te\'orico}{1}{section.1.1}% 
 \contentsline {subsection}{\numberline {1.1.1}Robots m\'oviles terrestres}{1}{subsection.1.1.1}% 
 \contentsline {subsection}{\numberline {1.1.2}Cinem\'atica de robots m\'oviles}{2}{subsection.1.1.2}% 
-\contentsline {subsection}{\numberline {1.1.3}AMCL}{5}{subsection.1.1.3}% 
-\contentsline {subsection}{\numberline {1.1.4}VFH (Vector Field Histogram)}{6}{subsection.1.1.4}% 
-\contentsline {subsubsection}{\numberline {1.1.4.1}Primer nivel: Mapa 2D}{6}{subsubsection.1.1.4.1}% 
-\contentsline {subsubsection}{\numberline {1.1.4.2}Segundo nivel: Histograma polar}{7}{subsubsection.1.1.4.2}% 
-\contentsline {subsubsection}{\numberline {1.1.4.3}Tercer nivel: Comando de direcci\'on}{7}{subsubsection.1.1.4.3}% 
+\contentsline {subsection}{\numberline {1.1.3}AMCL}{4}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}VFH (Vector Field Histogram)}{5}{subsection.1.1.4}% 
+\contentsline {subsubsection}{\numberline {1.1.4.1}Primer nivel: \textit {Mapa 2D}}{6}{subsubsection.1.1.4.1}% 
+\contentsline {subsubsection}{\numberline {1.1.4.2}Segundo nivel: \textit {Histograma polar}}{6}{subsubsection.1.1.4.2}% 
+\contentsline {subsubsection}{\numberline {1.1.4.3}Tercer nivel: \textit {Comando de direcci\'on}}{7}{subsubsection.1.1.4.3}% 
 \contentsline {subsection}{\numberline {1.1.5}Esquemas l\IeC {\'\i }der - seguidor}{8}{subsection.1.1.5}% 
 \contentsline {section}{\numberline {1.2}Marco Procedimental}{9}{section.1.2}% 
-\contentsline {subsection}{\numberline {1.2.1}Sistema mecatr\'onico}{10}{subsection.1.2.1}% 
-\contentsline {subsection}{\numberline {1.2.2}Dise\~no mecatr\'onico}{11}{subsection.1.2.2}% 
-\contentsline {subsection}{\numberline {1.2.3}Proceso de an\'alisis jer\'arquico (AHP)}{11}{subsection.1.2.3}% 
+\contentsline {subsection}{\numberline {1.2.1}Sistema mecatr\'onico}{9}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}Dise\~no mecatr\'onico}{10}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.3}Proceso de an\'alisis jer\'arquico (AHP)}{10}{subsection.1.2.3}% 
 \contentsline {chapter}{\numberline {2}Dise\~no del Sistema}{13}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Dise\~no Conceptual}{13}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Necesidades y requerimientos}{13}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}Descomposici\'on por \'areas funcionales }{16}{subsection.2.1.2}% 
-\contentsline {subsubsection}{\numberline {2.1.2.1}\'Area Funcional 1: Estructura}{17}{subsubsection.2.1.2.1}% 
-\contentsline {subsubsection}{\numberline {2.1.2.2}\'Area Funcional 2: Procesamiento}{17}{subsubsection.2.1.2.2}% 
-\contentsline {subsubsection}{\numberline {2.1.2.3}\'Area Funcional 3: Percepci\'on}{18}{subsubsection.2.1.2.3}% 
-\contentsline {subsubsection}{\numberline {2.1.2.4}\'Area Funcional 4: Alimentaci\'on}{18}{subsubsection.2.1.2.4}% 
-\contentsline {subsubsection}{\numberline {2.1.2.5}\'Area Funcional 5: Movimiento}{19}{subsubsection.2.1.2.5}% 
+\contentsline {subsubsection}{\numberline {2.1.2.1}\'Area Funcional 1: \textit {Estructura}}{17}{subsubsection.2.1.2.1}% 
+\contentsline {subsubsection}{\numberline {2.1.2.2}\'Area Funcional 2: \textit {Procesamiento}}{17}{subsubsection.2.1.2.2}% 
+\contentsline {subsubsection}{\numberline {2.1.2.3}\'Area Funcional 3: \textit {Percepci\'on}}{18}{subsubsection.2.1.2.3}% 
+\contentsline {subsubsection}{\numberline {2.1.2.4}\'Area Funcional 4: \textit {Alimentaci\'on}}{18}{subsubsection.2.1.2.4}% 
+\contentsline {subsubsection}{\numberline {2.1.2.5}\'Area Funcional 5: \textit {Movimiento}}{18}{subsubsection.2.1.2.5}% 
 \contentsline {subsection}{\numberline {2.1.3}Caracter\IeC {\'\i }sticas y/o necesidades principales de cada \'area funcional}{19}{subsection.2.1.3}% 
-\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet'' Robot Kit }{21}{subsection.2.1.4}% 
+\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet'' Robot Kit }{20}{subsection.2.1.4}% 
 \contentsline {subsubsection}{\numberline {2.1.4.1}Rosbot}{21}{subsubsection.2.1.4.1}% 
 \contentsline {subsubsection}{\numberline {2.1.4.2}Turtlebot3 Burger}{22}{subsubsection.2.1.4.2}% 
 \contentsline {subsubsection}{\numberline {2.1.4.3}TX1 ``Jet'' Robot Kit}{23}{subsubsection.2.1.4.3}% 
 \contentsline {subsection}{\numberline {2.1.5}Tablas de selecci\'on de los robots m\'oviles}{23}{subsection.2.1.5}% 
 \contentsline {subsection}{\numberline {2.1.6}Criterios para el dise\~no y selecciones de interfaces gr\'aficas}{26}{subsection.2.1.6}% 
 \contentsline {subsubsection}{\numberline {2.1.6.1}Criterios a evaluar}{26}{subsubsection.2.1.6.1}% 
-\contentsline {subsubsection}{\numberline {2.1.6.2}1. Amabilidad}{26}{subsubsection.2.1.6.2}% 
-\contentsline {subsubsection}{\numberline {2.1.6.3}2. Interactividad}{26}{subsubsection.2.1.6.3}% 
-\contentsline {subsubsection}{\numberline {2.1.6.4}3. Redundancia \'optima en el proceso de comunicaci\'on}{26}{subsubsection.2.1.6.4}% 
-\contentsline {subsubsection}{\numberline {2.1.6.5}4. Eficiencia y Utilidad}{26}{subsubsection.2.1.6.5}% 
+\contentsline {subsubsection}{\numberline {2.1.6.2}\textit {Amabilidad}}{26}{subsubsection.2.1.6.2}% 
+\contentsline {subsubsection}{\numberline {2.1.6.3}\textit {Interactivida}}{26}{subsubsection.2.1.6.3}% 
+\contentsline {subsubsection}{\numberline {2.1.6.4}\textit {Redundancia \'optima en el proceso de comunicaci\'on}}{26}{subsubsection.2.1.6.4}% 
+\contentsline {subsubsection}{\numberline {2.1.6.5}\textit {Eficiencia y utilidad}}{26}{subsubsection.2.1.6.5}% 
 \contentsline {subsubsection}{\numberline {2.1.6.6}Tabla de Criterios}{27}{subsubsection.2.1.6.6}% 
 \contentsline {subsubsection}{\numberline {2.1.6.7}Lista de opciones de interfaz}{28}{subsubsection.2.1.6.7}% 
 \contentsline {subsubsection}{\numberline {2.1.6.8}Dise\~no de arquitectura general del software}{28}{subsubsection.2.1.6.8}% 

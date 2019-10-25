@@ -6,36 +6,36 @@ En este capítulo se definen las necesidades y requerimientos del problema plante
 
 \subsection{Necesidades y requerimientos}
 
-Es necesario identificar el problema planteado a resolver y extraer las necesidades de la persona o personas que hayan planteado para dicho problema. Una vez identificadas dichas necesidades se prosigue a generar requerimientos los cuales surgen de traducir las necesidades en sentencias cuantificables, para que a partir de ellas se hagan propuestas de diseño las cuales posteriormente son evaluadas. Dado que el enfoque es para investigación, las necesidades no son tan estrictas y son pocas, sin embargo, al hacer una interpretación de estas, surgen muchos requerimientos, los cuales permite acotar el proyecto.
+Es necesario identificar el problema planteado a resolver y extraer todas las necesidades que el cliente tenga. Una vez identificadas dichas necesidades, se prosigue a generar requerimientos los cuales surgen de traducir las necesidades en sentencias cuantificables, para que a partir de ellas se hagan propuestas de diseño las cuales posteriormente son evaluadas. Dado que el enfoque de este trabajo es para investigación, las necesidades no son tan estrictas y son pocas, sin embargo, al hacer una interpretación de estas, surgen muchos requerimientos los cuales permite acotar el proyecto.
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|p{5cm}|p{9cm}|}
 		\hline
 		Necesidad & Interpretación \\ \hline
-		Tener dos robots móviles con ruedas para el desarrollo del proyecto SIP. & Selección de dos robots móviles terrestres para su compra o manufactura, con el objetivo de desarrollar un proyecto de investigación.\\ \hline
-		Los robots deberán ser usados para futuras aplicaciones y/o proyectos. & Robots con la documentación suficiente para poder ser replicados y reutilizados con una estructura modular, que permitan futuras adaptaciones .\\ \hline
+		Tener dos robots móviles con ruedas para el desarrollo del proyecto SIP. & Selección o construcción de dos robots móviles terrestres para su compra o manufactura, con el objetivo de desarrollar un proyecto de investigación.\\ \hline
+		Los robots deberán ser usados para futuras aplicaciones y/o proyectos. & Robots con la documentación suficiente para poder ser replicados y reutilizados con una estructura modular, que permitan futuras adaptaciones.\\ \hline
 		Controlar dos robots móviles terrestres bajo un esquema líder$-$seguidor. & Coordinación de dos robots móviles bajo la implementación de un esquema de control líder$-$seguidor.\\ \hline
-		Los robots deberán evadir obstáculos de manera autónoma y mantener una comunicación continua entre ambos robots. & El robot líder deberá seguir una trayectoria seleccionada y evadir los obstáculos que puedan estar dentro de esta trayectoria, mientras que el robot seguidor deberá alcanzar los mismos puntos que el robot líder con base en la información proporcionada por este último.\\ \hline
-		Una interfaz humano máquina con la cual se puedan compartir datos del proceso. & Interfaz gráfica que le sea posible, iniciar y visualizar el progreso del proceso del control y seguimiento de trayectoria y la configuración líder$-$seguidor.	\\ \hline
+		Los robots deberán evadir obstáculos de manera autónoma y mantener una comunicación continua entre ambos robots. & El robot líder deberá seguir una trayectoria seleccionada y evadir los obstáculos que pudieran estar dentro de la trayectoria, mientras que el robot seguidor deberá alcanzar los mismos puntos que el robot líder con base en la información proporcionada por este último.\\ \hline
+		Una interfaz humano máquina con la cual se puedan compartir datos del proceso. & Interfaz gráfica que le sea posible iniciar y visualizar el progreso del proceso del control y seguimiento de la trayectoria y la configuración líder$-$seguidor.	\\ \hline
 	\end{tabular}
 	\caption{Tabla de Necesidades}
 	\label{tab:Tabla_1_Necesidades}
 \end{table}
 
-Con la interpretación de la Tabla \ref{tab:Tabla_1_Necesidades} se procede a plantear los requerimientos técnicos enlistados a continuacion:
+Con la interpretación de la \textit{Tabla \ref{tab:Tabla_1_Necesidades}} se procede a plantear los requerimientos técnicos enlistados a continuacion:
 
 \begin{itemize}
-	\item Control basado en el esquema líder-seguidor.
+	\item Control basado en el esquema \textit{líder - seguidor}.
 	\item Móvil terrestre, con ruedas.
 	\item Batería con duración mínima de 10 minutos (uso continuo).
-	\item Estructura estable para el soporte de circuitos y movimiento del robot móvil y para futuras aplicaciones.
+	\item Estructura estable para el soporte de circuitos y movimiento del robot móvil con la posibilidad de ser adaptada para futuras aplicaciones.
 	\item Material ligero.
-	\item Ambiente controlado. (Obstáculos fijos y trayectorias predefinidas).
+	\item Ambiente controlado (obstáculos fijos y trayectorias predefinidas).
 	\item Superficie lisa y plana.
 	\item Lugar cerrado, con luz controlada.
 	\item Tarjeta de procesamiento de información con arquitectura mínima de 32 bits, con lenguaje de programación de medio/alto nivel (Python, C++).
-	\item Capacidad de soportar procesamiento en paralelo como lo es ROS.
+	\item Capacidad de soportar procesamiento en paralelo.
 	\item Capacidad para procesar información de distintos sensores y protocolos de comunicación, USB, WIFI, $I^{2}C$.
 	\item Capacidad para adquirir datos confiables.
 	\item Resolución menor a 5cm y 10° o su equivalente en coordenadas rectangulares.
@@ -44,7 +44,7 @@ Con la interpretación de la Tabla \ref{tab:Tabla_1_Necesidades} se procede a pla
 	\item Interfaz gráfica de rápido procesamiento capaz de establecer comunicación bidireccional con ambos robots móviles y desplegar los datos transmitidos por los robots.
 	\item El movimiento deberá ser con pausas no mayores a 3s, es decir, la trayectoria deseada deberá fluir lo mejor posible.
 	\item Respuesta rápida de los motores para establecer la velocidad deseada según la salida generada por el sistema de control.
-	\item Establecimiento de algoritmos específicos para la maniobra de evasión de los obstáculos y el control de seguimiento de trayectoria basado el control líder-seguidor, tomando en cuenta las capacidades de las tarjetas de procesamiento.
+	\item Establecimiento de algoritmos específicos para la maniobra de evasión de los obstáculos y el control de seguimiento de trayectoria basado en el control líder-seguidor.
 \end{itemize}
 
 Adicionalmente se tienen los siguientes requerimientos administrativos:
@@ -59,7 +59,7 @@ Adicionalmente se tienen los siguientes requerimientos administrativos:
 
 \subsection{Descomposición por áreas funcionales }
 
-Para tener una comprensión mayor del proyecto se procede a descomponerlo en áreas funcionales como se observa en la Figura \ref{fig:Figura_Areas_Funcionales}, lo cual permite visualizar una tarea complicada en funciones más sencillas que contribuirán a resolver el problema principal.
+Para tener una comprensión mayor del proyecto se procede a descomponerlo en áreas funcionales como se observa en la \textit{Figura \ref{fig:Figura_Areas_Funcionales}}, la cual permite la visualización de una tarea complicada, en tareas o funciones más sencillas que contribuyen a resolver el problema principal.
 
 \begin{figure}[H]
 	\centering
@@ -68,31 +68,31 @@ Para tener una comprensión mayor del proyecto se procede a descomponerlo en área
 	\label{fig:Figura_Areas_Funcionales}
 \end{figure}
 
-\subsubsection{Área Funcional 1: Estructura}
-La primera área de interés es una plataforma o estructura del móvil, donde alberga todas las herramientas que cumplirán con las funciones posteriores, esta estructura será la encargada de soportar todos los circuitos, sensores y procesadores capaces de satisfacer nuestras necesidades.
+\subsubsection{Área Funcional 1: \textit{Estructura}}
+La primera área de interés es la plataforma o estructura del móvil, donde se albergan todas las herramientas que cumplen con funciones o tareas posteriores. Esta área es la encargada de soportar todos los circuitos, sensores, actuadores, mecanismos de locomoción, fuentes de energía y tarjetas de procesamiento, capaces de satisfacer las necesidades de los robots y en particular del proyecto.
 
-Es importante mencionar que no se realizará un diseño de ella, sino que se pretenden analizar las propuestas existentes comercialmente o con acceso a un manual para su construcción. Nuestra razón es que al estar en el mercado sabemos que soporta todos los elementos que conlleva un móvil, ya que se hace la selección orientada a robots móviles que cumplan los requisitos de la mejor manera, con un proceso de diseño concurrente, una línea de producción, un sistema de pruebas, documentación y al ser comerciales con costos atractivos. Para el desarrollo de este proyecto no es necesario algo realmente robusto hablando estructuralmente, pues el objetivo es la implementación del esquema líder-seguidor.
+Es importante mencionar que no se realiza algún diseño de esta, sino que, se pretenden analizar las propuestas comerciales existentes o con acceso a un manual para su construcción. La razón es que al estar en el mercado se tiene la certeza que soportan todos los elementos que conlleva un móvil, con un proceso de diseño concurrente, una línea de producción, un sistema de pruebas, documentación y al ser comerciales, con costos atractivos.
 
-Dentro de los móviles que seleccionamos cada uno posee características específicas, aunque similares, es ahí donde entrará la metodología mecatrónica para seleccionar una opción adecuada que se encuentre disponible en el mercado o que tenga documentación para construirse, cubriendo los requerimientos antes mencionados, como lo es el límite de presupuesto.
+Dentro de los móviles que se seleccionaron cada uno posee características específicas, aunque similares, y es ahí donde entra la metodología mecatrónica para la selección de la opción más adecuada que se encuentre disponible en el mercado o que tenga la documentación suficiente para construirse, teniendo en cuenta los requerimientos antes mencionados, como el límite de presupuesto.
 
-\subsubsection{Área Funcional 2: Procesamiento}
+\subsubsection{Área Funcional 2: \textit{Procesamiento}}
 
-La localización, detección y evasión de obstáculos, la comunicación entre robots e interfaz (HMI), el seguimiento de trayectorias, así como la sinergia de las demás áreas funcionales están englobadas en el \textit{Área de Procesamiento} también llamada \textit{``Pensamiento propio del robot"}. Está es el área encargada de lograr el objetivo principal de este trabajo con la ayuda de tarjetas de procesamiento. Como entrada se manejan los datos obtenidos por la función percepción. El control, en términos de un diagrama IDEF0 es la selección del algoritmo a usar para cumplir cada una de estas funciones. Adicionalmente se necesitará establecer algún tipo de comunicación preferentemente inalámbrico entre ambos móviles y la computadora central, lo cual permitirá al robot seguidor conocer los puntos de interés por alcanzar, proporcionados por el líder. Así mismo, monitorear diversos parámetros durante la ejecución del esquema líder-seguidor.
+La localización, detección y evasión de obstáculos, la comunicación entre robots e interfaz (HMI), el seguimiento de trayectorias, así como la sinergia de las demás áreas funcionales están englobadas en el \textit{Área de Procesamiento} también llamada \textit{``Pensamiento propio del robot"}. El control, en términos de un diagrama IDEF0 es la selección del algoritmo a usar para el cumplimiento de cada una de las funciones, adicionalmente se necesita establecer algún tipo de comunicación (preferentemente inalámbrica) entre ambos móviles y la computadora central, la cual permita al robot seguidor conocer los puntos de interés por alcanzar proporcionados por el robot líder. Así mismo, monitorear diversos parámetros durante la ejecución del programa.
 
-\subsubsection{Área Funcional 3: Percepción}
+\subsubsection{Área Funcional 3: \textit{Percepción}}
 
-La percepción es el área funcional encargada de la recabación de datos internos y externos de cada robot (datos propioceptivos y exteroceptivos) para posteriormente procesar dicha información y extraer los datos de interés, y así llevar acabo la localización de los móviles, la detección de los obstáculos,  la detección del entorno y la evasión de los obstáculos. Para llevar a cabo la recabación de datos se implementó el uso de dispositivos electrónicos (sensores) capaces de variar sus propiedades internas con base en cambios de magnitudes físicas como distancias y ángulos de los objetos del entorno, aceleraciones y desplazamientos.
+La percepción es el área funcional encargada de la recabación de datos internos y externos de cada robot (datos propioceptivos y exteroceptivos) para posteriormente procesar dicha información y extraer los datos de interés, y así llevar a cabo la localización de los móviles, la detección de los obstáculos,  la detección del entorno y la evasión de los obstáculos. Para llevar a cabo la recabación de datos se implementa el uso de dispositivos electrónicos (sensores) capaces de variar sus propiedades internas con base en cambios de magnitudes físicas como distancias y ángulos de los objetos del entorno, aceleraciones y desplazamientos.
 
-\subsubsection{Área Funcional 4: Alimentación}
+\subsubsection{Área Funcional 4: \textit{Alimentación}}
 
-La alimentación es el área funcional encargada de suministrar la energía a cada móvil por la tanto es necesario que la fuente de alimentación pueda ser portable y que a la vez pueda suministrar una potencia suficiente al móvil, principalmente por los motores que son los que mayor cantidad de energía consumen, ya que llevan una carga. Asimismo al ser portable debe de ser una batería con una capacidad de energía considerable para que los móviles puedan realizar el seguimiento de la trayectoria totalmente sin dejarla a medias o en algún momento interferir con el proceso por falta de energía, también cabe recalcar que el sistema deberá tener una alerta de batería baja.
+La alimentación es el área funcional encargada de suministrar la energía a cada móvil por la tanto, es necesario que la fuente de alimentación pueda ser portable y que a su vez, pueda ser capaz de suministrar una potencia suficiente al móvil, principalmente por los motores que son los que mayor cantidad de energía requieren. Asimismo, al ser portable debe de ser una batería con una capacidad de energía considerable para que los móviles puedan realizar su tarea totalmente sin dejarla a medias o en algún momento interferir con el proceso.
 
-\subsubsection{Área Funcional 5: Movimiento}
+\subsubsection{Área Funcional 5: \textit{Movimiento}}
 
-La parte del acto o movimiento, tiene como característica fundamental la elección del tipo de locomoción ya sea Ackerman, triciclo, diferencial, entre otras. Esta locomoción tendrá como requisito que sea comercial o capaz de construirse con un manual para de esta manera poder satisfacer los requerimientos del proyecto. Otra de las herramientas para lograr esta función son los motores y sus controladores, las cuales son una parte fundamental para lograr tener un funcionamiento adecuado, refiriéndonos a la capacidad de transformar los comandos generados por los esquemas de control en acciones que además deberán tener un control de velocidad y dirección lo suficientemente preciso para asegurar que los móviles sigan la trayectoria de una manera correcta y consistente sin tener problemas mecánicos en los motores como lo es que no soporten la potencia debido a una alta velocidad.
+La parte del movimiento, tiene como característica fundamental la elección del tipo de locomoción ya sea Ackerman, triciclo, diferencial, etc. Este tipo de locomoción tiene que estar lo suficientemente documentada para poder satisfacer los requerimientos del proyecto. Otro parámetro importante en esta función, son los actuadores y sus controladores, los cuales son una parte fundamental para lograr tener un funcionamiento adecuado, refiriéndose a la capacidad de transformar los comandos generados por los esquemas de control en acciones que además tengan un control de velocidad y dirección lo suficientemente preciso para asegurar que los móviles sigan la trayectoria de una manera correcta y consistente.
 
 \subsection{Características y/o necesidades principales de cada área funcional}
-Ya propuestas las áreas funcionales se procede a enlistar las características y criterios a considerar según las necesidades y requerimientos haciendo énfasis en los elementos de cada área funcional.
+Ya propuestas las áreas funcionales se procede a enlistar las características y criterios a considerar según las necesidades y requerimientos, haciendo énfasis en los elementos de cada área funcional.
 \begin{itemize}
 	\item Percepción del entorno
 	\begin{itemize}
@@ -108,7 +108,7 @@ Ya propuestas las áreas funcionales se procede a enlistar las características y 
 		\item Costo.
 		\item Consumo energético.
 		\item Tamaño.
-		\item Bajo peso
+		\item Bajo peso.
 		\item Compatibilidad con diversos tipos de control (Torque, Velocidad, Posición).
 		\item Cantidad de motores.
 	\end{itemize}
@@ -122,9 +122,9 @@ Ya propuestas las áreas funcionales se procede a enlistar las características y 
 	\item Software/Framework
 	\begin{itemize}
 		\item Paralelismo inherente para tareas concurrentes.
-		\item Con herramientas de simulación, visualización de información y desarrollo de interfaces gráficas.
-		\item Facilidad de programación, física y digitalmente.
-		\item Compatible con las tarjetas de procesamiento.
+		\item Herramientas de simulación, visualización de información y desarrollo de interfaces gráficas.
+		\item Facilidad de programación, física y digital.
+		\item Compatibilidad con tarjetas de procesamiento.
 		\item Posibilidad de realizar diagnósticos sobre posibles fallas en el sistema.
 	\end{itemize}
 	\item Comunicación
@@ -143,17 +143,17 @@ Ya propuestas las áreas funcionales se procede a enlistar las características y 
 	\end{itemize}
 \end{itemize}
 \subsection{Características principales de los robots considerados. ROSbot, Turtlebot, TX1 ``Jet'' Robot Kit }
-Para la selección de los robots móviles se hizo una búsqueda contemplando los criterios antes mencionados, los más relevantes y dentro del presupuesto son las siguientes tres propuestas. Para cada propuesta se da una breve descripción.
+Para la selección de los robots móviles se hizo una búsqueda contemplando los criterios antes mencionados, las opciones más relevantes y dentro del presupuesto son las siguientes tres propuestas. Para cada propuesta se da una breve descripción.
 \subsubsection{Rosbot}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Conceptual/02_Rosbot.jpg}}
-	\caption{Robot móvil Rosbot [\citenum{rosbot}]}
+	\fbox{\includegraphics[scale=1.2]{imagenes/Conceptual/02_Rosbot.jpg}}
+	\caption{Robot móvil Rosbot [\citenum{rosbot}].}
 	\label{fig:Figura_Rosbot}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Rosbot} se muestra el Rosbot el cual es un robot autónomo basado en el sistema operativo ROS (Robotic Operating System) que cuenta con un sensor LIDAR 360º (RPLIDAR A2) y una cámara RGBD. Para el procesamiento y control del móvil se utilizan dos unidades centrales de control; la primera es un microcontrolador STM32F4 con instrucciones de un DSP (M4) el cual se encarga del procesamiento de la información proporcionada por los sensores, hacer la retroalimentación de los encoders, guardar en memoria las distancias de los sensores conectados a esta tarjeta y cualquier adquisición que ese necesite en tiempo real.  El segundo controlador es una tarjeta Core2 con Asus tinker Board la cual se encarga de ejecutar el sistema operativo ROS y así poder realizar el procesamiento de todos los algoritmos de alto nivel, asimismo está tarjeta le da la posibilidad de comunicarse inalámbricamente con otros dispositivos que ejecuten ROS.
+En la \textit{Figura \ref{fig:Figura_Rosbot}} se muestra el \textit{Rosbot} el cual es un robot basado en el sistema operativo ROS (Robotic Operating System) que cuenta con un sensor LIDAR 360º (RPLIDAR A2) y una cámara RGBD. En el procesamiento y control del móvil se utilizan dos unidades centrales de control; la primera es un microcontrolador STM32F4 con instrucciones de un DSP (M4) el cual se encarga del procesamiento de la información proporcionada por los sensores, hacer la retroalimentación de los encoders, guardar en memoria las distancias de los sensores conectados a esta tarjeta y cualquier adquisición que ese necesite en tiempo real.  La segunda es un controlador Core2 con Asus tinker Board la cual se encarga de ejecutar el sistema operativo ROS y así poder realizar el procesamiento de todos los algoritmos de alto nivel, asimismo está tarjeta da la posibilidad de comunicarse inalámbricamente con otros dispositivos que ejecuten ROS.
 
 Precio del robot: $\$$1299.00 USD
 
@@ -161,12 +161,12 @@ Precio del robot: $\$$1299.00 USD
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.12]{imagenes/Conceptual/03_Turtlebot.jpg}}
-	\caption{Robot móvil Turtlebot3 Burger [\citenum{turtlebot3}]}
+	\fbox{\includegraphics[scale=0.2]{imagenes/Conceptual/03_Turtlebot.jpg}}
+	\caption{Robot móvil Turtlebot3 Burger [\citenum{turtlebot3}].}
 	\label{fig:Figura_Turtlebot}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Turtlebot} se muestra el Turtlebot3 Burger el cual es un robot modular de bajo costo y software abierto basado en el sistema operativo ROS. Este robot es el que garantiza mejor compatibilidad con el sistema operativo ROS, ya que no es necesario realizar muchos modelos de este pues ya se encuentran disponibles. Cuenta con dos tarjetas de procesamiento y una interfaz de simulación y monitoreo; la primera de ella es una tarjeta Raspberry Pi 3 modelo B y la segunda es una tarjeta Open CR ARM Cortex 32 bits. Pose un sensor LIDAR 360º (LDS-01), una batería de 1800 mAh, un giroscopio, con un acelerómetro y un magnetómetro de 3 ejes cada uno. Para el control de la posición y velocidad del robot tiene un par motores inteligentes Dynamixel XL430 y una estructura escalable y modular con la cual se pueden extender sus aplicaciones. Uno de los objetivos primordiales del Turtlebot3 Burger es reducir drásticamente el tamaño de la plataforma y bajar el precio sin tener que sacrificar la calidad o limitar sus funciones de respuesta ofertando al mismo tiempo capacidad de expansión (escalabilidad).
+En la \textit{Figura \ref{fig:Figura_Turtlebot}} se muestra el \textit{Turtlebot3 Burger} el cual es un robot modular de bajo costo y software abierto basado en el sistema operativo ROS. Este robot es el que garantiza mejor compatibilidad con el sistema operativo ROS. Cuenta con dos tarjetas de procesamiento y una interfaz de simulación y monitoreo; la primera de ella es una tarjeta Raspberry Pi 3 modelo B y la segunda es una tarjeta Open CR ARM Cortex 32 bits. Pose un sensor LIDAR 360º (LDS-01), una batería de 1800 mAh, un giroscopio, con un acelerómetro y un magnetómetro de 3 ejes cada uno. Para el control de la posición y velocidad del robot tiene un par motores inteligentes Dynamixel XL430 y una estructura escalable y modular con la cual se pueden extender sus aplicaciones. Uno de los objetivos primordiales del Turtlebot3 Burger es reducir drásticamente el tamaño de la plataforma y bajar el precio sin tener que sacrificar la calidad o limitar sus funciones de respuesta ofertando al mismo tiempo capacidad de expansión (escalabilidad).
 
 Precio del robot: $\$$549.00 USD
 
@@ -174,12 +174,12 @@ Precio del robot: $\$$549.00 USD
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Conceptual/04_JET.jpg}}
-	\caption{Robot móvil TX1 ``Jet'' [\citenum{servocity.com}]}
+	\fbox{\includegraphics[scale=0.625]{imagenes/Conceptual/04_JET.jpg}}
+	\caption{Robot móvil TX1 ``Jet'' [\citenum{servocity.com}].}
 	\label{fig:Figura_JET}
 \end{figure}
 
-En la Figura \ref{fig:Figura_JET} se muestra el robot TX1 ``Jet"$\,$el cual es un robot inteligente y autónomo que utiliza componentes Acotobotics y se basa en la potente plataforma de desarrollo integrada NVIDIA Jetson. El cerebro de Jet se basa en el SoC NVIDIA Tegra® y utiliza los mismos núcleos de computacionales NVIDIA diseñados para las supercomputadoras de todo el mundo. Esto proporciona a la computadora una visión computacional intensiva en cálculos, inteligencia artificial (AI) y capacidades de auto manejo en un paquete de bajo costo. Como ``Jet"$\,$utiliza el sistema operativo de robot (ROS) para la abstracción, se puede escalar desde proyectos de desarrollo hasta aplicaciones industriales específicas en entornos complejos. El Jetson TX1 es un supercomputador que presenta la nueva arquitectura NVIDIA Maxwell, 256 núcleos NVIDIA CUDA®, CPU de 64 bits y una eficiencia energética competitiva. Sin embargo no posee tanta flexibilidad estructuralmente hablando para añadir nuevos elementos mecánicos.
+En la \textit{Figura \ref{fig:Figura_JET}} se muestra el  \textit{TX1 ``Jet"$\,$}el cual es un robot que utiliza componentes Acotobotics y se basa en la potente plataforma de desarrollo integrada NVIDIA Jetson. El cerebro de Jet se basa en el SoC NVIDIA Tegra® y utiliza los mismos núcleos de computacionales NVIDIA diseñados para las supercomputadoras de todo el mundo. Esto proporciona a la computadora una visión computacional intensiva en cálculos, inteligencia artificial (AI) y capacidades de auto manejo en un paquete de bajo costo. Como ``Jet"$\,$utiliza el sistema operativo de robot (ROS) para la abstracción, se puede escalar desde proyectos de desarrollo hasta aplicaciones industriales específicas en entornos complejos. El Jetson TX1 es un supercomputador que presenta la nueva arquitectura NVIDIA Maxwell, 256 núcleos NVIDIA CUDA®, CPU de 64 bits y una eficiencia energética competitiva. Sin embargo no posee tanta flexibilidad estructuralmente hablando para añadir nuevos elementos mecánicos.
 
 Precio del robot: $\$$1,165.99  USD
 
@@ -248,25 +248,25 @@ Los robots móviles considerados fueron separados acorde a las áreas funcionales 
 	\label{tab:Tabla_Motores}
 \end{table}
 
-De las tablas de selección se observa que la mejor opción para la mayoría de los casos resultó ser el \textit{Turtlebot3 Burger}, con lo que se concluye con la parte de selección de los robots móviles. En algunos casos no fue necesaria la realización de tablas ya que poseían las mismas características, como : configuración, framework y comunicación. Para mayor detalle de como se obtuvieron los anteriores valores revisar en anexos.
+De las tablas de selección se observa que la mejor opción para la mayoría de los casos resultó ser el \textit{Turtlebot3 Burger}, con lo que se concluye con la parte de selección de los robots móviles. En algunos casos no fue necesaria la realización de tablas ya que poseían las mismas características, como : configuración, framework y comunicación (para mayor detalle de como se obtuvieron los anteriores valores consultar los anexos).
 
 \subsection{Criterios para el diseño y selecciones de interfaces gráficas}
 \subsubsection{Criterios a evaluar}
 
-Para llevar a cabo la implementación de la interfaz gráfica se decidió primero considerar sus requerimientos técnicos y necesidades, posteriormente para lograr una correcta realización de la interfaz se investigaron diferentes criterios para una interfaz gráfica dentro de los cuales seleccionamos los más importantes, estos criterios para el diseño y selección de interfaces gráficas son mencionados a continuación.
+Para llevar a cabo la implementación de la interfaz gráfica se decidió primero considerar sus requerimientos técnicos y necesidades, posteriormente para lograr una correcta realización de la interfaz se investigaron diferentes criterios para una interfaz gráfica dentro de los cuales se seleccionaron los más importantes. Estos criterios para el diseño y selección de interfaces gráficas son mencionados a continuación.
 
-\subsubsection{1. Amabilidad}
+\subsubsection{\textit{Amabilidad}}
 
-La amabilidad se refiere a la facilidad de uso, aunque, dicho parámetro sea relativo de acuerdo al tipo de usuario, se considera que una interfaz es amigable cuando le es más fácil de usar para un mayor número de una población objetivo.
+La amabilidad se refiere a la facilidad de uso, aunque, dicho parámetro es relativo de acuerdo al tipo de usuario, se considera que una interfaz es amigable cuando es más fácil de usar para un mayor número de una población objetivo.
 
-\subsubsection{2. Interactividad}
+\subsubsection{\textit{Interactivida}}
 Una interfaz es interactiva cuando le proporciona al usuario un sentido de comunicación deseado, en otras palabras al usuario le será fácil plasmar su idea o propósito en la interfaz sin limitaciones.
 
-\subsubsection{3. Redundancia óptima en el proceso de comunicación}
+\subsubsection{\textit{Redundancia óptima en el proceso de comunicación}}
 
 Eficiencia a la hora de comunicarse entre distintos modos de comunicación como pueden ser visuales, verbales, auditivos, entre otros.
 
-\subsubsection{4. Eficiencia y Utilidad}
+\subsubsection{\textit{Eficiencia y utilidad}}
 
 El objetivo principal de una interfaz gráfica es hacer que las ideas, los conocimientos y la información sean comprensibles y útiles.
 
@@ -291,7 +291,7 @@ El objetivo principal de una interfaz gráfica es hacer que las ideas, los conoci
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.7]{imagenes/Conceptual/05_Interfaces.jpg}}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Conceptual/05_Interfaces.jpg}}
 	\caption{Opciones de interfaces gráficas}
 	\label{fig:Figura_Interfaces}
 \end{figure}
@@ -314,7 +314,7 @@ Como parte del diseño conceptual también se contemplan las distintas arquitectur
 	\label{fig:Figura_Arquitecturas}
 \end{figure}
 
-A continuación, se incluye la Tabla \ref{tab:Tabla_Comparacion_de_Arquitecturas} donde se mencionan las ventajas y desventajas de cada uno de estos paradigmas.
+A continuación, en la \textit{Tabla \ref{tab:Tabla_Comparacion_de_Arquitecturas}} se mencionan las ventajas y desventajas de cada uno de estos paradigmas.
 
 \begin{table}[H]
 	\centering
@@ -345,18 +345,18 @@ A continuación, se incluye la Tabla \ref{tab:Tabla_Comparacion_de_Arquitecturas}
 	\label{tab:Tabla_Comparacion_de_Arquitecturas}
 \end{table}
 
-Sin embargo, para nuestro caso donde solamente interactúan 2 robots y una computadora, únicamente para dar inicio a las trayectorias y modos de operación, las ventajas y desventajas que ofrecen estos paradigmas no se logran apreciar o reflejar  completamente debido a la escala del proyecto y número de robots.
+Sin embargo, para el caso en particular, donde solamente interactúan 2 robots y una computadora únicamente para dar inicio a las trayectorias y modos de operación, las ventajas y desventajas que ofrecen estos paradigmas no se logran apreciar o reflejar  completamente debido a la escala del proyecto y número de robots.
 
-En nuestra propuesta de solución y adaptándose a los robots móviles seleccionados una opción adecuada es aplicar una arquitectura distribuida como se muestra en la Figura \ref{fig:Figura_Arquitectura_lider}, ya que con este paradigma se realizará el procesamiento en cada uno de los robots móviles, así como en la computadora de monitoreo. Cada elemento dentro de nuestro sistema procesará partes de código específicas, relacionadas con sus acciones de manera autónoma sin necesidad de consultar todas sus acciones con un nodo central.
+En la propuesta de solución y adaptándose a los robots móviles seleccionados, una opción adecuada es aplicar una arquitectura distribuida como se muestra en la \textit{Figura \ref{fig:Figura_Arquitectura_lider}}, ya que con este paradigma se realiza el procesamiento en cada uno de los robots móviles, así como en la computadora de monitoreo. Cada elemento dentro del sistema procesará partes de código específicas, relacionadas con sus acciones de manera autónoma sin necesidad de consultar todas sus acciones con un nodo central.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.37]{imagenes/Conceptual/07_Esquema.jpg}}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Conceptual/07_Esquema.jpg}}
 	\caption{Arquitectura de software propuesta para el proyecto}
 	\label{fig:Figura_Arquitectura_lider}
 \end{figure}
 
-Adicionalmente cada robot móvil tendrá a su vez distintos nodos ejecutándose para cumplir con sus funciones específicas las cuales se detallan en la 
+Adicionalmente cada robot móvil tienen a su vez distintos nodos ejecutándose para cumplir con sus funciones específicas las cuales se detallan en la 
 \textit{\autoref{sec:Diseno_Detallado} ``Diseño Detallado".}
 
 \subsubsection{Concepto Final}
@@ -370,12 +370,12 @@ Adicionalmente cada robot móvil tendrá a su vez distintos nodos ejecutándose par
 
 \begin{enumerate}
 	\item Comunicación WiFi entre la interfaz humano máquina y los robots líder y seguidor.
-	\item Robot Seguidor con sensores lidar y acelerómetro.
+	\item Robot Seguidor con sensores LIDAR y acelerómetro.
 	\item Robot Líder manipulado directamente desde la interfaz.
 	\item 2 obstáculos con forma regular de dimensiones cercanas a la de una caja de zapatos.
 	\item Computadora con la interfaz y sistema operativo ROS para comunicarse con los robots.
-	\item Marcas de distintas formas para una mejor identificación con el sensor lidar.
-	\item Ambiente de luz controlado favorable para la operación del sensor lidar.
+	\item Marcas de distintas formas para una mejor identificación con el sensor LIDAR.
+	\item Ambiente de luz controlado favorable para la operación del sensor LIDAR.
 	\item Suelo plano sin ningún objeto móvil y con coeficiente de fricción mayor a 0.4.
 	\item Trayectoria fijada por medio de la interfaz la cual sigue tanto el líder como el seguidor.
 	\item Punto de objetivo propuesto por el usuario (la trayectoria llega a puntos meta).

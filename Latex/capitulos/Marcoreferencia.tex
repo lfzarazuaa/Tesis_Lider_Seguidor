@@ -4,40 +4,38 @@
 
 \subsection{Robots móviles terrestres}
 
-Una manera de entender este tipo de robots es por medio de las distintas áreas de conocimiento que se integran para su desarrollo. Lo primero en tomar en cuenta es ¿cómo van a moverse? y ¿qué mecanismo de movimiento usarán? La cinemática, la dinámica y la teoría del control de los mecanismos utilizados, son necesarios para el desplazamiento correcto de los robots. El diseño e implementación de los sistemas perceptuales robustos, la visión computacional y los sistemas sensoriales, son necesarios para la obtención de la información del entorno y con base en esta información la toma de decisiones.
+Una manera de entender este tipo de robots es por medio de las distintas áreas de conocimiento que se integran para su desarrollo. Lo primero en tomar en cuenta es ¿cómo van a moverse? y ¿qué mecanismo de movimiento usarán? La cinemática, la dinámica y la teoría del control de los mecanismos son necesarias para el desplazamiento correcto de los robots. El diseño e implementación de los sistemas perceptuales robustos, la visión computacional y los sistemas sensoriales, son necesarios para la obtención de la información del entorno y con base en esta información, la toma de decisiones.
 
-De igual manera, es necesario tener conocimientos acerca de localización y navegación que implican algoritmos informáticos, de inteligencia artificial y teoría probabilística, para el cumplimiernto de tareas de manera autónoma.
+De igual manera, es necesario tener conocimientos acerca de localización y navegación que implican los algoritmos informáticos de inteligencia artificial y de la teoría probabilística para el cumplimiento de tareas de manera autónoma.
 
 Todos estos elementos forman el llamado ciclo \textit{``Ve, piensa, actúa"}, tal como se muestra en la Figura \ref{fig:Figura_Ve_piensa_actua}  [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg}}
+	\fbox{\includegraphics[scale=0.38]{imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg}}
 	\caption{\textit{Ciclo: Ve, piensa, actúa}. Componentes que conforman un robot móvil autónomo.}
 	\label{fig:Figura_Ve_piensa_actua}
 \end{figure}
 
 \subsection{Cinemática de robots móviles}
-
 El análisis cinemático es esencial para el buen diseño de los robots móviles y para el diseño de controladores, dada cierta configuración de un robot móvil. Para comenzar a entender el movimiento de los robots móviles primero es necesario representar la posición de un robot en un marco de referencia [\citenum{siegwart_nourbakhsh_scaramuzza_2011}].
-
-En la Figura \ref{fig:Figura_Marco_de_Referencia} la posición de $``P"$ en el marco de referencia global se especifica mediante las coordenadas $``x"$ e  $``y"$, y la diferencia angular entre los marcos de referencia global y local viene dada por $``\theta"$. Se puede describir la posición del robot $(\xi_{l})$ como un vector conformado por estos tres elementos, teniendo en cuenta el uso del subíndice $``I"$ el cual nos indica el marco de referencia global.
+\\\\En la Figura \ref{fig:Figura_Marco_de_Referencia} la posición de $``P"$ en el marco de referencia global se especifica mediante las coordenadas $``x"$ y  $``y"$, y la diferencia angular entre los marcos de referencia global y local viene dada por $``\theta"$, pudiéndose describir la posición del robot $(\xi_{I})$ como un vector conformado por estos tres elementos, teniendo en cuenta el uso del subíndice $``I"$, el cual nos indica el marco de referencia global.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg}}
+	\fbox{\includegraphics[scale=0.38]{imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg}}
 	\caption{Marco de referencia global y el marco de referencia local del robot.}
 	\label{fig:Figura_Marco_de_Referencia}
 \end{figure}
 
-\[\xi_{l}=
+\[\xi_{I}=
 \begin{bmatrix}
 x\\
 y\\
 \theta\\
 \end{bmatrix}\]
 \begin{center}
-$\xi_{l}$ Posición conforme a un marco de referencia $l$.
+	$\xi_{I}$ Posición conforme a un marco de referencia $I$.
 \end{center}
 
 
@@ -48,8 +46,8 @@ Para describir la cinemática del robot se calcula el movimiento del motor en tér
 -\sin\left(\theta\right)&\cos\left(\theta\right)&0\\
 0&0&1\\
 \end{bmatrix}\]
-
-Dicha matriz puede ser usada para inspeccionar el movimiento del robot en ambos marcos de referencia, es decir el uso de esta matriz permite cambiar del marco de referencia local de robot al global y viceversa. Las expresiones para obtener el movimiento conforme a cada marco de referencia son:
+\\
+Dicha matriz puede ser usada para inspeccionar el movimiento del robot en ambos marcos de referencia, es decir, el uso de esta matriz permite cambiar del marco de referencia local del robot al global y viceversa. Las expresiones para obtener el movimiento conforme a cada marco de referencia son:
 \begin{center}
 	$\dot{\xi_{R}}=R\left(\theta\right) \dot{\xi_{I}}$
 	
@@ -85,7 +83,7 @@ Estas velocidades se representan en el robot como se indica en la Figura \ref{fi
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg}}
+	\fbox{\includegraphics[scale=1.3]{imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg}}
 	\caption{Parámetros de una configuración diferencial.}
 	\label{fig:Figura_Parametros_diferencial}
 \end{figure}
@@ -102,25 +100,25 @@ Parte de la cinemática de los robots móviles también es determinar la maniobrabi
 %\subsection{Matriz de fuerza}
 
 \subsection{AMCL}
-AMCL es una librería de \hyperref[sec:ROS]{ROS\ref*{sec:ROS}}\textit{ \hyperref[sec:ROS]{(ver definicón de ROS en la sección\ref*{sec:ROS}} \hyperref[sec:Glosario]{Glosario)\ref*{sec:Glosario}}}, la cual hace uso de un sistema de localización probabilístico para un robot, en un entorno de dos dimensiones (2D). Esta librería implementa el enfoque de localización adaptativo de Monte Carlo [\citenum{thrun_burgard_fox_2010}], junto con los siguientes algoritmos. 
+AMCL es una librería de \hyperref[sec:ROS]{ROS\ref*{sec:ROS}}, la cual hace uso de un sistema de localización probabilístico para un robot, en un entorno de dos dimensiones (2D). Esta librería implementa el enfoque de localización adaptativo de Monte Carlo [\citenum{thrun_burgard_fox_2010}], junto con los siguientes algoritmos. 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg}}
+	\fbox{\includegraphics[scale=0.65]{imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg}}
 	\caption{Algoritmo AMCL.}
 	\label{fig:Figura_Ecuaciones_AMCL}
 \end{figure}
 
-De manera general, para un mapa ya establecido este algoritmo estima la \textit{posición} y \textit{orientación} de un robot a medida que este empieza a moverse, usando un \textit{\hyperref[sec:FDP]{filtrado de partículas\ref*{sec:FDP}}} para representar todas las posibles posiciones, en donde si los datos son confiables y se relacionan con el estado predicho el \textit{\hyperref[sec:FDP]{filtrado de partículas\ref*{sec:FDP}}} tiende a converger en una posición en particular.
+De manera general, para un mapa ya establecido este algoritmo estima la \textit{posición} y \textit{orientación} de un robot a medida que este empieza a moverse y usando un \textit{\hyperref[sec:FDP]{filtrado de partículas\ref*{sec:FDP}}} para representar todas las posibles posiciones, en donde, si los datos son confiables y se relacionan con el estado predicho, el \textit{\hyperref[sec:FDP]{filtrado de partículas\ref*{sec:FDP}}} tiende a converger en una posición en particular.
 
 
 \subsection{VFH (Vector Field Histogram)}
 
-Es un método para la \textit{detección} y \textit{evasión de obstáculos}, el cual al ser aplicado permite continuar con su objetivo y así poder seguir una trayectoria. El método toma como entrada los datos capturados por sensores de tipo láser o ultrasónicos y con base en ello forma tres niveles de representación de datos. El primero es un mapa de dos dimensiones divido por celdas donde se guardarán las distancias. El segundo es un histograma polar, construido alrededor de la posición momentánea del robot y el tercero es la dirección que debe seguir el robot para llegar a su meta y a su vez evadir un obstáculo si está cercano.
+Es un método para la \textit{detección} y \textit{evasión de obstáculos} sin interferir con el objetivo principal, como el de seguir una trayectoria. El método toma como entrada los datos adquiridos por sensores de tipo láser o ultrasónicos y con base en ello, forma tres niveles de representación de datos; el primero es un mapa de dos dimensiones divido por celdas donde se guardan las distancias. El segundo es un histograma polar, construido alrededor de la posición momentánea del robot y el tercero es la dirección que debe seguir el robot para llegar a su meta y a su vez evadir un obstáculo si este está cercano.
 
-\subsubsection{Primer nivel: Mapa 2D}
+\subsubsection{Primer nivel: \textit{Mapa 2D}}
 
-De los datos obtenidos por los sensores los cuales son distancia para cada ángulo, se va formando un mapa de celdas o matriz que representa el espacio alrededor del robot, en donde el el valor de cada celda es dado por la ecuación \ref{eq:Mapa 2d} .
+De los datos obtenidos por los sensores los cuales son distancias para cada ángulo, se va formando un mapa de celdas o matriz que representa el espacio alrededor del robot, en donde el valor de cada celda es dado por la \textit{ecuación \ref{eq:Mapa 2d}}.
 
 \begin{equation} \label{eq:Mapa 2d}
 m_{(i,j)}=(c_{(i,j)}^* )^2 (a-bd_{(i,j)}^2 )
@@ -128,17 +126,17 @@ m_{(i,j)}=(c_{(i,j)}^* )^2 (a-bd_{(i,j)}^2 )
 \begin{center}
 	$c_{(i,j)}^*$: Valor de certeza en dicha celda
 	
-	$d_{i,j}$: Distancia entre la celda i,j y el centro del vehículo
+	$d_{i,j}$: Distancia entre la celda i, j y el centro del vehículo
 	
 	$a,b$: Constantes positivas que cumplan $a-bd_{max}=0$
 \end{center}
 
-Para el cálculo del valor de certeza se deben obtener 2 mediciones muy próximas y con ello corroborar si hay un obstáculo en la celda, dándole así un mayor valor a la celda, posteriormente las constantes se eligen considerando $``d_{max}"$ como distancia mayor a la celda más lejana al robot y con base a esta distancia se calculan las constantes $``a"$ y $``b"$ de tal manera que la más lejana devuelva un valor de 0 y la más cercana el máximo valor posible a su vez manteniendo una relación lineal.
+Para el cálculo del \textit{valor de certeza} se deben obtener 2 mediciones muy próximas y con ello corroborar si hay un obstáculo en la celda, dándole así, un mayor valor a la celda. Posteriormente las \textit{constantes} se eligen considerando $``d_{max}"$ como la distancia mayor a la celda más lejana al robot, obteniéndose $``a"$ y $``b"$ de manera tal que, la distancia más alejada devuelva un valor de 0 y la distancia más cercana devuelve el valor máximo posible y a su vez se mantenga una relación lineal.
 Con estas condiciones se tendrá una magnitud para cada celda $m_{(i,j)}$ que nos indicará la presencia o no de un obstáculo.
 
-\subsubsection{Segundo nivel: Histograma polar}
+\subsubsection{Segundo nivel: \textit{Histograma polar}}
 
-Una vez obtenido el mapa 2D se procede a simplificar estos datos para obtener un histograma polar como el mostrado en la Figura \ref{fig:Figura_Ejemplo_Histrograma_Polar}, primero se define una resolución arbitraria $\alpha$ de modo que $n=\dfrac{360}{\alpha}$.Posteriormente se definen $k$ sectores que corresponden a un ángulo discreto $\rho$ tal que $\rho=k\alpha$, dividiendo así en un cúmulo de datos (histograma polar) que nos indica para cada determinados grados por lo general 5, cual es la distancia al objetivo más cercano. Para cada sector $k$, el histograma polar $h_{k}$ es calculado siguiendo la ecuación \ref{histograma polar}.
+Una vez obtenido el mapa 2D se procede a simplificar estos datos para obtener un histograma polar como el mostrado en la \textit{Figura \ref{fig:Figura_Ejemplo_Histrograma_Polar}}, dando como primer paso la definición de una resolución arbitraria $\alpha$ de modo que $n=\dfrac{360}{\alpha}$. Posteriormente se definen $k$ sectores que corresponden a un ángulo discreto $\rho$ tal que, $\rho=k\alpha$, dividiendo así en un cúmulo de datos \textit{(histograma polar)} el cual nos indica la distancia más cercana al objetivo para cada determinados grados (por lo general 5). Para cada sector $k$, el histograma polar $h_{k}$ es calculado siguiendo la  \textit{ecuación \ref{histograma polar}}.
 
 \begin{equation}\label{histograma polar}
 h_{k}=\sum_{i,j}m_{i,j}
@@ -146,13 +144,13 @@ h_{k}=\sum_{i,j}m_{i,j}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg}}
+	\fbox{\includegraphics[scale=0.4]{imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg}}
 	\caption{Ejemplo de histograma polar.}
 	\label{fig:Figura_Ejemplo_Histrograma_Polar}
 \end{figure}
 
-\subsubsection{Tercer nivel: Comando de dirección}
-Para el cálculo del comando de dirección se tienen distintas opciones. La primera es, una vez encontradas las aperturas, las cuales se definen por los sectores límite $k_{r}$  $k_{l}$ y según un umbral $s_{max}$ (definido por el usuario considerando la distancia mínima a la que se considera como un obstáculo o como un sector libre) se pueden elegir distintas direcciones por las cuales pasar ya que no hay obstáculos cercanos.
+\subsubsection{Tercer nivel: \textit{Comando de dirección}}
+Para el cálculo del comando de dirección se tienen distintas opciones; la primera es, una vez encontradas las aperturas las cuales se definen por los sectores límite $k_{r}$  $k_{l}$ y según un umbral $s_{max}$ (definido por el usuario y la cual depende de la distancia mínima a la que se considera como un obstáculo o como un sector libre) se pueden elegir distintas direcciones por las cuales pasar ya que no hay obstáculos cercanos.
 \begin{equation}\label{Comando_de_direccion_1}
 c_{d}=\dfrac{k_{r}+k_{l}}{2}
 \end{equation}
@@ -166,9 +164,9 @@ c_{l}=k_{l}-\dfrac{s_{max}}{2}
 c_{t}=k_{t} \,si\,k_{t}  \epsilon [c_{r},c_{l}]
 \end{equation}
 
-Para la ecuación \ref{Comando_de_direccion_1} se elige la dirección centrada, para la ecuación \ref{Comando_de_direccion_2} se elige la dirección del lado derecho, para la ecuación \ref{Comando_de_direccion_3} se elige la dirección del lado izquierdo y para la ecuación \ref{Comando_de_direccion_4} con dirección al objetivo.
+Para la \textit{ecuación \ref{Comando_de_direccion_1}} se elige la dirección centrada, para la \textit{ecuación \ref{Comando_de_direccion_2}} se elige la dirección del lado derecho, para la \textit{ecuación \ref{Comando_de_direccion_3}} se elige la dirección del lado izquierdo y para la \textit{ecuación \ref{Comando_de_direccion_4}} con dirección al objetivo.
 
-La otra opción es definir una función de costo de la siguiente forma y elegir el candidato con menor costo.
+La segunda opción es definir una función de costo de la siguiente forma y elegir el candidato con menor costo.
 \begin{equation}\label{Comando_de_direccion_5}
 g(c)=\mu_{1} \Delta(c,k_{t})+\mu_{2} \Delta(c,k_{R})+\mu_{3} \Delta(c,k_{R-1})
 \end{equation}
@@ -176,7 +174,7 @@ Donde $\mu_{k}$ son valores positivos y el operador $\Delta$ representa la difer
 
 \subsection{Esquemas líder - seguidor}
 
-Dentro de la literatura que trata el control bajo un esquema líder-seguidor, el lector se puede dar cuenta que la definición del esquema líder-seguidor no es homogénea y depende de cada autor, ya que son muchos los métodos presentados en textos científicos que incluyen las palabras, \textit{``líder"}, y/o \textit{``seguidor"}, en sus títulos o resúmenes, y cada uno de ellos adapta o define bajo sus propios términos y métodos la definición de este esquema. Para ejemplificar a continuación se presentan dos definiciones de diferentes autores con la intensión de hacer una comparación entre a lo que se le puede denominar \textit{esquema líder-seguidor}.\\
+Dentro de la literatura que trata del control bajo un esquema líder-seguidor, se puede dar uno cuenta que la definición del esquema líder-seguidor no es homogénea y depende de cada autor, ya que son muchos los métodos presentados en textos científicos que incluyen las palabras, \textit{``líder"} y/o \textit{``seguidor"}, en sus títulos o resúmenes y cada uno de ellos adapta o define bajo sus propios términos y métodos la definición de este esquema. Para ejemplificar, a continuación se presentan dos definiciones de diferentes autores.\\
 
 1. Uno de los robots es asignado como el \textit{líder} y otro como \textit{seguidor}. El líder sigue una trayectoria predefinida, mientras que los seguidores mantienen una posición y dirección con cierta distancia respecto al líder [\citenum{lfa1}].
 
@@ -186,35 +184,22 @@ Una definición más general y con la posibilidad de complementarla con nuevas ide
 
 2. Usando el enfoque \textit{líder - seguidor (LFA)}, un robot actúa como el líder cuyo movimiento define el trayecto para el grupo de seguidores. Todos los seguidores usaran el trayecto definido para alcanzar una meta o lograr una tarea definida [\citenum{lfa2}].\\
 
-Existen más definiciones con ideas muy similares a las dos anteriores definiciones y que dependiendo del contexto es como implementan su propia definición del esquema líder-seguidor, pero siempre partiendo de la misma premisa de que un \textit{``ente"}, debe dictar el comportamiento de \textit{``otro u otros entes"}.
+Existen más definiciones con ideas muy similares a las dos anteriores definiciones y que dependiendo del contexto es como implementan su propia definición del esquema líder-seguidor, pero siempre partiendo de la misma premisa en la que un \textit{``ente"}, debe dictar el comportamiento de \textit{``otro u otros entes"}.
 \section{Marco Procedimental}
 
-El \textit{Marco Procedimental} corresponde a los conceptos y técnicas implementadas a lo largo del desarrollo del proyecto, permitiendo definir e identificar los problemas, acotarlos y visualizarlos de manera sistemática con la finalidad de obtener así elementos fundamentales para la resolución de cada uno de los problemas identificados. 
+El \textit{Marco Procedimental} corresponde a los conceptos y técnicas implementadas a lo largo del desarrollo del proyecto, permitiendo de definir e identificar los problemas, acotarlos y visualizarlos de manera sistemática con la finalidad de obtener así elementos fundamentales para la resolución de cada uno de los problemas identificados. 
 
 \subsection{Sistema mecatrónico}
 
-El concepto de mecatrónica surge en Japón en los años setenta con la siguiente definición:
+El concepto de mecatrónica surge en Japón en los años setenta con la siguiente definición:\\
 
-\textit{``La mecatrónica es la integración sinérgica de la ingeniería mecánica con la electrónica y el control informático inteligente en el diseño y la fabricación de productos y procesos industriales} [\citenum{harashima_1996}]".
+\textit{``La mecatrónica es la integración sinérgica de la ingeniería mecánica con la electrónica y el control informático inteligente en el diseño y la fabricación de productos y procesos industriales} [\citenum{harashima_1996}]".\\
 
-Tal definición ha ido evolucionando y generando nuevos métodos de diseño, los cuales han permitido crear productos inteligentes. Actualmente es complicado dar una definición completa de lo que es la mecatrónica, sin embargo, se entiende que la mecatrónica abarca diversas disciplinas de la ingeniería y la cual permite caracterizar los elementos que la componen en: sistemas de modelos físicos, sensores y actuadores, señales, sistemas computacionales, software y adquisición de datos.
-
-Con esto en mente un sistema mecatrónico para Bishop [\citenum{bishop_2008}] se divide en:
-
-\begin{itemize}
-	\item Máquinas mecatrónicas.
-	\item Vehículos mecatrónicos.
-	\item Mecatrónica de precisión.
-	\item Micro mecatrónica.
-\end{itemize}
-
-Esto demuestra que la integración de un sistema con la electrónica comprende muchas clases de sistemas técnicos. En varios casos, la parte mecánica del proceso está acoplada con una parte de procesamiento eléctrico, térmico, termodinámico, químico o de información. Esto es especialmente cierto para los convertidores de energía como máquinas donde, además de la energía mecánica, aparecen otros tipos de energía. Por lo tanto, los sistemas mecatrónicos en un sentido más amplio comprenden procesos mecánicos y también no mecánicos. Sin embargo, la parte mecánica normalmente domina el sistema.
-
-Esto es debido a que se requiere una energía auxiliar para cambiar las propiedades fijas de los sistemas mecánicos pasivos, mediante el avance o el control con retroalimentación [\citenum{bishop_2008}].
+Tal definición ha ido evolucionando y generando nuevos métodos de diseño, los cuales han permitido crear productos inteligentes. Actualmente es complicado dar una definición completa de lo que es la mecatrónica, sin embargo, se entiende que la mecatrónica abarca diversas disciplinas de la ingeniería y la cual permite caracterizar los elementos que la componen en: sistemas de modelos físicos, sensores y actuadores, señales, sistemas computacionales, software y adquisición de datos.\\\\
 
 \subsection{Diseño mecatrónico}
 
-Parte de la identificación de un problema o necesidad es asignar \textit{funciones} necesarias para resolver dichos problemas y asociarlas con las características iniciales con las que se cuentan en la etapa del \textit{Diseño Conceptual}, en la que se analizan diferentes alternativas acerca de como satisfacer dichas funciones y en donde también, se evalúan para elegir la mejor alternativa. Posteriormente se formaliza ese concepto en la parte \textit{Diseño Detallado} cuyo objetivo es tener una aproximación bastante cercana del producto final y cómo se debería construir. Siempre con las validaciones de todas las funciones propuestas.\\
+Parte de la identificación de un problema o necesidad es asignar \textit{funciones} necesarias para resolver dichos problemas y asociarlas con las características iniciales con las que se cuentan en la etapa del \textit{Diseño Conceptual}, en la que se analizan diferentes alternativas acerca de como satisfacer dichas funciones y en donde también, se evalúan para elegir la mejor alternativa. Posteriormente se formaliza ese concepto en la parte \textit{Diseño Detallado} cuyo objetivo es tener una aproximación bastante cercana del producto final y como se debería construir. Siempre con las validaciones de todas las funciones propuestas.\\
 
 El diseño mecatrónico no es lineal, sino concurrente y requiere de un desarrollo sistemático y el uso de herramientas modernas de diseño, como lo son según Bishop [\citenum{bishop_2008}]:
 
