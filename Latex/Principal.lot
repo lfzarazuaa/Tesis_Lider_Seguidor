@@ -17,25 +17,25 @@
 \contentsline {table}{\numberline {2.9}{\ignorespaces Caracter\IeC {\'\i }sticas de la Tarjeta ARM Cortex M7 [\citenum {opencr}].}}{42}{table.2.9}% 
 \contentsline {table}{\numberline {2.10}{\ignorespaces Caracter\IeC {\'\i }sticas de la Tarjeta ARM Cortex M7 [\citenum {opencr}].}}{43}{table.2.10}% 
 \contentsline {table}{\numberline {2.11}{\ignorespaces Caracter\IeC {\'\i }sticas de la tarjeta Raspberry Pi 3, Modelo B [\citenum {raspberry_pi3}].}}{44}{table.2.11}% 
-\contentsline {table}{\numberline {2.12}{\ignorespaces Caracter\IeC {\'\i }sticas del sensor LIDAR.}}{71}{table.2.12}% 
-\contentsline {table}{\numberline {2.13}{\ignorespaces Descripci\'on de los pines del sensor LIDAR.}}{74}{table.2.13}% 
-\contentsline {table}{\numberline {2.14}{\ignorespaces Descripci\'on de los pines del motor del sensor LIDAR.}}{74}{table.2.14}% 
-\contentsline {table}{\numberline {2.15}{\ignorespaces Comandos para operaci\'on del LIDAR.}}{75}{table.2.15}% 
-\contentsline {table}{\numberline {2.16}{\ignorespaces Especificaciones t\'ecnicas de la bater\IeC {\'\i }a. [\citenum {Bateria-de-polimero-de-litio}]}}{77}{table.2.16}% 
-\contentsline {table}{\numberline {2.17}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{84}{table.2.17}% 
-\contentsline {table}{\numberline {2.18}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{85}{table.2.18}% 
-\contentsline {table}{\numberline {2.19}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{86}{table.2.19}% 
+\contentsline {table}{\numberline {2.12}{\ignorespaces Caracter\IeC {\'\i }sticas del sensor LIDAR.}}{67}{table.2.12}% 
+\contentsline {table}{\numberline {2.13}{\ignorespaces Descripci\'on de los pines del sensor LIDAR.}}{69}{table.2.13}% 
+\contentsline {table}{\numberline {2.14}{\ignorespaces Descripci\'on de los pines del motor del sensor LIDAR.}}{70}{table.2.14}% 
+\contentsline {table}{\numberline {2.15}{\ignorespaces Comandos para operaci\'on del LIDAR.}}{70}{table.2.15}% 
+\contentsline {table}{\numberline {2.16}{\ignorespaces Especificaciones t\'ecnicas de la bater\IeC {\'\i }a. [\citenum {Bateria-de-polimero-de-litio}]}}{72}{table.2.16}% 
+\contentsline {table}{\numberline {2.17}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{78}{table.2.17}% 
+\contentsline {table}{\numberline {2.18}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{79}{table.2.18}% 
+\contentsline {table}{\numberline {2.19}{\ignorespaces Caracter\IeC {\'\i }sticas t\'ecnicas del actuador Dynamixel XL 430 W250 [\citenum {DYNAMIXEL_Motor}].}}{80}{table.2.19}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de costos variables.}}{156}{table.4.1}% 
-\contentsline {table}{\numberline {4.2}{\ignorespaces D\IeC {\'\i }as trabajados en TT1.}}{156}{table.4.2}% 
-\contentsline {table}{\numberline {4.3}{\ignorespaces D\IeC {\'\i }as trabajados TT2.}}{157}{table.4.3}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Total de d\IeC {\'\i }as y horas trabajadas.}}{157}{table.4.4}% 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Costo total de gastos fijos.}}{157}{table.4.5}% 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de costos variables.}}{148}{table.4.1}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces D\IeC {\'\i }as trabajados en TT1.}}{148}{table.4.2}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces D\IeC {\'\i }as trabajados TT2.}}{149}{table.4.3}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Total de d\IeC {\'\i }as y horas trabajadas.}}{149}{table.4.4}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Costo total de gastos fijos.}}{149}{table.4.5}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Tabla de selecci\'on para Percepci\'on}}{179}{table.0.1}% 
-\contentsline {table}{\numberline {2}{\ignorespaces Tabla de selecci\'on para Estructura}}{180}{table.0.2}% 
-\contentsline {table}{\numberline {3}{\ignorespaces Tabla de selecci\'on para Procesamiento}}{181}{table.0.3}% 
-\contentsline {table}{\numberline {4}{\ignorespaces Tabla de selecci\'on para Motores}}{182}{table.0.4}% 
+\contentsline {table}{\numberline {1}{\ignorespaces Tabla de selecci\'on para Percepci\'on}}{171}{table.0.1}% 
+\contentsline {table}{\numberline {2}{\ignorespaces Tabla de selecci\'on para Estructura}}{172}{table.0.2}% 
+\contentsline {table}{\numberline {3}{\ignorespaces Tabla de selecci\'on para Procesamiento}}{173}{table.0.3}% 
+\contentsline {table}{\numberline {4}{\ignorespaces Tabla de selecci\'on para Motores}}{174}{table.0.4}% 

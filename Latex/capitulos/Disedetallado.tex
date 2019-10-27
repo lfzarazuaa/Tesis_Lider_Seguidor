@@ -1,7 +1,7 @@
 % !TeX encoding = ISO-8859-1
 \section{Diseño Detallado}
 \label{sec:Diseno_Detallado}
-En este capítulo se analiza con más profundidad cada una de las áreas funcionales previamente mencionadas junto con las características y datos técnicos de cada uno de los elementos que conforman las distintas áreas funcionales. De igual manera, se aborda la integración de cada una de las áreas funcionales con el sistema final que forman a los robots, tal y como se puede observar en la Figura \ref{fig:Integracion}.
+En este capítulo se analiza más a profundidad cada una de las áreas funcionales previamente analizadas junto con las características y datos técnicos de cada uno de los elementos que conforman las distintas áreas funcionales. De igual manera, se aborda la integración de cada una de las áreas funcionales con el sistema final que conforman a los robots, tal y como se puede observar en la \textit{Figura \ref{fig:Integracion}}.
 
 \begin{figure}[H]
 	\centering
@@ -10,29 +10,29 @@ En este capítulo se analiza con más profundidad cada una de las áreas funcionale
 	\label{fig:Integracion}
 \end{figure}
 
-La Figura \ref{fig:Integracion} muestra la interacción de las distintas áreas funcionales aplicadas a cada uno de los robots, así como su implementación con los distintos componentes los cuales en conjunto conforman al sistema robótico líder-seguidor que se va a utilizar para llevar acabo la coordinación, navegación y ejecución de tareas proporcionadas por un usuario.
+La \textit{Figura \ref{fig:Integracion}} muestra la interacción de las distintas áreas funcionales aplicadas a cada uno de los robots, así como su implementación con los distintos componentes los cuales en conjunto forman a los robots que se utilizan para llevar a cabo la coordinación, navegación y ejecución de tareas proporcionadas por un usuario.
 
-Ajustándose a la Figura \ref{fig:Integracion} la primera Área Funcional que hay que analizar es la de \textit{Estructura} que tiene como principal objetivo albergar los distintos componentes que conforman a los robots, es decir, es la encargada de alojar todas las partes físicas de las distintas áreas funcionales pertinentes a los robots, como por ejemplo, en el caso del Procesamiento, se necesita que dentro de la estructura exista un lugar donde establecer y resguardar las tarjetas de procesamiento \textit{(Raspberry PI y ARM Cortex)} y que estás vayan a estar seguras para que no sufran ningún desperfecto que se pudiera traducir en algún error en los robots.
+Ajustándose a la Figura \ref{fig:Integracion} la primera área funcional que hay que analizar es la de \textit{Estructura} que tiene como principal objetivo albergar los distintos componentes que conforman a los robots, es decir, es la encargada de alojar todas las partes físicas de las distintas áreas funcionales pertinentes a los robots, como por ejemplo, en el caso del \textit{Procesamiento}, se necesita que dentro de la estructura exista un lugar donde establecer y resguardar las tarjetas de procesamiento \textit{(Raspberry PI y ARM Cortex)} y que estas estén seguras para que no sufran ningún desperfecto que se pudiera traducir en algún error en los robots.
 
-\subsection{Área Funcional 1: Estructura (Soporte de componentes)}
+\subsection{Área Funcional 1: \textit{Estructura (Soporte de componentes)}}
 
-La Estructura está directamente relacionada con el tamaño y el peso de las distintas piezas que conforman los robots, así como el tipo de locomoción, en donde, los robots móviles Turtlebot3 Burger se acoplan perfectamente a estas necesidades y previos requisitos ya antes mencionados, gracias a que cuentan con una estructura modular y compacta que hace posible la distribución de los distintos componentes del robot a través de sus diferentes plataformas y cuya estructura es capaz de soportar hasta 15 kg de peso quedando libres 14kg para futuras implementaciones. Asimismo cabe mencionar que la estructura en conjunto con la batería LiPo y el sensor LIDAR es de apenas 1 kg [\citenum{e-Manual-Features}] [\citenum{e-Manual-specifications}] [\citenum{AutoModelCar}].
+La Estructura está directamente relacionada con el tamaño y el peso de las distintas piezas que conforman los robots, así como el tipo de locomoción, en donde, los robots móviles TurtleBot3 Burger se acoplan perfectamente a estas necesidades y previos requisitos ya antes mencionados, gracias a que cuentan con una estructura modular y compacta que hace posible la distribución de los distintos componentes del robot a través de sus diferentes plataformas y cuya estructura es capaz de soportar hasta 15 kg de peso quedando libres 14kg para futuras aplicaciones. Asimismo cabe mencionar que la estructura en conjunto con la batería LiPo y el sensor LIDAR es de apenas 1 kg [\citenum{e-Manual-Features}] [\citenum{e-Manual-specifications}] [\citenum{AutoModelCar}].
 
-Por otro lado, al tener una estructura modular dentro del robot, y que el Turtlebot3 Burger este clasificado como un robot móvil de Código Abierto, con flexibilidad en el diseño mecánico, se puede adaptar a cualquier tipo de locomoción, aunque el desarrollo del proyecto se llevará acabo con la configuración con la que ya viene integrada, que es de tipo diferencial sobre la cual en la sección de Movimiento se hablará a detalle.
+Por otro lado, al tener una estructura modular dentro del robot, y estando clasificado el TurtleBot3 Burger como un robot móvil de \textit{Código Abierto} con flexibilidad en el diseño mecánico, se puede adaptar a cualquier tipo de locomoción, aunque cabe mencionar que el desarrollo del proyecto se lleva a cabo en la configuración original con la que vienen integrados los robots, que es de tipo diferencial y de la cual en la sección de \textit{Movimiento} se habla a detalle.
 
 \subsubsection{Elementos primordiales de la estructura}
 
 \subsubsection*{Chapas}
-Los pisos o chapas que conforman los diferentes niveles del Turtlebot3 dentro de la estructura, son como se muestran en la Figura \ref{fig:Figura_Ensamble_2_pisos}, los cuales están fabricados de plástico ABS y tienen distintos orificios que sirven para ahorrar material y con ello peso, y que por otra parte, sirven para adaptar diferentes componentes, haciendo los pisos de la estructura universales para cualquier requerimiento, adaptación o aplicación.
+Los pisos o chapas que conforman los diferentes niveles del TurtleBot3 dentro de la estructura, son como se muestran en la \textit{Figura \ref{fig:Figura_Ensamble_2_pisos}}, los cuales están fabricados de plástico ABS y tienen distintos orificios que sirven para ahorrar material y con ello peso. Por otra parte, sirven para adaptar diferentes componentes, haciendo los pisos de la estructura universales para cualquier requerimiento, adaptación o aplicación.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=1]{imagenes/Detallado/03_Ensamble_2_pisos.jpg}}
+	\fbox{\includegraphics[scale=1.125]{imagenes/Detallado/03_Ensamble_2_pisos.jpg}}
 	\caption{Ensamble de 2 pisos o chapas en forma de celda (base estructural).}
 	\label{fig:Figura_Ensamble_2_pisos}
 \end{figure}
 
-Al ser un robot denominado multiplataforma o multicapa como se observa en la Figura \ref{fig:Figura_Estructura_multiplataforma} ofrece entre otras bondades un mejor uso del espacio y mejor maniobrabilidad a la hora de ensamblar los componentes que conforman al robot. Cuenta con 4 plataformas las cuales distribuyen los distintos componentes en cada una de estas y sus chapas o pisos en forma de celdas permiten la colocación y posterior implementación de diferentes componentes y funciones de acuerdo a cada tarea ejecutada por el robot que sea requerida.
+Al ser un robot denominado multiplataforma o multicapa como se observa en la \textit{Figura \ref{fig:Figura_Estructura_multiplataforma}}, ofrece entre otras bondades un mejor uso del espacio y mejor maniobrabilidad a la hora de ensamblar los componentes que conforman al robot. Cuenta con 4 plataformas las cuales distribuyen los distintos componentes en cada una de estas, y sus chapas o pisos en forma de celdas permiten la colocación y posterior implementación de diferentes componentes y funciones, de acuerdo a la tarea que sea requerida por el robot.
 
 \begin{figure}[H]
 	\centering
@@ -44,13 +44,13 @@ Al ser un robot denominado multiplataforma o multicapa como se observa en la Fig
 \subsubsection{Elementos utilizados en cada piso}
 
 \subsubsection*{Elementos generales}
-Para el ensamble de cada piso de la estructura, se utilizaron los siguientes elementos:
+Para el ensamble de cada piso de la estructura, se utilizan los siguientes elementos:
 \begin{itemize}
-	\item Dos chapas tipo ``waffle" (ver Figura \ref{fig:Figura_Ensamble_2_pisos}).
+	\item Dos chapas tipo ``waffle" \textit{(ver Figura \ref{fig:Figura_Ensamble_2_pisos})}.
 	\item 16 tornillos M3 de 4mm de longitud.
 	\item 16 tuercas M3 de 8mm de longitud.
 \end{itemize}
-Se colocaron 4 tornillos M3 de 8mm en la parte superior de la chapa, y por la parte inferior para ajustar se usaron 4 tuercas M3 como se muestra en la Figura \ref{fig:Figura_Estructura_multiplataforma}.
+Se colocan 4 tornillos M3 de 8mm en la parte superior de la chapa, y por la parte inferior para ajustar se usan 4 tuercas M3 como se muestra en la \textit{Figura \ref{fig:Figura_Estructura_multiplataforma}}.
 \subsubsection*{Elementos específicos por cada piso}
 \begin{enumerate}
 	\item Piso 1
@@ -114,10 +114,10 @@ Se colocaron 4 tornillos M3 de 8mm en la parte superior de la chapa, y por la pa
 		\item 1 Sensor Lidar.
 	\end{enumerate}
 \end{enumerate}
-
+\break
 \subsubsection{Dimensiones}
 
-Como ya se ha mencionado el Turtlebot3, es un robot compacto con apenas una longitud (L) de 138 mm, una anchura (W) de 178 mm y una altura (H) de 192 mm tomando como referencia las llantas, tal como se muestra en la Figura \ref{fig:Figura_Estructura_Turtlebot3}.
+Como ya se ha mencionado el \textit{TurtleBot3 burger}, es un robot compacto con apenas una longitud (L) de 138 mm, una anchura (W) de 178 mm y una altura (H) de 192 mm tomando como referencia las llantas, tal como se muestra en la \textit{Figura \ref{fig:Figura_Estructura_Turtlebot3}}.
 
 \begin{figure}[H]
 	\centering
@@ -127,17 +127,17 @@ Como ya se ha mencionado el Turtlebot3, es un robot compacto con apenas una long
 \end{figure}
 
 
-\subsection{Área Funcional 2: Procesamiento (Comunicación de componentes)}
+\subsection{Área Funcional 2: \textit{Procesamiento (Comunicación de componentes)}}
 
-El área funcional de procesamiento es de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales (ver la Figura \ref{fig:Figura_Areas_Funcionales}), puesto que además de ser el área funcional con mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control líder-seguidor. Para desarrollar esta área funcional se dividió en tres secciones con el objetivo de volver más transparente el proceso de diseño.
+El \textit{Procesamiento} es de suma importancia de acuerdo con el diagrama de la integración de las distintas áreas funcionales \textit{(ver la Figura \ref{fig:Figura_Areas_Funcionales})}, puesto que además de ser el área funcional con el mayor número de subáreas, es una de las partes principales donde recae todo el desarrollo del esquema de control líder - seguidor. 
 
-La primera parte consiste en la descripción de las tarjetas encargadas del procesamiento, razón por la cual se mencionan las distintas tarjetas y sus características más relevantes, es decir se define el recurso disponible para realizar el procesamiento.
+El desarrollo de esta área funcional se dividió en tres secciones con el objetivo de volver más detallado el proceso de diseño. La primera parte consiste en la \textit{descripción de las tarjetas encargadas del procesamiento}, en donde se mencionan las distintas tarjetas y sus características más relevantes, es decir se define el recurso disponible para realizar el procesamiento.
 
-En la segunda parte se definen las funciones que deberán cumplir cada una de las tarjetas, y finalmente en la tercera parte se describe como se está proponiendo cumplir dichas funciones.
+En la segunda parte se \textit{definen las funciones que deberán cumplir cada una de las tarjetas}, y finalmente en la tercera parte se \textit{describe como se propone cumplir dichas funciones}.
 
-\subsubsection{Primera parte: Dispositivos destinados para el procesamiento}
+\subsubsection{Primera parte: \textit{Dispositivos destinados para el procesamiento}}
 
-Recordando el ciclo ''Ve, piensa, actúa", el procesamiento funciona como la parte del pensar, es a través de este pensar que los robots podrán ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existirá o se llevará a cabo el procesamiento.
+Recordando el ciclo \textit{``Ve, piensa, actúa"}, el procesamiento funciona como la parte del pensar, y es a través de este pensar que los robots pueden ejecutar las acciones que el procesamiento solicite. Son cuatro los dispositivos donde existe o se lleva a cabo el procesamiento.
 
 \begin{enumerate}
 	\item Líder: Raspberry Pi 3 Model B.
@@ -147,7 +147,7 @@ Recordando el ciclo ''Ve, piensa, actúa", el procesamiento funciona como la part
 	\item Computadora de monitoreo.
 \end{enumerate}
 
-Las características técnicas más relevantes de cada una de las tarjetas se muestran en las Tablas \ref{tab:Tabla_Caracteristicas_Tarjeta_ARM_1} y \ref{tab:Tabla_Caracteristicas_Tarjeta_Raspberry_PI}.
+Las características técnicas más relevantes de cada una de las tarjetas se muestran en las \textit{Tablas \ref{tab:Tabla_Caracteristicas_Tarjeta_ARM_1}} y\textit{ \ref{tab:Tabla_Caracteristicas_Tarjeta_Raspberry_PI}}.
 
 \begin{table}[H]
 	\centering
@@ -258,7 +258,7 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 
 \begin{figure}[t]
 	\centering
-	\fbox{\includegraphics[scale=1.5]{imagenes/Detallado/07_Tarjeta_ARM.jpg}}
+	\fbox{\includegraphics[scale=1.8]{imagenes/Detallado/07_Tarjeta_ARM.jpg}}
 	\caption{Tarjeta ARM Cortex M7 [\citenum{opencr}].}
 	\label{fig:Figura_Tarjeta_ARM}
 \end{figure}
@@ -306,17 +306,17 @@ Las características técnicas más relevantes de cada una de las tarjetas se muest
 	\label{fig:Figura_Tarjeta_Raspberry_PI_3}
 \end{figure}
 
-\subsubsection{Segunda parte: Funciones a desarrollar en cada tarjeta}
+\subsubsection{Segunda parte: \textit{Funciones a desarrollar en cada tarjeta}}
 
-Una vez definidos que elementos son necesarios, sigue hablar que realizarán, es decir que áreas funcionales están relacionadas con las tarjetas de procesamiento y de que se encargan dichas áreas funcionales. El procesamiento es la principal área funcional, pero de ella se derivan las siguientes subáreas, las cuales se recuperan del diseño conceptual:
+Una vez definidos los elementos necesarios, sigue preguntarse ¿qué realizarán? Es decir, que áreas funcionales están relacionadas con las tarjetas de procesamiento y de que se encargan dichas áreas funcionales. El procesamiento es la principal área funcional, pero de ella se derivan las siguientes subáreas, las cuales se recuperan del diseño conceptual:
 
 \begin{description}
-	\item[Framework:] Es una herramienta de software que se ejecuta en cada una de las unidades de procesamiento para facilitar ciertos aspectos como la manera en que se procesan los datos y el funcionamiento del sistema en general.
-	\item[Esquemas de control:] Son los encargados de definir la dirección de los Turtlebot 3 burger para mantener la trayectoria deseada, el esquema líder-seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
-	\item[Comunicación:] Es la encargada de transmitir mensaje entre los distintivos agentes.
+	\item[\textit{Framework:}] Es una herramienta de software que se ejecuta en cada una de las unidades de procesamiento para facilitar ciertos aspectos como; la manera en la que se procesan los datos y el funcionamiento del sistema en general.
+	\item[\textit{Esquemas de control:}] Son los encargados de definir la dirección de los robots para mantener la trayectoria deseada, el esquema líder-seguidor y la evasión de obstáculos. Esta a su vez se divide en seguimiento de trayectoria, seguimiento al líder, evasión de obstáculos y control de motores.
+	\item[\textit{Comunicación:}] Es la encargada de transmitir mensajes entre los distintos agentes.
 \end{description}
 
-Estas áreas funcionales estarán distribuidas en cada una de las tarjetas siguiendo la lista a continuación.
+Estas áreas funcionales estarán distribuidas en cada una de las tarjetas, siguiendo la lista a continuación.
 
 \begin{itemize}
 	\item RBP Líder.
@@ -338,13 +338,14 @@ Estas áreas funcionales estarán distribuidas en cada una de las tarjetas siguien
 	\end{itemize}
 \end{itemize}
 
-Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ``como se cumplirán".
+Ya clarificadas las funciones específicas de cada una de las tarjetas, el siguiente paso es definir ``¿cómo se cumplirán?".
 
-\subsubsection{Tercera parte: Diseño del software}
+\subsubsection{Tercera parte: \textit{Diseño del software}}
 
 \paragraph{Seguimiento de trayectorias}
 
-Para el seguimiento de trayectorias se optó por seleccionar la \textit{matriz de fuerzas} [\citenum{AutoModelCar}] como método de seguimiento, es así como se le denomina \textit{matriz de fuerzas} a un mapa de vectores que cubre toda el área del lugar donde el líder se desplazará, este algoritmo resulta muy adecuado debido a que se tiene la opción de usar una librería de ROS para localización del móvil en ambientes cerrados. Dicha librería hace uso de un algoritmo probabilístico llamado AMCL, el cual se detalla en el marco teórico. Este algoritmo permite conocer la posición de los Turtlebot 3 burger con una incertidumbre de 2.5$cm^{2}$. Este hecho facilita el uso de la matriz de fuerzas, ya que una vez determinadas las dimensiones del área de pruebas se procede a definir la trayectoria a seguir por el líder, esto se hace discretizando la trayectoria propuesta y listando dichos puntos en un archivo con extensión .txt siguiendo uno de los formatos creados para una de las competencias de DARPA [\citenum{darpa}]. Posteriormente esta serie de puntos son procesados por el algoritmo que genera la matriz de fuerzas como se muestra en la Figura \ref{fig:Figura_IO_Matriz_de_Fuerza} y es guardado en un archivo con extensión .npy el cual puede ser fácilmente leído e interpretado por Python. En la Figura \ref{fig:Figura_Algoritmo_Generador_de_Matriz} se observa el algoritmo usado en el programa principal para generar la matriz de fuerza y en la Figura \ref{fig:Figura_Vecino_mas_cercano} se muestra como se calcula para cada punto de la matriz el elemento destino o meta.
+
+Para el seguimiento de trayectorias se ha optado por seleccionar la \textit{Matriz de fuerzas} (mapa de vectores que cubre toda el área del lugar) [\citenum{AutoModelCar}], como método de seguimiento por donde el líder se desplaza. El algoritmo probabilístico llamado \textit{AMCL} permite conocer la posición de los robots con una incertidumbre de 2.5$cm^{2}$, facilitando el uso de la matriz de fuerzas, ya que una vez determinadas las dimensiones del área de pruebas se procede a definir la trayectoria a seguir por el líder, esto se hace discretizando la trayectoria propuesta y enlistando dichos puntos en un archivo con extensión .txt. Posteriormente, esta serie de puntos son procesados por el algoritmo que genera la matriz de fuerzas como se muestra en la \textit{Figura \ref{fig:Figura_IO_Matriz_de_Fuerza}} y es guardado en un archivo con extensión .npy el cual puede ser fácilmente leído e interpretado por Python. En la \textit{Figura \ref{fig:Figura_Algoritmo_Generador_de_Matriz}} se observa el algoritmo usado en el programa principal para generar la matriz de fuerza y en la \textit{Figura \ref{fig:Figura_Vecino_mas_cercano}} se muestra como se calcula para cada punto de la matriz el elemento destino o meta.
 
 \begin{figure}[H]
 	\centering
@@ -362,48 +363,48 @@ Para el seguimiento de trayectorias se optó por seleccionar la \textit{matriz de
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/11_Vecino_Cercano.jpg}}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/11_Vecino_Cercano.jpg}}
 	\caption{Diagrama de Flujo para la rutina ``Obtener el punto meta".}
 	\label{fig:Figura_Vecino_mas_cercano}
 \end{figure}
 
-Una vez obtenida la matriz de fuerza se debe implementar un código para que el líder pueda seguir dicha trayectoria. La implementación de este seguimiento de trayectoria se realiza en el ``Nodo MovimientoLíder". En la Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}, se muestra el diagrama UML planteado para este nodo, asimismo en las Figuras \ref{fig:Figura_Diagrama_de_Flujo_Lider}, \ref{fig:Figura_Diagrama_metodo_Follow}, \ref{fig:Figura_Diagrama_metodo_VFH}, \ref{fig:Figura_Diagrama_metodo_Move} y \ref{fig:Figura_Diagrama_Callbacks_Lider} se muestran los diagramas de flujo que explican la funcionalidad de los métodos de la clase propuesta.
+Una vez obtenida la matriz de fuerza se debe implementar un código para que el líder pueda seguir dicha trayectoria. La implementación del seguimiento de trayectoria se realiza en el nodo ``MovimientoLíder". En la \textit{Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}} se muestra el diagrama UML planteado para este nodo, asimismo en las \textit{Figuras \ref{fig:Figura_Diagrama_de_Flujo_Lider}, \ref{fig:Figura_Diagrama_metodo_Follow}, \ref{fig:Figura_Diagrama_metodo_VFH}, \ref{fig:Figura_Diagrama_metodo_Move}} y  \textit{\ref{fig:Figura_Diagrama_Callbacks_Lider}} se muestran los diagramas de flujo que explican la funcionalidad de los métodos de la clase propuesta.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg}}
-	\caption{Diagrama UML del objeto MovementLeader a implementar en el nodo del líder.}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg}}
+	\caption{Diagrama UML del objeto \textit{MovementLeader} a implementar en el nodo del líder.}
 	\label{fig:Figura_Diagrama_UML_MovementLeader}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Diagrama_de_Flujo_Lider} se observa el programa principal del nodo encargado de asignarle el movimiento al líder, este programa al construir el objeto crea las variables para publicadores y subscriptores que se mencionan en el Diagrama UML en la Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}, y además configura todas las condiciones y funciones a ejecutar, como acción principal este programa ejecuta el método ``Follow" dándole movimiento al igual que para al líder en caso de ser necesario.
+En la \textit{Figura \ref{fig:Figura_Diagrama_de_Flujo_Lider}} se observa el programa principal del nodo encargado de asignarle el movimiento al líder, este programa al construir el objeto crea las variables para publicadores y subscriptores que se mencionan en el Diagrama UML de la \textit{Figura \ref{fig:Figura_Diagrama_UML_MovementLeader}}, y además configura todas las condiciones y funciones a ejecutar. Como acción principal, este programa ejecuta el método \textit{``Follow"}, brindando de la capacidad de movimiento a los robots, en caso de ser necesario.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg}}
+	\fbox{\includegraphics[scale=0.3112]{imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg}}
 	\caption{Diagrama de flujo del programa principal del nodo del líder.}
 	\label{fig:Figura_Diagrama_de_Flujo_Lider}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Diagrama_metodo_Follow} se muestra el diagrama de flujo del método ``Follow" el cual tiene como propósito principal decidir si ejecuta el seguimiento de trayectoria o esquiva algún obstáculo cercano en caso de tenerlo. Adicionalmente incluye controles sobre la trayectoria seleccionada.
-
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg}}
+	\fbox{\includegraphics[scale=0.28]{imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg}}
 	\caption{Diagrama de flujo del método ``Follow".}
 	\label{fig:Figura_Diagrama_metodo_Follow}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Diagrama_metodo_VFH} se muestra el diagrama de flujo del método ``Vector Field Histogram" para su ejecución en el líder, esta es la segunda parte del algoritmo donde ya se cuenta con el Histograma generado. Este método tiene como función encontrar el ángulo más cercano a la trayectoria por donde pueda pasar el móvil sin chocar, y para ello encuentra el primer ángulo libre (más cercano a la trayectoria) donde se sabe que no hay obstáculo y lo propone como dirección a llegar.
+En la \textit{Figura \ref{fig:Figura_Diagrama_metodo_Follow}} se muestra el diagrama de flujo del método \textit{``Follow"}, el cual tiene como propósito principal decidir si ejecuta el seguimiento de trayectoria o esquiva algún obstáculo cercano en caso de tenerlo. Adicionalmente incluye controles sobre la trayectoria seleccionada.
+
+En la \textit{Figura \ref{fig:Figura_Diagrama_metodo_VFH}} se muestra el diagrama de flujo del método \textit{``Vector Field Histogram"}, para su ejecución en el líder. Esta es la segunda parte del algoritmo donde ya se cuenta con el histograma generado. Este método tiene como función encontrar el ángulo más cercano a la trayectoria por donde pueda pasar el móvil sin chocar, y para ello encuentra el primer ángulo libre (más cercano a la trayectoria) donde se sabe que no hay obstáculo y se propone como dirección a llegar u objetivo.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg}}
-	\caption{Diagrama de flujo del método ``Vector Field Histogram".}
+	\caption{Diagrama de flujo del método ``VectorFieldHistogram".}
 	\label{fig:Figura_Diagrama_metodo_VFH}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Diagrama_metodo_Move} se muestra el diagrama de flujo del método ``Move2angle", el cual a partir de la dirección a seguir, ya sea la que se da directamente del seguimiento de la trayectoria o a partir del VFH en caso de tener un obstáculo cercano, orienta al líder al ángulo meta por medio del control de su velocidad angular, cabe mencionar que para realizar un mejor seguimiento cuando el móvil está desorientado por más de 45° la velocidad lineal es cero para garantizar rotación en su propio eje lo cual reduce el error al tener una mejor maniobrabilidad.
+En la \textit{Figura \ref{fig:Figura_Diagrama_metodo_Move}} se muestra el diagrama de flujo del método ``Move2angle", el cual, a partir de la dirección a seguir, ya sea la que se da directamente del seguimiento de la trayectoria o a partir del VFH (en caso de tener un obstáculo cercano), orienta al robot líder al ángulo meta por medio del control de su velocidad angular. Cabe mencionar que para realizar un mejor seguimiento cuando el móvil está desorientado por más de 45°, la velocidad lineal es cero para garantizar la rotación en su propio eje, lo cual reduce el error al tener una mejor maniobrabilidad.
 
 \begin{figure}[H]
 	\centering
@@ -412,30 +413,28 @@ En la Figura \ref{fig:Figura_Diagrama_metodo_Move} se muestra el diagrama de flu
 	\label{fig:Figura_Diagrama_metodo_Move}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Diagrama_Callbacks_Lider} se muestra el diagrama de flujo se muestran los diagramas de flujo de los ``Callbacks" que son métodos que interrumpen la ejecución del programa principal cada vez que se recibe un dato de los publicadores. El algoritmo general de los callbacks es recibir y guardar el dato como una variable global para que posteriormente pueda ser utilizada. En el caso específico del Histograma recibe un vector indicando si hay obstáculo o no con el cual el método de ``Follow" da la instrucción de seguir la trayectoria o esquivar el obstáculo, para evitar que la variable aún no este actualizada se prende una bandera que indica que ya fue recibido al menos un dato.
+En la \textit{Figura \ref{fig:Figura_Diagrama_Callbacks_Lider}} se muestra los diagramas de flujo de los ``Callbacks", los cuales son métodos que interrumpen la ejecución del programa principal cada vez que se recibe un dato de los publicadores. El objetivo general de los callbacks es recibir y guardar datos como variables globales para que posteriormente puedan ser utilizados. En el caso específico del \textit{histograma}, recibe un vector indicando si hay obstáculo o no, con el cual el método de ``Follow" da la instrucción de seguir la trayectoria o esquivar el obstáculo. Para evitar que una variable no este actualizada, se prende una bandera que indica que ya fue recibido al menos un dato.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/14D_Diagrama_Callbacks.jpg}}
+	\fbox{\includegraphics[scale=0.3]{imagenes/Detallado/14D_Diagrama_Callbacks.jpg}}
 	\caption{Diagrama de flujo de los ``Callbacks".}
 	\label{fig:Figura_Diagrama_Callbacks_Lider}
 \end{figure}
 
-Este nodo es el encargado de suscribirse a su posición proveniente de la AMCL y con base a ella reorientarse para mantener la trayectoria junto con la ayuda de la matriz de fuerza.
+Este nodo es el encargado de suscribirse al algoritmo AMCL y con base a ello, reorientarse para mantener la trayectoria junto con la ayuda de la matriz de fuerza.
 
 \paragraph{Esquema Líder - Seguidor}
-El implementar uno de los esquemas líder-seguidor propuestos en el marco de referencia implicaría mantener una posición relativa al líder $d_1$, bajo cualquiera de los métodos de control citados en el marco de referencia, lo cual podría causar colisiones con obstáculos. Para este caso en particular el seguidor más que mantener una posición relativa al líder, debe mantenerse sobre la trayectoria dictada por el líder.
-
-Para evitar este problema y lograr que el seguidor se mantenga en la ruta, se pensó en mantener una velocidad lineal constante e igual para cada robot móvil, y enviar al seguidor los puntos de ruta por los que el líder pase, e irlos almacenando sin ningún lazo cerrado encargado de mantener una posición relativa entre líder y seguidor. Con dichos puntos de ruta el seguidor, usando el mismo principio para reorientarse que usa el líder, y de este modo alcanzará los puntos almacenados el seguidor y por tener la misma velocidad se mantendrá una distancia constante sobre la trayectoria entre líder y seguidor, a la cual llamaremos $d_2$. La siguiente figura da un ejemplo más claro de la diferencia entre $d_1$ y $d_2$.
+El implementar uno de los esquemas de control líder - seguidor propuestos en el Marco de referencia, implica mantener una posición relativa al robot líder ($d_1$) pudiendo ocasionar colisiones entre ambos robots o entre los obstáculos. Para este caso en particular, el robot seguidor más que mantener una posición relativa al robot líder, debe mantenerse sobre la trayectoria dictada por el líder, es decir, para evitar que pueda existir una colisión y lograr que el robot seguidor se mantenga en la ruta, se debe mantener una velocidad lineal constante e igual para cada robot, enviando y almacenando los puntos ruta por los que el robot líder pase. Con dichos puntos de ruta, el robot seguidor usa el mismo principio que usa el robot líder para reorientarse.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/15_Representacion_distancias.jpg}}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/15_Representacion_distancias.jpg}}
 	\caption{Representación de las distancias entre el líder y el seguidor.}
 	\label{fig:Figura_Representacion_distancias}
 \end{figure}
 
-En la Figura \ref{fig:Figura_Representacion_distancias} se tiene al líder, de color rojo y al seguidor de color azul, la curva de color negro representa un tramo de la trayectoria a seguir, la cual está formada por $P_{n} (x_{n},y_{n})$ pares de coordenadas, siendo $P_{l}$ la coordenada donde se localiza el líder y $P_{s}$ donde se localiza el seguidor. Con esto definimos $d_{1}$ y $d_{2}$ en la ecuaciones \ref{Distancia_lider_seguidor(simplificado)} y \ref{Distancia_lider_seguidor}, de la siguiente manera:
+En la \textit{Figura \ref{fig:Figura_Representacion_distancias}} se tiene al robot líder (color rojo) y al robot seguidor (color azul), la curva de color negro representa un tramo de la trayectoria a seguir, la cual está formada por $P_{n} (x_{n},y_{n})$, siendo $P_{l}$ la coordenada donde se localiza el robot líder y $P_{s}$ donde se localiza el robot seguidor, definiendo $d_{1}$ y $d_{2}$ en la \textit{ecuaciones \ref{Distancia_lider_seguidor(simplificado)}} y \textit{\ref{Distancia_lider_seguidor}}, de la siguiente manera.
 
 \begin{equation}\label{Distancia_lider_seguidor(simplificado)}
 d_1=\sqrt{(x_l-x_n )^2+(y_l-y_n )^2}
@@ -447,32 +446,32 @@ d_2=\sum_{P_n=x_n,y_n}^{P_l=x_{l-1},y_{l-1}}=\sqrt{(x_{n+1}-x_n )^2+(y_{n+1}-y_n
 
 La distancia $d_{1}$ es únicamente la distancia entre líder y seguidor, mientras que $d_{2}$ es la distancia que separa al líder del seguidor, sobre la trayectoria.
 
-Una vez definido el tipo de esquema líder-seguidor a usar sigue el diseño del algoritmo que cumpla lo propuesto, lo cual se llevará a cabo en el ``Nodo Seguidor$"$ con un Diagrama UML como el mostrado en la Figura \ref{fig:Figura_Diagrama_UML_FollowerRobot}.
+Una vez definido el tipo de esquema líder-seguidor usado, se procede al diseño del algoritmo que cumpla lo propuesto \textit{``Nodo Seguidor$"$}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.6]{imagenes/Detallado/16_Diagrama_UML_FR.jpg}}
+	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/16_Diagrama_UML_FR.jpg}}
 	\caption{Diagrama UML del objeto FollowerRobot a implementar en el nodo seguidor.}
 	\label{fig:Figura_Diagrama_UML_FollowerRobot}
 \end{figure}
 
- Hablando en términos más específicos de programación en ROS dicho nodo se suscribe a las posiciones publicadas por el líder y las propias en la construcción del objeto ``FollowerRobot$"$ como se ve en la Figura \ref{fig:Figura_Diagrama_de_flujo_seguidor}. Cada vez que se recibe una nueva posición del líder es almacenada en una lista de Python, que para este caso se llamará WPL(como se muestra en la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A}). 
- En la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A} se muestran los Callbacks del nodo del seguidor de donde se obtienen la posición del líder para almacenarla en la lista WPL (LeaderCallback) y la instrucción de avanzar o no (Turn\_onCallback).
+Dicho nodo se suscribe a las posiciones publicadas por el líder y las posiciones del seguidor en la construcción del objeto \textit{``FollowerRobot$"$}, como se muestra en la \textit{Figura \ref{fig:Figura_Diagrama_de_flujo_seguidor}}. Cada vez que se recibe una nueva posición del líder, esta es almacenada en una lista de Python llamada \textit{WPL} mostrada en la \textit{Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A}}. 
+En la \textit{Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_A}} se muestran los Callbacks del nodo del seguidor, obtiendo la posición del robot líder para despues almacenarla en la lista WPL (LeaderCallback) y en la instrucción de avanzar (Turn\_onCallback).
  \begin{figure}[H]
  	\centering
- 	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg}}
+ 	\fbox{\includegraphics[scale=0.46]{imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg}}
  	\caption{Diagrama de flujo del programa principal del nodo seguidor.}
  	\label{fig:Figura_Diagrama_de_flujo_seguidor}
  \end{figure}
  
  \begin{figure}[H]
  	\centering
- 	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/18_Callbacks_Seguidor.jpg}}
+ 	\fbox{\includegraphics[scale=0.52]{imagenes/Detallado/18_Callbacks_Seguidor.jpg}}
  	\caption{Diagrama de flujo de los Callbacks para obtención de datos.}
  	\label{fig:Figura_Diagrama_metodos_FollowerRobot_A}
  \end{figure}
 
- Después en el método FollowerCallback como se muestra en la Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_B} usando el mismo tipo de lazo de control usado para la orientación del líder, se reorienta el seguidor en función de su posición y la lista con los puntos de referencia almacenados en la lista WPL, todo esto sucede cada que se recibe una nueva posición del seguidor por AMCL. 
+El método \textit{FollowerCallback} mostrado en la \textit{Figura \ref{fig:Figura_Diagrama_metodos_FollowerRobot_B}}, es utilizando por parte del robot seguidor para cubrir los mismos puntos alcanzados por parte del robot líder, reorientando al robot seguidor bajo el mismo lazo de control implementado en el líder, y en función de la posición y la lista con los puntos de referencia almacenados en la lista WPL.
 
 \begin{figure}[H]
 	\centering
@@ -483,27 +482,27 @@ Una vez definido el tipo de esquema líder-seguidor a usar sigue el diseño del al
 
 \paragraph{Evasión de obstáculos}
 
-Para la evasión de obstáculos es necesario un método que se ajuste a la forma de operar de la matriz de fuerza por lo que como posibilidad se tiene el algoritmo por campos potenciales y el VFH. De Ribeiro en Evasión de Obstáculos [\citenum{ribeiro_2005}] se tiene un análisis de los pros y contras de los distintos algoritmos para la evasión de obstáculos, basado en ese estudio se elige el VFH, ya era una forma que requería menor costo computacional, no afectaba de manera tan brusca el seguimiento de trayectoria y no se corre el riesgo de dejar al robot dentro de un mínimo local como sucede con los campos potenciales.
+Para la evasión de obstáculos es necesario un método que se ajuste con la forma de operar de la Matriz de fuerza, por lo que se cuenta con dos posibilidades; \textit{algoritmo por campos potenciales} y \textit{VFH}. De Ribeiro en Evasión de Obstáculos se tiene un análisis de los pros y contras de los distintos algoritmos para la evasión de obstáculos [\citenum{ribeiro_2005}]. Basado en ese estudio se elige el VFH, ya que es un algoritmo que requiere un menor costo computacional, no afecta de manera brusca el seguimiento de trayectoria y no se corre el riesgo de dejar al robot dentro de un mínimo local, como sucede con los campos potenciales.
 
-La manera de implementarlo fue la siguiente, dividiendo este algoritmo en dos nodos, el primer nodo llamado nodo de Distancia Mínima (mostrado en la Figura \ref{fig:Figura_Diagrama_UML_Distancia}) el cual tiene como único objetivo calcular y enviar la menor distancia entre el robot líder y cualquier obstáculo que tenga enfrente o al lado de él, el segundo es el nodo LaserVFH (mostrado en la Figura \ref{fig:Figura_Diagrama_UML_VFH}) que tiene como propósito generar un histograma polar binario en cual muestra los ángulos donde no hay obstáculo dado un cierto umbral y luego lo manda al nodo del líder. Como se puede observar en el nodo del líder en la función ``Follow" la primera parte decide si aplica VFH o seguimiento de trayectoria y esto lo lográ conociendo la distancia mínima a cualquier obstáculo, por su parte la segunda parte que es aplicar el VFH para encontrar el ángulo libre más cercano al ángulo dado por la trayectoria es posible gracias al histograma binario proporcionado por el nodo LaserVFH.
+La manera de implementar el \textit{VFH} es dividiendo el algoritmo en dos nodos; el primer nodo es el de la \textit{Distancia mínima} mostrado en la \textit{Figura \ref{fig:Figura_Diagrama_UML_Distancia}}, el cual tiene como único objetivo calcular y enviar la distancia entre el robot líder y cualquier obstáculo que tenga enfrente o al lado. El segundo es el nodo llamado \textit{LaserVFH}, mostrado en la \textit{Figura \ref{fig:Figura_Diagrama_UML_VFH}}, tiene como propósito generar un histograma polar binario en cual se muestren los ángulos de donde hay y no hay obstáculo, dado un cierto umbral que despues es mandado al nodo del robot líder. Como se puede observar en el nodo del líder en la función \textit{``Follow"}, en la primera parte se decide si aplica VFH o seguimiento de trayectoria en razón de la distancia mínima a cualquier obstáculo. En la segunda parte se aplica el VFH para encontrar el ángulo libre más cercano al ángulo dado por la trayectoria, gracias al histograma binario proporcionado por el nodo \textit{LaserVFH}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/20_Diagrama_UML_Distancia.jpg}}
+	\fbox{\includegraphics[scale=0.3]{imagenes/Detallado/20_Diagrama_UML_Distancia.jpg}}
 	\caption{Diagrama UML para nodo de distancia mínima.}
 	\label{fig:Figura_Diagrama_UML_Distancia}
 \end{figure}
 
-El nodo de distancia mínima en su función principal mostrada en la Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_A} inicializa al nodo con su publicador de ``distancia mínima$"$ y además configura los límites de error debido a que en ciertas ocasiones el LIDAR entrega valores muy pequeños que no concuerdan con la distancia real entre el Turtlebot 3 burger y un objeto muy cercano, por lo cual la distancia debe ser mayor al radio de la estructura del Turtlebot 3 burger, el no considerar este efecto generaría que la distancia mínima siempre sea de 0 y nunca se avanzaría. Por último el constructor ejecuta el método ``Obtain\_min\_distance$"$ con la que se logra obtener la distancia mínima entre todos los ángulos frontales y laterales del Turtlebot 3 burger.
+El nodo de distancia mínima en su función principal mostrada en la \textit{Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_A}}, inicializa al nodo con su publicador de ``distancia mínima$"$ y además configura los límites de error debido a que en ciertas ocasiones el LIDAR entrega valores muy pequeños que no concuerdan con la distancia real entre los robots y los objetos muy cercanos, por lo cual la distancia debe ser mayor al radio de la estructura de los robots, ya que al no considerar este efecto, generaría que la distancia mínima siempre fuera de 0 y nunca se avanzaría. Por último, el constructor ejecuta el método \textit{``Obtain\_min\_distance$"$} con el que se logra obtener la distancia mínima entre todos los ángulos frontales y laterales del robot.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg}}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg}}
 	\caption{Diagrama de flujo del programa principal del nodo de distancia mínima.}
 	\label{fig:Figura_Diagrama_de_Flujo_Obstacle_A}
 \end{figure}
 
-Profundizando más en la obtención de la distancia mínima en la Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_B} se muestra el diagrama de flujo de como se obtiene la distancia mínima donde verifica primeramente si ROS se está ejecutando para proseguir con el programa, luego guarda en una lista todos los valores de las distancias en los ángulos que el líder podría chocar considerando que este siempre avanza hacia enfrente, luego calcula el valor mínimo de la lista y lo publica para que sea recibido en el nodo del líder.
+Profundizando más en la obtención de la distancia mínima, en la \textit{Figura \ref{fig:Figura_Diagrama_de_Flujo_Obstacle_B}} se muestra el diagrama de flujo de como se obtiene la distancia mínima, comenzando por verifica primero si ROS se está ejecutando de manera correcta para después proseguir con el programa, posteriormente se guarda en una lista todos los valores de las distancias de donde el robot líder pudiera chocar con un objeto (considerando que este siempre avanza hacia enfrente), y por último, se calcula el valor mínimo de la lista y este es publicado para que sea recibido en el nodo del robot líder.
 
 \begin{figure}[H]
 	\centering
@@ -512,7 +511,7 @@ Profundizando más en la obtención de la distancia mínima en la Figura \ref{fig:F
 	\label{fig:Figura_Diagrama_de_Flujo_Obstacle_B}
 \end{figure}
 
-Centrándonos más en el diseño del algoritmo ``Vector Field Histogram", se propuso distribuirlo en 2 partes como ya se había mencionado previamente en el nodo del líder, la primera parte consiste en obtener el histograma binario a partir de las distancias entregadas por el LIDAR y su orientación, de la cual se muestra su diagrama UML y programa principal en las Figuras \ref{fig:Figura_Diagrama_UML_VFH} y \ref{fig:Figura_Diagrama_de_Flujo_VFH_A}. La segunda parte es usar el histograma binario para evadir el obstáculo como se explica en el nodo del líder.
+Centrándose más en el diseño del algoritmo \textit{``Vector Field Histogram"}, el algoritmo se distribuye en 2 partes; la primera parte consiste en la obtención del histograma binario a partir de las distancias dictadas por el LIDAR y su orientación, las cuales son mostradas en un diagrama UML y en un programa principal en las \textit{Figuras \ref{fig:Figura_Diagrama_UML_VFH}} y \textit{\ref{fig:Figura_Diagrama_de_Flujo_VFH_A}}. La segunda parte consiste en usar el histograma binario para evadir el obstáculo, tal y como se explica en el nodo del líder.
 
 \begin{figure}[H]
 	\centering
@@ -523,25 +522,27 @@ Centrándonos más en el diseño del algoritmo ``Vector Field Histogram", se propus
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg}}
+	\fbox{\includegraphics[scale=0.35]{imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg}}
 	\caption{Diagrama de flujo del programa principal del nodo LaserVFH.}
 	\label{fig:Figura_Diagrama_de_Flujo_VFH_A}
 \end{figure}
 
-Para generar el histograma binario se aplicó el proceso mostrado en la Figura \ref{fig:Figura_Diagrama_de_Flujo_VFH_B} donde a partir del histograma de distancias proporcionado por el LIDAR y la orientación del líder se genera un histograma binario base acoplado al marco de referencia global sobre el cual está la trayectoria, considerando así la orientación del líder para reorientar los ángulos del LIDAR que se obtienen conforme al marco de referencia del líder y un umbral de distancia a la cual se considera ángulo libre u ocupado. Posteriormente con el fin de ensanchar este histograma binario debido a que el móvil no es una partícula sino un cuerpo rígido, se calculan los puntos donde existe en el histograma un flanco de subida o de bajada obteniendo así los valles y las crestas, y a partir de estos ángulos se ensancha el histograma quitando ``N" ángulos libres iniciando en cada cresta o valle (``N" se acostumbra desde 20 hasta 35). Por último se envía el histograma ensanchado al nodo del líder.
+Para generar el histograma binario se aplica el proceso mostrado en la \textit{Figura \ref{fig:Figura_Diagrama_de_Flujo_VFH_B}} donde, a partir del histograma de distancias proporcionado por el LIDAR y la orientación del líder, se genera un histograma binario base, acoplado al marco de referencia global sobre el cual está la trayectoria. Considerando así la orientación del líder para reorientar los ángulos del LIDAR que se obtienen conforme al marco de referencia del líder y un umbral de distancia al cual se le considera ángulo libre u ocupado. Posteriormente, con el fin de ensanchar este histograma binario (debido a que el móvil no es una partícula sino un cuerpo rígido), se calculan los puntos del histograma donde existen flancos de subida o flancos de bajada, obteniendo así los valles y las crestas. A partir de estos ángulos se ensancha el histograma quitando ``N" ángulos libres iniciando en cada cresta o valle (``N" se acostumbra desde 20 hasta 35). Por último, se envía el histograma ensanchado al nodo del líder.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg}}
+	\fbox{\includegraphics[scale=0.45]{imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg}}
 	\caption{Diagrama de flujo para generar histograma binario.}
 	\label{fig:Figura_Diagrama_de_Flujo_VFH_B}
 \end{figure}
 
 \paragraph{Comunicación}
 
-La comunicación se realizará por medio de WiFi entre los distintos dispositivos, es decir el Turtlebot 3 burger líder, el Turtlebot 3 burger seguidor y la computadora de monitoreo tendrán una comunicación de manera continua. Como se explicó en la parte del diseño conceptual la arquitectura para el desarrollo de este proyecto será de tipo distribuida, ya que cada dispositivo antes mencionado, procesará distintos tipos de información y realizaran diversas tareas, que para un sistema centralizado teóricamente sería complicado y demandante computacionalmente, mientras que para esta arquitectura el procesamiento de información se distribuye y reduce la demanda de poder computacional para un dispositivo en particular.
+La comunicación se realiza por medio de WiFi entre los distintos dispositivos, es decir, el robot líder, el robot seguidor y la computadora de monitoreo, tienen una comunicación continua. Como se explicó en la parte del diseño conceptual; la arquitectura para el desarrollo de este proyecto es de tipo distribuida, ya que cada dispositivo antes mencionado, procesa distintos tipos de información y realiza diversas tareas, que para un sistema centralizado teóricamente sería complicado y demandante computacionalmente, mientras que para esta arquitectura, el procesamiento de información se distribuye y reduce la demanda de poder computacional para un dispositivo en particular.
 
-Los mensajes que serán transferidos vía WiFi son los tópicos publicados durante la ejecución del esquema líder-seguidor. A continuación, se presenta una lista de ellos y la información que contienen.
+\break
+
+Los mensajes que son transferidos vía WiFi, son los tópicos publicados durante la ejecución del esquema líder - seguidor. A continuación, se presenta una lista de ellos y la información que contienen.
 
 \begin{itemize}
 	\item $/map$
@@ -556,34 +557,35 @@ Los mensajes que serán transferidos vía WiFi son los tópicos publicados durante 
 	\item $/tb3_1/scan$
 \end{itemize}
 
-Para poder tener estos mensajes en comunicación con los distintos robots es necesario establecer una comunicación wifi entre los distintos robots y computadora de monitores. A continuación, se muestra como hacerlo.
+Para poder enlazar estos mensajes de comunicación con los robots, es necesario establecer una comunicación WiFi entre los distintos robots y la computadora de monitoreo. A continuación se muestra como hacerlo.\\
 
-Se obtiene la IP de la PC remota y se modifica en la computadora del Turtlebot 3 burger como sigue:
-
+Se obtiene la IP de la PC remota y se modifica en la computadora del TurtleBot3 Burger.
 \begin{itemize}
 	\item Ingresar el siguiente comando en cada Turtlebot 3 burger y PC remota $>> \$ nano ~/.bashrc$
-	\item Modifique la dirección de localhost en $ROS\_MASTER\_URI$ y $ROS\_HOSTNAME$ con la dirección IP obtenida de la ventana de terminal anterior.
+	\item Modificar la dirección de localhost en $ROS\_MASTER\_URI$ y $ROS\_HOSTNAME$ con la dirección IP obtenida de la ventana de terminal anterior.
 \end{itemize}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.75]{imagenes/Detallado/25_Configuracion_IP.jpg}}
+	\fbox{\includegraphics[scale=0.81]{imagenes/Detallado/25_Configuracion_IP.jpg}}
 	\caption{Configuración de la IP para la comunicación vía WiFi [\citenum{turtlebot3}].}
 	\label{fig:Figura_Configuracion_IP}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.28]{imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg}}
+	\fbox{\includegraphics[scale=0.31]{imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg}}
 	\caption{Ejemplo de configuración WIFI [\citenum{install-ubuntu}].}
 	\label{fig:Figura_Ejemplo_de_Configuracion_WIFI}
 \end{figure}
 
 \paragraph{Control de motores}
 
-Para lograr que los robots móviles se comporten como se desea es necesario hacer uso de la cinemática inversa de su configuración. Estas ecuaciones fueron planteadas en el marco teórico. El enfoque es hacia el cálculo de la velocidad necesaria en cada una de las llantas para obtener así el cambio en la dirección y siempre mantener una velocidad lineal constante en todo momento. Esto se explica a continuación.
+Para lograr que los robots móviles se comporten como se desea, es necesario hacer uso de la cinemática inversa de su configuración (estas ecuaciones fueron planteadas en el Marco teórico). El enfoque es hacia el cálculo de la velocidad necesaria en cada una de las llantas para obtener así, el cambio en la dirección y mantener una velocidad lineal constante en todo momento, como se explica a continuación.\\
 
-Lo primero es considerar la velocidad lineal a la que los Turtlebot 3 burger deseamos que vayan $V_k$ y tomando como tope la velocidad máxima $V_max$, sabemos que estos van a 0.22$\dfrac{m}{s}$, tomando la ecuación de la cinemática inversa tenemos que para la velocidad del motor 1 y 2 de nuestros Turtlebot 3 burger obtenemos \ref{Ecuacion_cinematica} y \ref{Phi2} .
+Lo primero es considerar la \textit{velocidad lineal} a la que se desean que vayan los robots ($V_k$) y la velocidad máxima ($V_{max}$). Tomando la ecuación de la cinemática inversa, obtenemos las ecuaciones \textit{\ref{Ecuacion_cinematica}} y \textit{\ref{Phi2}} para la velocidad en ambos motores de los robots.
+
+\break
 
 \begin{equation}\label{Ecuacion_cinematica}
 \phi_{r}^{'}=\dfrac{V_{k}+\theta^{'}b}{r}
@@ -593,79 +595,79 @@ Lo primero es considerar la velocidad lineal a la que los Turtlebot 3 burger des
 \phi_{l}^{'}=\dfrac{V_{k}-\theta^{'}b}{r}
 \end{equation}
 
-Debido a la restricción de velocidad máxima de los motores $(\phi_{max}^{'})$ el máximo de velocidad angular que podemos obtener es \ref{Ecuacion_cinematica3}.
+Debido a la restricción de velocidad máxima de los motores $(\phi_{max}^{'})$, el máximo en la velocidad angular que se puede obtener, se representa en la \textit{ecuación \ref{Ecuacion_cinematica3}}.
 
 \begin{equation}\label{Ecuacion_cinematica3}
 \theta^{'}=\dfrac{\phi_{max}^{'}r-V_{k}}{b}
 \end{equation}
 
-Estas ecuaciones (\ref{Ecuacion_cinematica},\ref{Phi2},\ref{Ecuacion_cinematica3}) son las implementadas por la librería que usa ROS para controlar el Turtlebot 3 burger.
+Las \textit{ecuaciones \ref{Ecuacion_cinematica}, \ref{Phi2}, \ref{Ecuacion_cinematica3}}, son las implementadas por la librería que usa ROS para controlar a los robots.
 
-\subsection{Área Funcional 3: Percepción (Comunicación entorno - robot)}
+\subsection{Área Funcional 3: \textit{Percepción (Comunicación entorno - robot)}}
 
-Como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, la tercera área funcional a analizar es la de Percepción, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los móviles para poderlos ubicar en el espacio ya sea por odometría (información propioceptiva), o por la recabación de la información del ambiente, para poder ubicar los obstáculos dentro del área de trabajo (información exteroceptiva), así mismo cabe indicar que estas dos formas trabajan en conjunto siendo una más efectiva para la detección del móvil en la zona de trabajo y la otra para dar ajustes más precisos como cual ha sido el desplazamiento total, de esta manera se evita que por el ruido del sensor lidar el móvil de repente aparezca en otro lugar muy lejano (para el programa) como suele pasar si no se usa odometría.
+Como se puede observar en la \textit{Figura \ref{fig:Integracion}} de la página \pageref{fig:Integracion}, la tercera área funcional a analizar es la de \textit{Percepción}, la cual tiene la función de adquirir los datos propioceptivos y extereoceptivos de cada uno de los robots, es decir, la recabación de datos como la distancia, velocidad y posición de los robots, con el fin de poder ubicar a los robots, implementando odometría \textit{(información propioceptiva)}, o llevando a cabo la recabación de la información del ambiente dentro del área de trabajo \textit{(información exteroceptiva)}. 
 
-Para la recabación de la información propioceptiva se necesita un control preciso de los actuadores del móvil para lograr orientar a los móviles de manera correcta, y así, en conjunto con un buena lectura de los datos obtenidos de la rotación de las ruedas se lleve a cabo una estimación más precisa de la posición de los móviles durante la navegación. Los datos recabados por los sensores posteriormente serán leídos por el hardware implementado en el área funcional de procesamiento, siendo así el hardware él que se encargará de su procesamiento para realizar una tarea en específico.
-Para poder llevar a cabo la solución de esta área funcional se plantea separar de manera general en las dos clasificaciones de información obtenida por los sensores y así desglosar cada uno de los elementos que conllevan.
+Para la recabación de la \textit{información propioceptiva} es necesario un control preciso de los actuadores, con el objetivo de lograr orientar de manera correcta a los robots, y en conjunto con un buena lectura de los datos (obtenidos de la rotación de las ruedas), llevar a cabo una estimación más precisa de la posición de los robots durante la navegación.
 
 \subsubsection{Datos propioceptivos}
 
-Este tipo de datos son los obtenidos a partir de variables internas del móvil, por lo cual su medición es únicamente referente a la posición relativa del móvil y a las variables físicas donde este se encuentre, este concepto tiene su origen en la propiocepción, el cual es el sentido que informa al organismo de la posición de los músculos, en otras palabras, es la capacidad de sentir la posición relativa de partes corporales contiguas. Análogamente a este concepto en el estudio de la información de sensores se ocupa este término para diferenciar entre los sensores que dependen del entorno para poder realizar su medición de una manera relativa, y los que no.
-
-De esta manera se tiene como principal ventaja que los sensores propioceptivos no dependen de estímulos externos, por su característica de medir únicamente los datos o variables referentes a los estados internos del móvil. Sin embargo, por esta misma característica es difícil obtener datos en concreto confiables, siendo por lo tanto una desventaja el nivel de error total almacenado o acumulado, el cual se puede estimar con un muestreo de los sensores, pero nunca se llegará a tener el valor verdadero sino solo con un margen de incertidumbre, así mismo este error podría ser reducido en gran manera si se captara la información externa como en el caso de los sensores exteroceptivos.
-
-\subsubsection{Sensores integrados}
+Este tipo de datos son obtenidos a partir de variables internas de los robots, es decir, su medición es únicamente referente a variables internas cuantificables, como lo son; la medición de la batería, la medición de una señal proporcionada por un enconder en un actuador, etc. La principal ventaja que los sensores propioceptivos tienen es que no dependen de estímulos externos por su característica de medir únicamente los datos o variables referentes a los estados internos del robot, sin embargo, por esta misma característica es difícil obtener datos en concreto confiables, siendo por lo tanto, una desventaja el \textit{nivel de error total almacenado} o \textit{acumulado}, pudiendose estimar con un muestreo de los sensores, pero si nunca llegar a tener el valor verdadero.
 
 \subsubsection{Encoders rotatorios}
 
-En robótica, los encoders se utilizan habitualmente para llevar a cabo tareas odométricas, las cuales permiten estimar la posición de un robot móvil con respecto a una posición inicial conocida, basándose en el número de revoluciones de cada rueda del robot, y en la dirección en que se mueven las ruedas. Los encoders más empleados son los rotatorios (o de eje), que son dispositivos electromecánicos que convierten la posición angular de un eje en un código digital. Los encoders pueden ser magnéticos, mecánicos y de otros tipos, si bien los más comunes son los ópticos.
+En robótica, los encoders se utilizan habitualmente para llevar a cabo tareas odométricas, las cuales permiten estimar la posición de un robot móvil con respecto a una posición inicial conocida, basándose en el número de revoluciones de cada rueda del robot, y en la dirección en las que estas se mueven. Los encoders más empleados son los rotatorios (o de eje), que son dispositivos electromecánicos que convierten la posición angular de un eje en un código digital. Los encoders pueden ser magnéticos, mecánicos y de otros tipos, aunque los más comunes son los ópticos.
 
-\subsubsection{Encoder óptico rotatorio, de tipo relativo (o incremental)}
+\subsubsection{Encoder óptico rotatorio de tipo relativo o incremental}
 
-Este tipo de encoder está formado por un disco con agujeros (o ranuras) cerca de su borde y se coloca de modo que el eje del disco coincida con el eje del motor y el de la rueda (que normalmente son el mismo). El número de agujeros en el disco determina la precisión del encoder. A un lado del disco se coloca un led infrarrojo, mientras que, al otro lado, y enfrente del led infrarrojo, se coloca un fototransistor receptor de infrarrojos. Cuando el disco gira, los agujeros hacen que el fototransistor reciba luz de manera intermitente, generándose así una secuencia de pulsos. Se acostumbra a tener un par de leds que midan ranuras desfasadas 90 grados, cada una con una configuración como se describió anteriormente, esto con el fin de conocer el sentido de giro del motor y así poder calcular mediante un sistema relativo la posición del motor sin conocer la posición inicial. A pesar de que se puede programar mediante una técnica de interrupciones o leyendo constantemente la lectura del giro, una forma económica y fácil de obtener es mediante un flip-flop D con una señal conectada a la entradade reloj y el otro a la entrada de datos, al ser 2 señales cuadradas desfasadas 90 grados cuando detecta un cambio de estado en el pin de reloj, actualiza con el dato del segundo, el cual por su construcción coincide siempre con el giro (1-Sentido horario, 0-Sentido anti horario).
+Este tipo de encoder está formado por un disco con agujeros (o ranuras) cerca de su borde, el número de agujeros en el disco determina la precisión del encoder y este es colocado de modo tal que el eje del disco coincida con el eje del motor y el de la rueda (que normalmente son el mismo). A un lado del disco se coloca un led infrarrojo, mientras que al otro lado y enfrente del led infrarrojo, se coloca un fototransistor receptor de infrarrojos. Cuando el disco gira, los agujeros hacen que el fototransistor reciba luz de manera intermitente, generándose así una secuencia de pulsos. Se acostumbra a tener un par de leds que midan ranuras desfasadas 90 grados, cada una con una configuración como se describió anteriormente, con el fin de conocer el sentido de giro del motor y así poder calcular mediante un sistema relativo la posición del motor sin conocer la posición inicial. A pesar de que se puede programar mediante una técnica de interrupciones o leyendo constantemente la lectura del giro, una forma económica y fácil de obtener es mediante un flip-flop D, con una señal conectada a la entrada de reloj y la otra, a la entrada de datos. Al ser 2 señales cuadradas desfasadas 90 grados cuando detecta un cambio de estado en el pin de reloj, actualiza con el dato del segundo, el cual por su construcción coincide siempre con el giro (1 - sentido horario, 0 - sentido anti horario).
 
 \subsubsection{Encoder óptico absoluto}
 
-Son más apropiados para casos en los que se producen rotaciones más lentas, o poco frecuentes, como por ejemplo averiguar la rotación de un volante en un vehículo automatizado. El disco está formado por patrones codificados de zonas opacas y zonas transparentes. El funcionamiento es similar a los encoders relativos, pero en lugar de utilizarse un único led y un único foto receptor, se utilizan varios como se observa en la Figura \ref{fig:Figura_Encoder_absoluto}. Por medio de estos sensores se tiene la posición absoluta sin necesidad de ningún cálculo como ocurre en el relativo, además de conocer siempre su posición inicial, pero su construcción es más compleja y al ser más señales su tiempo de respuesta no es tan alto como en el relativo.
+Los encoders ópticos absolutos están formados por patrones codificados de zonas opacas y transparentes y suelen ser más apropiados para casos en los que se producen rotaciones más lentas, o poco frecuentes, como por ejemplo la averiguación de la rotación de un volante en un vehículo automatizado. El funcionamiento es similar al de los encoders relativos, pero en lugar de utilizarse un único led y un único foto receptor, se utilizan varios, tal y como se muestra en la \textit{Figura \ref{fig:Figura_Encoder_absoluto}}. Por medio de estos sensores se obtiene la posición absoluta sin necesidad de ningún cálculo como ocurre con el relativo, además de conocerse siempre su posición inicial, su tiempo de respuesta no es tan alto como en el relativo y su construcción es más compleja y al tenerse más señales.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/27_Encoder_absoluto.jpg}}
+	\fbox{\includegraphics[scale=0.3]{imagenes/Detallado/27_Encoder_absoluto.jpg}}
 	\caption{Funcionamiento del encoder absoluto.}
 	\label{fig:Figura_Encoder_absoluto}
 \end{figure}
 
 \subsubsection{Acelerómetros}
 
-Los acelerómetros son dispositivos que detectan cambios en la velocidad. La mayoría no están preparados para medir velocidad constante, sino que solamente miden aceleración o desaceleración. En un principio estaban restringidos al ámbito científico e industrial, debido a su alto coste. Sin embargo, gracias a su abaratamiento, cada vez se encuentran más presentes en aparatos de uso cotidiano, como ordenadores portátiles (que se suspenden en caso de caídas), mandos de consolas de videojuegos, o incluso teléfonos móviles.
+Los acelerómetros son dispositivos que detectan cambios en la velocidad. La mayoría no están preparados para medir velocidad constante, sino que únicamente miden aceleración o desaceleración. En un principio estaban restringidos al ámbito científico e industrial debido a su alto coste, sin embargo, gracias a su abaratamiento, cada vez se encuentran más presentes en aparatos de uso cotidiano, como ordenadores portátiles (que se suspenden en caso de caídas), mandos de consolas de videojuegos, o incluso teléfonos móviles.
 
-Dentro de la robótica móvil, uno de los principales usos de un acelerómetro es la detección de movimiento. Los acelerómetros presentan la ventaja de que pueden detectar desplazamientos del robot incluso cuando las ruedas del robot están detenidas. Otros posibles usos del acelerómetro son la detección de colisiones o la teleoperación robótica.
+Dentro de la robótica, uno de los principales usos de un acelerómetro es la detección de movimiento. Los acelerómetros presentan la ventaja de que pueden detectar desplazamientos del robot incluso cuando las ruedas del robot están detenidas. Otros posibles usos del acelerómetro son la detección de colisiones o la teleoperación robótica.
 
-Algunas desventajas de los acelerómetros es que detectan con dificultad las aceleraciones de pequeña magnitud (como por ejemplo al realizar giros muy lentos) y que son muy sensibles a irregularidades en el suelo.
+Algunas desventajas de los acelerómetros son que detectan con dificultad las aceleraciones de pequeña magnitud (como por ejemplo al realizar giros muy lentos) y que son muy sensibles a irregularidades en el suelo.
 
 \subsubsection{Datos exteroceptivos}
 
-Este tipo de datos son los que nos dan información del medio exterior, así como los propioceptivos tienen su origen en el cuerpo humano, también este concepto tiene su origen a partir del sistema exteroceptivo, el cual es el encargado de recibir estímulos externos al cuerpo como el frío, el calor, la presión, el dolor, etc., realizándolos por medio de los 5 sentidos entre otros.
-Las medidas de este tipo de sensores normalmente son interpretadas por el móvil para extraer características del entorno y a partir de estas elaborar un croquis del entorno, conocer los elementos que lo conforman, ver si es un entorno apropiado, etc.
+Este tipo de datos nos brindan información del medio exterior al recibir estímulos externos como temperatura, presión, acidez o alcalinidad, luz, etc. Los datos obtenidos por este tipo de sensores normalmente son interpretados por los robots como características del medio, donde a partir de estos, se elaboran mapas del entorno, conociendo los elementos que lo conforman.
 
-\subsubsection{Sensores implementados}
+\subsubsection{Sensores láser}
 
-\subsubsection{Escáner láser de medición de distancias}
-
-La palabra LASER responde a las siglas Light Amplification by Stimulated Emission of Radiation. Entre el sonar (competencia del Lidar) y el LASER existe una diferencia fundamental: la velocidad de propagación. Para el sonido es 0.3 m/ms, mientras que para las señales electromagnéticas es 0.3 m/ns, es decir, 1 millón de veces más rápido. Por ejemplo, en una distancia de 3 m, un sonar tardaría 10 ms, mientras que un láser mediría la distancia en 10 ns. Es evidente que para medir el tiempo de vuelo de señales electromagnéticas se necesita una tecnología más avanzada que para medir el tiempo de vuelo de un sonar. Esto explica que el precio de un láser sea mucho más elevado que el de un sonar.
-
-Como ya se mencionó el sensor LIDAR basa su funcionamiento en la medida del tiempo de vuelo como se observa en la Figura \ref{fig:Figura_Funcionamiento_Lidar}. Para determinar la distancia a la que se encuentra un objeto, el sensor emite un pulso de luz infrarroja. Cuando el pulso incide sobre el objeto más cercano, regresa hacia el sensor y se determina el tiempo transcurrido. Conocido el tiempo de ida y vuelta del pulso (tiempo de vuelo), se calcula fácilmente la distancia al objeto detectado. De este modo se puede medir la distancia en una sola dirección, pero gracias a que dispone internamente de un espejo rotatorio, se logra un efecto de barrido en dos dimensiones. La amplitud del barrido en este modelo es siempre de 360°. También se puede observar que, si los pulsos emitidos no indicen sobre ningún objeto cercano, el láser devuelve la distancia máxima, dando lugar a un conjunto de medidas que forman un semicírculo. Al conjunto de medidas que obtiene el láser se le denomina barrido láser.
+La palabra láser responde a las siglas en inglés \textit{Light Amplification by Stimulated Emission of Radiation (LASER)}. Por lo general un sensor láser, es un dispositivo que emite un haz de luz por medio de un elemento transmisor y recibe devuelta ese mismo haz de luz por medio de un elemento receptor, una vez que este es reflejado o interrumpido por un objeto, como se muestra a continuación.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/28_Funcionamiento_Lidar.jpg}}
+	\fbox{\includegraphics[scale=0.275]{imagenes/Detallado/28_1_SensorLaser}}
+	\caption{Funcionamiento de un sensor láser.}
+	\label{fig:Figura_Funcionamiento_Lidar}
+\end{figure}
+
+
+El sensor LIDAR es un de tipo de sensor láser, que basa su funcionamiento en la medida del \textit{tiempo de vuelo} como se observa en la \textit{Figura \ref{fig:Figura_Funcionamiento_Lidar}}. Para determinar la distancia a la que se encuentra un objeto, el sensor emite un pulso de luz infrarroja, cuando el pulso incide sobre el objeto más cercano, regresa hacia el sensor y se determina el tiempo transcurrido. Conocido el tiempo de ida y el tiempo de vuelta del pulso (tiempo de vuelo), se calcula fácilmente la distancia al objeto detectado. De este modo es posible medir la distancia en una sola dirección, pero gracias a que el sensor LIDAR dispone internamente de un espejo rotatorio, logra un efecto de barrido de 360°. Cabe mencionar que si los pulsos emitidos no indicen sobre ningún objeto cercano, el láser devuelve la distancia máxima, dando lugar a un conjunto de medidas que forman un semicírculo. Al conjunto de medidas que obtiene el láser se le denomina barrido láser.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[scale=0.53]{imagenes/Detallado/28_Funcionamiento_Lidar.jpg}}
 	\caption{Funcionamiento del sensor LIDAR.}
 	\label{fig:Figura_Funcionamiento_Lidar}
 \end{figure}
 
 \subsubsection{Sensor LIDAR LDS-01}
 
-Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las cuales son usadas en este proyecto para llevar a cabo el algoritmo SLAM para su localización y VFH para esquivar objetos.
+Es un sensor láser 2D capaz de escanear en 360° las diferentes distancias, las cuales son utilizadas para llevar a cabo el \textit{SLAM} para la localización y \textit{VFH} para la esquivación obstáculos.
 
 \begin{table}[H]
 	\centering
@@ -701,10 +703,10 @@ Es un sensor láser 2D capaz de escanear en 360°, las diferentes distancias, las 
 	\caption{Características del sensor LIDAR.}
 	\label{tab:Tabla_Caracteristicas_sensor_lidar}
 \end{table}
-
+\break
 \subsubsection{Dimensiones}
 
-En la Figuras \ref{fig:Figura_Dimensiones_Lidar} y \ref{fig:Figura_Vista_Frontal_lidar} se pueden observar las distintas dimensiones del sensor LIDAR, las cuales son importantes de considerar ya que dependiendo del tamaño del LIDAR y de otros elementos se puede llegar a la elección de la medida ideal para cada móvil.
+En las \textit{Figuras \ref{fig:Figura_Dimensiones_Lidar}} y \textit{\ref{fig:Figura_Vista_Frontal_lidar}} se muestran las dimensiones del sensor LIDAR.
 
 \begin{figure}[H]
 	\centering
@@ -715,29 +717,23 @@ En la Figuras \ref{fig:Figura_Dimensiones_Lidar} y \ref{fig:Figura_Vista_Frontal
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.3]{imagenes/Detallado/30_Vista_Frontal.jpg}}
+	\fbox{\includegraphics[scale=0.33]{imagenes/Detallado/30_Vista_Frontal.jpg}}
 	\caption{Vista Frontal del sensor LIDAR.}
 	\label{fig:Figura_Vista_Frontal_lidar}
 \end{figure}
 
-\subsubsection{Montaje del sensor}
-
-El sensor LIDAR se coloca en la parte superior con 4 soportes removibles para facilitar su reemplazo en cualquier caso que se necesitará, además que favorece a no tener que retirar toda la capa. En cuanto a su función de obtener las distancias para cada grado de su alrededor es más factible colocarla en la posición superior ya que así ningún soporte le impide realizar la medición correcta.
-
-En su colocación los 4 soportes ofrecen un nivel de seguridad mayor, ya que para poder definir un plano en sus 3 dimensiones se necesitan 3 puntos que pasen por él, dando de esta forma un sistema completamente definido, sin embargo, al tener 4 puntos de sujeción se sobre define este haciendo forzosamente que el 4 punto solo se pueda colocar si pertenece al plano, en este caso al pertenecer si ocurriera que algún punto se quitará el sistema seguiría completamente definido y por lo tanto estable ante cualquier eventualidad referente a esto. En la sección de Implementación se habla más a detalle del proceso de montaje.
-
 \subsubsection{Acondicionamiento}
 
-Para conectar el sensor LIDAR a la tarjeta Raspberry Pi 3 se usa un convertidor de protocolo USB al protocolo UART como se observa en la Figura \ref{fig:Figura_Pines_del_lidar}, esto debido a que el LIDAR recibe comandos de 40 bytes con los cuales decide cada cuantos grados va a realizar un escaneo, asimismo como la intensidad a la que se usa el láser, todo esto para obtener del LIDAR la distancia medida de la mejor manera posible. Al finalizar de recibir los 40 bytes se comprueba mediante una suma que los datos fueron correctos y se prosigue en caso contrario vuelven a enviar los datos.
+Para conectar el sensor LIDAR a la tarjeta Raspberry Pi 3, se usa un convertidor de protocolo USB a protocolo UART, como se observa en la \textit{Figura \ref{fig:Figura_Pines_del_lidar}}, esto debido a que el LIDAR recibe comandos de 40 bytes con los cuales decide cada cuantos grados va a realizar un escaneo, así como también, la intensidad del láser. Al finalizar de recibir los 40 bytes se comprueba mediante una suma si los datos fueron correctos y se prosigue, en caso contrario, se vuelven a enviar los datos.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.35]{imagenes/Detallado/31_Pines_del_lidar.jpg}}
+	\fbox{\includegraphics[scale=0.3]{imagenes/Detallado/31_Pines_del_lidar.jpg}}
 	\caption{Pines del sensor LIDAR.}
 	\label{fig:Figura_Pines_del_lidar}
 \end{figure}
 
-La descripción de los pines se muestra a continuación en la Tablas \ref{tab:Tabla_Pines_sensor_lidar}, \ref{tab:Tabla_Pines_motor_lidar} y \ref{tab:Tabla_Comandos_lidar} en las cuales se considera tanto el motor que se encarga del giro del LIDAR, así como el circuito de control del láser.
+La descripción de los pines se muestra a continuación en la \textit{Tablas \ref{tab:Tabla_Pines_sensor_lidar}, \ref{tab:Tabla_Pines_motor_lidar}} y \textit{\ref{tab:Tabla_Comandos_lidar}} en las cuales se considera tanto el actuador encargado del giro del sensor LIDAR, así como también el circuito de control del láser.
 
 \begin{table}[H]
 	\centering
@@ -792,11 +788,13 @@ La descripción de los pines se muestra a continuación en la Tablas \ref{tab:Tabl
 	\label{tab:Tabla_Comandos_lidar}
 \end{table}
 
-\subsection{Área Funcional 4: Alimentación (Suministro de energía)}
+\subsection{Área Funcional 4: \textit{Alimentación (Suministro de energía)}}
 
-La cuarta área funcional es la de Alimentación, la cual es la encargada de abastecer de energía a tres áreas funcionales fundamentales para el móvil por medio de una batería como se muestra en la Figura \ref{fig:Figura_Ubicacion_Alimentacion}. Cada una de estas áreas tiene sus propios elementos para poder llevar acabo sus tareas; en el caso de nuestra segunda área funcional denominada ``Procesamiento", es necesario abastecer a dos tarjetas, las cuales son la Raspberry Pi 3 y la ARM Cortex M7, cada una con sus respectivas entradas y salidas que se abordan a detalle en la sección de Procesamiento. Hablando de la tercera área funcional denominada ``Percepción", es necesario alimentar de acuerdo a las especificaciones técnicas el sensor LIDAR, el cual nos dará toda la información del entorno y nos brindará los datos exteroceptivos del ambiente que posteriormente serán evaluados y procesados en la segunda área funcional. En cuanto al movimiento, la quinta y última área funcional, los encargados de llevar acabo está tarea son dos actuadores Dynamixel (uno en cada llanta) que son los responsables de la locomoción del móvil y de la ejecución de toda la información antes proporcionada por las distintas áreas funcionales. Teniendo en cuenta que estos actuadores (por el encoder interno) al igual que el sensor LIDAR, brindarán información acerca del movimiento (rotación) de las llantas y posteriormente esta información nos servirá para conocer la posición y orientación de los móviles (odometría). Teniendo así que todos estos elementos y aspectos mencionados tendrán que ser alimentados por una fuente.
+La cuarta área funcional denominada \textit{Alimentación}, es la encargada de abastecer de energía por medio de una batería \textit{(Figura \ref{fig:Figura_Bateria_LiPo})} a tres áreas fundamentales para los robots. Es necesario abastecer de energía a dos tarjetas de procesamiento, en segunda área funcional; Raspberry Pi 3 y la ARM Cortex M7. En la tercera área funcional, es necesario alimentar al sensor LIDAR encargado de la recabación de la información del ambiente, y en la quinta y última área funcional encargada del movimiento, es necesario abastecer de energía a dos actuadores Dynamixel (uno en cada llanta), responsables del movimiento en los robots y de la ejecución de toda la información antes proporcionada por las distintas áreas funcionales.
 
-La encargada de abastecer energía a todos los elementos que conforman cada área funcional es una batería LiPo (batería de Polímero de Litio) ubicada en la primera capa dentro del Turtlebot3 como se muestra en la Figura \ref{fig:Figura_Ubicacion_Alimentacion}.
+\break
+
+La responsable de abastecer energía a todos los elementos que conforman a cada una de las áreas funcionales antes mencionadas, es una batería de tipo LiPo \textit{(Polímero de Litio)} ubicada en la primera capa del TurtleBot3, como se muestra en la \textit{Figura \ref{fig:Figura_Ubicacion_Alimentacion}}.
 
 \begin{figure}[H]
 	\centering
@@ -805,7 +803,7 @@ La encargada de abastecer energía a todos los elementos que conforman cada área 
 	\label{fig:Figura_Ubicacion_Alimentacion}
 \end{figure}
 
-La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cuenta con solo una salida, que es la que abastece a todo el robot y una entrada como se muestra en la Figura \ref{fig:Figura_Bateria_LiPo}, que es la que sirve para que se pueda cargar, adicionalmente para cargarla se usa un cargador de baterías LiPo en conjunto con una fuente de voltaje.
+La batería tiene una capacidad nominal de 1800 mAh con una sola salida de 11.1V que abastece de energía a todo el robot y una entrada como se muestra en la \textit{Figura \ref{fig:Figura_Bateria_LiPo}}, encargada de cargar a la batería.
 
 \begin{figure}[H]
 	\centering
@@ -853,8 +851,6 @@ La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cue
 
 \subsubsection{Ensamble de la batería LiPo con la estructura}
 
- En la Figura \ref{fig:Figura_Ensamble_Bateria_LiPo} se muestra el proceso de ensamble de la batería en el Turtlebot3 burger, un proceso que se debe tener en mente, ya que el manual del Turtlebot3 burger aconseja retirar la batería de la estructura cada vez que se quiera recargar.
- 
  \begin{figure}[H]
  	\centering
  	\fbox{\includegraphics[scale=0.12]{imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg}}
@@ -862,11 +858,13 @@ La batería tiene una capacidad nominal de 1800 mAh con una salida de 11.1V y cue
  	\label{fig:Figura_Ensamble_Bateria_LiPo}
  \end{figure}
 
-\subsection{Área Funcional 5: Movimiento (Desplazamiento del robot)}
+Como ya se ha mencionado, la batería LiPo va ensamblada en el primer piso de cada uno de los robots y cuenta con un cuatro barras que limitan el movimiento de misma. A los costados se encuentran los actuadores de los robots y en la parte de arriba se encuentran las tarjetas de procesamiento y el sensor LIDAR. En la sección de \textit{Integración del Sistema} se habla más a detalle. 
+
+\subsection{Área Funcional 5: \textit{Movimiento (Desplazamiento del robot)}}
 
 %\subsubsection{Locomoción}
 
-El movimiento o locomoción forma una parte fundamental del proyecto, ya que es la última función antes de que nuestro robot ejecute la información proporcionada, una vez esta haya pasado por las 4 funciones previas que engloban el proyecto. En la Figura \ref{fig:Figura_Ensamble_llanta} se muestra el proceso de ensamble para cada llanta.
+El movimiento o locomoción forma una parte fundamental del proyecto, ya que es la última función antes de que el robot ejecute las instrucciones proporcionadas por las 4 funciones previas que engloban el proyecto. En la \textit{Figura \ref{fig:Figura_Ensamble_llanta}} se muestra el proceso de ensamble para cada llanta.
 
 \begin{figure}[H]
 	\centering
@@ -875,7 +873,7 @@ El movimiento o locomoción forma una parte fundamental del proyecto, ya que es l
 	\label{fig:Figura_Ensamble_llanta}
 \end{figure}
 
-El sistema de locomoción está en la primera capa dentro de la estructura de nuestros robots, y tiene como eje fundamental dos actuadores Dynamixel XL 430 - W250 en cada llanta, lo que se traduce a una configuración cinemática de tracción diferencial como se muestra en las Figuras  \ref{fig:Figura_Estructura_de_la_locomocion} y \ref{fig:Figura_Ensamble_Actuadores}.
+El sistema de locomoción se encuentra en la primera capa dentro de la estructura de los robots, y tiene como eje fundamental dos actuadores Dynamixel XL 430 - W250 en cada llanta, lo que se traduce a una configuración cinemática de tracción diferencial como se muestra en las \textit{Figuras  \ref{fig:Figura_Estructura_de_la_locomocion}} y \textit{\ref{fig:Figura_Ensamble_Actuadores}}.
 
 \begin{figure}[H]
 	\centering
@@ -893,11 +891,11 @@ El sistema de locomoción está en la primera capa dentro de la estructura de nues
 
 \subsubsection{Actuadores Dynamixel}
 
-Para el control de la posición y velocidad del móvil se utilizan los motores Dynamixel XL430-W250-T los cuales cuentan con un controlador interno, el cual puede ajustarse en 6 distintos modos, para este caso principalmente se usará el control de velocidad, esto se logrará transmitiendo la información por medio del protocolo UART, por lo cual cada motor se conecta al Open CR que se encarga de mandarle la información de una manera que el motor pueda interpretar directamente [\citenum{DYNAMIXEL}].
+Para el control de la posición y velocidad de los robots, se utilizan dos motores Dynamixel XL430-W250-T por cada robot, los cuales cuentan con un controlador interno capaz de ajustarse hasta en 6 modos distintos. La información o instrucciones se transmiten por medio del protocolo UART a la Open CR, encargada de mandar información a los motores [\citenum{DYNAMIXEL}]. 
 
 \subsubsection{Análisis interno del motor}
 
-El motor este ensamblado como se muestra en la Figura \ref{fig:Figura_Ensamble_del_motor}, de tal manera que eléctricamente lo compone un motor de CD, una tarjeta controladora y un encoder. La tarjeta controladora se encarga de recibir y ejecutar las instrucciones, así como de leer los valores del sensor de corriente y el encoder es el sensor para determinar su posición.
+El actuador básicamente está compuesto por un motor de CD, una tarjeta controladora y un encoder, como se muestra en la \textit{Figura \ref{fig:Figura_Ensamble_del_motor}}. La tarjeta controladora se encarga de la recepción y ejecución de las instrucciones, así como también de leer los valores del sensor, mientras que el encoder es el sensor encargado de determinar la posición.
 
 \begin{figure}[H]
 	\centering
@@ -906,7 +904,7 @@ El motor este ensamblado como se muestra en la Figura \ref{fig:Figura_Ensamble_d
 	\label{fig:Figura_Ensamble_del_motor}
 \end{figure}
 
-Los tipos de control que puede realizar son los siguientes:
+Los tipos de control que puede realizar la tarjeta controladora del Dynamixel son los siguientes:
 
 \begin{itemize}
 	\item Control de par.
@@ -919,18 +917,18 @@ Los tipos de control que puede realizar son los siguientes:
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/39_Caracteristicas_del_motor.jpg}}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/39_Caracteristicas_del_motor.jpg}}
 	\caption{Características del actuador.}
 	\label{fig:Figura_Caracteristicas_del_motor}
 \end{figure}
 
-Los actuadores Dynamixel son de los actuadores más avanzados para robótica económica de alto rendimiento, también llamados actuadores inteligentes, ya que ofrecen la posibilidad de programar entre 50 y 57 comandos permitiendo definir el comportamiento del actuador de una mejor manera otorgándoles funciones especiales como las que se muestran en la Figura \ref{fig:Figura_Caracteristicas_del_motor}, en comparación con el servomotor, más comúnmente usado, que solo interpreta la orden de ``ángulo objetivo" proporcionado por una señal PWM.
+Los actuadores Dynamixel son uno de los mejores y más avanzados motores económicos y de alto rendimiento, también llamados actuadores inteligentes. Ofrecen la posibilidad de programar entre 50 y 57 comandos, permitiendo definir el comportamiento del actuador de una mejor y otorgando funciones especiales como las mostradas en la \textit{Figura \ref{fig:Figura_Caracteristicas_del_motor}}, que en comparación con un servomotor típico, este solo interpreta la orden de ``ángulo objetivo" proporcionado por una señal PWM.
 
-En las Figuras \ref{fig:Figura_Sistema_de_Locomocion} y \ref{fig:Figura_Sistema_de_Locomocion_B}, se muestran los motores ya ensamblados para formar la configuración diferencial.
+En las \textit{Figuras \ref{fig:Figura_Sistema_de_Locomocion}} y \textit{\ref{fig:Figura_Sistema_de_Locomocion_B}} se muestran los motores ya ensamblados para formar la configuración diferencial.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.18]{imagenes/Detallado/40_Sistema_de_Locomocion.jpg}}
+	\fbox{\includegraphics[scale=0.15]{imagenes/Detallado/40_Sistema_de_Locomocion.jpg}}
 	\caption{Sistema de locomoción en conjunto con los actuadores Dynamixel XL 430 - W250.}
 	\label{fig:Figura_Sistema_de_Locomocion}
 \end{figure}
@@ -944,7 +942,7 @@ En las Figuras \ref{fig:Figura_Sistema_de_Locomocion} y \ref{fig:Figura_Sistema_
 
 \subsubsection{Características del motor}
 
-Los actuadores Dynamixel son capaces de proporcionar valiosa información de retroalimentación permitiendo leer y procesar información en tiempo real captada por sus sensores embebidos, los cuales son sumamente útiles para hacer odometría con los móviles. Entre la información que pueden proporcionar los actuadores Dynamixel se encuentra leer la posición actual del motor, la velocidad, la temperatura interna, el par y la tensión de alimentación.
+Los actuadores Dynamixel son capaces de proporcionar valiosa información de retroalimentación permitiendo leer y procesar información en tiempo real captada por sus sensores embebidos, haciéndolo sumamente útil para la odometría. Entre la información que pueden proporcionar los actuadores Dynamixel se encuentra leer la posición actual del motor, la velocidad, la temperatura interna, el par y la tensión de alimentación.
 
 \begin{figure}[H]
 	\centering
@@ -953,7 +951,7 @@ Los actuadores Dynamixel son capaces de proporcionar valiosa información de retr
 	\label{fig:Figura_Nomenclatura_DYNAMYXEL}
 \end{figure}
 
-En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de acuerdo a la Figura \ref{fig:Figura_Nomenclatura_DYNAMYXEL}, son los actuadores del más bajo desempeño dentro de las tres posibles clasificaciones de los actuadores, y cuyas especificaciones y características técnicas se mencionan a continuación en la Tabla \ref{tab:Tabla_Caracteristicas_actuador_Dynamixel_1} en conjunto con sus curvas características que se muestran en la Figura \ref{fig:Figura_Grafica_DYNAMYXEL}.
+Los actuadores Dynamixel XL 430 - W250, son los actuadores del más bajo desempeño dentro de las tres posibles clasificaciones de los actuadores \textit{(Figura \ref{fig:Figura_Nomenclatura_DYNAMYXEL})}, y cuyas especificaciones y características técnicas se mencionan en la \textit{Tabla \ref{tab:Tabla_Caracteristicas_actuador_Dynamixel_1}}, en conjunto con sus curvas características mostradas en la \textit{Figura \ref{fig:Figura_Grafica_DYNAMYXEL}}.
 
 \begin{table}[H]
 	\centering
@@ -1091,24 +1089,21 @@ En nuestro caso trabajaremos con los actuadores Dynamixel XL 430 - W250 que de a
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg}}
-	\caption{Gráfica de funcionamiento del motor DYNAMYXEL [\citenum{DYNAMIXEL}].}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg}}
+	\caption{Gráfica de funcionamiento del motor DYNAMIXEL [\citenum{DYNAMIXEL}].}
 	\label{fig:Figura_Grafica_DYNAMYXEL}
 \end{figure}
 
-Entre cualidades del motor DYNAMYXEL XL 430 W250 actuador tenemos:
+Entre cualidades del motor Dynamixel XL 430 W250 actuador tenemos:
 
 \begin{enumerate}
 	\item Torque mejorado y diseño compacto.
-	\item Durabilidad mejorada y capacidad de expansión.
-	\item Al tener la caja trasera hueca minimiza la tensión del cable.
-	\item Marcos directamente enroscados en la caja.
 	\item 6 modos de funcionamiento.
 	\item Control perfil para la planificación de movimientos.
 	\item Eficiencia energética con tiempo mejorado de operación.
 \end{enumerate}
 
-Y en cuanto al ambiente de programación, los actuadores DYNAMYXEL pueden ser programados mediante:
+En cuanto a la programación de los actuadores Dynamixel, estos pueden ser programados mediante los siguientes lenguages de programación. 
 
 \begin{itemize}
 	\item OpenCM ID.
@@ -1116,8 +1111,11 @@ Y en cuanto al ambiente de programación, los actuadores DYNAMYXEL pueden ser pro
 	\item Software exclusivo [Dynamixel Workbench].
 \end{itemize}
 
-Basándonos en este último, el Dynamixel Workbench es un metapaquete que contiene cuatro paquetes fundamentales, los cuales son; Administrador único (single manager), Controlador, Operador y Caja de herramientas (Toolbox).
-El paquete de Administrador único (single manager) provee de paquetes que pueden programar todas las series del Dynamixel, incluidas la serie X, y la PRO utilizando la biblioteca del Toolbox desarrollada en la base de Dynamixel SDK. Estos paquetes no sólo muestran el estado del Dynamixel, sino que también, permiten cambiar los valores de las direcciones de la tabla de control por comandos de línea o mediante la interfaz gráfica. El paquete de controladores nos presenta como utilizar los actuadores Dynamixel en diferentes modos de operación con la librería de Dynamixel Workbench Toolbox. La interfaz gráfica de Dynamixel Workbench se muestra en la Figura \ref{fig:Figura_Interfaz_de_programacion_DYNAMYXEL}.
+Basándose en este último, el Dynamixel Workbench es un metapaquete que contiene cuatro paquetes fundamentales, los cuales son; administrador único (single manager), controlador, operador y caja de herramientas (Toolbox).
+
+\break
+
+El paquete de administrador único (single manager) provee de paquetes que pueden programar todas las series del Dynamixel, incluidas la serie X, y la PRO utilizando la biblioteca del Toolbox. Estos paquetes no sólo muestran el estado del Dynamixel, sino que también, permiten cambiar los valores de las direcciones de la tabla de control por comandos de línea o mediante la interfaz gráfica. El paquete de controladores nos presenta como utilizar los actuadores Dynamixel en diferentes modos de operación con la librería de Dynamixel Workbench Toolbox. La interfaz gráfica de Dynamixel Workbench se muestra en la \textit{Figura \ref{fig:Figura_Interfaz_de_programacion_DYNAMYXEL}}.
 
 \begin{figure}[H]
 	\centering
@@ -1126,10 +1124,11 @@ El paquete de Administrador único (single manager) provee de paquetes que pueden
 	\label{fig:Figura_Interfaz_de_programacion_DYNAMYXEL}
 \end{figure}
 
+\break
+
 \subsection{Integración del Sistema}
 
-Una vez conociendo todos los elementos que conforman a los robots móviles, se dará paso a la integración de todos los componentes dentro de la primera área funcional que es la de Estructura.
-La primera plataforma o capa es destinada al montaje de los dos actuadores Dynamixel, en conjunto con la batería Li-Po que suministra energía a todo el robot como se muestra en la Figura \ref{fig:Figura_Capa_1}.
+Una vez conociendo todos los elementos que conforman a los robots móviles, se da paso a la integración de todos los componentes dentro de la primera área funcional que es la de \textit{Estructura}. La primera plataforma o capa es destinada al montaje de los dos actuadores Dynamixel, en conjunto con la batería LiPo que suministra energía a todo el robot como se muestra en la \textit{Figura \ref{fig:Figura_Capa_1}}.
 
 \begin{figure}[H]
 	\centering
@@ -1138,16 +1137,16 @@ La primera plataforma o capa es destinada al montaje de los dos actuadores Dynam
 	\label{fig:Figura_Capa_1}
 \end{figure}
 
-La segunda capa como se muestra en la Figura \ref{fig:Figura_Capa_2} es la destinada para el montaje la tarjeta OpenCR que es la encargada de mandar las señales de control a los actuadores y leer señales externas que ayuden al funcionamiento del robot como pueden ser sensores o interfaces por medio de botones mecánicos.
+La segunda capa como se muestra en la \textit{Figura \ref{fig:Figura_Capa_2}} es la destinada para el montaje la tarjeta OpenCR, encargada de mandar las señales de control a los actuadores y leer señales externas que ayuden al funcionamiento del robot como pueden ser sensores o interfaces por medio de botones mecánicos.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.15]{imagenes/Detallado/46_Capa_2.jpg}}
+	\fbox{\includegraphics[scale=0.155]{imagenes/Detallado/46_Capa_2.jpg}}
 	\caption{Capa 2. Implementación de la capa 1, capa 2 y tarjeta Open CR.}
 	\label{fig:Figura_Capa_2}
 \end{figure}
 
-En la tercera capa como se muestra en la Figura \ref{fig:Figura_Capa_3} se coloca la Raspberry Pi 3 encargada de ejecutar el sistema operativo ROS y el conector usb para leer el sensor lidar. Y por último en la última capa se coloca el sensor lidar sin ningún elemento extra para que este pueda escanear su alrededor sin ninguna interferencia otorgándole de esta manera un correcto funcionamiento al sensor.
+En la tercera capa como se muestra en la \textit{Figura \ref{fig:Figura_Capa_3}} se coloca la Raspberry Pi 3 encargada de ejecutar el sistema operativo ROS y el conector usb para leer el sensor LIDAR. Y por último, en la última capa se coloca el sensor LIDAR sin ningún elemento extra para que este pueda escanear su alrededor sin ninguna interferencia, otorgándole de esta manera un correcto funcionamiento al sensor.
 
 \begin{figure}[H]
 	\centering
@@ -1156,7 +1155,7 @@ En la tercera capa como se muestra en la Figura \ref{fig:Figura_Capa_3} se coloc
 	\label{fig:Figura_Capa_3}
 \end{figure}
 
-Ya explicadas las distintas capas que conforman todo el sistema del robot, se muestra ensamble del robot en las Figuras \ref{fig:Figura_Vista_Isometrica_completa} y \ref{fig:Figura_Distribucion_de_los_componentes} utilizando un total de 193 piezas en la parte estructural y 12 piezas que involucran la parte electrónica.
+Ya explicadas las distintas capas que conforman todo el sistema del robot, se muestra ensamble del robot en las \textit{Figuras \ref{fig:Figura_Vista_Isometrica_completa}} y \textit{\ref{fig:Figura_Distribucion_de_los_componentes}} utilizando un total de 193 piezas en la parte estructural y 12 piezas que involucran la parte electrónica.
 
 \begin{figure}[H]
 	\centering
@@ -1174,8 +1173,8 @@ Ya explicadas las distintas capas que conforman todo el sistema del robot, se mu
 
 \subsubsection{Elementos de Software}
 
-Respecto a la parte de procesamiento, las áreas funcionales se desarrollan en diferentes nodos de ROS, es decir un programa no cumplirá una función completa, sino que dicha función estará dividida en distintos nodos, en cada una de las áreas funcionales se mencionaron los nombres de los nodos en los cuales se iban a desarrollar las áreas funcionales, la manera en que los diversos nodos se comunican es por medio de tópicos, los cuales también fueron listados en la sección de transmisión de mensajes. Una manera simple de mostrar la integración de estos nodos es a través de los siguientes diagramas, los cuales presentan los nodos activos para cada Turtlebot 3 burger.
-Se proponen, para el líder y seguidor la interconexión de los siguientes nodos mostrados en las Figuras \ref{fig:Figura_Esquema_General_Trayectorias} y \ref{fig:Figura_Esquema_General_Seguidor}.
+Respecto a la parte de procesamiento, las áreas funcionales se desarrollan en diferentes nodos de ROS, es decir, un programa no cumple una función completa, sino que dicha programa está dividido en distintos nodos. La manera en que los diversos nodos se comunican es mediante el uso de tópicos, los cuales también son enlistados en la sección de transmisión de mensajes. Una manera simple de mostrar la integración de estos nodos es a través de los siguientes diagramas, los cuales presentan los nodos activos para cada TurtleBot3 burger.
+Se proponen, para el líder y seguidor la interconexión de los siguientes nodos mostrados en las \textit{Figuras \ref{fig:Figura_Esquema_General_Trayectorias}} y \textit{\ref{fig:Figura_Esquema_General_Seguidor}}.
 
 \begin{figure}[H]
 	\centering
@@ -1191,9 +1190,13 @@ Se proponen, para el líder y seguidor la interconexión de los siguientes nodos m
 	\label{fig:Figura_Esquema_General_Seguidor}
 \end{figure}
 
-La manera de formar esta integración es muy directa, ya que dentro de cada nodo hay objetos que se suscriben a tópicos, y otros que publican la información procesada, por lo que estos de manera natural pueden y están hechos para trabajar en conjunto. Para mandar a llamar todos los nodos se hace uso de otro tipo de archivo de ROS, archivos con extensión .launch los cuales permiten mandar a llamar nodos de manera automática. Para lograr la integración que se propone en los diagramas de las Figuras \ref{fig:Figura_Esquema_General_Trayectorias} y \ref{fig:Figura_Esquema_General_Seguidor}, se debe primero llamar el nodo que inicializa los motores y el sensor LIDAR, el cual viene por defecto en los Turtlebot 3 burger, posteriormente se debe mandar a llamar el mapa para la localización, una vez inicializado el mapa se llaman los nodos líder y seguidor, en los cuales se ejecuta la parte medular del proyecto, finalmente se llaman por medio de otro launch el localizador del líder y el localizador del seguidor, una vez inicializados todos los nodos antes mencionados se lleva a cabo la función principal del proyecto.
+La manera de formar esta integración es muy directa, ya que dentro de cada nodo hay objetos que se suscriben a tópicos, y otros que publican la información ya procesada, por lo que estos de manera natural pueden y están hechos para trabajar en conjunto.
 
-Los diagramas antes presentados muestran la integración de los nodos, sin embargo, dentro de cada nodo existen tópicos (variables compartidas) las cuales también forman parte de la integración de dichos códigos, el siguiente diagrama en la Figura \ref{fig:Figura_Comunicacion_entre_topicos} muestra como esos tópicos se comunican y cómo van transformando la información cada vez que pasan por algún nodo.
+\break
+
+Para mandar a llamar a todos los nodos, se hace uso de otro tipo de archivo de ROS con extensión .launch, el cual permite mandar a llamar a los nodos de manera automática. Para lograr la integración que se propone en los diagramas de las \textit{Figuras \ref{fig:Figura_Esquema_General_Trayectorias}} y \textit{\ref{fig:Figura_Esquema_General_Seguidor}}, se debe primero mandar a llamar el nodo que inicializa a los motores y el nodo que inicializa el sensor LIDAR. Posteriormente se manda a llamar el mapa, para la localización. Una vez inicializado el mapa, se manda a llamar a los nodos líder y seguidor, en los cuales se ejecuta la parte medular del proyecto para finalmente mandar a llamar por medio de otro launch, al localizador del líder y al localizador del seguidor.
+
+Los diagramas antes presentados muestran la integración de los nodos, sin embargo, dentro de cada nodo existen tópicos (variables compartidas) los cuales también forman parte de la integración de dichos códigos. El diagrama de la \textit{Figura \ref{fig:Figura_Comunicacion_entre_topicos}} muestra como esos tópicos se comunican y van transformando la información, cada vez que pasa por algún nodo.
 
 \begin{figure}[H]
 	\centering
@@ -1204,11 +1207,11 @@ Los diagramas antes presentados muestran la integración de los nodos, sin embarg
 
 \subsection{HMI}
 
-La interfaz o HMI por sus siglas en inglés (Human Machine Interface) forma parte indirectamente del área funcional de Procesamiento como se puede observar en la Figura \ref{fig:Integracion} en la página \pageref{fig:Integracion}, esto debido a que aunque la interfaz no se encuentre dentro de los robots, trabaja directamente con el procesamiento de los móviles, y se caracteriza por ser el puente de comunicación entre el usuario, el robot líder y el robot seguidor, en donde el usuario seleccionará y enviará a través de una computadora datos acerca de una tarea a ejecutar (en este caso la selección de una trayectoria), y el robot líder decodificará y ejecutará dicha tarea en conjunto con el robot seguidor al cual también se le dirá en que momento detenerse si así lo desea el usuario.
+La interfaz o HMI por sus siglas en inglés \textit{(Human Machine Interface)} forma parte indirectamente del área funcional de Procesamiento como se puede observar en la \textit{Figura \ref{fig:Integracion}} en la página \pageref{fig:Integracion}, esto debido a que aunque la interfaz no se encuentre dentro de los robots, trabaja directamente con el procesamiento de los móviles, y se caracteriza por ser el puente de comunicación entre el usuario, el robot líder y el robot seguidor, en donde el usuario selecciona y envia datos a través de una computadora.
 
 \subsubsection{Comunicación peer to peer}
 
-Como ya se ha hablado con anterioridad en el glosario, el uso del término ``nodo" dentro de ROS, ejecuta una serie de procesos conectados en un mismo tiempo de ejecución a un determinado número de anfitriones, dependiendo del número de nodos. Cuando muchos nodos se están ejecutando al mismo tiempo, se realiza una comunicación ``peer-to-peer", que, en otras palabras, es la topología de enlace entre los distintos nodos. Este tipo de topología requiere de un maestro que permita que los procesos se encuentren los unos con otros. Esto se ejemplifica en la Figura \ref{fig:ConexionROS}.
+Como ya se ha hablado con anterioridad en el glosario, el uso del término ``nodo" dentro de ROS, ejecuta una serie de procesos conectados en un mismo tiempo de ejecución a un determinado número de anfitriones, dependiendo del número de nodos. Cuando muchos nodos se están ejecutando al mismo tiempo, se realiza una comunicación ``peer-to-peer", que, en otras palabras, es la topología de enlace entre los distintos nodos. Este tipo de topología requiere de un maestro que permita que los procesos se encuentren los unos con otros. Esto se ejemplifica en la \textit{Figura \ref{fig:ConexionROS}}.
 
 \begin{figure}[H]
 	\centering
@@ -1217,7 +1220,7 @@ Como ya se ha hablado con anterioridad en el glosario, el uso del término ``nodo
 	\label{fig:ConexionROS}
 \end{figure}
 
-Para el desarrollo de la interfaz gráfica es importante entender como trabaja este tipo de comunicación, ya que la interfaz gráfica que se implementará desde una computadora funcionará como anfitrión (teniendo un único anfitrión), que enviará mensajes mediante la publicación en un tópico (entendiéndose tópico como el intercambio de información de los nodos) y llamando a los nodos interesados a procedimientos remotos, suscribiendo su información a el tipo de tópico en proceso como se muestra en la Figura \ref{fig:EjemploCOM}.
+Para el desarrollo de la interfaz gráfica es importante entender como trabaja este tipo de comunicación, ya que la interfaz gráfica que se implementa desde una computadora funciona como anfitrión (teniendo un único anfitrión), que envia mensajes mediante la publicación en un tópico (entendiéndose tópico como el intercambio de información de los nodos) y llamando a los nodos interesados a procedimientos remotos, suscribiendo su información a el tipo de tópico en proceso como se muestra en la \textit{Figura \ref{fig:EjemploCOM}}.
 
 \begin{figure}[H]
 	\centering
@@ -1226,96 +1229,97 @@ Para el desarrollo de la interfaz gráfica es importante entender como trabaja es
 	\label{fig:EjemploCOM}
 \end{figure}
 
-La Figura \ref{fig:ConexionROS}, sirve como ejemplo para el desarrollo de la interfaz (agente externo) y su comunicación con ROS, ya que a diferencia de utilizar una cámara como se muestra en el ejemplo de la Figura \ref{fig:EjemploCOM}, la propuesta para la recabación de los datos exteroceptivos de cada robot móvil, es mediante la implementación de un sensor LIDAR y que en la parte de percepción se aborda a detalle, pero la lógica del diagrama es la similar.
-
-Dentro del Meta Sistema Operativo ROS, existe algunas herramientas para poder desarrollar e implementar interfaces gráficas siendo Qt un ejemplo de estas.
+La \textit{Figura \ref{fig:ConexionROS}}, sirve como ejemplo para el desarrollo de la interfaz (agente externo) y su comunicación con ROS, ya que a diferencia de utilizar una cámara como se muestra en la \textit{Figura \ref{fig:EjemploCOM}}, la recabación de los datos exteroceptivos de cada robot, es mediante un sensor LIDAR.
 
 \subsection{Validación y análisis de resultados}
 
 Es de suma importancia que en cualquier proceso de investigación y diseño antes de la construcción exista una validación, ya que se corre el riesgo de que las propuestas de diseño diverjan de la realidad, no sean factibles o simplemente infuncional, es por esta razón que se necesita realizar una simulación lo más cercana a la realidad en la que se puedan probar los algoritmos implementados en el área funcional de procesamiento.
-El objetivo que se persigue en esta validación es determinar si los algoritmos implementados en un Turtlebot 3 burger virtual cumplen su función o no.
+
+El objetivo que se persigue en esta validación es determinar si los algoritmos implementados en un TurtleBot3 burger virtual cumplen su función o no.
+
+\break
 
 \subsubsection{Procesamiento}
 
-Cada validación consistió en la programación de los nodos propuestos para cada sección del área funcional en el lenguaje de programación Python; del cual es relevante mencionar que es compatible con las tarjetas de procesamiento de los Turtlebot 3 burger. Una vez hechos los programas fueron implementados en un ambiente de simulación llamado \textit{Gazebo} incluyendo allí el modelo 3D del Turtlebot 3 burger, con sus características físicas y restricciones mecánicas como lo son velocidad máxima en cada motor. Posteriormente los datos de cada una de las simulaciones fueron grabados con el comando de ROS (Rosbags) y graficados con ayuda de Excel. Dichos datos son presentados graficados en las siguientes secciones junto con un breve análisis. Todos los datos aquí graficados pueden ser consultados en la parte de apéndices.
+Cada validación consistió en la programación de los nodos propuestos para cada sección del área funcional en el lenguaje de programación Python; del cual es relevante mencionar que es compatible con las tarjetas de procesamiento de los TurtleBot3 burger. Una vez hechos los programas, fueron implementados en un ambiente de simulación llamado \textit{Gazebo} incluyendo allí el modelo 3D del TurtleBot3 burger, con sus características físicas y restricciones mecánicas como la velocidad máxima en cada motor. Posteriormente los datos de cada una de las simulaciones fueron grabados con el comando de ROS (Rosbags) y graficados con ayuda de Excel. Dichos datos son presentados graficados en las siguientes secciones junto con un breve análisis. 
 
 \subsubsection{Seguimiento de trayectoria}
 
-Lo primero por validar en el proyecto es el funcionamiento del generador de la matriz de fuerza para esta validación se propusieron dos trayectorias, las cuales se muestran en las Figuras \ref{fig:Figura_Trayectoria_propuesta_1} y \ref{fig:Figura_Trayectoria_propuesta_2}, donde cada eje coordenado tiene dimensiones en metros, una vez propuestas las trayectorias se llevó a cabo la generación de la matriz de fuerzas como se observa en las Figuras \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2}, estas figuras también tiene sus ejes coordenados en metros. Como se puede observar de las gráficas \ref{fig:Figura_Matriz_de_fuerza_1} y \ref{fig:Figura_Matriz_de_fuerza_2} los vectores generados siguen las trayectorias propuestas cuando estan dentro de la trayectoria y se orientan al punto más cercano cuando estan fuera de trayectoria, por lo cual se toma como válido el algoritmo.
+Lo primero por validar en el proyecto es el funcionamiento del generador de la Matriz de fuerza, para esta validación se propusieron dos trayectorias, mostradas en las \textit{Figuras \ref{fig:Figura_Trayectoria_propuesta_1}} y \textit{\ref{fig:Figura_Trayectoria_propuesta_2}}, donde cada eje coordenado tiene dimensiones en metros. Una vez propuestas las trayectorias, se llevó a cabo la generación de la matriz de fuerzas como se observa en las \textit{Figuras \ref{fig:Figura_Matriz_de_fuerza_1}} y \textit{\ref{fig:Figura_Matriz_de_fuerza_2}}, estas figuras también tiene sus ejes coordenados en metros. Como se puede observar de las \textit{gráficas \ref{fig:Figura_Matriz_de_fuerza_1}} y \textit{\ref{fig:Figura_Matriz_de_fuerza_2}} los vectores generados siguen las trayectorias propuestas cuando estan dentro de la trayectoria y se orientan al punto más cercano cuando están fuera de trayectoria, por lo cual se toma como válido el algoritmo.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Validacion/01_Trayectoria_propuesta_1.jpg}}
+	\fbox{\includegraphics[scale=0.387]{imagenes/Validacion/01_Trayectoria_propuesta_1.jpg}}
 	\caption{Trayectoria propuesta 1 (unidades en metros).}
 	\label{fig:Figura_Trayectoria_propuesta_1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.47]{imagenes/Validacion/02_Trayectoria_propuesta_2.jpg}}
+	\fbox{\includegraphics[scale=0.39]{imagenes/Validacion/02_Trayectoria_propuesta_2.jpg}}
 	\caption{Trayectoria propuesta 2 (unidades en metros).}
 	\label{fig:Figura_Trayectoria_propuesta_2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.25]{imagenes/Validacion/03_Matriz_de_fuerza_1.jpg}}
+	\fbox{\includegraphics[scale=0.21]{imagenes/Validacion/03_Matriz_de_fuerza_1.jpg}}
 	\caption{Matriz de fuerza para trayectoria propuesta 1 (unidades en metros).}
 	\label{fig:Figura_Matriz_de_fuerza_1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.25]{imagenes/Validacion/04_Matriz_de_fuerza_2.jpg}}
+	\fbox{\includegraphics[scale=0.20]{imagenes/Validacion/04_Matriz_de_fuerza_2.jpg}}
 	\caption{Matriz de fuerza para trayectoria propuesta 2 (unidades en metros).}
 	\label{fig:Figura_Matriz_de_fuerza_2}
 \end{figure}
 
-A continuación se validará que el Turtlebot 3 burger en el ambiente virtual sea capaz de seguir la trayectoria de la Figura \ref{fig:Figura_Trayectoria_propuesta_1}. Recordando que la simulación es realizada en Gazebo y los datos son grabados y posteriormente presentados en gráficas hechas con Excel. Para esta simulación se hizo uso del nodo líder, nodo AMCL y nodo tb3 virtual. Los datos obtenidos de la simulación se muestran en la Figura \ref{fig:Figura_Puntos_Alcanzados_lider}.
+A continuación se valida que el TurtleBot3 burger en el ambiente virtual sea capaz de seguir la trayectoria de la \textit{Figura \ref{fig:Figura_Trayectoria_propuesta_1}}. Recordando que la simulación es realizada en Gazebo y los datos son grabados para posteriormente ser presentados en gráficas hechas con Excel. Para esta simulación, se hizo uso del nodo líder, nodo AMCL y nodo tb3 virtual. Los datos obtenidos de la simulación se muestran en la \textit{Figura \ref{fig:Figura_Puntos_Alcanzados_lider}}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Validacion/05_Puntos_Alcanzados.jpg}}
+	\fbox{\includegraphics[scale=0.4]{imagenes/Validacion/05_Puntos_Alcanzados.jpg}}
 	\caption{Resultados extraídos de la simulación de seguimiento de trayectoria (unidades en metros).}
 	\label{fig:Figura_Puntos_Alcanzados}
 \end{figure}
 
-La Figura \ref{fig:Figura_Puntos_Alcanzados_lider} muestra los puntos de ruta alcanzados por el líder durante la simulación, en dicha gráfica cada eje coordenado se representa en metros. Para validar esta parte de procesamiento se hace una comparación entre las Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Trayectoria_propuesta_1}, a simple vista se puede observar que los puntos representados en la Figura \ref{fig:Figura_Puntos_Alcanzados_lider} se asemejan a la trayectoria propuesta en la Figura \ref{fig:Figura_Trayectoria_propuesta_1}, por lo tanto, se valida el funcionamiento de algoritmo de seguimiento de trayectoria.
+La \textit{Figura \ref{fig:Figura_Puntos_Alcanzados_lider}} muestra los puntos de ruta alcanzados por el líder durante la simulación, en dicha gráfica cada eje coordenado se representa en metros. Para validar esta parte de procesamiento se hace una comparación entre las \textit{Figuras \ref{fig:Figura_Puntos_Alcanzados_lider}} y \textit{\ref{fig:Figura_Trayectoria_propuesta_1}}, a simple vista se puede observar que los puntos representados en la \textit{Figura \ref{fig:Figura_Puntos_Alcanzados_lider}} se asemejan a la trayectoria propuesta en la \textit{Figura \ref{fig:Figura_Trayectoria_propuesta_1}}, por lo tanto, se valida el funcionamiento de algoritmo de seguimiento de trayectoria.
 
 \subsubsection{Líder Seguidor}
 
-Para validar el esquema líder seguidor se inició haciendo que el líder siguiera una de las trayectorias propuestas, con todos los nodos mencionados en la validación de seguimiento de trayectorias y después ejecutar el nodo del seguidor. Los resultados de la simulación son mostrados en las Figuras \ref{fig:Figura_Puntos_Alcanzados_lider} y \ref{fig:Figura_Puntos_Alcanzados_seguidor}, las cuales tienen las mismas dimensiones. Comparando las coordenadas por las que el líder y seguidor pasan se valida el diseño de este nodo ya que las coordenadas son muy similares, entre líder y seguidor.
+Para validar el esquema líder seguidor se inició haciendo que el líder siguiera una de las trayectorias propuestas, con todos los nodos mencionados en la validación de seguimiento de trayectorias y después ejecutar el nodo del seguidor. Los resultados de la simulación son mostrados en las \textit{Figuras \ref{fig:Figura_Puntos_Alcanzados_lider}} y \textit{\ref{fig:Figura_Puntos_Alcanzados_seguidor}}, las cuales tienen las mismas dimensiones. Comparando las coordenadas por las que el líder y seguidor pasan se valida el diseño de este nodo ya que las coordenadas son muy similares, entre líder y seguidor.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg}}
+	\fbox{\includegraphics[scale=0.31]{imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg}}
 	\caption{Resultados extraídos de la simulación del líder (unidades en metros).}
 	\label{fig:Figura_Puntos_Alcanzados_lider}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.5]{imagenes/Validacion/07_Puntos_Alcanzados_seguidor.jpg}}
+	\fbox{\includegraphics[scale=0.31]{imagenes/Validacion/07_Puntos_Alcanzados_seguidor.jpg}}
 	\caption{Resultados extraídos de la simulación del seguidor (unidades en metros).}
 	\label{fig:Figura_Puntos_Alcanzados_seguidor}
 \end{figure}
 
 \subsubsection{Evasión de obstáculos}
 
-Para la evasión de obstáculos en el ambiente de simulación se colocaron dos objetos por donde se tenía previsto que pasara el robot líder, Figura \ref{fig:Figura_Obstaculos_para_la_validacion}, de acuerdo con la trayectoria que debía seguir, posteriormente se ejecutó el seguimiento de trayectoria y la evasión, los puntos por los que pasó el líder se muestran en Figura \ref{fig:Figura_Puntos_de_ruta_alcanzados}.
+Para la evasión de obstáculos en el ambiente de simulación se colocaron dos objetos por donde se tenía previsto que pasara el robot líder, \textit{Figura \ref{fig:Figura_Obstaculos_para_la_validacion}}, de acuerdo con la trayectoria que debía seguir, posteriormente se ejecutó el seguimiento de trayectoria y la evasión, los puntos por los que pasó el líder se muestran en \textit{Figura \ref{fig:Figura_Puntos_de_ruta_alcanzados}}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.28]{imagenes/Validacion/08_Obstaculos_para_la_validacion.jpg}}
+	\fbox{\includegraphics[scale=0.18]{imagenes/Validacion/08_Obstaculos_para_la_validacion.jpg}}
 	\caption{Obstáculos para la validación del algoritmo propuesto.}
 	\label{fig:Figura_Obstaculos_para_la_validacion}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.23]{imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg}}
+	\fbox{\includegraphics[scale=0.14]{imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg}}
 	\caption{Puntos de ruta alcanzados por el líder durante la evasión de obstáculos (unidades en metros).}
 	\label{fig:Figura_Puntos_de_ruta_alcanzados}
 \end{figure}
 
-Durante la ejecución el robot líder fue capaz de evadir efectivamente los obstáculos, y cuando no había obstáculo se reincorporaba a la trayectoria nuevamente, por lo tanto se valida este algoritmo ya que cumple con la función de la evasión. 
+Durante la ejecución, el robot líder fue capaz de evadir efectivamente los obstáculos, y cuando no había obstáculo se reincorporaba a la trayectoria nuevamente, por lo tanto se valida este algoritmo ya que cumple con la función de la evasión. 

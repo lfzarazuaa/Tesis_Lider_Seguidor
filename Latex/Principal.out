@@ -65,78 +65,75 @@
 \BOOKMARK [3][-]{subsubsection.2.2.2.3}{Tercera parte: Dise\361o del software}{subsection.2.2.2}% 65
 \BOOKMARK [2][-]{subsection.2.2.3}{\301rea Funcional 3: Percepci\363n \(Comunicaci\363n entorno - robot\)}{section.2.2}% 66
 \BOOKMARK [3][-]{subsubsection.2.2.3.1}{Datos propioceptivos}{subsection.2.2.3}% 67
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Sensores integrados}{subsection.2.2.3}% 68
-\BOOKMARK [3][-]{subsubsection.2.2.3.3}{Encoders rotatorios}{subsection.2.2.3}% 69
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{Encoder \363ptico rotatorio, de tipo relativo \(o incremental\)}{subsection.2.2.3}% 70
-\BOOKMARK [3][-]{subsubsection.2.2.3.5}{Encoder \363ptico absoluto}{subsection.2.2.3}% 71
-\BOOKMARK [3][-]{subsubsection.2.2.3.6}{Aceler\363metros}{subsection.2.2.3}% 72
-\BOOKMARK [3][-]{subsubsection.2.2.3.7}{Datos exteroceptivos}{subsection.2.2.3}% 73
-\BOOKMARK [3][-]{subsubsection.2.2.3.8}{Sensores implementados}{subsection.2.2.3}% 74
-\BOOKMARK [3][-]{subsubsection.2.2.3.9}{Esc\341ner l\341ser de medici\363n de distancias}{subsection.2.2.3}% 75
-\BOOKMARK [3][-]{subsubsection.2.2.3.10}{Sensor LIDAR LDS-01}{subsection.2.2.3}% 76
-\BOOKMARK [3][-]{subsubsection.2.2.3.11}{Dimensiones}{subsection.2.2.3}% 77
-\BOOKMARK [3][-]{subsubsection.2.2.3.12}{Montaje del sensor}{subsection.2.2.3}% 78
-\BOOKMARK [3][-]{subsubsection.2.2.3.13}{Acondicionamiento}{subsection.2.2.3}% 79
-\BOOKMARK [2][-]{subsection.2.2.4}{\301rea Funcional 4: Alimentaci\363n \(Suministro de energ\355a\)}{section.2.2}% 80
-\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Caracter\355sticas T\351cnicas de la bater\355a LiPo.}{subsection.2.2.4}% 81
-\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Ensamble de la bater\355a LiPo con la estructura}{subsection.2.2.4}% 82
-\BOOKMARK [2][-]{subsection.2.2.5}{\301rea Funcional 5: Movimiento \(Desplazamiento del robot\)}{section.2.2}% 83
-\BOOKMARK [3][-]{subsubsection.2.2.5.1}{Actuadores Dynamixel}{subsection.2.2.5}% 84
-\BOOKMARK [3][-]{subsubsection.2.2.5.2}{An\341lisis interno del motor}{subsection.2.2.5}% 85
-\BOOKMARK [3][-]{subsubsection.2.2.5.3}{Caracter\355sticas del motor}{subsection.2.2.5}% 86
-\BOOKMARK [2][-]{subsection.2.2.6}{Integraci\363n del Sistema}{section.2.2}% 87
-\BOOKMARK [3][-]{subsubsection.2.2.6.1}{Elementos de Software}{subsection.2.2.6}% 88
-\BOOKMARK [2][-]{subsection.2.2.7}{HMI}{section.2.2}% 89
-\BOOKMARK [3][-]{subsubsection.2.2.7.1}{Comunicaci\363n peer to peer}{subsection.2.2.7}% 90
-\BOOKMARK [2][-]{subsection.2.2.8}{Validaci\363n y an\341lisis de resultados}{section.2.2}% 91
-\BOOKMARK [3][-]{subsubsection.2.2.8.1}{Procesamiento}{subsection.2.2.8}% 92
-\BOOKMARK [3][-]{subsubsection.2.2.8.2}{Seguimiento de trayectoria}{subsection.2.2.8}% 93
-\BOOKMARK [3][-]{subsubsection.2.2.8.3}{L\355der Seguidor}{subsection.2.2.8}% 94
-\BOOKMARK [3][-]{subsubsection.2.2.8.4}{Evasi\363n de obst\341culos}{subsection.2.2.8}% 95
-\BOOKMARK [0][-]{chapter.3}{Integraci\363n del Sistema}{}% 96
-\BOOKMARK [1][-]{section.3.1}{Implementaci\363n del \301rea Funcional Estructura}{chapter.3}% 97
-\BOOKMARK [2][-]{subsection.3.1.1}{Recomendaciones a considerar}{section.3.1}% 98
-\BOOKMARK [2][-]{subsection.3.1.2}{Armado de los robots m\363viles}{section.3.1}% 99
-\BOOKMARK [2][-]{subsection.3.1.3}{Resultados del proceso de armado}{section.3.1}% 100
-\BOOKMARK [2][-]{subsection.3.1.4}{Verificaci\363n de ensamble del sistema}{section.3.1}% 101
-\BOOKMARK [1][-]{section.3.2}{Implementaci\363n del \301rea Funcional Movimiento}{chapter.3}% 102
-\BOOKMARK [1][-]{section.3.3}{Implementaci\363n del \301rea Funcional Percepci\363n}{chapter.3}% 103
-\BOOKMARK [2][-]{subsection.3.3.1}{Sensor LIDAR}{section.3.3}% 104
-\BOOKMARK [2][-]{subsection.3.3.2}{Sensores del motor DYNAMIXEL}{section.3.3}% 105
-\BOOKMARK [1][-]{section.3.4}{Implementaci\363n del \301rea Funcional Alimentaci\363n}{chapter.3}% 106
-\BOOKMARK [1][-]{section.3.5}{Implementaci\363n del \301rea Funcional Procesamiento}{chapter.3}% 107
-\BOOKMARK [2][-]{subsection.3.5.1}{Pasos previos}{section.3.5}% 108
-\BOOKMARK [2][-]{subsection.3.5.2}{Comunicaci\363n}{section.3.5}% 109
-\BOOKMARK [2][-]{subsection.3.5.3}{Prueba A: Verificaci\363n de la matriz de fuerza}{section.3.5}% 110
-\BOOKMARK [3][-]{subsubsection.3.5.3.1}{An\341lisis de resultados}{subsection.3.5.3}% 111
-\BOOKMARK [2][-]{subsection.3.5.4}{Prueba B: Validar el seguimiento de trayectoria}{section.3.5}% 112
-\BOOKMARK [3][-]{subsubsection.3.5.4.1}{An\341lisis de resultados}{subsection.3.5.4}% 113
-\BOOKMARK [2][-]{subsection.3.5.5}{Prueba C: Validar el algoritmo L\355der-Seguidor}{section.3.5}% 114
-\BOOKMARK [3][-]{subsubsection.3.5.5.1}{An\341lisis de resultados}{subsection.3.5.5}% 115
-\BOOKMARK [2][-]{subsection.3.5.6}{Prueba D:Validar la evasi\363n de obst\341culos}{section.3.5}% 116
-\BOOKMARK [3][-]{subsubsection.3.5.6.1}{Validaci\363n de seguimiento y evasi\363n}{subsection.3.5.6}% 117
-\BOOKMARK [3][-]{subsubsection.3.5.6.2}{An\341lisis de resultados}{subsection.3.5.6}% 118
-\BOOKMARK [2][-]{subsection.3.5.7}{Prueba E: Validar la integraci\363n de evasi\363n y seguimiento}{section.3.5}% 119
-\BOOKMARK [3][-]{subsubsection.3.5.7.1}{An\341lisis de resultados}{subsection.3.5.7}% 120
-\BOOKMARK [2][-]{subsection.3.5.8}{Realizaci\363n de la HMI}{section.3.5}% 121
-\BOOKMARK [3][-]{subsubsection.3.5.8.1}{Programa Principal}{subsection.3.5.8}% 122
-\BOOKMARK [3][-]{subsubsection.3.5.8.2}{Ventana Gr\341fica}{subsection.3.5.8}% 123
-\BOOKMARK [3][-]{subsubsection.3.5.8.3}{Programa de ROS}{subsection.3.5.8}% 124
-\BOOKMARK [3][-]{subsubsection.3.5.8.4}{Framework de Trabajo}{subsection.3.5.8}% 125
-\BOOKMARK [3][-]{subsubsection.3.5.8.5}{Puntos importantes a considerar}{subsection.3.5.8}% 126
-\BOOKMARK [3][-]{subsubsection.3.5.8.6}{Modificaci\363n del Programa}{subsection.3.5.8}% 127
-\BOOKMARK [3][-]{subsubsection.3.5.8.7}{Resultados de la ejecuci\363n}{subsection.3.5.8}% 128
-\BOOKMARK [1][-]{section.3.6}{Especificaciones del Sistema}{chapter.3}% 129
-\BOOKMARK [2][-]{subsubsection.3.6.0.1}{Especificaciones del \301rea de Trabajo}{section.3.6}% 130
-\BOOKMARK [3][-]{subsubsection.3.6.0.2}{Especificaciones de la Alimentaci\363n}{subsubsection.3.6.0.1}% 131
-\BOOKMARK [3][-]{subsubsection.3.6.0.3}{Especificaciones del Procesamiento}{subsubsection.3.6.0.1}% 132
-\BOOKMARK [0][-]{chapter.4}{An\341lisis de Costo}{}% 133
-\BOOKMARK [1][-]{section.4.1}{Costos variables}{chapter.4}% 134
-\BOOKMARK [1][-]{section.4.2}{Costos fijos}{chapter.4}% 135
-\BOOKMARK [1][-]{section.4.3}{Costo total}{chapter.4}% 136
-\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 137
-\BOOKMARK [0][-]{Referencias.0}{Referencias}{}% 138
-\BOOKMARK [-1][-]{part.1}{Ap\351ndices}{}% 139
-\BOOKMARK [0][-]{chapter*.7}{Ap\351ndice 1}{part.1}% 140
-\BOOKMARK [-1][-]{part.2}{Anexos}{}% 141
-\BOOKMARK [0][-]{chapter*.8}{Anexo 1. Criterios de selecci\363n en \301reas funcionales}{part.2}% 142
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Encoders rotatorios}{subsection.2.2.3}% 68
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{Encoder \363ptico rotatorio de tipo relativo o incremental}{subsection.2.2.3}% 69
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{Encoder \363ptico absoluto}{subsection.2.2.3}% 70
+\BOOKMARK [3][-]{subsubsection.2.2.3.5}{Aceler\363metros}{subsection.2.2.3}% 71
+\BOOKMARK [3][-]{subsubsection.2.2.3.6}{Datos exteroceptivos}{subsection.2.2.3}% 72
+\BOOKMARK [3][-]{subsubsection.2.2.3.7}{Sensores l\341ser}{subsection.2.2.3}% 73
+\BOOKMARK [3][-]{subsubsection.2.2.3.8}{Sensor LIDAR LDS-01}{subsection.2.2.3}% 74
+\BOOKMARK [3][-]{subsubsection.2.2.3.9}{Dimensiones}{subsection.2.2.3}% 75
+\BOOKMARK [3][-]{subsubsection.2.2.3.10}{Acondicionamiento}{subsection.2.2.3}% 76
+\BOOKMARK [2][-]{subsection.2.2.4}{\301rea Funcional 4: Alimentaci\363n \(Suministro de energ\355a\)}{section.2.2}% 77
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Caracter\355sticas T\351cnicas de la bater\355a LiPo.}{subsection.2.2.4}% 78
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Ensamble de la bater\355a LiPo con la estructura}{subsection.2.2.4}% 79
+\BOOKMARK [2][-]{subsection.2.2.5}{\301rea Funcional 5: Movimiento \(Desplazamiento del robot\)}{section.2.2}% 80
+\BOOKMARK [3][-]{subsubsection.2.2.5.1}{Actuadores Dynamixel}{subsection.2.2.5}% 81
+\BOOKMARK [3][-]{subsubsection.2.2.5.2}{An\341lisis interno del motor}{subsection.2.2.5}% 82
+\BOOKMARK [3][-]{subsubsection.2.2.5.3}{Caracter\355sticas del motor}{subsection.2.2.5}% 83
+\BOOKMARK [2][-]{subsection.2.2.6}{Integraci\363n del Sistema}{section.2.2}% 84
+\BOOKMARK [3][-]{subsubsection.2.2.6.1}{Elementos de Software}{subsection.2.2.6}% 85
+\BOOKMARK [2][-]{subsection.2.2.7}{HMI}{section.2.2}% 86
+\BOOKMARK [3][-]{subsubsection.2.2.7.1}{Comunicaci\363n peer to peer}{subsection.2.2.7}% 87
+\BOOKMARK [2][-]{subsection.2.2.8}{Validaci\363n y an\341lisis de resultados}{section.2.2}% 88
+\BOOKMARK [3][-]{subsubsection.2.2.8.1}{Procesamiento}{subsection.2.2.8}% 89
+\BOOKMARK [3][-]{subsubsection.2.2.8.2}{Seguimiento de trayectoria}{subsection.2.2.8}% 90
+\BOOKMARK [3][-]{subsubsection.2.2.8.3}{L\355der Seguidor}{subsection.2.2.8}% 91
+\BOOKMARK [3][-]{subsubsection.2.2.8.4}{Evasi\363n de obst\341culos}{subsection.2.2.8}% 92
+\BOOKMARK [0][-]{chapter.3}{Integraci\363n del Sistema}{}% 93
+\BOOKMARK [1][-]{section.3.1}{Implementaci\363n del \301rea Funcional Estructura}{chapter.3}% 94
+\BOOKMARK [2][-]{subsection.3.1.1}{Recomendaciones a considerar}{section.3.1}% 95
+\BOOKMARK [2][-]{subsection.3.1.2}{Armado de los robots m\363viles}{section.3.1}% 96
+\BOOKMARK [2][-]{subsection.3.1.3}{Resultados del proceso de armado}{section.3.1}% 97
+\BOOKMARK [2][-]{subsection.3.1.4}{Verificaci\363n de ensamble del sistema}{section.3.1}% 98
+\BOOKMARK [1][-]{section.3.2}{Implementaci\363n del \301rea Funcional Movimiento}{chapter.3}% 99
+\BOOKMARK [1][-]{section.3.3}{Implementaci\363n del \301rea Funcional Percepci\363n}{chapter.3}% 100
+\BOOKMARK [2][-]{subsection.3.3.1}{Sensor LIDAR}{section.3.3}% 101
+\BOOKMARK [2][-]{subsection.3.3.2}{Sensores del motor DYNAMIXEL}{section.3.3}% 102
+\BOOKMARK [1][-]{section.3.4}{Implementaci\363n del \301rea Funcional Alimentaci\363n}{chapter.3}% 103
+\BOOKMARK [1][-]{section.3.5}{Implementaci\363n del \301rea Funcional Procesamiento}{chapter.3}% 104
+\BOOKMARK [2][-]{subsection.3.5.1}{Pasos previos}{section.3.5}% 105
+\BOOKMARK [2][-]{subsection.3.5.2}{Comunicaci\363n}{section.3.5}% 106
+\BOOKMARK [2][-]{subsection.3.5.3}{Prueba A: Verificaci\363n de la matriz de fuerza}{section.3.5}% 107
+\BOOKMARK [3][-]{subsubsection.3.5.3.1}{An\341lisis de resultados}{subsection.3.5.3}% 108
+\BOOKMARK [2][-]{subsection.3.5.4}{Prueba B: Validar el seguimiento de trayectoria}{section.3.5}% 109
+\BOOKMARK [3][-]{subsubsection.3.5.4.1}{An\341lisis de resultados}{subsection.3.5.4}% 110
+\BOOKMARK [2][-]{subsection.3.5.5}{Prueba C: Validar el algoritmo L\355der-Seguidor}{section.3.5}% 111
+\BOOKMARK [3][-]{subsubsection.3.5.5.1}{An\341lisis de resultados}{subsection.3.5.5}% 112
+\BOOKMARK [2][-]{subsection.3.5.6}{Prueba D:Validar la evasi\363n de obst\341culos}{section.3.5}% 113
+\BOOKMARK [3][-]{subsubsection.3.5.6.1}{Validaci\363n de seguimiento y evasi\363n}{subsection.3.5.6}% 114
+\BOOKMARK [3][-]{subsubsection.3.5.6.2}{An\341lisis de resultados}{subsection.3.5.6}% 115
+\BOOKMARK [2][-]{subsection.3.5.7}{Prueba E: Validar la integraci\363n de evasi\363n y seguimiento}{section.3.5}% 116
+\BOOKMARK [3][-]{subsubsection.3.5.7.1}{An\341lisis de resultados}{subsection.3.5.7}% 117
+\BOOKMARK [2][-]{subsection.3.5.8}{Realizaci\363n de la HMI}{section.3.5}% 118
+\BOOKMARK [3][-]{subsubsection.3.5.8.1}{Programa Principal}{subsection.3.5.8}% 119
+\BOOKMARK [3][-]{subsubsection.3.5.8.2}{Ventana Gr\341fica}{subsection.3.5.8}% 120
+\BOOKMARK [3][-]{subsubsection.3.5.8.3}{Programa de ROS}{subsection.3.5.8}% 121
+\BOOKMARK [3][-]{subsubsection.3.5.8.4}{Framework de Trabajo}{subsection.3.5.8}% 122
+\BOOKMARK [3][-]{subsubsection.3.5.8.5}{Puntos importantes a considerar}{subsection.3.5.8}% 123
+\BOOKMARK [3][-]{subsubsection.3.5.8.6}{Modificaci\363n del Programa}{subsection.3.5.8}% 124
+\BOOKMARK [3][-]{subsubsection.3.5.8.7}{Resultados de la ejecuci\363n}{subsection.3.5.8}% 125
+\BOOKMARK [1][-]{section.3.6}{Especificaciones del Sistema}{chapter.3}% 126
+\BOOKMARK [2][-]{subsubsection.3.6.0.1}{Especificaciones del \301rea de Trabajo}{section.3.6}% 127
+\BOOKMARK [3][-]{subsubsection.3.6.0.2}{Especificaciones de la Alimentaci\363n}{subsubsection.3.6.0.1}% 128
+\BOOKMARK [3][-]{subsubsection.3.6.0.3}{Especificaciones del Procesamiento}{subsubsection.3.6.0.1}% 129
+\BOOKMARK [0][-]{chapter.4}{An\341lisis de Costo}{}% 130
+\BOOKMARK [1][-]{section.4.1}{Costos variables}{chapter.4}% 131
+\BOOKMARK [1][-]{section.4.2}{Costos fijos}{chapter.4}% 132
+\BOOKMARK [1][-]{section.4.3}{Costo total}{chapter.4}% 133
+\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 134
+\BOOKMARK [0][-]{Referencias.0}{Referencias}{}% 135
+\BOOKMARK [-1][-]{part.1}{Ap\351ndices}{}% 136
+\BOOKMARK [0][-]{chapter*.7}{Ap\351ndice 1}{part.1}% 137
+\BOOKMARK [-1][-]{part.2}{Anexos}{}% 138
+\BOOKMARK [0][-]{chapter*.8}{Anexo 1. Criterios de selecci\363n en \301reas funcionales}{part.2}% 139
