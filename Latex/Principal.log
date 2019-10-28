@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  26 OCT 2019 23:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  28 OCT 2019 00:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,12 +880,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (60.0pt too high) has occurred while \output is active []
 
  [2]
-<logos/ipn_trans.pdf, id=569, 65.24374pt x 90.3375pt>
+<logos/ipn_trans.pdf, id=573, 65.24374pt x 90.3375pt>
 File: logos/ipn_trans.pdf Graphic file (type pdf)
 <use logos/ipn_trans.pdf>
 Package pdftex.def Info: logos/ipn_trans.pdf  used on input line 41.
 (pdftex.def)             Requested size: 52.19505pt x 72.27008pt.
-<logos/logoupiita.pdf, id=570, 140.75786pt x 98.6061pt>
+<logos/logoupiita.pdf, id=574, 140.75786pt x 98.6061pt>
 File: logos/logoupiita.pdf Graphic file (type pdf)
 <use logos/logoupiita.pdf>
 Package pdftex.def Info: logos/logoupiita.pdf  used on input line 41.
@@ -973,12 +973,11 @@ l.44 \dedicatoria
 e same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 A
-       mis hermanos Francisco y Daniel por darme su ayuda en distintas ocasi...
-[1
+l.29 
+      [1
 
 ]
-LaTeX Font Info:    Try loading font information for U+futs on input line 37.
+LaTeX Font Info:    Try loading font information for U+futs on input line 41.
  (c:/texlive/2019/texmf-dist/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
 )
@@ -992,7 +991,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 
+l.41 
       [2]) [3] [4
 
 ] (./Principal.toc
@@ -1024,27 +1023,27 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 (spanish)                faked small caps on input line 6.
 
 
-Overfull \hbox (6.48466pt too wide) detected at line 7
+Overfull \hbox (13.20064pt too wide) detected at line 7
  [][]
  []
 
 
-Overfull \hbox (6.48466pt too wide) detected at line 8
+Overfull \hbox (13.20064pt too wide) detected at line 8
  [][]
  []
 
 
-Overfull \hbox (6.48466pt too wide) detected at line 9
+Overfull \hbox (13.20064pt too wide) detected at line 9
  [][]
  []
 
 
-Overfull \hbox (10.03731pt too wide) detected at line 10
+Overfull \hbox (16.75328pt too wide) detected at line 10
  [][]
  []
 
 
-Overfull \hbox (13.58995pt too wide) detected at line 11
+Overfull \hbox (20.30592pt too wide) detected at line 11
  [][]
  []
 
@@ -1072,17 +1071,17 @@ LaTeX Info: Redefining \% on input line 47.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-Overfull \hbox (3.17535pt too wide) detected at line 7
+Overfull \hbox (9.89133pt too wide) detected at line 7
  [][]
  []
 
 
-Overfull \hbox (3.17535pt too wide) detected at line 8
+Overfull \hbox (9.89133pt too wide) detected at line 8
  [][]
  []
 
 
-Overfull \hbox (10.03731pt too wide) detected at line 9
+Overfull \hbox (16.75328pt too wide) detected at line 9
  [][]
  []
 
@@ -1214,7 +1213,7 @@ LaTeX Info: Redefining \% on input line 54.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 11.
 
-<imagenes/MarcodeReferencia/Antecedentes/02_Robot_Repartidor.jpg, id=1333, 523.
+<imagenes/MarcodeReferencia/Antecedentes/02_Robot_Repartidor.jpg, id=1337, 523.
 9575pt x 290.08376pt>
 File: imagenes/MarcodeReferencia/Antecedentes/02_Robot_Repartidor.jpg Graphic f
 ile (type jpg)
@@ -1228,7 +1227,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
  [34]
-<imagenes/MarcodeReferencia/Antecedentes/03_Ejecucion_del_Sistema.jpg, id=1339,
+<imagenes/MarcodeReferencia/Antecedentes/03_Ejecucion_del_Sistema.jpg, id=1343,
  1001.7425pt x 390.45876pt>
 File: imagenes/MarcodeReferencia/Antecedentes/03_Ejecucion_del_Sistema.jpg Grap
 hic file (type jpg)
@@ -1243,7 +1242,7 @@ LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
  [36]
 <imagenes/MarcodeReferencia/Antecedentes/01_Antecedentes_Control_Formacion.jpg,
- id=1358, 1059.20718pt x 426.09187pt>
+ id=1362, 1059.20718pt x 426.09187pt>
 File: imagenes/MarcodeReferencia/Antecedentes/01_Antecedentes_Control_Formacion
 .jpg Graphic file (type jpg)
 <use imagenes/MarcodeReferencia/Antecedentes/01_Antecedentes_Control_Formacion.
@@ -1273,7 +1272,7 @@ LaTeX Info: Redefining \% on input line 70.
 
  (./capitulos/Marcoreferencia.tex
 Cap\'{\i }tulo 1.
-<imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg, id=1379, 370.38374pt x 297.
+<imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg, id=1383, 370.38374pt x 297.
 36093pt>
 File: imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg Graphic file (type jpg)
 
@@ -1292,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-<imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg, id=1388, 324.46219pt x 
+<imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg, id=1392, 324.46219pt x 
 311.66437pt>
 File: imagenes/MarcodeReferencia/01_Marco_de_Referencia.jpg Graphic file (type 
 jpg)
@@ -1304,7 +1303,7 @@ LaTeX Info: Redefining \. on input line 36.
 LaTeX Info: Redefining \% on input line 36.
 [2 <./imagenes/MarcodeReferencia/01_Ve_piensa_actua.jpg> <./imagenes/MarcodeRef
 erencia/01_Marco_de_Referencia.jpg>]
-<imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg, id=1396, 96.2505pt x
+<imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg, id=1400, 96.2505pt x
  97.236pt>
 File: imagenes/MarcodeReferencia/02_Parametros_diferencial.jpg Graphic file (ty
 pe jpg)
@@ -1315,7 +1314,7 @@ pg  used on input line 86.
 LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
  [3]
-<imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg, id=1407, 417.05812pt x 335.
+<imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg, id=1411, 417.05812pt x 335.
 75438pt>
 File: imagenes/MarcodeReferencia/04_Ecuaciones_AMCL.jpg Graphic file (type jpg)
 
@@ -1335,7 +1334,7 @@ LaTeX Info: Redefining \% on input line 122.
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
  [6]
-<imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg, id=1429, 557.0812
+<imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg, id=1433, 557.0812
 5pt x 292.84406pt>
 File: imagenes/MarcodeReferencia/02_Ejemplo_Histrograma_Polar.jpg Graphic file 
 (type jpg)
@@ -1435,7 +1434,7 @@ LaTeX Info: Redefining \% on input line 34.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
  [15]
-<imagenes/Conceptual/01_Areas.jpg, id=1492, 396.48125pt x 268.00125pt>
+<imagenes/Conceptual/01_Areas.jpg, id=1496, 396.48125pt x 268.00125pt>
 File: imagenes/Conceptual/01_Areas.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/01_Areas.jpg>
 Package pdftex.def Info: imagenes/Conceptual/01_Areas.jpg  used on input line 6
@@ -1456,13 +1455,13 @@ LaTeX Info: Redefining \% on input line 120.
 LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
  [20]
-<imagenes/Conceptual/02_Rosbot.jpg, id=1516, 167.2065pt x 111.69pt>
+<imagenes/Conceptual/02_Rosbot.jpg, id=1520, 167.2065pt x 111.69pt>
 File: imagenes/Conceptual/02_Rosbot.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/02_Rosbot.jpg>
 Package pdftex.def Info: imagenes/Conceptual/02_Rosbot.jpg  used on input line 
 151.
 (pdftex.def)             Requested size: 200.64679pt x 134.02731pt.
-<imagenes/Conceptual/03_Turtlebot.jpg, id=1519, 702.625pt x 803.0pt>
+<imagenes/Conceptual/03_Turtlebot.jpg, id=1523, 702.625pt x 803.0pt>
 File: imagenes/Conceptual/03_Turtlebot.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/03_Turtlebot.jpg>
 Package pdftex.def Info: imagenes/Conceptual/03_Turtlebot.jpg  used on input li
@@ -1474,7 +1473,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 168.
 LaTeX Info: Redefining \% on input line 168.
  [21 <./imagenes/Conceptual/02_Rosbot.jpg>]
-<imagenes/Conceptual/04_JET.jpg, id=1526, 329.73187pt x 210.7875pt>
+<imagenes/Conceptual/04_JET.jpg, id=1530, 329.73187pt x 210.7875pt>
 File: imagenes/Conceptual/04_JET.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/04_JET.jpg>
 Package pdftex.def Info: imagenes/Conceptual/04_JET.jpg  used on input line 177
@@ -1726,7 +1725,7 @@ Overfull \hbox (31.09451pt too wide) in paragraph at lines 275--286
 LaTeX Info: Redefining \. on input line 289.
 LaTeX Info: Redefining \% on input line 289.
 [26]
-<imagenes/Conceptual/05_Interfaces.jpg, id=1550, 434.6055pt x 325.872pt>
+<imagenes/Conceptual/05_Interfaces.jpg, id=1554, 434.6055pt x 325.872pt>
 File: imagenes/Conceptual/05_Interfaces.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/05_Interfaces.jpg>
 Package pdftex.def Info: imagenes/Conceptual/05_Interfaces.jpg  used on input l
@@ -1738,7 +1737,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
  [27]
-<imagenes/Conceptual/06_Arquitecturas.jpg, id=1555, 602.25pt x 381.425pt>
+<imagenes/Conceptual/06_Arquitecturas.jpg, id=1559, 602.25pt x 381.425pt>
 File: imagenes/Conceptual/06_Arquitecturas.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/06_Arquitecturas.jpg>
 Package pdftex.def Info: imagenes/Conceptual/06_Arquitecturas.jpg  used on inpu
@@ -1845,13 +1844,13 @@ Underfull \vbox (badness 7291) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 349.
 LaTeX Info: Redefining \% on input line 349.
  [29 <./imagenes/Conceptual/06_Arquitecturas.jpg>]
-<imagenes/Conceptual/07_Esquema.jpg, id=1567, 484.81125pt x 404.26031pt>
+<imagenes/Conceptual/07_Esquema.jpg, id=1571, 484.81125pt x 404.26031pt>
 File: imagenes/Conceptual/07_Esquema.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/07_Esquema.jpg>
 Package pdftex.def Info: imagenes/Conceptual/07_Esquema.jpg  used on input line
  354.
 (pdftex.def)             Requested size: 242.40503pt x 202.12965pt.
-<imagenes/Conceptual/08_Entorno.jpg, id=1569, 371.3875pt x 511.9125pt>
+<imagenes/Conceptual/08_Entorno.jpg, id=1573, 371.3875pt x 511.9125pt>
 File: imagenes/Conceptual/08_Entorno.jpg Graphic file (type jpg)
 <use imagenes/Conceptual/08_Entorno.jpg>
 Package pdftex.def Info: imagenes/Conceptual/08_Entorno.jpg  used on input line
@@ -1873,7 +1872,7 @@ LaTeX Info: Redefining \% on input line 59.
 \openout2 = `capitulos/Disedetallado.aux'.
 
  (./capitulos/Disedetallado.tex
-<imagenes/Detallado/01_Areas_Funcionales.jpg, id=1598, 1284.8pt x 740.7675pt>
+<imagenes/Detallado/01_Areas_Funcionales.jpg, id=1602, 1284.8pt x 740.7675pt>
 File: imagenes/Detallado/01_Areas_Funcionales.jpg Graphic file (type jpg)
 <use imagenes/Detallado/01_Areas_Funcionales.jpg>
 Package pdftex.def Info: imagenes/Detallado/01_Areas_Funcionales.jpg  used on i
@@ -1885,7 +1884,7 @@ LaTeX Info: Redefining \% on input line 16.
 
 
  <./imagenes/Detallado/01_Areas_Funcionales.jpg>]
-<imagenes/Detallado/03_Ensamble_2_pisos.jpg, id=1610, 125.487pt x 121.545pt>
+<imagenes/Detallado/03_Ensamble_2_pisos.jpg, id=1614, 125.487pt x 121.545pt>
 File: imagenes/Detallado/03_Ensamble_2_pisos.jpg Graphic file (type jpg)
 <use imagenes/Detallado/03_Ensamble_2_pisos.jpg>
 Package pdftex.def Info: imagenes/Detallado/03_Ensamble_2_pisos.jpg  used on in
@@ -1894,7 +1893,7 @@ put line 30.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
  [34]
-<imagenes/Detallado/04_Estructura_multiplataforma.jpg, id=1618, 201.042pt x 200
+<imagenes/Detallado/04_Estructura_multiplataforma.jpg, id=1622, 201.042pt x 200
 .0565pt>
 File: imagenes/Detallado/04_Estructura_multiplataforma.jpg Graphic file (type j
 pg)
@@ -1920,7 +1919,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
  [38]
-<imagenes/Detallado/05_Estructura_Turtlebot3.jpg, id=1692, 511.15968pt x 406.51
+<imagenes/Detallado/05_Estructura_Turtlebot3.jpg, id=1696, 511.15968pt x 406.51
 875pt>
 File: imagenes/Detallado/05_Estructura_Turtlebot3.jpg Graphic file (type jpg)
 <use imagenes/Detallado/05_Estructura_Turtlebot3.jpg>
@@ -1952,7 +1951,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 258.
 LaTeX Info: Redefining \% on input line 258.
  [42]
-<imagenes/Detallado/07_Tarjeta_ARM.jpg, id=1742, 125.9907pt x 86.2422pt>
+<imagenes/Detallado/07_Tarjeta_ARM.jpg, id=1746, 125.9907pt x 86.2422pt>
 File: imagenes/Detallado/07_Tarjeta_ARM.jpg Graphic file (type jpg)
 <use imagenes/Detallado/07_Tarjeta_ARM.jpg>
 Package pdftex.def Info: imagenes/Detallado/07_Tarjeta_ARM.jpg  used on input l
@@ -1964,7 +1963,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 300.
 LaTeX Info: Redefining \% on input line 300.
  [43]
-<imagenes/Detallado/08_Tarjeta_Raspberry_PI_3.jpg, id=1762, 263.7855pt x 176.40
+<imagenes/Detallado/08_Tarjeta_Raspberry_PI_3.jpg, id=1766, 263.7855pt x 176.40
 45pt>
 File: imagenes/Detallado/08_Tarjeta_Raspberry_PI_3.jpg Graphic file (type jpg)
 <use imagenes/Detallado/08_Tarjeta_Raspberry_PI_3.jpg>
@@ -1983,14 +1982,14 @@ LaTeX Info: Redefining \% on input line 322.
 LaTeX Info: Redefining \. on input line 349.
 LaTeX Info: Redefining \% on input line 349.
  [46]
-<imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg, id=1781, 460.72125pt x 126.4725
+<imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg, id=1785, 460.72125pt x 126.4725
 pt>
 File: imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg Graphic file (type jpg)
 <use imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg>
 Package pdftex.def Info: imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg  used on
  input line 352.
 (pdftex.def)             Requested size: 161.25485pt x 44.26602pt.
-<imagenes/Detallado/10_Algoritmo_Matriz_de_Fuerza.jpg, id=1782, 266.04393pt x 5
+<imagenes/Detallado/10_Algoritmo_Matriz_de_Fuerza.jpg, id=1786, 266.04393pt x 5
 97.58257pt>
 File: imagenes/Detallado/10_Algoritmo_Matriz_de_Fuerza.jpg Graphic file (type j
 pg)
@@ -1998,7 +1997,7 @@ pg)
 Package pdftex.def Info: imagenes/Detallado/10_Algoritmo_Matriz_de_Fuerza.jpg  
 used on input line 359.
 (pdftex.def)             Requested size: 119.71866pt x 268.90967pt.
-<imagenes/Detallado/11_Vecino_Cercano.jpg, id=1783, 375.804pt x 597.58257pt>
+<imagenes/Detallado/11_Vecino_Cercano.jpg, id=1787, 375.804pt x 597.58257pt>
 File: imagenes/Detallado/11_Vecino_Cercano.jpg Graphic file (type jpg)
 <use imagenes/Detallado/11_Vecino_Cercano.jpg>
 Package pdftex.def Info: imagenes/Detallado/11_Vecino_Cercano.jpg  used on inpu
@@ -2011,7 +2010,7 @@ LaTeX Info: Redefining \. on input line 370.
 LaTeX Info: Redefining \% on input line 370.
  [47 <./imagenes/Detallado/09_IO_Matriz_de_Fuerza.jpg> <./imagenes/Detallado/10
 _Algoritmo_Matriz_de_Fuerza.jpg>]
-<imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg, id=1794, 622.42537pt x 
+<imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg, id=1798, 622.42537pt x 
 239.39438pt>
 File: imagenes/Detallado/12_Diagrama_UML_MovementLeader.jpg Graphic file (type 
 jpg)
@@ -2023,14 +2022,14 @@ LaTeX Info: Redefining \. on input line 381.
 LaTeX Info: Redefining \% on input line 381.
  [48 <./imagenes/Detallado/11_Vecino_Cercano.jpg> <./imagenes/Detallado/12_Diag
 rama_UML_MovementLeader.jpg>]
-<imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg, id=1801, 610.22981pt x 593.517
+<imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg, id=1805, 610.22981pt x 593.517
 38pt>
 File: imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg Graphic file (type jpg)
 <use imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg>
 Package pdftex.def Info: imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg  used o
 n input line 384.
 (pdftex.def)             Requested size: 189.90488pt x 184.70393pt.
-<imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg, id=1802, 668.4975pt x 597.5
+<imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg, id=1806, 668.4975pt x 597.5
 8257pt>
 File: imagenes/Detallado/14A_Diagrama_Metodo_Follow.jpg Graphic file (type jpg)
 
@@ -2042,7 +2041,7 @@ LaTeX Info: Redefining \. on input line 397.
 LaTeX Info: Redefining \% on input line 397.
  [49 <./imagenes/Detallado/13_Diagrama_Flujo_Lider.jpg> <./imagenes/Detallado/1
 4A_Diagrama_Metodo_Follow.jpg>]
-<imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg, id=1810, 411.939pt x 597.58257
+<imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg, id=1814, 411.939pt x 597.58257
 pt>
 File: imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg Graphic file (type jpg)
 <use imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg>
@@ -2052,14 +2051,14 @@ n input line 402.
 LaTeX Info: Redefining \. on input line 408.
 LaTeX Info: Redefining \% on input line 408.
  [50 <./imagenes/Detallado/14B_Diagrama_Metodo_VFH.jpg>]
-<imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg, id=1816, 518.98894pt x 588.54
+<imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg, id=1820, 518.98894pt x 588.54
 881pt>
 File: imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg Graphic file (type jpg)
 <use imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg>
 Package pdftex.def Info: imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg  used 
 on input line 411.
 (pdftex.def)             Requested size: 207.59189pt x 235.41534pt.
-<imagenes/Detallado/14D_Diagrama_Callbacks.jpg, id=1818, 1117.47487pt x 393.419
+<imagenes/Detallado/14D_Diagrama_Callbacks.jpg, id=1822, 1117.47487pt x 393.419
 82pt>
 File: imagenes/Detallado/14D_Diagrama_Callbacks.jpg Graphic file (type jpg)
 <use imagenes/Detallado/14D_Diagrama_Callbacks.jpg>
@@ -2072,7 +2071,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 424.
 LaTeX Info: Redefining \% on input line 424.
  [51 <./imagenes/Detallado/14C_Diagrama_Metodo_Move.jpg>]
-<imagenes/Detallado/15_Representacion_distancias.jpg, id=1823, 313.17pt x 191.9
+<imagenes/Detallado/15_Representacion_distancias.jpg, id=1827, 313.17pt x 191.9
 672pt>
 File: imagenes/Detallado/15_Representacion_distancias.jpg Graphic file (type jp
 g)
@@ -2084,13 +2083,13 @@ LaTeX Info: Redefining \. on input line 438.
 LaTeX Info: Redefining \% on input line 438.
  [52 <./imagenes/Detallado/14D_Diagrama_Callbacks.jpg> <./imagenes/Detallado/15
 _Representacion_distancias.jpg>]
-<imagenes/Detallado/16_Diagrama_UML_FR.jpg, id=1831, 614.74669pt x 126.9242pt>
+<imagenes/Detallado/16_Diagrama_UML_FR.jpg, id=1835, 614.74669pt x 126.9242pt>
 File: imagenes/Detallado/16_Diagrama_UML_FR.jpg Graphic file (type jpg)
 <use imagenes/Detallado/16_Diagrama_UML_FR.jpg>
 Package pdftex.def Info: imagenes/Detallado/16_Diagrama_UML_FR.jpg  used on inp
 ut line 453.
 (pdftex.def)             Requested size: 307.37259pt x 63.46193pt.
-<imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg, id=1835, 370.38374pt x 483.
+<imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg, id=1839, 370.38374pt x 483.
 75731pt>
 File: imagenes/Detallado/17_Diagrama_Flujo_Seguidor.jpg Graphic file (type jpg)
 
@@ -2102,14 +2101,14 @@ LaTeX Info: Redefining \. on input line 466.
 LaTeX Info: Redefining \% on input line 466.
 
 [53 <./imagenes/Detallado/16_Diagrama_UML_FR.jpg>]
-<imagenes/Detallado/18_Callbacks_Seguidor.jpg, id=1845, 327.47343pt x 279.59456
+<imagenes/Detallado/18_Callbacks_Seguidor.jpg, id=1849, 327.47343pt x 279.59456
 pt>
 File: imagenes/Detallado/18_Callbacks_Seguidor.jpg Graphic file (type jpg)
 <use imagenes/Detallado/18_Callbacks_Seguidor.jpg>
 Package pdftex.def Info: imagenes/Detallado/18_Callbacks_Seguidor.jpg  used on 
 input line 469.
 (pdftex.def)             Requested size: 170.28717pt x 145.39pt.
-<imagenes/Detallado/19_Diagrama_Follower_Callback.jpg, id=1847, 1101.21413pt x 
+<imagenes/Detallado/19_Diagrama_Follower_Callback.jpg, id=1851, 1101.21413pt x 
 596.2275pt>
 File: imagenes/Detallado/19_Diagrama_Follower_Callback.jpg Graphic file (type j
 pg)
@@ -2126,14 +2125,14 @@ Underfull \vbox (badness 1635) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 488.
 LaTeX Info: Redefining \% on input line 488.
  [55 <./imagenes/Detallado/19_Diagrama_Follower_Callback.jpg>]
-<imagenes/Detallado/20_Diagrama_UML_Distancia.jpg, id=1861, 612.03656pt x 107.9
+<imagenes/Detallado/20_Diagrama_UML_Distancia.jpg, id=1865, 612.03656pt x 107.9
 5331pt>
 File: imagenes/Detallado/20_Diagrama_UML_Distancia.jpg Graphic file (type jpg)
 <use imagenes/Detallado/20_Diagrama_UML_Distancia.jpg>
 Package pdftex.def Info: imagenes/Detallado/20_Diagrama_UML_Distancia.jpg  used
  on input line 491.
 (pdftex.def)             Requested size: 183.61238pt x 32.38623pt.
-<imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg, id=1863, 499.11469pt x
+<imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg, id=1867, 499.11469pt x
  398.84006pt>
 File: imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_A.jpg Graphic file (type
  jpg)
@@ -2145,7 +2144,7 @@ LaTeX Info: Redefining \. on input line 506.
 LaTeX Info: Redefining \% on input line 506.
  [56 <./imagenes/Detallado/20_Diagrama_UML_Distancia.jpg> <./imagenes/Detallado
 /21_Diagrama_de_Flujo_Obstacle_A.jpg>]
-<imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg, id=1869, 445.81557pt x
+<imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg, id=1873, 445.81557pt x
  617.00513pt>
 File: imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg Graphic file (type
  jpg)
@@ -2156,14 +2155,14 @@ Package pdftex.def Info: imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg
 LaTeX Info: Redefining \. on input line 515.
 LaTeX Info: Redefining \% on input line 515.
  [57 <./imagenes/Detallado/21_Diagrama_de_Flujo_Obstacle_B.jpg>]
-<imagenes/Detallado/22_Diagrama_UML_VFH.jpg, id=1876, 612.03656pt x 111.11513pt
+<imagenes/Detallado/22_Diagrama_UML_VFH.jpg, id=1880, 612.03656pt x 111.11513pt
 >
 File: imagenes/Detallado/22_Diagrama_UML_VFH.jpg Graphic file (type jpg)
 <use imagenes/Detallado/22_Diagrama_UML_VFH.jpg>
 Package pdftex.def Info: imagenes/Detallado/22_Diagrama_UML_VFH.jpg  used on in
 put line 518.
 (pdftex.def)             Requested size: 201.97269pt x 36.66809pt.
-<imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg, id=1877, 573.19144pt x 524.
+<imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg, id=1881, 573.19144pt x 524.
 86087pt>
 File: imagenes/Detallado/23_Diagrama_de_Flujo_VFH_A.jpg Graphic file (type jpg)
 
@@ -2176,7 +2175,7 @@ LaTeX Info: Redefining \% on input line 531.
 
 [58 <./imagenes/Detallado/22_Diagrama_UML_VFH.jpg> <./imagenes/Detallado/23_Dia
 grama_de_Flujo_VFH_A.jpg>]
-<imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg, id=1883, 454.39763pt x 528.
+<imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg, id=1887, 454.39763pt x 528.
 92606pt>
 File: imagenes/Detallado/24_Diagrama_de_Flujo_VFH_B.jpg Graphic file (type jpg)
 
@@ -2201,7 +2200,7 @@ it/10.95 ROS[]MASTER[]URI$ \OT1/cmr/m/n/10.95 y $\OML/cmm/m/it/10.95 ROS[]HOSTN
 AME$
  []
 
-<imagenes/Detallado/25_Configuracion_IP.jpg, id=1888, 357.58594pt x 84.315pt>
+<imagenes/Detallado/25_Configuracion_IP.jpg, id=1892, 357.58594pt x 84.315pt>
 File: imagenes/Detallado/25_Configuracion_IP.jpg Graphic file (type jpg)
 <use imagenes/Detallado/25_Configuracion_IP.jpg>
 Package pdftex.def Info: imagenes/Detallado/25_Configuracion_IP.jpg  used on in
@@ -2210,7 +2209,7 @@ put line 570.
 LaTeX Info: Redefining \. on input line 574.
 LaTeX Info: Redefining \% on input line 574.
 [60]
-<imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg, id=1895, 947.03813pt 
+<imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg, id=1899, 947.03813pt 
 x 433.62pt>
 File: imagenes/Detallado/26_Ejemplo_de_Configuracion_WIFI.jpg Graphic file (typ
 e jpg)
@@ -2236,7 +2235,7 @@ LaTeX Info: Redefining \% on input line 615.
 LaTeX Info: Redefining \. on input line 623.
 LaTeX Info: Redefining \% on input line 623.
  [63]
-<imagenes/Detallado/27_Encoder_absoluto.jpg, id=1922, 496.10344pt x 140.77594pt
+<imagenes/Detallado/27_Encoder_absoluto.jpg, id=1926, 496.10344pt x 140.77594pt
 >
 File: imagenes/Detallado/27_Encoder_absoluto.jpg Graphic file (type jpg)
 <use imagenes/Detallado/27_Encoder_absoluto.jpg>
@@ -2252,13 +2251,13 @@ LaTeX Info: Redefining \% on input line 638.
 LaTeX Info: Redefining \. on input line 650.
 LaTeX Info: Redefining \% on input line 650.
  [65]
-<imagenes/Detallado/28_1_SensorLaser.png, id=1931, 1375.1375pt x 421.575pt>
+<imagenes/Detallado/28_1_SensorLaser.png, id=1935, 1375.1375pt x 421.575pt>
 File: imagenes/Detallado/28_1_SensorLaser.png Graphic file (type png)
 <use imagenes/Detallado/28_1_SensorLaser.png>
 Package pdftex.def Info: imagenes/Detallado/28_1_SensorLaser.png  used on input
  line 653.
 (pdftex.def)             Requested size: 378.15349pt x 115.93025pt.
-<imagenes/Detallado/28_Funcionamiento_Lidar.jpg, id=1933, 491.58656pt x 143.034
+<imagenes/Detallado/28_Funcionamiento_Lidar.jpg, id=1937, 491.58656pt x 143.034
 38pt>
 File: imagenes/Detallado/28_Funcionamiento_Lidar.jpg Graphic file (type jpg)
 <use imagenes/Detallado/28_Funcionamiento_Lidar.jpg>
@@ -2279,13 +2278,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 706.
 LaTeX Info: Redefining \% on input line 706.
  [67]
-<imagenes/Detallado/29_Dimensiones_Lidar.jpg, id=1946, 341.3115pt x 316.017pt>
+<imagenes/Detallado/29_Dimensiones_Lidar.jpg, id=1950, 341.3115pt x 316.017pt>
 File: imagenes/Detallado/29_Dimensiones_Lidar.jpg Graphic file (type jpg)
 <use imagenes/Detallado/29_Dimensiones_Lidar.jpg>
 Package pdftex.def Info: imagenes/Detallado/29_Dimensiones_Lidar.jpg  used on i
 nput line 713.
 (pdftex.def)             Requested size: 177.48299pt x 164.32977pt.
-<imagenes/Detallado/30_Vista_Frontal.jpg, id=1947, 528.47438pt x 671.50874pt>
+<imagenes/Detallado/30_Vista_Frontal.jpg, id=1951, 528.47438pt x 671.50874pt>
 File: imagenes/Detallado/30_Vista_Frontal.jpg Graphic file (type jpg)
 <use imagenes/Detallado/30_Vista_Frontal.jpg>
 Package pdftex.def Info: imagenes/Detallado/30_Vista_Frontal.jpg  used on input
@@ -2298,7 +2297,7 @@ LaTeX Info: Redefining \. on input line 728.
 LaTeX Info: Redefining \% on input line 728.
  [68 <./imagenes/Detallado/29_Dimensiones_Lidar.jpg> <./imagenes/Detallado/30_V
 ista_Frontal.jpg>]
-<imagenes/Detallado/31_Pines_del_lidar.jpg, id=1953, 206.27063pt x 453.94594pt>
+<imagenes/Detallado/31_Pines_del_lidar.jpg, id=1957, 206.27063pt x 453.94594pt>
 
 File: imagenes/Detallado/31_Pines_del_lidar.jpg Graphic file (type jpg)
 <use imagenes/Detallado/31_Pines_del_lidar.jpg>
@@ -2313,14 +2312,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 795.
 LaTeX Info: Redefining \% on input line 795.
  [70]
-<imagenes/Detallado/32_Ubicacion_Alimentacion.jpg, id=1967, 969.6225pt x 618.81
+<imagenes/Detallado/32_Ubicacion_Alimentacion.jpg, id=1971, 969.6225pt x 618.81
 187pt>
 File: imagenes/Detallado/32_Ubicacion_Alimentacion.jpg Graphic file (type jpg)
 <use imagenes/Detallado/32_Ubicacion_Alimentacion.jpg>
 Package pdftex.def Info: imagenes/Detallado/32_Ubicacion_Alimentacion.jpg  used
  on input line 801.
 (pdftex.def)             Requested size: 193.92107pt x 123.76018pt.
-<imagenes/Detallado/33_Bateria_LiPo.jpg, id=1969, 181.989pt x 152.7525pt>
+<imagenes/Detallado/33_Bateria_LiPo.jpg, id=1973, 181.989pt x 152.7525pt>
 File: imagenes/Detallado/33_Bateria_LiPo.jpg Graphic file (type jpg)
 <use imagenes/Detallado/33_Bateria_LiPo.jpg>
 Package pdftex.def Info: imagenes/Detallado/33_Bateria_LiPo.jpg  used on input 
@@ -2338,7 +2337,7 @@ LaTeX Info: Redefining \. on input line 851.
 LaTeX Info: Redefining \% on input line 851.
  [71 <./imagenes/Detallado/32_Ubicacion_Alimentacion.jpg> <./imagenes/Detallado
 /33_Bateria_LiPo.jpg>]
-<imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg, id=1976, 2409.0pt x 1204.5pt>
+<imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg, id=1980, 2409.0pt x 1204.5pt>
 
 File: imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg Graphic file (type jpg)
 <use imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg>
@@ -2348,13 +2347,13 @@ on input line 856.
 LaTeX Info: Redefining \. on input line 862.
 LaTeX Info: Redefining \% on input line 862.
  [72 <./imagenes/Detallado/34_Ensamble_Bateria_LiPo.jpg>]
-<imagenes/Detallado/35_Ensamble_llanta.jpg, id=1982, 333.756pt x 167.535pt>
+<imagenes/Detallado/35_Ensamble_llanta.jpg, id=1986, 333.756pt x 167.535pt>
 File: imagenes/Detallado/35_Ensamble_llanta.jpg Graphic file (type jpg)
 <use imagenes/Detallado/35_Ensamble_llanta.jpg>
 Package pdftex.def Info: imagenes/Detallado/35_Ensamble_llanta.jpg  used on inp
 ut line 871.
 (pdftex.def)             Requested size: 200.25513pt x 100.52176pt.
-<imagenes/Detallado/37_Estructura_de_la_locomocion.jpg, id=1985, 272.9835pt x 1
+<imagenes/Detallado/37_Estructura_de_la_locomocion.jpg, id=1989, 272.9835pt x 1
 94.1435pt>
 File: imagenes/Detallado/37_Estructura_de_la_locomocion.jpg Graphic file (type 
 jpg)
@@ -2368,7 +2367,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 884.
 LaTeX Info: Redefining \% on input line 884.
  [73 <./imagenes/Detallado/35_Ensamble_llanta.jpg>]
-<imagenes/Detallado/36_Ensamble_Actuadores.jpg, id=1992, 460.72125pt x 378.6646
+<imagenes/Detallado/36_Ensamble_Actuadores.jpg, id=1996, 460.72125pt x 378.6646
 9pt>
 File: imagenes/Detallado/36_Ensamble_Actuadores.jpg Graphic file (type jpg)
 <use imagenes/Detallado/36_Ensamble_Actuadores.jpg>
@@ -2382,14 +2381,14 @@ LaTeX Info: Redefining \. on input line 899.
 LaTeX Info: Redefining \% on input line 899.
  [74 <./imagenes/Detallado/37_Estructura_de_la_locomocion.jpg> <./imagenes/Deta
 llado/36_Ensamble_Actuadores.jpg>]
-<imagenes/Detallado/38_Ensamble_del_motor.jpg, id=1999, 397.485pt x 338.76563pt
+<imagenes/Detallado/38_Ensamble_del_motor.jpg, id=2003, 397.485pt x 338.76563pt
 >
 File: imagenes/Detallado/38_Ensamble_del_motor.jpg Graphic file (type jpg)
 <use imagenes/Detallado/38_Ensamble_del_motor.jpg>
 Package pdftex.def Info: imagenes/Detallado/38_Ensamble_del_motor.jpg  used on 
 input line 902.
 (pdftex.def)             Requested size: 198.742pt x 169.38239pt.
-<imagenes/Detallado/39_Caracteristicas_del_motor.jpg, id=2000, 459.21562pt x 33
+<imagenes/Detallado/39_Caracteristicas_del_motor.jpg, id=2004, 459.21562pt x 33
 2.74312pt>
 File: imagenes/Detallado/39_Caracteristicas_del_motor.jpg Graphic file (type jp
 g)
@@ -2400,14 +2399,14 @@ sed on input line 920.
 LaTeX Info: Redefining \. on input line 924.
 LaTeX Info: Redefining \% on input line 924.
  [75 <./imagenes/Detallado/38_Ensamble_del_motor.jpg>]
-<imagenes/Detallado/40_Sistema_de_Locomocion.jpg, id=2008, 1186.4325pt x 880.79
+<imagenes/Detallado/40_Sistema_de_Locomocion.jpg, id=2012, 1186.4325pt x 880.79
 062pt>
 File: imagenes/Detallado/40_Sistema_de_Locomocion.jpg Graphic file (type jpg)
 <use imagenes/Detallado/40_Sistema_de_Locomocion.jpg>
 Package pdftex.def Info: imagenes/Detallado/40_Sistema_de_Locomocion.jpg  used 
 on input line 931.
 (pdftex.def)             Requested size: 177.9572pt x 132.11288pt.
-<imagenes/Detallado/41_Sistema_de_Locomocion_B.jpg, id=2009, 512.66531pt x 534.
+<imagenes/Detallado/41_Sistema_de_Locomocion_B.jpg, id=2013, 512.66531pt x 534.
 49687pt>
 File: imagenes/Detallado/41_Sistema_de_Locomocion_B.jpg Graphic file (type jpg)
 
@@ -2422,7 +2421,7 @@ LaTeX Info: Redefining \. on input line 942.
 LaTeX Info: Redefining \% on input line 942.
  [76 <./imagenes/Detallado/39_Caracteristicas_del_motor.jpg> <./imagenes/Detall
 ado/40_Sistema_de_Locomocion.jpg>]
-<imagenes/Detallado/42_Nomenclatura_DYNAMYXEL.jpg, id=2014, 864.22874pt x 257.4
+<imagenes/Detallado/42_Nomenclatura_DYNAMYXEL.jpg, id=2018, 864.22874pt x 257.4
 6187pt>
 File: imagenes/Detallado/42_Nomenclatura_DYNAMYXEL.jpg Graphic file (type jpg)
 <use imagenes/Detallado/42_Nomenclatura_DYNAMYXEL.jpg>
@@ -2444,7 +2443,7 @@ LaTeX Info: Redefining \. on input line 1045.
 LaTeX Info: Redefining \% on input line 1045.
 
 [79]
-<imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg, id=2035, 702.625pt x 387.4475pt>
+<imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg, id=2039, 702.625pt x 387.4475pt>
 File: imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg Graphic file (type jpg)
 <use imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg>
 Package pdftex.def Info: imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg  used on i
@@ -2460,7 +2459,7 @@ LaTeX Info: Redefining \. on input line 1116.
 LaTeX Info: Redefining \% on input line 1116.
 
 [81 <./imagenes/Detallado/43_Grafica_DYNAMYXEL.jpg>]
-<imagenes/Detallado/44_Interfaz_de_programacion.jpg, id=2050, 324.46219pt x 352
+<imagenes/Detallado/44_Interfaz_de_programacion.jpg, id=2054, 324.46219pt x 352
 .31625pt>
 File: imagenes/Detallado/44_Interfaz_de_programacion.jpg Graphic file (type jpg
 )
@@ -2474,13 +2473,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1127.
 LaTeX Info: Redefining \% on input line 1127.
  [82 <./imagenes/Detallado/44_Interfaz_de_programacion.jpg>]
-<imagenes/Detallado/45_Capa_1.jpg, id=2056, 965.10562pt x 675.27281pt>
+<imagenes/Detallado/45_Capa_1.jpg, id=2060, 965.10562pt x 675.27281pt>
 File: imagenes/Detallado/45_Capa_1.jpg Graphic file (type jpg)
 <use imagenes/Detallado/45_Capa_1.jpg>
 Package pdftex.def Info: imagenes/Detallado/45_Capa_1.jpg  used on input line 1
 135.
 (pdftex.def)             Requested size: 164.06578pt x 114.79486pt.
-<imagenes/Detallado/46_Capa_2.jpg, id=2058, 1022.31938pt x 816.80156pt>
+<imagenes/Detallado/46_Capa_2.jpg, id=2062, 1022.31938pt x 816.80156pt>
 File: imagenes/Detallado/46_Capa_2.jpg Graphic file (type jpg)
 <use imagenes/Detallado/46_Capa_2.jpg>
 Package pdftex.def Info: imagenes/Detallado/46_Capa_2.jpg  used on input line 1
@@ -2492,13 +2491,13 @@ Underfull \vbox (badness 1509) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1150.
 LaTeX Info: Redefining \% on input line 1150.
  [83 <./imagenes/Detallado/45_Capa_1.jpg> <./imagenes/Detallado/46_Capa_2.jpg>]
-<imagenes/Detallado/47_Capa_3.jpg, id=2064, 846.16125pt x 846.16125pt>
+<imagenes/Detallado/47_Capa_3.jpg, id=2068, 846.16125pt x 846.16125pt>
 File: imagenes/Detallado/47_Capa_3.jpg Graphic file (type jpg)
 <use imagenes/Detallado/47_Capa_3.jpg>
 Package pdftex.def Info: imagenes/Detallado/47_Capa_3.jpg  used on input line 1
 153.
 (pdftex.def)             Requested size: 143.8455pt x 143.8455pt.
-<imagenes/Detallado/48_Vista_Isometrica_completa.jpg, id=2067, 768.62157pt x 85
+<imagenes/Detallado/48_Vista_Isometrica_completa.jpg, id=2071, 768.62157pt x 85
 8.95906pt>
 File: imagenes/Detallado/48_Vista_Isometrica_completa.jpg Graphic file (type jp
 g)
@@ -2506,7 +2505,7 @@ g)
 Package pdftex.def Info: imagenes/Detallado/48_Vista_Isometrica_completa.jpg  u
 sed on input line 1162.
 (pdftex.def)             Requested size: 130.66393pt x 146.0211pt.
-<imagenes/Detallado/49_Distribucion_de_los_componentes.jpg, id=2068, 207.02344p
+<imagenes/Detallado/49_Distribucion_de_los_componentes.jpg, id=2072, 207.02344p
 t x 393.72093pt>
 File: imagenes/Detallado/49_Distribucion_de_los_componentes.jpg Graphic file (t
 ype jpg)
@@ -2521,7 +2520,7 @@ rica_completa.jpg>]
 LaTeX Info: Redefining \. on input line 1178.
 LaTeX Info: Redefining \% on input line 1178.
  [85 <./imagenes/Detallado/49_Distribucion_de_los_componentes.jpg>]
-<imagenes/Detallado/50_Esquema_General_Trayectorias.jpg, id=2080, 986.9372pt x 
+<imagenes/Detallado/50_Esquema_General_Trayectorias.jpg, id=2084, 986.9372pt x 
 270.25969pt>
 File: imagenes/Detallado/50_Esquema_General_Trayectorias.jpg Graphic file (type
  jpg)
@@ -2534,7 +2533,7 @@ Overfull \hbox (1.56787pt too wide) in paragraph at lines 1181--1182
  [][] 
  []
 
-<imagenes/Detallado/51_Esquema_General_Seguidor.jpg, id=2081, 987.69pt x 305.64
+<imagenes/Detallado/51_Esquema_General_Seguidor.jpg, id=2085, 987.69pt x 305.64
 188pt>
 File: imagenes/Detallado/51_Esquema_General_Seguidor.jpg Graphic file (type jpg
 )
@@ -2554,7 +2553,7 @@ LaTeX Info: Redefining \. on input line 1195.
 LaTeX Info: Redefining \% on input line 1195.
  [86 <./imagenes/Detallado/50_Esquema_General_Trayectorias.jpg> <./imagenes/Det
 allado/51_Esquema_General_Seguidor.jpg>]
-<imagenes/Detallado/52_Comunicacion_entre_topicos.jpg, id=2089, 478.6245pt x 24
+<imagenes/Detallado/52_Comunicacion_entre_topicos.jpg, id=2093, 478.6245pt x 24
 5.718pt>
 File: imagenes/Detallado/52_Comunicacion_entre_topicos.jpg Graphic file (type j
 pg)
@@ -2568,7 +2567,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1211.
 LaTeX Info: Redefining \% on input line 1211.
  [87 <./imagenes/Detallado/52_Comunicacion_entre_topicos.jpg>]
-<imagenes/Interfaz/ConexionROS.jpg, id=2097, 304.0158pt x 119.0046pt>
+<imagenes/Interfaz/ConexionROS.jpg, id=2101, 304.0158pt x 119.0046pt>
 File: imagenes/Interfaz/ConexionROS.jpg Graphic file (type jpg)
 <use imagenes/Interfaz/ConexionROS.jpg>
 Package pdftex.def Info: imagenes/Interfaz/ConexionROS.jpg  used on input line 
@@ -2577,7 +2576,7 @@ Package pdftex.def Info: imagenes/Interfaz/ConexionROS.jpg  used on input line
 LaTeX Info: Redefining \. on input line 1224.
 LaTeX Info: Redefining \% on input line 1224.
  [88 <./imagenes/Interfaz/ConexionROS.jpg>]
-<imagenes/Interfaz/EjemploCOM.jpg, id=2105, 223.83624pt x 161.60374pt>
+<imagenes/Interfaz/EjemploCOM.jpg, id=2109, 223.83624pt x 161.60374pt>
 File: imagenes/Interfaz/EjemploCOM.jpg Graphic file (type jpg)
 <use imagenes/Interfaz/EjemploCOM.jpg>
 Package pdftex.def Info: imagenes/Interfaz/EjemploCOM.jpg  used on input line 1
@@ -2589,7 +2588,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1240.
 LaTeX Info: Redefining \% on input line 1240.
  [89 <./imagenes/Interfaz/EjemploCOM.jpg>]
-<imagenes/Validacion/01_Trayectoria_propuesta_1.jpg, id=2118, 462.528pt x 346.8
+<imagenes/Validacion/01_Trayectoria_propuesta_1.jpg, id=2122, 462.528pt x 346.8
 96pt>
 File: imagenes/Validacion/01_Trayectoria_propuesta_1.jpg Graphic file (type jpg
 )
@@ -2603,7 +2602,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1256.
 LaTeX Info: Redefining \% on input line 1256.
  [90]
-<imagenes/Validacion/02_Trayectoria_propuesta_2.jpg, id=2123, 462.528pt x 346.8
+<imagenes/Validacion/02_Trayectoria_propuesta_2.jpg, id=2127, 462.528pt x 346.8
 96pt>
 File: imagenes/Validacion/02_Trayectoria_propuesta_2.jpg Graphic file (type jpg
 )
@@ -2611,14 +2610,14 @@ File: imagenes/Validacion/02_Trayectoria_propuesta_2.jpg Graphic file (type jpg
 Package pdftex.def Info: imagenes/Validacion/02_Trayectoria_propuesta_2.jpg  us
 ed on input line 1259.
 (pdftex.def)             Requested size: 180.38518pt x 135.28888pt.
-<imagenes/Validacion/03_Matriz_de_fuerza_1.jpg, id=2124, 867.24pt x 718.3638pt>
+<imagenes/Validacion/03_Matriz_de_fuerza_1.jpg, id=2128, 867.24pt x 718.3638pt>
 
 File: imagenes/Validacion/03_Matriz_de_fuerza_1.jpg Graphic file (type jpg)
 <use imagenes/Validacion/03_Matriz_de_fuerza_1.jpg>
 Package pdftex.def Info: imagenes/Validacion/03_Matriz_de_fuerza_1.jpg  used on
  input line 1266.
 (pdftex.def)             Requested size: 182.12578pt x 150.86084pt.
-<imagenes/Validacion/04_Matriz_de_fuerza_2.jpg, id=2125, 867.24pt x 718.3638pt>
+<imagenes/Validacion/04_Matriz_de_fuerza_2.jpg, id=2129, 867.24pt x 718.3638pt>
 
 File: imagenes/Validacion/04_Matriz_de_fuerza_2.jpg Graphic file (type jpg)
 <use imagenes/Validacion/04_Matriz_de_fuerza_2.jpg>
@@ -2631,7 +2630,7 @@ LaTeX Info: Redefining \% on input line 1277.
 [91 <./imagenes/Validacion/01_Trayectoria_propuesta_1.jpg> <./imagenes/Validaci
 on/02_Trayectoria_propuesta_2.jpg> <./imagenes/Validacion/03_Matriz_de_fuerza_1
 .jpg>]
-<imagenes/Validacion/05_Puntos_Alcanzados.jpg, id=2133, 427.3566pt x 342.5598pt
+<imagenes/Validacion/05_Puntos_Alcanzados.jpg, id=2137, 427.3566pt x 342.5598pt
 >
 File: imagenes/Validacion/05_Puntos_Alcanzados.jpg Graphic file (type jpg)
 <use imagenes/Validacion/05_Puntos_Alcanzados.jpg>
@@ -2642,7 +2641,7 @@ LaTeX Info: Redefining \. on input line 1288.
 LaTeX Info: Redefining \% on input line 1288.
  [92 <./imagenes/Validacion/04_Matriz_de_fuerza_2.jpg> <./imagenes/Validacion/0
 5_Puntos_Alcanzados.jpg>]
-<imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg, id=2145, 427.3566pt x 342.
+<imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg, id=2149, 427.3566pt x 342.
 5598pt>
 File: imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg Graphic file (type jpg
 )
@@ -2650,7 +2649,7 @@ File: imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg Graphic file (type jpg
 Package pdftex.def Info: imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg  us
 ed on input line 1295.
 (pdftex.def)             Requested size: 132.47917pt x 106.19243pt.
-<imagenes/Validacion/07_Puntos_Alcanzados_seguidor.jpg, id=2146, 427.3566pt x 3
+<imagenes/Validacion/07_Puntos_Alcanzados_seguidor.jpg, id=2150, 427.3566pt x 3
 42.078pt>
 File: imagenes/Validacion/07_Puntos_Alcanzados_seguidor.jpg Graphic file (type 
 jpg)
@@ -2662,7 +2661,7 @@ LaTeX Info: Redefining \. on input line 1310.
 LaTeX Info: Redefining \% on input line 1310.
  [93 <./imagenes/Validacion/06_Puntos_Alcanzados_lider.jpg> <./imagenes/Validac
 ion/07_Puntos_Alcanzados_seguidor.jpg>]
-<imagenes/Validacion/08_Obstaculos_para_la_validacion.jpg, id=2153, 739.76375pt
+<imagenes/Validacion/08_Obstaculos_para_la_validacion.jpg, id=2157, 739.76375pt
  x 769.87625pt>
 File: imagenes/Validacion/08_Obstaculos_para_la_validacion.jpg Graphic file (ty
 pe jpg)
@@ -2670,7 +2669,7 @@ pe jpg)
 Package pdftex.def Info: imagenes/Validacion/08_Obstaculos_para_la_validacion.j
 pg  used on input line 1313.
 (pdftex.def)             Requested size: 133.15172pt x 138.57175pt.
-<imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg, id=2154, 891.33pt x 713.
+<imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg, id=2158, 891.33pt x 713.
 66624pt>
 File: imagenes/Validacion/09_Puntos_de_ruta_alcanzados.jpg Graphic file (type j
 pg)
@@ -2693,7 +2692,7 @@ Cap\'{\i }tulo 3.
 
 
 ]
-<imagenes/Implementacion/Estructura/01_Caja_de_Componentes.jpg, id=2165, 564.60
+<imagenes/Implementacion/Estructura/01_Caja_de_Componentes.jpg, id=2169, 564.60
 938pt x 752.8125pt>
 File: imagenes/Implementacion/Estructura/01_Caja_de_Componentes.jpg Graphic fil
 e (type jpg)
@@ -2704,14 +2703,14 @@ tes.jpg  used on input line 27.
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
  [96 <./imagenes/Implementacion/Estructura/01_Caja_de_Componentes.jpg>]
-<imagenes/Implementacion/Estructura/02_Caja_1.jpg, id=2175, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/02_Caja_1.jpg, id=2179, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/02_Caja_1.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/02_Caja_1.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Estructura/02_Caja_1.jpg  used
  on input line 36.
 (pdftex.def)             Requested size: 152.44656pt x 203.26208pt.
-<imagenes/Implementacion/Estructura/03_Caja_2.jpg, id=2176, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/03_Caja_2.jpg, id=2180, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/03_Caja_2.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/03_Caja_2.jpg>
@@ -2724,14 +2723,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
  [97 <./imagenes/Implementacion/Estructura/02_Caja_1.jpg>]
-<imagenes/Implementacion/Estructura/04_Caja_3.jpg, id=2182, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/04_Caja_3.jpg, id=2186, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/04_Caja_3.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/04_Caja_3.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Estructura/04_Caja_3.jpg  used
  on input line 50.
 (pdftex.def)             Requested size: 141.152pt x 188.20265pt.
-<imagenes/Implementacion/Estructura/05_Caja_4.jpg, id=2183, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/05_Caja_4.jpg, id=2187, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/05_Caja_4.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/05_Caja_4.jpg>
@@ -2745,7 +2744,7 @@ LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
  [98 <./imagenes/Implementacion/Estructura/03_Caja_2.jpg> <./imagenes/Implement
 acion/Estructura/04_Caja_3.jpg>]
-<imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg, id=2189, 564.60938p
+<imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg, id=2193, 564.60938p
 t x 752.8125pt>
 File: imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg Graphic file (t
 ype jpg)
@@ -2759,7 +2758,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
  [99 <./imagenes/Implementacion/Estructura/05_Caja_4.jpg>]
-<imagenes/Implementacion/Estructura/07_Uniones.jpg, id=2196, 433.62pt x 420.069
+<imagenes/Implementacion/Estructura/07_Uniones.jpg, id=2200, 433.62pt x 420.069
 38pt>
 File: imagenes/Implementacion/Estructura/07_Uniones.jpg Graphic file (type jpg)
 
@@ -2767,7 +2766,7 @@ File: imagenes/Implementacion/Estructura/07_Uniones.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/Estructura/07_Uniones.jpg  use
 d on input line 76.
 (pdftex.def)             Requested size: 173.44492pt x 168.02477pt.
-<imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg, id=2197, 564.609
+<imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg, id=2201, 564.609
 38pt x 752.8125pt>
 File: imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg Graphic file
  (type jpg)
@@ -2782,7 +2781,7 @@ LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
  [100 <./imagenes/Implementacion/Estructura/06_Fuente_de_carga.jpg> <./imagenes
 /Implementacion/Estructura/07_Uniones.jpg>]
-<imagenes/Implementacion/Estructura/09_Ensamble_Robot.jpg, id=2202, 365.86688pt
+<imagenes/Implementacion/Estructura/09_Ensamble_Robot.jpg, id=2206, 365.86688pt
  x 425.33907pt>
 File: imagenes/Implementacion/Estructura/09_Ensamble_Robot.jpg Graphic file (ty
 pe jpg)
@@ -2797,14 +2796,14 @@ LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
  [101 <./imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg> <./image
 nes/Implementacion/Estructura/09_Ensamble_Robot.jpg>]
-<imagenes/Implementacion/Estructura/10_Piso_1.jpg, id=2212, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/10_Piso_1.jpg, id=2216, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/10_Piso_1.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/10_Piso_1.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Estructura/10_Piso_1.jpg  used
  on input line 104.
 (pdftex.def)             Requested size: 169.38411pt x 225.84549pt.
-<imagenes/Implementacion/Estructura/11_Piso_2.jpg, id=2213, 564.60938pt x 752.8
+<imagenes/Implementacion/Estructura/11_Piso_2.jpg, id=2217, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/11_Piso_2.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/11_Piso_2.jpg>
@@ -2817,7 +2816,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
  [102 <./imagenes/Implementacion/Estructura/10_Piso_1.jpg>]
-<imagenes/Implementacion/Estructura/12_Piso_03.jpg, id=2218, 564.60938pt x 752.
+<imagenes/Implementacion/Estructura/12_Piso_03.jpg, id=2222, 564.60938pt x 752.
 8125pt>
 File: imagenes/Implementacion/Estructura/12_Piso_03.jpg Graphic file (type jpg)
 
@@ -2825,7 +2824,7 @@ File: imagenes/Implementacion/Estructura/12_Piso_03.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/Estructura/12_Piso_03.jpg  use
 d on input line 118.
 (pdftex.def)             Requested size: 141.152pt x 188.20265pt.
-<imagenes/Implementacion/Estructura/13_Ensamble_Final.jpg, id=2219, 86.04114pt 
+<imagenes/Implementacion/Estructura/13_Ensamble_Final.jpg, id=2223, 86.04114pt 
 x 114.72151pt>
 File: imagenes/Implementacion/Estructura/13_Ensamble_Final.jpg Graphic file (ty
 pe jpg)
@@ -2840,7 +2839,7 @@ LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
  [103 <./imagenes/Implementacion/Estructura/11_Piso_2.jpg> <./imagenes/Implemen
 tacion/Estructura/12_Piso_03.jpg>]
-<imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg, id=2226, 104.
+<imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg, id=2230, 104.
 2509pt x 66.38028pt>
 File: imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg Graphic f
 ile (type jpg)
@@ -2865,7 +2864,7 @@ Package pdftex.def Info: imagenes/Implementacion/Estructura/11_Piso_2.jpg  used
 LaTeX Info: Redefining \. on input line 166.
 LaTeX Info: Redefining \% on input line 166.
  [106]
-<imagenes/Implementacion/01_Montaje_LIDAR.jpg, id=2241, 240.9pt x 374.14781pt>
+<imagenes/Implementacion/01_Montaje_LIDAR.jpg, id=2245, 240.9pt x 374.14781pt>
 File: imagenes/Implementacion/01_Montaje_LIDAR.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/01_Montaje_LIDAR.jpg>
 Package pdftex.def Info: imagenes/Implementacion/01_Montaje_LIDAR.jpg  used on 
@@ -2874,13 +2873,13 @@ input line 171.
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
  [107 <./imagenes/Implementacion/01_Montaje_LIDAR.jpg>]
-<imagenes/Implementacion/02_LIDAR_tb3.jpg, id=2249, 800.23969pt x 269.50688pt>
+<imagenes/Implementacion/02_LIDAR_tb3.jpg, id=2253, 800.23969pt x 269.50688pt>
 File: imagenes/Implementacion/02_LIDAR_tb3.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/02_LIDAR_tb3.jpg>
 Package pdftex.def Info: imagenes/Implementacion/02_LIDAR_tb3.jpg  used on inpu
 t line 182.
 (pdftex.def)             Requested size: 200.05943pt x 67.37654pt.
-<imagenes/Implementacion/03_RVIZ_Distancias.jpg, id=2251, 728.7225pt x 410.2828
+<imagenes/Implementacion/03_RVIZ_Distancias.jpg, id=2255, 728.7225pt x 410.2828
 pt>
 File: imagenes/Implementacion/03_RVIZ_Distancias.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/03_RVIZ_Distancias.jpg>
@@ -2893,7 +2892,7 @@ Underfull \vbox (badness 3078) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 205.
 LaTeX Info: Redefining \% on input line 205.
  [108 <./imagenes/Implementacion/02_LIDAR_tb3.jpg>]
-<imagenes/Implementacion/04_RQt_scan.jpg, id=2257, 691.08188pt x 397.485pt>
+<imagenes/Implementacion/04_RQt_scan.jpg, id=2261, 691.08188pt x 397.485pt>
 File: imagenes/Implementacion/04_RQt_scan.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/04_RQt_scan.jpg>
 Package pdftex.def Info: imagenes/Implementacion/04_RQt_scan.jpg  used on input
@@ -2905,13 +2904,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 222.
 LaTeX Info: Redefining \% on input line 222.
  [109 <./imagenes/Implementacion/03_RVIZ_Distancias.jpg>]
-<imagenes/Implementacion/05_Dynamixel.jpg, id=2264, 752.8125pt x 481.8pt>
+<imagenes/Implementacion/05_Dynamixel.jpg, id=2268, 752.8125pt x 481.8pt>
 File: imagenes/Implementacion/05_Dynamixel.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/05_Dynamixel.jpg>
 Package pdftex.def Info: imagenes/Implementacion/05_Dynamixel.jpg  used on inpu
 t line 230.
 (pdftex.def)             Requested size: 173.14322pt x 110.81166pt.
-<imagenes/Implementacion/06_OpenCR_Dynamixel.jpg, id=2266, 310.15875pt x 457.71
+<imagenes/Implementacion/06_OpenCR_Dynamixel.jpg, id=2270, 310.15875pt x 457.71
 pt>
 File: imagenes/Implementacion/06_OpenCR_Dynamixel.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/06_OpenCR_Dynamixel.jpg>
@@ -2928,7 +2927,7 @@ _Dynamixel.jpg>]
 
 LaTeX Warning: Reference `' on page 111 undefined on input line 245.
 
-<imagenes/Implementacion/07_OpenCR_botones.jpg, id=2271, 735.49782pt x 475.0246
+<imagenes/Implementacion/07_OpenCR_botones.jpg, id=2275, 735.49782pt x 475.0246
 9pt>
 File: imagenes/Implementacion/07_OpenCR_botones.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/07_OpenCR_botones.jpg>
@@ -2942,7 +2941,7 @@ LaTeX Info: Redefining \. on input line 256.
 LaTeX Info: Redefining \% on input line 256.
  [111 <./imagenes/Implementacion/06_OpenCR_Dynamixel.jpg> <./imagenes/Implement
 acion/07_OpenCR_botones.jpg>]
-<imagenes/Implementacion/08_Bateria_LiPo.jpg, id=2279, 714.67pt x 501.875pt>
+<imagenes/Implementacion/08_Bateria_LiPo.jpg, id=2283, 714.67pt x 501.875pt>
 File: imagenes/Implementacion/08_Bateria_LiPo.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/08_Bateria_LiPo.jpg>
 Package pdftex.def Info: imagenes/Implementacion/08_Bateria_LiPo.jpg  used on i
@@ -2985,7 +2984,7 @@ LaTeX Info: Redefining \% on input line 298.
 LaTeX Info: Redefining \. on input line 326.
 LaTeX Info: Redefining \% on input line 326.
  [115]
-<imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg, id=2304, 350.810
+<imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg, id=2308, 350.810
 62pt x 246.9225pt>
 File: imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg Graphic file
  (type jpg)
@@ -2993,7 +2992,7 @@ File: imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg Graphic file
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/01_Creacion_de_r
 ed.jpg  used on input line 330.
 (pdftex.def)             Requested size: 252.58345pt x 177.78404pt.
-<imagenes/Implementacion/Procesamiento/02_Tipo_de_conexion.jpg, id=2306, 418.56
+<imagenes/Implementacion/Procesamiento/02_Tipo_de_conexion.jpg, id=2310, 418.56
 375pt x 220.57407pt>
 File: imagenes/Implementacion/Procesamiento/02_Tipo_de_conexion.jpg Graphic fil
 e (type jpg)
@@ -3005,7 +3004,7 @@ LaTeX Info: Redefining \. on input line 346.
 LaTeX Info: Redefining \% on input line 346.
  [116 <./imagenes/Implementacion/Procesamiento/01_Creacion_de_red.jpg> <./image
 nes/Implementacion/Procesamiento/02_Tipo_de_conexion.jpg>]
-<imagenes/Implementacion/Procesamiento/03_Configuracion_de_nombre.jpg, id=2313,
+<imagenes/Implementacion/Procesamiento/03_Configuracion_de_nombre.jpg, id=2317,
  435.12563pt x 361.35pt>
 File: imagenes/Implementacion/Procesamiento/03_Configuracion_de_nombre.jpg Grap
 hic file (type jpg)
@@ -3014,14 +3013,14 @@ Package pdftex.def Info: imagenes/Implementacion/Procesamiento/03_Configuracion
 _de_nombre.jpg  used on input line 350.
 (pdftex.def)             Requested size: 217.56227pt x 180.67456pt.
 <imagenes/Implementacion/Procesamiento/04_Configuracion_de_seguridad.jpg, id=23
-14, 435.12563pt x 361.35pt>
+18, 435.12563pt x 361.35pt>
 File: imagenes/Implementacion/Procesamiento/04_Configuracion_de_seguridad.jpg G
 raphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/04_Configuracion_de_seguridad.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/04_Configuracion
 _de_seguridad.jpg  used on input line 358.
 (pdftex.def)             Requested size: 217.56227pt x 180.67456pt.
-<imagenes/Implementacion/Procesamiento/05_Comando_ping.jpg, id=2316, 482.55281p
+<imagenes/Implementacion/Procesamiento/05_Comando_ping.jpg, id=2320, 482.55281p
 t x 191.9672pt>
 File: imagenes/Implementacion/Procesamiento/05_Comando_ping.jpg Graphic file (t
 ype jpg)
@@ -3033,7 +3032,7 @@ LaTeX Info: Redefining \. on input line 371.
 LaTeX Info: Redefining \% on input line 371.
  [117 <./imagenes/Implementacion/Procesamiento/03_Configuracion_de_nombre.jpg> 
 <./imagenes/Implementacion/Procesamiento/04_Configuracion_de_seguridad.jpg>]
-<imagenes/Implementacion/Procesamiento/06_RQt_topico_bateria.jpg, id=2324, 572.
+<imagenes/Implementacion/Procesamiento/06_RQt_topico_bateria.jpg, id=2328, 572.
 1375pt x 335.00156pt>
 File: imagenes/Implementacion/Procesamiento/06_RQt_topico_bateria.jpg Graphic f
 ile (type jpg)
@@ -3046,7 +3045,7 @@ LaTeX Info: Redefining \% on input line 386.
  [118 <./imagenes/Implementacion/Procesamiento/05_Comando_ping.jpg> <./imagenes
 /Implementacion/Procesamiento/06_RQt_topico_bateria.jpg>]
 <imagenes/Implementacion/Procesamiento/07_Reconstruccion_trayectoria_A.jpg, id=
-2335, 443.1465pt x 244.0755pt>
+2339, 443.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/07_Reconstruccion_trayectoria_A.jpg
  Graphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/07_Reconstruccion_trayectoria_A.jpg>
@@ -3055,7 +3054,7 @@ Package pdftex.def Info: imagenes/Implementacion/Procesamiento/07_Reconstruccio
 n_trayectoria_A.jpg  used on input line 394.
 (pdftex.def)             Requested size: 221.57271pt x 122.03745pt.
 <imagenes/Implementacion/Procesamiento/08_Reconstruccion_trayectoria_B.jpg, id=
-2336, 443.1465pt x 244.0755pt>
+2340, 443.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/08_Reconstruccion_trayectoria_B.jpg
  Graphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/08_Reconstruccion_trayectoria_B.jpg>
@@ -3071,7 +3070,7 @@ LaTeX Info: Redefining \% on input line 406.
  [119 <./imagenes/Implementacion/Procesamiento/07_Reconstruccion_trayectoria_A.
 jpg>]
 <imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.jpg, id=
-2341, 443.1465pt x 244.0755pt>
+2345, 443.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.jpg
  Graphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.jpg>
@@ -3079,7 +3078,7 @@ File: imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.jpg
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/09_Reconstruccio
 n_trayectoria_C.jpg  used on input line 410.
 (pdftex.def)             Requested size: 221.57271pt x 122.03745pt.
-<imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg, id=2342, 44
+<imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg, id=2346, 44
 3.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg Graphic
  file (type jpg)
@@ -3087,7 +3086,7 @@ File: imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg Graphic
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/10_Puntos_trayec
 toria_A.jpg  used on input line 418.
 (pdftex.def)             Requested size: 221.57271pt x 122.03745pt.
-<imagenes/Implementacion/Procesamiento/11_Puntos_trayectoria_B.jpg, id=2343, 44
+<imagenes/Implementacion/Procesamiento/11_Puntos_trayectoria_B.jpg, id=2347, 44
 3.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/11_Puntos_trayectoria_B.jpg Graphic
  file (type jpg)
@@ -3103,7 +3102,7 @@ LaTeX Info: Redefining \% on input line 430.
  [120 <./imagenes/Implementacion/Procesamiento/08_Reconstruccion_trayectoria_B.
 jpg> <./imagenes/Implementacion/Procesamiento/09_Reconstruccion_trayectoria_C.j
 pg> <./imagenes/Implementacion/Procesamiento/10_Puntos_trayectoria_A.jpg>]
-<imagenes/Implementacion/Procesamiento/12_Puntos_trayectoria_C.jpg, id=2348, 44
+<imagenes/Implementacion/Procesamiento/12_Puntos_trayectoria_C.jpg, id=2352, 44
 3.1465pt x 244.0755pt>
 File: imagenes/Implementacion/Procesamiento/12_Puntos_trayectoria_C.jpg Graphic
  file (type jpg)
@@ -3115,7 +3114,7 @@ LaTeX Info: Redefining \. on input line 445.
 LaTeX Info: Redefining \% on input line 445.
  [121 <./imagenes/Implementacion/Procesamiento/11_Puntos_trayectoria_B.jpg> <./
 imagenes/Implementacion/Procesamiento/12_Puntos_trayectoria_C.jpg>]
-<imagenes/Implementacion/Procesamiento/13_Error_liderA.jpg, id=2363, 451.6875pt
+<imagenes/Implementacion/Procesamiento/13_Error_liderA.jpg, id=2367, 451.6875pt
  x 279.29344pt>
 File: imagenes/Implementacion/Procesamiento/13_Error_liderA.jpg Graphic file (t
 ype jpg)
@@ -3123,7 +3122,7 @@ ype jpg)
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/13_Error_liderA.
 jpg  used on input line 449.
 (pdftex.def)             Requested size: 225.84319pt x 139.64638pt.
-<imagenes/Implementacion/Procesamiento/14_Error_lider_B.jpg, id=2364, 451.6875p
+<imagenes/Implementacion/Procesamiento/14_Error_lider_B.jpg, id=2368, 451.6875p
 t x 279.29344pt>
 File: imagenes/Implementacion/Procesamiento/14_Error_lider_B.jpg Graphic file (
 type jpg)
@@ -3132,7 +3131,7 @@ Package pdftex.def Info: imagenes/Implementacion/Procesamiento/14_Error_lider_B
 .jpg  used on input line 457.
 (pdftex.def)             Requested size: 225.84319pt x 139.64638pt.
 <imagenes/Implementacion/Procesamiento/15_Grafica_posiciones_alcanzadas.jpg, id
-=2365, 481.8pt x 408.02437pt>
+=2369, 481.8pt x 408.02437pt>
 File: imagenes/Implementacion/Procesamiento/15_Grafica_posiciones_alcanzadas.jp
 g Graphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/15_Grafica_posiciones_alcanzadas.jpg
@@ -3151,7 +3150,7 @@ LaTeX Info: Redefining \. on input line 477.
 LaTeX Info: Redefining \% on input line 477.
  [123 <./imagenes/Implementacion/Procesamiento/15_Grafica_posiciones_alcanzadas
 .jpg>]
-<imagenes/Implementacion/Procesamiento/16_Error_Seguidor_A.jpg, id=2377, 451.68
+<imagenes/Implementacion/Procesamiento/16_Error_Seguidor_A.jpg, id=2381, 451.68
 75pt x 279.29344pt>
 File: imagenes/Implementacion/Procesamiento/16_Error_Seguidor_A.jpg Graphic fil
 e (type jpg)
@@ -3159,7 +3158,7 @@ e (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/16_Error_Seguido
 r_A.jpg  used on input line 481.
 (pdftex.def)             Requested size: 225.84319pt x 139.64638pt.
-<imagenes/Implementacion/Procesamiento/17_Error_Seguidor_B.jpg, id=2378, 451.68
+<imagenes/Implementacion/Procesamiento/17_Error_Seguidor_B.jpg, id=2382, 451.68
 75pt x 279.29344pt>
 File: imagenes/Implementacion/Procesamiento/17_Error_Seguidor_B.jpg Graphic fil
 e (type jpg)
@@ -3172,14 +3171,14 @@ LaTeX Info: Redefining \% on input line 502.
  [124 <./imagenes/Implementacion/Procesamiento/16_Error_Seguidor_A.jpg> <./imag
 enes/Implementacion/Procesamiento/17_Error_Seguidor_B.jpg>]
 <imagenes/Implementacion/Procesamiento/18_Diagrama_de_Flujo_Obstacle.jpg, id=23
-86, 445.81557pt x 617.00513pt>
+90, 445.81557pt x 617.00513pt>
 File: imagenes/Implementacion/Procesamiento/18_Diagrama_de_Flujo_Obstacle.jpg G
 raphic file (type jpg)
 <use imagenes/Implementacion/Procesamiento/18_Diagrama_de_Flujo_Obstacle.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/18_Diagrama_de_F
 lujo_Obstacle.jpg  used on input line 506.
 (pdftex.def)             Requested size: 133.7457pt x 185.10297pt.
-<imagenes/Implementacion/Procesamiento/19_Deteccion_obstaculo_A.jpg, id=2389, 4
+<imagenes/Implementacion/Procesamiento/19_Deteccion_obstaculo_A.jpg, id=2393, 4
 43.8035pt x 149.796pt>
 File: imagenes/Implementacion/Procesamiento/19_Deteccion_obstaculo_A.jpg Graphi
 c file (type jpg)
@@ -3191,7 +3190,7 @@ LaTeX Info: Redefining \. on input line 520.
 LaTeX Info: Redefining \% on input line 520.
  [125 <./imagenes/Implementacion/Procesamiento/18_Diagrama_de_Flujo_Obstacle.jp
 g>]
-<imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg, id=2394, 4
+<imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg, id=2398, 4
 43.8035pt x 149.796pt>
 File: imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg Graphi
 c file (type jpg)
@@ -3199,7 +3198,7 @@ c file (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/20_Deteccion_obs
 taculo_B.jpg  used on input line 524.
 (pdftex.def)             Requested size: 355.04327pt x 119.83694pt.
-<imagenes/Implementacion/Procesamiento/21_Diagrama_Metodo_Follow.jpg, id=2396, 
+<imagenes/Implementacion/Procesamiento/21_Diagrama_Metodo_Follow.jpg, id=2400, 
 668.4975pt x 597.58257pt>
 File: imagenes/Implementacion/Procesamiento/21_Diagrama_Metodo_Follow.jpg Graph
 ic file (type jpg)
@@ -3211,7 +3210,7 @@ LaTeX Info: Redefining \. on input line 538.
 LaTeX Info: Redefining \% on input line 538.
  [126 <./imagenes/Implementacion/Procesamiento/19_Deteccion_obstaculo_A.jpg> <.
 /imagenes/Implementacion/Procesamiento/20_Deteccion_obstaculo_B.jpg>]
-<imagenes/Implementacion/Procesamiento/22_Diagrama_Metodo_Move.jpg, id=2403, 51
+<imagenes/Implementacion/Procesamiento/22_Diagrama_Metodo_Move.jpg, id=2407, 51
 8.98894pt x 588.54881pt>
 File: imagenes/Implementacion/Procesamiento/22_Diagrama_Metodo_Move.jpg Graphic
  file (type jpg)
@@ -3225,7 +3224,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 549.
 LaTeX Info: Redefining \% on input line 549.
  [127 <./imagenes/Implementacion/Procesamiento/21_Diagrama_Metodo_Follow.jpg>]
-<imagenes/Implementacion/Procesamiento/23_Diagrama_Metodo_VFH.jpg, id=2410, 411
+<imagenes/Implementacion/Procesamiento/23_Diagrama_Metodo_VFH.jpg, id=2414, 411
 .939pt x 597.58257pt>
 File: imagenes/Implementacion/Procesamiento/23_Diagrama_Metodo_VFH.jpg Graphic 
 file (type jpg)
@@ -3242,7 +3241,7 @@ LaTeX Info: Redefining \% on input line 559.
 LaTeX Info: Redefining \. on input line 567.
 LaTeX Info: Redefining \% on input line 567.
  [129 <./imagenes/Implementacion/Procesamiento/23_Diagrama_Metodo_VFH.jpg>]
-<imagenes/Implementacion/Procesamiento/25_errorLider-evasion.png, id=2423, 602.
+<imagenes/Implementacion/Procesamiento/25_errorLider-evasion.png, id=2427, 602.
 25pt x 372.39125pt>
 File: imagenes/Implementacion/Procesamiento/25_errorLider-evasion.png Graphic f
 ile (type png)
@@ -3250,7 +3249,7 @@ ile (type png)
 Package pdftex.def Info: imagenes/Implementacion/Procesamiento/25_errorLider-ev
 asion.png  used on input line 574.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<imagenes/Implementacion/Procesamiento/26_errorSeguidor-evasion.png, id=2424, 6
+<imagenes/Implementacion/Procesamiento/26_errorSeguidor-evasion.png, id=2428, 6
 02.25pt x 372.39125pt>
 File: imagenes/Implementacion/Procesamiento/26_errorSeguidor-evasion.png Graphi
 c file (type png)
@@ -3267,14 +3266,14 @@ LaTeX Info: Redefining \% on input line 586.
 LaTeX Info: Redefining \. on input line 595.
 LaTeX Info: Redefining \% on input line 595.
  [131 <./imagenes/Implementacion/Procesamiento/26_errorSeguidor-evasion.png>]
-<imagenes/Implementacion/HMI/01_RQt_Graficas.jpg, id=2440, 55.93813pt x 36.0212
+<imagenes/Implementacion/HMI/01_RQt_Graficas.jpg, id=2444, 55.93813pt x 36.0212
 pt>
 File: imagenes/Implementacion/HMI/01_RQt_Graficas.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/HMI/01_RQt_Graficas.jpg>
 Package pdftex.def Info: imagenes/Implementacion/HMI/01_RQt_Graficas.jpg  used 
 on input line 599.
 (pdftex.def)             Requested size: 240.53345pt x 154.89078pt.
-<imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg, id=2441, 61.23033pt x 35.3952
+<imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg, id=2445, 61.23033pt x 35.3952
 3pt>
 File: imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/HMI/02_RQt_Mensajes.jpg>
@@ -3290,7 +3289,7 @@ Overfull \hbox (58.83427pt too wide) in paragraph at lines 634--635
 pa-ra ge-ne-rar el pa-que-te y ``gui[]lider[]seguidor",
  []
 
-<imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg, id=2448, 914.66719pt x 58
+<imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg, id=2452, 914.66719pt x 58
 4.1825pt>
 File: imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg Graphic file (type jp
 g)
@@ -3301,14 +3300,14 @@ sed on input line 641.
 LaTeX Info: Redefining \. on input line 647.
 LaTeX Info: Redefining \% on input line 647.
 [133 <./imagenes/Implementacion/HMI/03_Inicio_QtCreator.jpg>]
-<imagenes/Implementacion/HMI/04_Abrir_GUI.jpg, id=2456, 482.55281pt x 338.01282
+<imagenes/Implementacion/HMI/04_Abrir_GUI.jpg, id=2460, 482.55281pt x 338.01282
 pt>
 File: imagenes/Implementacion/HMI/04_Abrir_GUI.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/HMI/04_Abrir_GUI.jpg>
 Package pdftex.def Info: imagenes/Implementacion/HMI/04_Abrir_GUI.jpg  used on 
 input line 651.
 (pdftex.def)             Requested size: 212.32388pt x 148.72609pt.
-<imagenes/Implementacion/HMI/05_Seleccionar_carpeta_compilacion.jpg, id=2458, 4
+<imagenes/Implementacion/HMI/05_Seleccionar_carpeta_compilacion.jpg, id=2462, 4
 20.82219pt x 292.09125pt>
 File: imagenes/Implementacion/HMI/05_Seleccionar_carpeta_compilacion.jpg Graphi
 c file (type jpg)
@@ -3325,14 +3324,14 @@ Overfull \hbox (79.01439pt too wide) in paragraph at lines 669--670
 ]DEVEL[]PREFIX=../devel 
  []
 
-<imagenes/Implementacion/HMI/06_Qt_CMake.jpg, id=2465, 589.4522pt x 398.99063pt
+<imagenes/Implementacion/HMI/06_Qt_CMake.jpg, id=2469, 589.4522pt x 398.99063pt
 >
 File: imagenes/Implementacion/HMI/06_Qt_CMake.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/HMI/06_Qt_CMake.jpg>
 Package pdftex.def Info: imagenes/Implementacion/HMI/06_Qt_CMake.jpg  used on i
 nput line 679.
 (pdftex.def)             Requested size: 294.72537pt x 199.49483pt.
-<imagenes/Implementacion/HMI/07_Ventana_Proyecto_QT.jpg, id=2467, 914.66719pt x
+<imagenes/Implementacion/HMI/07_Ventana_Proyecto_QT.jpg, id=2471, 914.66719pt x
  584.1825pt>
 File: imagenes/Implementacion/HMI/07_Ventana_Proyecto_QT.jpg Graphic file (type
  jpg)
@@ -3352,7 +3351,7 @@ LaTeX Info: Redefining \% on input line 708.
 LaTeX Info: Redefining \. on input line 716.
 LaTeX Info: Redefining \% on input line 716.
  [137]
-<imagenes/Implementacion/HMI/08_Editor_Qt.jpg, id=2483, 974.89218pt x 560.0925p
+<imagenes/Implementacion/HMI/08_Editor_Qt.jpg, id=2487, 974.89218pt x 560.0925p
 t>
 File: imagenes/Implementacion/HMI/08_Editor_Qt.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/HMI/08_Editor_Qt.jpg>
@@ -3365,7 +3364,7 @@ LaTeX Info: Redefining \% on input line 733.
 LaTeX Info: Redefining \. on input line 750.
 LaTeX Info: Redefining \% on input line 750.
  [139]
-<imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg, id=2495, 903.375pt x 584.18
+<imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg, id=2499, 903.375pt x 584.18
 25pt>
 File: imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg Graphic file (type jpg)
 
@@ -3379,7 +3378,7 @@ Underfull \vbox (badness 6559) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 775.
 LaTeX Info: Redefining \% on input line 775.
  [140]
-<imagenes/Implementacion/HMI/10_Interfaz_Trayectoria1.jpg, id=2500, 903.375pt x
+<imagenes/Implementacion/HMI/10_Interfaz_Trayectoria1.jpg, id=2504, 903.375pt x
  584.1825pt>
 File: imagenes/Implementacion/HMI/10_Interfaz_Trayectoria1.jpg Graphic file (ty
 pe jpg)
@@ -3387,7 +3386,7 @@ pe jpg)
 Package pdftex.def Info: imagenes/Implementacion/HMI/10_Interfaz_Trayectoria1.j
 pg  used on input line 780.
 (pdftex.def)             Requested size: 271.01459pt x 175.25609pt.
-<imagenes/Implementacion/HMI/11_Interfaz_Trayectoria2.jpg, id=2503, 903.375pt x
+<imagenes/Implementacion/HMI/11_Interfaz_Trayectoria2.jpg, id=2507, 903.375pt x
  584.1825pt>
 File: imagenes/Implementacion/HMI/11_Interfaz_Trayectoria2.jpg Graphic file (ty
 pe jpg)
@@ -3402,7 +3401,7 @@ LaTeX Info: Redefining \. on input line 795.
 LaTeX Info: Redefining \% on input line 795.
  [141 <./imagenes/Implementacion/HMI/09_Interfaz_Incio.jpg> <./imagenes/Impleme
 ntacion/HMI/10_Interfaz_Trayectoria1.jpg>]
-<imagenes/Implementacion/HMI/12_Interfaz_Trayectoria3.jpg, id=2508, 903.375pt x
+<imagenes/Implementacion/HMI/12_Interfaz_Trayectoria3.jpg, id=2512, 903.375pt x
  584.1825pt>
 File: imagenes/Implementacion/HMI/12_Interfaz_Trayectoria3.jpg Graphic file (ty
 pe jpg)
@@ -3410,7 +3409,7 @@ pe jpg)
 Package pdftex.def Info: imagenes/Implementacion/HMI/12_Interfaz_Trayectoria3.j
 pg  used on input line 800.
 (pdftex.def)             Requested size: 225.8432pt x 146.04526pt.
-<imagenes/Implementacion/HMI/13_Interfaz_Mensajes.jpg, id=2511, 903.375pt x 584
+<imagenes/Implementacion/HMI/13_Interfaz_Mensajes.jpg, id=2515, 903.375pt x 584
 .1825pt>
 File: imagenes/Implementacion/HMI/13_Interfaz_Mensajes.jpg Graphic file (type j
 pg)
@@ -3425,7 +3424,7 @@ LaTeX Info: Redefining \. on input line 815.
 LaTeX Info: Redefining \% on input line 815.
  [142 <./imagenes/Implementacion/HMI/11_Interfaz_Trayectoria2.jpg> <./imagenes/
 Implementacion/HMI/12_Interfaz_Trayectoria3.jpg>]
-<imagenes/Implementacion/HMI/14_Interfaz_Mensajes.jpg, id=2516, 903.375pt x 584
+<imagenes/Implementacion/HMI/14_Interfaz_Mensajes.jpg, id=2520, 903.375pt x 584
 .1825pt>
 File: imagenes/Implementacion/HMI/14_Interfaz_Mensajes.jpg Graphic file (type j
 pg)
@@ -3433,7 +3432,7 @@ pg)
 Package pdftex.def Info: imagenes/Implementacion/HMI/14_Interfaz_Mensajes.jpg  
 used on input line 820.
 (pdftex.def)             Requested size: 225.8432pt x 146.04526pt.
-<imagenes/Implementacion/HMI/15_Interfaz_Graficar.jpg, id=2518, 903.375pt x 584
+<imagenes/Implementacion/HMI/15_Interfaz_Graficar.jpg, id=2522, 903.375pt x 584
 .1825pt>
 File: imagenes/Implementacion/HMI/15_Interfaz_Graficar.jpg Graphic file (type j
 pg)
@@ -3452,7 +3451,7 @@ ementacion/HMI/14_Interfaz_Mensajes.jpg>]
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 840.
 
-<imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg, id=2524, 1449.1
+<imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg, id=2528, 1449.1
 6406pt x 1233.10687pt>
 File: imagenes/Implementacion/Especificaciones/01_rosgraph_node.jpg Graphic fil
 e (type jpg)
@@ -3673,7 +3672,7 @@ LaTeX Info: Redefining \% on input line 71.
 \openout2 = `apendices/apendice1.aux'.
 
  (./apendices/apendice1.tex
-<imagenes/Apendice/01_Nodos_A.jpg, id=2614, 667.74469pt x 629.35126pt>
+<imagenes/Apendice/01_Nodos_A.jpg, id=2618, 667.74469pt x 629.35126pt>
 File: imagenes/Apendice/01_Nodos_A.jpg Graphic file (type jpg)
 <use imagenes/Apendice/01_Nodos_A.jpg>
 Package pdftex.def Info: imagenes/Apendice/01_Nodos_A.jpg  used on input line 5
@@ -3685,7 +3684,7 @@ has been already used, duplicate ignored
                    \relax 
 l.6 ...tion{Configuración de nodos en ROS parte A}
                                                   
-<imagenes/Apendice/02_Nodos_B.jpg, id=2615, 663.22781pt x 630.85687pt>
+<imagenes/Apendice/02_Nodos_B.jpg, id=2619, 663.22781pt x 630.85687pt>
 File: imagenes/Apendice/02_Nodos_B.jpg Graphic file (type jpg)
 <use imagenes/Apendice/02_Nodos_B.jpg>
 Package pdftex.def Info: imagenes/Apendice/02_Nodos_B.jpg  used on input line 1
@@ -3703,7 +3702,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./imagenes/Apendice/01_Nodos_A.jpg>]
-<imagenes/Apendice/03_Nodos_C.jpg, id=2621, 664.73344pt x 655.69969pt>
+<imagenes/Apendice/03_Nodos_C.jpg, id=2625, 664.73344pt x 655.69969pt>
 File: imagenes/Apendice/03_Nodos_C.jpg Graphic file (type jpg)
 <use imagenes/Apendice/03_Nodos_C.jpg>
 Package pdftex.def Info: imagenes/Apendice/03_Nodos_C.jpg  used on input line 1
@@ -3720,7 +3719,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
  [164 <./imagenes/Apendice/02_Nodos_B.jpg>]
-<imagenes/Apendice/04_Nodos_D.jpg, id=2626, 603.0028pt x 649.67719pt>
+<imagenes/Apendice/04_Nodos_D.jpg, id=2630, 603.0028pt x 649.67719pt>
 File: imagenes/Apendice/04_Nodos_D.jpg Graphic file (type jpg)
 <use imagenes/Apendice/04_Nodos_D.jpg>
 Package pdftex.def Info: imagenes/Apendice/04_Nodos_D.jpg  used on input line 2
@@ -3730,7 +3729,7 @@ Package pdftex.def Info: imagenes/Apendice/04_Nodos_D.jpg  used on input line 2
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [165 <./imagenes/Apendice/03_Nodos_C.jpg>]
-<imagenes/Apendice/05_Nodos_E.jpg, id=2631, 609.02531pt x 657.2053pt>
+<imagenes/Apendice/05_Nodos_E.jpg, id=2635, 609.02531pt x 657.2053pt>
 File: imagenes/Apendice/05_Nodos_E.jpg Graphic file (type jpg)
 <use imagenes/Apendice/05_Nodos_E.jpg>
 Package pdftex.def Info: imagenes/Apendice/05_Nodos_E.jpg  used on input line 3
@@ -3750,50 +3749,60 @@ E.jpg>]
 \openout2 = `apendices/anexo1.aux'.
 
  (./apendices/anexo1.tex
-<imagenes/Anexos/01_Seleccion_Percepcion.jpg, id=2653, 284.56313pt x 396.7322pt
->
+<imagenes/Anexos/01_Seleccion_Percepcion.jpg, id=2657, 540.51938pt x 615.80063p
+t>
 File: imagenes/Anexos/01_Seleccion_Percepcion.jpg Graphic file (type jpg)
 <use imagenes/Anexos/01_Seleccion_Percepcion.jpg>
 Package pdftex.def Info: imagenes/Anexos/01_Seleccion_Percepcion.jpg  used on i
 nput line 6.
-(pdftex.def)             Requested size: 227.6508pt x 317.38617pt.
-<imagenes/Anexos/02_Seleccion_Estructura.jpg, id=2654, 289.83281pt x 397.485pt>
+(pdftex.def)             Requested size: 297.28658pt x 338.69139pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [171
+
+
+]
+Overfull \vbox (17.02055pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+
+[172 <./imagenes/Anexos/01_Seleccion_Percepcion.jpg>]
+<imagenes/Anexos/02_Seleccion_Estructura.jpg, id=2666, 545.03625pt x 573.64313p
+t>
 File: imagenes/Anexos/02_Seleccion_Estructura.jpg Graphic file (type jpg)
 <use imagenes/Anexos/02_Seleccion_Estructura.jpg>
 Package pdftex.def Info: imagenes/Anexos/02_Seleccion_Estructura.jpg  used on i
 nput line 15.
-(pdftex.def)             Requested size: 289.83209pt x 397.48402pt.
- [171
-
-
- <./imagenes/Anexos/01_Seleccion_Percepcion.jpg>]
-<imagenes/Anexos/03_Seleccion_Procesamiento.jpg, id=2659, 274.77657pt x 386.945
-62pt>
+(pdftex.def)             Requested size: 381.52278pt x 401.54745pt.
+<imagenes/Anexos/03_Seleccion_Procesamiento.jpg, id=2667, 541.27219pt x 572.890
+32pt>
 File: imagenes/Anexos/03_Seleccion_Procesamiento.jpg Graphic file (type jpg)
 <use imagenes/Anexos/03_Seleccion_Procesamiento.jpg>
 Package pdftex.def Info: imagenes/Anexos/03_Seleccion_Procesamiento.jpg  used o
 n input line 24.
-(pdftex.def)             Requested size: 274.77588pt x 386.94467pt.
+(pdftex.def)             Requested size: 378.88794pt x 401.0205pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
- [172 <./imagenes/Anexos/02_Seleccion_Estructura.jpg>]
-<imagenes/Anexos/04_Seleccion_Motores.jpg, id=2664, 311.66437pt x 386.94562pt>
+ [173 <./imagenes/Anexos/02_Seleccion_Estructura.jpg>]
+<imagenes/Anexos/04_Seleccion_Motores.jpg, id=2672, 542.77782pt x 615.80063pt>
 File: imagenes/Anexos/04_Seleccion_Motores.jpg Graphic file (type jpg)
 <use imagenes/Anexos/04_Seleccion_Motores.jpg>
 Package pdftex.def Info: imagenes/Anexos/04_Seleccion_Motores.jpg  used on inpu
 t line 33.
-(pdftex.def)             Requested size: 311.6636pt x 386.94467pt.
+(pdftex.def)             Requested size: 379.94188pt x 431.0575pt.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [173 <./imagenes/Anexos/03_Seleccion_Procesamiento.jpg>]
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
- [174 <./imagenes/Anexos/04_Seleccion_Motores.jpg>] (./Principal.ind)
+ [174 <./imagenes/Anexos/03_Seleccion_Procesamiento.jpg>] [175 <./imagenes/Anex
+os/04_Seleccion_Motores.jpg>] [176
+
+
+] (./Principal.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./Principal.aux
@@ -3810,7 +3819,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: 8D5518C00DFB9B40EBF6C0EECA974D8B;11696.
+(rerunfilecheck)             Checksum: B75D4CBA918F688131E9E62BBB510E70;11766.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3840,10 +3849,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12170 strings out of 492609
- 199494 string characters out of 6132833
- 317196 words of memory out of 5000000
- 14895 multiletter control sequences out of 15000+600000
+ 12174 strings out of 492609
+ 199553 string characters out of 6132833
+ 317202 words of memory out of 5000000
+ 14896 multiletter control sequences out of 15000+600000
  15894 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,45p,1455b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3868,10 +3877,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (222 pages, 13984242 bytes).
+Output written on Principal.pdf (224 pages, 14128286 bytes).
 PDF statistics:
- 2900 PDF objects out of 2984 (max. 8388607)
- 2451 compressed objects within 25 object streams
- 697 named destinations out of 1000 (max. 500000)
- 1893 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2913 PDF objects out of 2984 (max. 8388607)
+ 2462 compressed objects within 25 object streams
+ 700 named destinations out of 1000 (max. 500000)
+ 1901 words of extra memory for PDF output out of 10000 (max. 10000000)
 
