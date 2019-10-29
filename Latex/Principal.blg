@@ -15,28 +15,29 @@ A level-1 auxiliary file: capitulos/Conclusiones.aux
 The style file: apalike.bst
 A level-1 auxiliary file: apendices/apendice1.aux
 A level-1 auxiliary file: apendices/anexo1.aux
+A level-1 auxiliary file: apendices/anexo2.aux
 Database file #1: xbiblioteca.bib
 You've used 44 entries,
             1935 wiz_defined-function locations,
-            703 strings with 10265 characters,
+            703 strings with 10133 characters,
 and the built_in function-call counts, 13555 in all, are:
 = -- 1353
 > -- 480
 < -- 37
-+ -- 161
++ -- 162
 - -- 150
 * -- 925
-:= -- 2480
+:= -- 2479
 add.period$ -- 135
 call.type$ -- 44
 change.case$ -- 278
-chr.to.int$ -- 39
+chr.to.int$ -- 38
 cite$ -- 44
 duplicate$ -- 601
 empty$ -- 894
 format.name$ -- 208
 if$ -- 2616
-int.to.chr$ -- 6
+int.to.chr$ -- 7
 int.to.str$ -- 0
 missing$ -- 21
 newline$ -- 226

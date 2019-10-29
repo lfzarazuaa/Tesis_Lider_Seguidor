@@ -93,45 +93,45 @@
 \contentsline {section}{\numberline {3.1}Implementaci\'on del \'Area Funcional Estructura}{95}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Recomendaciones a considerar}{95}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}Armado de los robots m\'oviles}{96}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Resultados del proceso de armado}{102}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Verificaci\'on de ensamble del sistema}{105}{subsection.3.1.4}% 
-\contentsline {section}{\numberline {3.2}Implementaci\'on del \'Area Funcional Movimiento}{105}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Implementaci\'on del \'Area Funcional Percepci\'on}{106}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Sensor LIDAR}{106}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Sensores del motor DYNAMIXEL}{110}{subsection.3.3.2}% 
-\contentsline {section}{\numberline {3.4}Implementaci\'on del \'Area Funcional Alimentaci\'on}{112}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Implementaci\'on del \'Area Funcional Procesamiento}{113}{section.3.5}% 
-\contentsline {subsection}{\numberline {3.5.1}Pasos previos}{113}{subsection.3.5.1}% 
-\contentsline {subsection}{\numberline {3.5.2}Comunicaci\'on}{116}{subsection.3.5.2}% 
-\contentsline {subsection}{\numberline {3.5.3}Prueba A: Verificaci\'on de la matriz de fuerza}{119}{subsection.3.5.3}% 
-\contentsline {subsubsection}{\numberline {3.5.3.1}An\'alisis de resultados}{121}{subsubsection.3.5.3.1}% 
-\contentsline {subsection}{\numberline {3.5.4}Prueba B: Validar el seguimiento de trayectoria}{121}{subsection.3.5.4}% 
-\contentsline {subsubsection}{\numberline {3.5.4.1}An\'alisis de resultados}{123}{subsubsection.3.5.4.1}% 
-\contentsline {subsection}{\numberline {3.5.5}Prueba C: Validar el algoritmo L\IeC {\'\i }der-Seguidor}{123}{subsection.3.5.5}% 
-\contentsline {subsubsection}{\numberline {3.5.5.1}An\'alisis de resultados}{124}{subsubsection.3.5.5.1}% 
-\contentsline {subsection}{\numberline {3.5.6}Prueba D:Validar la evasi\'on de obst\'aculos}{125}{subsection.3.5.6}% 
-\contentsline {subsubsection}{\numberline {3.5.6.1}Validaci\'on de seguimiento y evasi\'on}{129}{subsubsection.3.5.6.1}% 
-\contentsline {subsubsection}{\numberline {3.5.6.2}An\'alisis de resultados}{130}{subsubsection.3.5.6.2}% 
-\contentsline {subsection}{\numberline {3.5.7}Prueba E: Validar la integraci\'on de evasi\'on y seguimiento}{130}{subsection.3.5.7}% 
-\contentsline {subsubsection}{\numberline {3.5.7.1}An\'alisis de resultados}{131}{subsubsection.3.5.7.1}% 
-\contentsline {subsection}{\numberline {3.5.8}Realizaci\'on de la HMI}{131}{subsection.3.5.8}% 
-\contentsline {subsubsection}{\numberline {3.5.8.1}Programa Principal}{136}{subsubsection.3.5.8.1}% 
-\contentsline {subsubsection}{\numberline {3.5.8.2}Ventana Gr\'afica}{137}{subsubsection.3.5.8.2}% 
-\contentsline {subsubsection}{\numberline {3.5.8.3}Programa de ROS}{137}{subsubsection.3.5.8.3}% 
-\contentsline {subsubsection}{\numberline {3.5.8.4}Framework de Trabajo}{138}{subsubsection.3.5.8.4}% 
-\contentsline {subsubsection}{\numberline {3.5.8.5}Puntos importantes a considerar}{139}{subsubsection.3.5.8.5}% 
-\contentsline {subsubsection}{\numberline {3.5.8.6}Modificaci\'on del Programa}{139}{subsubsection.3.5.8.6}% 
-\contentsline {subsubsection}{\numberline {3.5.8.7}Resultados de la ejecuci\'on}{140}{subsubsection.3.5.8.7}% 
-\contentsline {section}{\numberline {3.6}Especificaciones del Sistema}{144}{section.3.6}% 
-\contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{144}{subsubsection.3.6.0.1}% 
-\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentaci\'on}{144}{subsubsection.3.6.0.2}% 
-\contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{144}{subsubsection.3.6.0.3}% 
-\contentsline {chapter}{\numberline {4}An\'alisis de Costo}{147}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Costos variables}{147}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Costos fijos}{148}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Costo total}{150}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Conclusiones}{151}{chapter.5}% 
-\contentsline {part}{Ap\'endices}{161}{part.1}% 
-\contentsline {chapter}{Ap\'endice 1}{163}{chapter*.7}% 
-\contentsline {part}{Anexos}{169}{part.2}% 
-\contentsline {chapter}{Anexo 1. Criterios de selecci\'on en \'Areas funcionales}{171}{chapter*.8}% 
+\contentsline {subsection}{\numberline {3.1.3}Resultados del proceso de armado}{101}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Verificaci\'on de ensamble del sistema}{103}{subsection.3.1.4}% 
+\contentsline {section}{\numberline {3.2}Implementaci\'on del \'Area Funcional Movimiento}{103}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Implementaci\'on del \'Area Funcional Percepci\'on}{104}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Sensor LIDAR}{104}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Sensores del motor DYNAMIXEL}{108}{subsection.3.3.2}% 
+\contentsline {section}{\numberline {3.4}Implementaci\'on del \'Area Funcional Alimentaci\'on}{110}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Implementaci\'on del \'Area Funcional Procesamiento}{110}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Pasos previos}{110}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Comunicaci\'on}{112}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.3}Prueba A: Verificaci\'on de la matriz de fuerza}{116}{subsection.3.5.3}% 
+\contentsline {subsubsection}{\numberline {3.5.3.1}An\'alisis de resultados}{118}{subsubsection.3.5.3.1}% 
+\contentsline {subsection}{\numberline {3.5.4}Prueba B: Validar el seguimiento de trayectoria}{118}{subsection.3.5.4}% 
+\contentsline {subsubsection}{\numberline {3.5.4.1}An\'alisis de resultados}{120}{subsubsection.3.5.4.1}% 
+\contentsline {subsection}{\numberline {3.5.5}Prueba C: Validar el algoritmo L\IeC {\'\i }der-Seguidor}{120}{subsection.3.5.5}% 
+\contentsline {subsubsection}{\numberline {3.5.5.1}An\'alisis de resultados}{121}{subsubsection.3.5.5.1}% 
+\contentsline {subsection}{\numberline {3.5.6}Prueba D: Validar la evasi\'on de obst\'aculos}{121}{subsection.3.5.6}% 
+\contentsline {subsubsection}{\numberline {3.5.6.1}Validaci\'on de seguimiento y evasi\'on}{126}{subsubsection.3.5.6.1}% 
+\contentsline {subsection}{\numberline {3.5.7}Prueba E: Validar la integraci\'on de evasi\'on y seguimiento}{127}{subsection.3.5.7}% 
+\contentsline {subsubsection}{\numberline {3.5.7.1}An\'alisis de resultados}{128}{subsubsection.3.5.7.1}% 
+\contentsline {subsection}{\numberline {3.5.8}Realizaci\'on de la HMI}{128}{subsection.3.5.8}% 
+\contentsline {subsubsection}{\numberline {3.5.8.1}Programa Principal}{133}{subsubsection.3.5.8.1}% 
+\contentsline {subsubsection}{\numberline {3.5.8.2}Ventana Gr\'afica}{133}{subsubsection.3.5.8.2}% 
+\contentsline {subsubsection}{\numberline {3.5.8.3}Programa de ROS}{134}{subsubsection.3.5.8.3}% 
+\contentsline {subsubsection}{\numberline {3.5.8.4}Framework de Trabajo}{134}{subsubsection.3.5.8.4}% 
+\contentsline {subsubsection}{\numberline {3.5.8.5}Puntos importantes a considerar}{135}{subsubsection.3.5.8.5}% 
+\contentsline {subsubsection}{\numberline {3.5.8.6}Modificaci\'on del Programa}{136}{subsubsection.3.5.8.6}% 
+\contentsline {subsubsection}{\numberline {3.5.8.7}Resultados de la ejecuci\'on}{136}{subsubsection.3.5.8.7}% 
+\contentsline {section}{\numberline {3.6}Especificaciones del Sistema}{140}{section.3.6}% 
+\contentsline {subsubsection}{\numberline {3.6.0.1}Especificaciones del \'Area de Trabajo}{140}{subsubsection.3.6.0.1}% 
+\contentsline {subsubsection}{\numberline {3.6.0.2}Especificaciones de la Alimentaci\'on}{140}{subsubsection.3.6.0.2}% 
+\contentsline {subsubsection}{\numberline {3.6.0.3}Especificaciones del Procesamiento}{140}{subsubsection.3.6.0.3}% 
+\contentsline {chapter}{\numberline {4}An\'alisis de Costo}{143}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Costos variables}{143}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Costos fijos}{144}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Costo total}{146}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Conclusiones}{147}{chapter.5}% 
+\contentsline {part}{Ap\'endices}{157}{part.1}% 
+\contentsline {chapter}{Ap\'endice 1. Nodos en ROS}{159}{chapter*.7}% 
+\contentsline {part}{Anexos}{165}{part.2}% 
+\contentsline {chapter}{Anexo 1. Programas Usados}{167}{chapter*.8}% 
+\contentsline {chapter}{Anexo 2. Criterios de selecci\'on en \'Areas funcionales}{169}{chapter*.9}% 

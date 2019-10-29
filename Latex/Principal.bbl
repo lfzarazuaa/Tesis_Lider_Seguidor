@@ -10,12 +10,6 @@ Alvaro, G. (2013).
 \newblock Ros: Robot operating system.
 \newblock {\em Universidad Polit\'ecnica de Cartagena}.
 
-\bibitem[AutoModelCar, 2016]{e-Manual-specifications}
-AutoModelCar (2016).
-\newblock {\em Robotis e-Manual}.
-\newblock
-  http://emanual.robotis.com/docs/en/platform/turtlebot3/specifications/hardware-specifications.
-
 \bibitem[Berlin, 2018]{AutoModelCar}
 Berlin, F.~U. (2018).
 \newblock {\em Automodel Car}.
@@ -157,7 +151,7 @@ Ro-Botica (2018).
 \bibitem[Robotis, 2016a]{e-Manual-Features}
 Robotis (2016a).
 \newblock {\em e-Manual Features}.
-\newblock http://emanual.robotis.com/docs/en/platform/turtlebot3/features/.
+\newblock http://emanual.robotis.com.
 
 \bibitem[Robotis, 2016b]{e-Manual-structure}
 Robotis (2016b).
@@ -177,6 +171,11 @@ Robotis (2016d).
 \newblock Raspberry pi 3 model b.
 \newblock https://www.raspberrypi.org/products/raspberry-pi-3-model-b/.
 
+\bibitem[Robotis, 2016e]{e-Manual-specifications}
+Robotis (2016e).
+\newblock {\em Robotis e-Manual}.
+\newblock http://emanual.robotis.com.
+
 \bibitem[Robotis, 2018a]{LIPO-Battery}
 Robotis (2018a).
 \newblock {\em LIPO Battery 11.1V}.
@@ -186,7 +185,7 @@ Robotis (2018a).
 \bibitem[Robotis, 2018b]{opencr}
 Robotis (2018b).
 \newblock Opencr.
-\newblock http://emanual.robotis.com/docs/en/parts/controller/opencr10/.
+\newblock http://emanual.robotis.com/docs/en/parts.
 
 \bibitem[ROS, 2014a]{catkin_make}
 ROS (2014a).

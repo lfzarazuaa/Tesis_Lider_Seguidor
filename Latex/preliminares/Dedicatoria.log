@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  25 OCT 2019 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  28 OCT 2019 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,6 +1102,11 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
+[]
+ []
+
 Missing character: There is no E in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1250,7 +1255,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ... encuentres valioso el conocimiento aquí re
+l.10 ...encuentres valioso el conocimiento aquí re
                                                   flejado muchas bendiciones.
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1283,25 +1288,16 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no D in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--11
+[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--12
+[] 
+ []
+
 
 ! Package inputenc Error: Invalid UTF-8 byte "FA.
 
@@ -1309,18 +1305,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 Dichoso aquel a quien tú
-                             , SEÑOR, corriges; aquel a quien instruyes en t...
-
+l.13 ...n, mientras al impío se le cava una fosa.}
+                                                  
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no , in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no E in font nullfont!
 
 ! Package inputenc Error: Invalid UTF-8 byte sequence.
 
@@ -1328,82 +1320,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 Dichoso aquel a quien tú, SEÑO
-                                   R, corriges; aquel a quien instruyes en t...
-
+l.13 ...n, mientras al impío se le cava una fosa.}
+                                                  
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no R in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no d in font nullfont!
 
 ! Package inputenc Error: Invalid UTF-8 byte sequence.
 
@@ -1411,24 +1335,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ... ley, para que enfrente tranquilo los días
-                                                   de aflicción, mientras al...
-
+l.13 ...n, mientras al impío se le cava una fosa.}
+                                                  
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
 
 ! Package inputenc Error: Invalid UTF-8 byte sequence.
 
@@ -1436,27 +1350,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...nfrente tranquilo los días de aflicción, m
-                                                  ientras al impío se le cav...
-
+l.13 ...n, mientras al impío se le cava una fosa.}
+                                                  
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
 
 ! Package inputenc Error: Invalid UTF-8 byte sequence.
 
@@ -1464,29 +1365,204 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...los días de aflicción, mientras al impío s
-                                                  e le cava una fosa.
+l.13 ...n, mientras al impío se le cava una fosa.}
+                                                  
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no . in font nullfont!
+
+Overfull \hbox (30.6665pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 Salmos
+ []
+
+
+Overfull \hbox (27.08873pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 94:12-
+ []
+
+
+Overfull \hbox (10.22217pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 13
+ []
+
+
+Overfull \hbox (14.19434pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 Di-
+ []
+
+
+Overfull \hbox (24.02208pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 choso
+ []
+
+
+Overfull \hbox (22.23318pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 aquel
+ []
+
+
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 a
+ []
+
+
+Overfull \hbox (23.2554pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 quien
+ []
+
+
+Overfull \hbox (6.38884pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 t,
+ []
+
+
+Overfull \hbox (22.76654pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 SER,
+ []
+
+
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 cor-
+ []
+
+
+Overfull \hbox (23.63872pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 riges;
+ []
+
+
+Overfull \hbox (22.23318pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 aquel
+ []
+
+
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 a
+ []
+
+
+Overfull \hbox (23.2554pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 quien
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 in-
+ []
+
+
+Overfull \hbox (30.53867pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 struyes
+ []
+
+
+Overfull \hbox (10.22215pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 en
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 tu
+ []
+
+
+Overfull \hbox (15.07767pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 ley,
+ []
+
+
+Overfull \hbox (18.52763pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 para
+ []
+
+
+Overfull \hbox (14.56656pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 que
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 en-
+ []
+
+
+Overfull \hbox (24.91646pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 frente
+ []
+
+
+Overfull \hbox (21.33871pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 tran-
+ []
+
+
+Overfull \hbox (20.69987pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 quilo
+ []
+
+
+Overfull \hbox (11.7555pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 los
+ []
+
+
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 d
+ []
+
+
+Overfull \hbox (9.71104pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 de
+ []
+
+
+Overfull \hbox (29.38866pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 aflicci-
+ []
+
+
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 ien-
+ []
+
+
+Overfull \hbox (16.22765pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 tras
+ []
+
+
+Overfull \hbox (7.66663pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 al
+ []
+
+
+Overfull \hbox (20.95543pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 impe
+ []
+
+
+Overfull \hbox (7.1555pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 le
+ []
+
+
+Overfull \hbox (18.91096pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 cava
+ []
+
+
+Overfull \hbox (16.09991pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 una
+ []
+
+
+Overfull \hbox (20.44434pt too wide) in paragraph at lines 13--14
+ \OT1/cmr/m/it/10 fosa.
+ []
+
 )
 ! Emergency stop.
 <*> Dedicatoria.tex
@@ -1497,9 +1573,9 @@ Missing character: There is no . in font nullfont!
 Here is how much of TeX's memory you used:
  33 strings out of 492609
  330 string characters out of 6132833
- 58247 words of memory out of 5000000
+ 59247 words of memory out of 5000000
  4053 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 13i,1n,10p,820b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 13i,1n,10p,820b,112s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
