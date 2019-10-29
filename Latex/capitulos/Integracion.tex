@@ -59,7 +59,7 @@ En la \textit{caja 3} como se muestra en la \textit{Figura \ref{fig:Figura_Caja_
 	\label{fig:Figura_Caja_4}
 \end{figure}
 
-Además de estas cuatro cajas, hay una caja mas, no numerada donde viene la fuente de voltaje para el cargador con su respectivo cable.
+Además de estas cuatro cajas, hay una caja más, no numerada donde viene la fuente de voltaje para el cargador con su respectivo cable.
 
 \begin{figure}[H]
 	\centering
@@ -85,7 +85,7 @@ La primera parte del armado consiste en unir cada uno de los pisos con ayuda de 
 	\label{fig:Figura_Wafles_Ensamblados}
 \end{figure}
 
-Caber mencionar que a pesar que en el instructivo de armado viene paso por paso, como van las piezas y cada una de las tapas, muchas veces este no es tan claro, aunado a que todas las partes del robot son muy parecidas, dando lugar a piezas mal colocadas y por ende mal ensambladas a la hora de unir cada uno de los pisos.
+Caber mencionar que a pesar de que en el instructivo de armado viene paso por paso, como van las piezas y cada una de las tapas, muchas veces este no es tan claro, aunado a que todas las partes del robot son muy parecidas, dando lugar a piezas mal colocadas y por ende mal ensambladas a la hora de unir cada uno de los pisos.
 
 %%Ensamble del robot.
 \begin{figure}[H]
@@ -97,7 +97,7 @@ Caber mencionar que a pesar que en el instructivo de armado viene paso por paso,
 
 \subsection{Resultados del proceso de armado}
 
-En las \textit{Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura_Piso_3}} y \textit{\ref{fig:Figura_Ensamble_Final}} se puede observar como se ven cada uno del los pisos del TurtleBot3 burger, así como también el orden en el que son ensamblados.
+En las \textit{Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fig:Figura_Piso_3}} y \textit{\ref{fig:Figura_Ensamble_Final}} se puede observar la manera en que se ven cada uno de los pisos del TurtleBot3 burger, así como también el orden en el que son ensamblados.
 
 \begin{figure}[H]
 	\centering
@@ -128,7 +128,7 @@ En las \textit{Figuras \ref{fig:Figura_Piso_1}, \ref{fig:Figura_Piso_2}, \ref{fi
 	\label{fig:Figura_Ensamble_Final}
 \end{figure}
 
-El armado de cada robot representa un trabajo muy minucioso, ya que cada tornillo y tuerca tienen que estar en el lugar adecuado, cada piso y componente bien encajados y posicionados, dificultándose porque algunas piezas son de ensamble múltiple por lo que si se mueve una, se tiene que reiniciar el proceso de ensamblaje. El proceso de ensamblaje duró aproximadamente 5 horas de trabajo continuo para cada TurtleBot3.
+El armado de cada robot representa un trabajo muy minucioso, ya que cada tornillo y tuerca tienen que estar en el lugar adecuado, cada piso y componente bien encajados y posicionados, dificultándose porque algunas piezas son de ensamble múltiple por lo que, si se mueve una, se tiene que reiniciar el proceso de ensamblaje. El proceso de ensamblaje duró aproximadamente 5 horas de trabajo continuo para cada TurtleBot3.
 
 %%Robots Líder ? Seguidor.
 \begin{figure}[H]
@@ -144,7 +144,7 @@ Una vez que el robot estuvo armado, se verificó que todo estuviera bien conectad
 
 \section{Implementación del Área Funcional Movimiento}
 
-Esta área funcional es la encargada de la unión de la estructura junto con su configuración mecánica. En la implementación se utilizan 2 actuadores Dynamixel por cada robot, conectados a una tarjeta OpenCR denominada tarjeta de control. Para ajustar el controlador PID encargado de mantener estable las velocidades de los robots, no es necesario realizar un calculo de valores, ya que los motores cuentan con la opción de \textit{autotune} que permite de forma automática, obtener los valores del controlador PID necesarios para lograr un control de velocidad y estos ya están previamente configurados, con un valor \textbf{P} de 1.1, \textbf{D} de 0.03 e \textbf{I} de 0.11. 
+Esta área funcional es la encargada de la unión de la estructura junto con su configuración mecánica. En la implementación se utilizan 2 actuadores Dynamixel por cada robot, conectados a una tarjeta OpenCR denominada tarjeta de control. Para ajustar el controlador PID encargado de mantener estable las velocidades de los robots, no es necesario realizar un cálculo de valores, ya que los motores cuentan con la opción de \textit{autotune} que permite de forma automática, obtener los valores del controlador PID necesarios para lograr un control de velocidad y estos ya están previamente configurados, con un valor \textbf{P} de 1.1, \textbf{D} de 0.03 e \textbf{I} de 0.11. 
 
 En la \textit{Figura \ref{fig:Figura_Area movimientos}} se muestra el ensamble mínimo para poder verificar el área funcional de movimiento usando los botones de la tarjeta OpenCR para controlar el movimiento del móvil.
 
@@ -248,7 +248,7 @@ Para la implementación de este sensor se colocan los 2 motores en la estructura 
 	\label{fig:Figura_Ensamble_motores_OpenCR}
 \end{figure}
 
-Una vez ensamblada esa capa, se procede a verificar el funcionamiento de los motores así como el funcionamiento de los enconders por medio del programa base que se carga a la OpenCR. Este programa hace dos pruebas con los motores; una para lograr un desplazamiento lineal y otra para lograr un desplazamiento angular (giro de 180° conforme al centro del robot) en la posición del robot.
+Una vez ensamblada esa capa, se procede a verificar el funcionamiento de los motores, así como el funcionamiento de los enconders por medio del programa base que se carga a la OpenCR. Este programa hace dos pruebas con los motores; una para lograr un desplazamiento lineal y otra para lograr un desplazamiento angular (giro de 180° conforme al centro del robot) en la posición del robot.
 
 %%Ilustración 7: Localización de los botones de prueba en la tarjeta OpenCR
 \begin{figure}[H]
@@ -258,7 +258,7 @@ Una vez ensamblada esa capa, se procede a verificar el funcionamiento de los mot
 	\label{fig:Figura_Botones_OpenCR}
 \end{figure}
 
-El proceso de verificación del correcto funcionamiento de los encoders y el giro de los motores es el siguiente :
+El proceso de verificación del correcto funcionamiento de los encoders y el giro de los motores es el siguiente:
 
 \begin{itemize}
 	\item Revisar que todos los elementos estén ensamblados al menos hasta la capa 2.
@@ -296,7 +296,7 @@ En la computadora remota se debe instalar \textit{Ubuntu 16.04}. Hay muchos tuto
 
 Para la Raspberry Pi 3 existen dos sistemas operativos compatibles con ROS; \textit{Raspbian} y \textit{UbuntuMate}. Para el desarrollo del proyecto se ha optado por elegir Raspbian, ya que la forma de configurar el SSH está bien establecida en la documentación oficial de la Raspberry Pi \cite{ssh}, y además de que se proporciona una versión de Raspbian con ROS ya instalada en el mismo manual online, lo cual reduce en aproximadamente 2 horas el tiempo de instalación por cada tarjeta.\\
 
-Para la OpenCR de igual manera existen dos formas de configurarla, la primer manera es por medio de la computadora remota, siendo más útil cuando se está ensamblando el robot por primera vez. La segunda manera es directamente desde la Raspberry Pi 3, siendo más sugerible esta opción cuando ya se tiene ensamblado el TurtleBot3, puesto que no se tiene que desconectar, ni desarmar ninguno de los pisos para poder llevar a cabo este proceso en la Raspberry Pi 3, basta con solo ejecutar el siguiente comando para que comience la descarga e instalación del programa.\\
+Para la OpenCR de igual manera existen dos formas de configurarla, la primera manera es por medio de la computadora remota, siendo más útil cuando se está ensamblando el robot por primera vez. La segunda manera es directamente desde la Raspberry Pi 3, siendo más sugerible esta opción cuando ya se tiene ensamblado el TurtleBot3, puesto que no se tiene que desconectar, ni desarmar ninguno de los pisos para poder llevar a cabo este proceso en la Raspberry Pi 3, basta con solo ejecutar el siguiente comando para que comience la descarga e instalación del programa.\\
 
 https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1
 /latest/opencr\_update.tar.bz2\&\& tar -xvf opencr\_update.tar.bz2
@@ -377,7 +377,7 @@ Una vez establecida la comunicación, se procede a realizar pruebas para determin
 	\label{fig:Figura_Comando_ping}
 \end{figure}
 
-Como se apreciar en la \textit{Figura \ref{fig:Figura_Comando_ping}}, la comunicación fue establecida correctamente, ya que se recibieron todos los paquetes apropiadamente. Finalmente se prueba la comunicación de algunos tópicos simples para verificar que la configuración entre la red y ROS sea correcta, para ello se inicializa por medio de la computadora remota un TurtleBot3, además, con apoyo de la herramienta rqt se puede visualizar el valor actual de algunos tópicos como por ejemplo, el estado de la batería mostrado en la \textit{Figura \ref{fig:Figura_RQt_topico_bateria}}.
+Como se apreciar en la \textit{Figura \ref{fig:Figura_Comando_ping}}, la comunicación fue establecida correctamente, ya que se recibieron todos los paquetes apropiadamente. Finalmente se prueba la comunicación de algunos tópicos simples para verificar que la configuración entre la red y ROS sea correcta, para ello se inicializa por medio de la computadora remota un TurtleBot3, además, con apoyo de la herramienta Rqt se puede visualizar el valor actual de algunos tópicos como por ejemplo, el estado de la batería mostrado en la \textit{Figura \ref{fig:Figura_RQt_topico_bateria}}.
 
 %Ilustración 6: RQt mostrando los datos del tópico battery.
 \begin{figure}[H]
@@ -388,7 +388,7 @@ Como se apreciar en la \textit{Figura \ref{fig:Figura_Comando_ping}}, la comunic
 \end{figure}
 
 Todos los algoritmos de control son programados en el lenguaje de programación Python, siguiendo la lógica que fue propuesta en los diagramas de flujo posteriormente analizados. Los programas son almacenados en un mismo paquete llamado \textit{esquema\_lider\_seguidor}, con el objetivo de mantener en orden la información.
-Para manejar la información de manera independiente, es necesario agrupar todos los tópicos por namespaces  propios de cada robot, debido a que en un principio cada robot posee tópicos con el mismo nombre y en caso de no usarse los namespace para diferenciar a los tópicos,  resultaría muy complejo controlar los robots de forma individual, ya que no se podría distinguir si la información es enviada al líder o es enviada al seguidor.
+Para manejar la información de manera independiente, es necesario agrupar todos los tópicos por namespaces propios de cada robot, debido a que en un principio cada robot posee tópicos con el mismo nombre y en caso de no usarse los namespace para diferenciar a los tópicos,  resultaría muy complejo controlar los robots de forma individual, ya que no se podría distinguir si la información es enviada al líder o es enviada al seguidor.
 
 \subsection{Prueba A: Verificación de la matriz de fuerza}
 
@@ -504,9 +504,9 @@ Se toman nuevamente los datos de posición, en este caso las del seguidor \textit
 
 \subsection{Prueba D: Validar la evasión de obstáculos}
 
-El algoritmo para la evasión de obstáculos se volvió la parte más compleja durante la implementación, debido a que al haber reducido el área de trabajo propuesta en dimensiones por cuestiones de espacio en el área de trabajo real, los robots no lograba esquivar los objetos de manera correcta. El problema radicó en que todas las paredes del espacio de trabajo, eran leídas como obstáculos y no se lograba establecer un camino adecuado para la evasión. Para solucionar esta problemática se creó un nodo adicional, encargado de calcular una distancia mínima para ciertos ángulos del robot, informándole al nodo principal si se debía leer o no el Histograma, para posteriormente aplicar el algoritmo Vector Field Histogram (VFH). \\
+El algoritmo para la evasión de obstáculos se volvió la parte más compleja durante la implementación, debido a que, al haber reducido el área de trabajo propuesta en dimensiones por cuestiones de espacio en el área de trabajo real, los robots no lograba esquivar los objetos de manera correcta. El problema radicó en que todas las paredes del espacio de trabajo eran leídas como obstáculos y no se lograba establecer un camino adecuado para la evasión. Para solucionar esta problemática se creó un nodo adicional, encargado de calcular una distancia mínima para ciertos ángulos del robot, informándole al nodo principal si se debía leer o no el Histograma, para posteriormente aplicar el algoritmo Vector Field Histogram (VFH). \\
 
-La forma de verificar el funcionamiento del código es a través de Gazebo, el cual inicializa el nodo y posteriormente corroboraba la información que envia el nodo con las posiciones de los obstáculos.
+La forma de verificar el funcionamiento del código es a través de Gazebo, el cual inicializa el nodo y posteriormente corroboraba la información que envía el nodo con las posiciones de los obstáculos.
 
 %Ilustración 18. Nodo Laser_Distance.
 \begin{figure}[H]
@@ -567,7 +567,7 @@ En el caso de que la distancia sea menor a la propuesta, como se muestra en la \
 %Ilustración 23. Algoritmo de seguimiento de trayectoria parte C.
 
 \subsubsection{Validación de seguimiento y evasión}
-La forma de validar los algoritmos de seguimiento de trayectorias, consiste en una serie de pasos; inicialmente los robots fueron simulados en un ambiente virtual (gazebo), que incluye información sobre el espacio físico y funcional de los TurtleBot3 burger, igualando a las condiciones reales. La inspección a la prueba consiste en observar el comportamiento de los robots en la simulación, dando especial énfasis al seguimiento de la trayectoria, que de no colisionar con ningún obstáculo virtual que pudiera haber en el camino, se confirma que todo ha sido realizado de manera correcta para posteriormente llevar a cabo las pruebas físicas. Durante las pruebas físicas se guardan los datos de posición, que junto con los datos de la trayectoria a seguir, y aplicando un algoritmo basado en un árbol kd se obtiene un error que valida la operación. 
+La forma de validar los algoritmos de seguimiento de trayectorias consiste en una serie de pasos; inicialmente los robots fueron simulados en un ambiente virtual (gazebo), que incluye información sobre el espacio físico y funcional de los TurtleBot3 burger, igualando a las condiciones reales. La inspección a la prueba consiste en observar el comportamiento de los robots en la simulación, dando especial énfasis al seguimiento de la trayectoria, que de no colisionar con ningún obstáculo virtual que pudiera haber en el camino, se confirma que todo ha sido realizado de manera correcta para posteriormente llevar a cabo las pruebas físicas. Durante las pruebas físicas se guardan los datos de posición, que, junto con los datos de la trayectoria a seguir, y aplicando un algoritmo basado en un árbol kd se obtiene un error que valida la operación. 
 
 Finalmente, para validar el algoritmo de evasión de obstáculos se colocan dos obstáculos en la zona de pruebas y se ejecuta el algoritmo de seguimiento de trayectoria, el algoritmo líder-seguidor y el algoritmo evasión. Para cada trayectoria los robots dan 3 recorridos, si falla únicamente una sola vez se considera exitoso.
 
@@ -617,7 +617,7 @@ Dadas estas características, se utiliza el ambiente de trabajo \textit{QtCreator
 	\label{fig:Figura_RQt_Mensajes}
 \end{figure}
 
-Con el objetivo de usar Qt, dada su versatilidad con ROS como herramienta gráfica para mandar ordenes a los robots líder y seguidor, se hacen uso de los siguientes paquetes:
+Con el objetivo de usar Qt, dada su versatilidad con ROS como herramienta gráfica para mandar órdenes a los robots líder y seguidor, se hacen uso de los siguientes paquetes:
 
 \begin{itemize}
 	\item qtcreator
@@ -689,7 +689,7 @@ Posteriormente se le da clic en el botón \textit{``Run CMake"}, compilando el pr
 	\label{fig:Figura_Qt_CMake}
 \end{figure}
 
-Una vez realizado esto exitosamente, se muestra una ventana como la de la \textit{Figura \ref{fig:Figura_Ventana_Proyecto_QT}}. Cabe mencionar que este procedimiento se puede aplicar para cualquier paquete del la carpeta ``catkin\_ws".
+Una vez realizado esto exitosamente, se muestra una ventana como la de la \textit{Figura \ref{fig:Figura_Ventana_Proyecto_QT}}. Cabe mencionar que este procedimiento se puede aplicar para cualquier paquete de la carpeta ``catkin\_ws".
 
 %%Ilustración 7: Ventana en Qt con el paquete qgui.
 \begin{figure}[H]
@@ -703,7 +703,7 @@ La edición del paquete se describe a detalle en la wiki de ROS, sección de ``qt\
 
 \begin{itemize}
 	\item El programa principal del proyecto.
-	\item El programa de la funcionalidad del código del la ventana gráfica.
+	\item El programa de la funcionalidad del código de la ventana gráfica.
 	\item El programa de las funciones para interactuar con ROS.
 	\item El framework para realizar la edición de la HMI gráficamente.
 \end{itemize}
@@ -737,7 +737,7 @@ El framework de trabajo es una herramienta muy útil, ya que se puede editar fáci
 
 \subsubsection{Puntos importantes a considerar}
 
-Como recomendación se propone primero editar la interfaz gráfica sin intentar añadir un slot (método a ejecutar cada que hay un evento en cierto elemento de la interfaz; por ejemplo darle clic a un pushbutton) a los componentes, ya que daña el proyecto al generar código erróneo, posteriormente compilarlo y después con este procedimiento ya aparecerán los nuevos componentes reconocidos automáticamente por el sistema para así realizar una mejor edición del código. En el caso de usar slots para darle funcionalidad a cada componente se recomienda conectarlos manualmente como se muestra en la siguiente instrucción:
+Como recomendación se propone primero editar la interfaz gráfica sin intentar añadir un slot (método a ejecutar cada que hay un evento en cierto elemento de la interfaz; por ejemplo, darle clic a un pushbutton) a los componentes, ya que daña el proyecto al generar código erróneo, posteriormente compilarlo y después con este procedimiento ya aparecerán los nuevos componentes reconocidos automáticamente por el sistema para así realizar una mejor edición del código. En el caso de usar slots para darle funcionalidad a cada componente se recomienda conectarlos manualmente como se muestra en la siguiente instrucción:
 
 \begin{itemize}
 	\item QObject::connect(ui.pushButton\_Graficar, SIGNAL(clicked()),
@@ -748,7 +748,7 @@ Donde \textit{``ui.pushButton\_Graficar"}, es el botón en la interfaz gráfica, \
 
 \subsubsection{Modificación del Programa}
 
-Dado que este paquete ya viene con una funcionalidad predeterminada, se modifica el código base, así como también la interfaz gráfica para ajustarlo a los requerimientos del trabajo, con lo cual siguiendo la lógica del programa descrita anteriormente, se consigue enviar los tópicos necesarios para que se logre la interacción con los robots y la graficación. Los tópicos que se crean para dar dicha funcionalidad son los siguientes:
+Dado que este paquete ya viene con una funcionalidad predeterminada, se modifica el código base, así como también la interfaz gráfica para ajustarlo a los requerimientos del trabajo, con lo cual, siguiendo la lógica del programa descrita anteriormente, se consigue enviar los tópicos necesarios para que se logre la interacción con los robots y la graficación. Los tópicos que se crean para dar dicha funcionalidad son los siguientes:
 
 \begin{itemize}
 	\item lane de tipo std\_msgs::Int32 para seleccionar la trayectoria.
@@ -760,7 +760,7 @@ Dado que este paquete ya viene con una funcionalidad predeterminada, se modifica
 
 \subsubsection{Resultados de la ejecución}
 
-A continuación se muestran los resultados de la ejecución de la interfaz, donde destacan 3 ventanas principales.
+A continuación, se muestran los resultados de la ejecución de la interfaz, donde destacan 3 ventanas principales.
 
 \begin{itemize}
 	\item Ventana para elegir trayectoria y encender o apagar al robot.

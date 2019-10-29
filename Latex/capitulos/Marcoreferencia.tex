@@ -136,7 +136,7 @@ Con estas condiciones se tendrá una magnitud para cada celda $m_{(i,j)}$ que nos
 
 \subsubsection{Segundo nivel: \textit{Histograma polar}}
 
-Una vez obtenido el mapa 2D se procede a simplificar estos datos para obtener un histograma polar como el mostrado en la \textit{Figura \ref{fig:Figura_Ejemplo_Histrograma_Polar}}, dando como primer paso la definición de una resolución arbitraria $\alpha$ de modo que $n=\dfrac{360}{\alpha}$. Posteriormente se definen $k$ sectores que corresponden a un ángulo discreto $\rho$ tal que, $\rho=k\alpha$, dividiendo así en un cúmulo de datos \textit{(histograma polar)} el cual nos indica la distancia más cercana al objetivo para cada determinados grados (por lo general 5). Para cada sector $k$, el histograma polar $h_{k}$ es calculado siguiendo la  \textit{ecuación \ref{histograma polar}}.
+Una vez obtenido el mapa 2D se procede a simplificar estos datos para obtener un histograma polar como el mostrado en la \textit{Figura \ref{fig:Figura_Ejemplo_Histrograma_Polar}}, dando como primer paso la definición de una resolución arbitraria $\alpha$ de modo que $n=\dfrac{360}{\alpha}$. Posteriormente se definen $k$ sectores que corresponden a un ángulo discreto $\rho$ tal que, $\rho=k\alpha$, dividiendo así en un cúmulo de datos \textit{(histograma polar)} el cual nos indica la distancia más cercana al objetivo para cada determinados grados (por lo general 5). Para cada sector $k$, el histograma polar $h_{k}$ es calculado siguiendo la \textit{ecuación \ref{histograma polar}}.
 
 \begin{equation}\label{histograma polar}
 h_{k}=\sum_{i,j}m_{i,j}
@@ -174,7 +174,7 @@ Donde $\mu_{k}$ son valores positivos y el operador $\Delta$ representa la difer
 
 \subsection{Esquemas líder - seguidor}
 
-Dentro de la literatura que trata del control bajo un esquema líder-seguidor, se puede dar uno cuenta que la definición del esquema líder-seguidor no es homogénea y depende de cada autor, ya que son muchos los métodos presentados en textos científicos que incluyen las palabras, \textit{``líder"} y/o \textit{``seguidor"}, en sus títulos o resúmenes y cada uno de ellos adapta o define bajo sus propios términos y métodos la definición de este esquema. Para ejemplificar, a continuación se presentan dos definiciones de diferentes autores.\\
+Dentro de la literatura que trata del control bajo un esquema líder-seguidor, se puede dar uno cuenta que la definición del esquema líder-seguidor no es homogénea y depende de cada autor, ya que son muchos los métodos presentados en textos científicos que incluyen las palabras, \textit{``líder"} y/o \textit{``seguidor"}, en sus títulos o resúmenes y cada uno de ellos adapta o define bajo sus propios términos y métodos la definición de este esquema. Para ejemplificar, a continuación, se presentan dos definiciones de diferentes autores.\\
 
 1. Uno de los robots es asignado como el \textit{líder} y otro como \textit{seguidor}. El líder sigue una trayectoria predefinida, mientras que los seguidores mantienen una posición y dirección con cierta distancia respecto al líder [\citenum{lfa1}].
 
@@ -199,7 +199,7 @@ Tal definición ha ido evolucionando y generando nuevos métodos de diseño, los cu
 
 \subsection{Diseño mecatrónico}
 
-Parte de la identificación de un problema o necesidad es asignar \textit{funciones} necesarias para resolver dichos problemas y asociarlas con las características iniciales con las que se cuentan en la etapa del \textit{Diseño Conceptual}, en la que se analizan diferentes alternativas acerca de como satisfacer dichas funciones y en donde también, se evalúan para elegir la mejor alternativa. Posteriormente se formaliza ese concepto en la parte \textit{Diseño Detallado} cuyo objetivo es tener una aproximación bastante cercana del producto final y como se debería construir. Siempre con las validaciones de todas las funciones propuestas.\\
+Parte de la identificación de un problema o necesidad es asignar \textit{funciones} necesarias para resolver dichos problemas y asociarlas con las características iniciales con las que se cuentan en la etapa del \textit{Diseño Conceptual}, en la que se analizan diferentes alternativas acerca de cómo satisfacer dichas funciones y en donde también, se evalúan para elegir la mejor alternativa. Posteriormente se formaliza ese concepto en la parte \textit{Diseño Detallado} cuyo objetivo es tener una aproximación bastante cercana del producto final y como se debería construir. Siempre con las validaciones de todas las funciones propuestas.\\
 
 El diseño mecatrónico no es lineal, sino concurrente y requiere de un desarrollo sistemático y el uso de herramientas modernas de diseño, como lo son según Bishop [\citenum{bishop_2008}]:
 

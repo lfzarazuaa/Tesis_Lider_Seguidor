@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  28 OCT 2019 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  29 OCT 2019 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2788,20 +2788,20 @@ pe jpg)
 Package pdftex.def Info: imagenes/Implementacion/Estructura/09_Ensamble_Robot.j
 pg  used on input line 93.
 (pdftex.def)             Requested size: 153.66304pt x 178.64117pt.
-<imagenes/Implementacion/Estructura/10_Piso_1.jpg, id=2210, 564.60938pt x 752.8
+
+Underfull \vbox (badness 1748) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
+ [100 <./imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg> <./image
+nes/Implementacion/Estructura/09_Ensamble_Robot.jpg>]
+<imagenes/Implementacion/Estructura/10_Piso_1.jpg, id=2215, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/10_Piso_1.jpg Graphic file (type jpg)
 <use imagenes/Implementacion/Estructura/10_Piso_1.jpg>
 Package pdftex.def Info: imagenes/Implementacion/Estructura/10_Piso_1.jpg  used
  on input line 104.
 (pdftex.def)             Requested size: 141.152pt x 188.20265pt.
-
-Underfull \vbox (badness 1748) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
- [100 <./imagenes/Implementacion/Estructura/08_Wafles_Ensamblados.jpg> <./image
-nes/Implementacion/Estructura/09_Ensamble_Robot.jpg>]
 <imagenes/Implementacion/Estructura/11_Piso_2.jpg, id=2216, 564.60938pt x 752.8
 125pt>
 File: imagenes/Implementacion/Estructura/11_Piso_2.jpg Graphic file (type jpg)
@@ -2817,9 +2817,6 @@ File: imagenes/Implementacion/Estructura/12_Piso_03.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/Implementacion/Estructura/12_Piso_03.jpg  use
 d on input line 118.
 (pdftex.def)             Requested size: 132.68321pt x 176.91095pt.
-
-Underfull \vbox (badness 6542) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 122.
 LaTeX Info: Redefining \% on input line 122.
  [101 <./imagenes/Implementacion/Estructura/10_Piso_1.jpg> <./imagenes/Implemen
@@ -2842,8 +2839,9 @@ uidor.jpg  used on input line 136.
 (pdftex.def)             Requested size: 208.50125pt x 132.7602pt.
 LaTeX Info: Redefining \. on input line 140.
 LaTeX Info: Redefining \% on input line 140.
- [102 <./imagenes/Implementacion/Estructura/12_Piso_03.jpg> <./imagenes/Impleme
-ntacion/Estructura/13_Ensamble_Final.jpg>]
+
+[102 <./imagenes/Implementacion/Estructura/12_Piso_03.jpg> <./imagenes/Implemen
+tacion/Estructura/13_Ensamble_Final.jpg>]
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
  [103 <./imagenes/Implementacion/Estructura/14_Robots_Lider_Seguidor.jpg>]
@@ -3871,7 +3869,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `Principal.out' has not changed.
-(rerunfilecheck)             Checksum: ED6CFD8B4C21D0608929AC870C8E1788;11690.
+(rerunfilecheck)             Checksum: B4E50C988E84D938558B224D5FB27570;11689.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3904,7 +3902,7 @@ Here is how much of TeX's memory you used:
  14899 multiletter control sequences out of 15000+600000
  15894 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,45p,1455b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,45p,1454b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-di
@@ -3926,7 +3924,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (220 pages, 14032660 bytes).
+Output written on Principal.pdf (220 pages, 14032723 bytes).
 PDF statistics:
  2892 PDF objects out of 2984 (max. 8388607)
  2441 compressed objects within 25 object streams
