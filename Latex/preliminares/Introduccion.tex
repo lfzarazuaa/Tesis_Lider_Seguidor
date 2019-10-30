@@ -43,7 +43,7 @@ Por parte del IEEE (Instituto de Ingeniería Eléctrica y Electrónica) se llevó a 
 
 La Universidad Politécnica Superior de Elche desarrolló un trabajo de investigación llamado \textit{``Seguimiento de robots mediante visión artificial"}, el cual es un trabajo aplicado al mantenimiento de formaciones y en donde se describe el desarrollo e implementación de algoritmos de navegación que permite a un robot móvil seguir la ruta realizada por otro robot, manteniendo una formación entre ellos. El trabajo implementa diferentes algoritmos de control de movimientos, de manera que el robot que sigue a el líder se mantiene a una distancia (posición y orientación) determinada con respecto a el robot líder[\citenum{seguimiento_de_robots}].
 
-En el Departamento de Ingeniería Electrónica y Ciencia de la Comunicación de La Universidad de California se desarrolló un trabajo de investigación llamado \textit{``Formation control of nonholomic mobile robots with omnidirectional visual servoing and motion segmentaion"} (Control para la formación de robots móviles no-holonómicos con servo visión omnidireccional y movimiento segmentado) el cual habla de un conjunto de robots móviles omnidireccionales basado en el diseño líder-seguidor usando visión omnidireccional, y en donde se especifica la formación deseada en un plano y esta despues es traducida en un control servo visual para cada seguidor. En el trabajo también se muestra que la dinámica de la linealización de retroalimentación del líder-seguidor sufre en consecuencia de las restricciones no  holonómicas de los robots y la no-linealidad del modelo [\citenum{formation_control}].
+En el Departamento de Ingeniería Electrónica y Ciencia de la Comunicación de La Universidad de California se desarrolló un trabajo de investigación llamado \textit{``Formation control of nonholomic mobile robots with omnidirectional visual servoing and motion segmentaion"} (Control para la formación de robots móviles no-holonómicos con servo visión omnidireccional y movimiento segmentado) el cual habla de un conjunto de robots móviles omnidireccionales basado en el diseño líder-seguidor usando visión omnidireccional, y en donde se especifica la formación deseada en un plano y esta después es traducida en un control servo visual para cada seguidor. En el trabajo también se muestra que la dinámica de la linealización de retroalimentación del líder-seguidor sufre en consecuencia de las restricciones no  holonómicas de los robots y la no-linealidad del modelo [\citenum{formation_control}].
 
 \begin{figure}[H]
 	\centering \fbox{\includegraphics[scale=0.25]{imagenes/MarcodeReferencia/Antecedentes/01_Antecedentes_Control_Formacion.jpg}}
@@ -53,14 +53,14 @@ En el Departamento de Ingeniería Electrónica y Ciencia de la Comunicación de La 
 
 \section*{Planteamiento del problema}
 \addcontentsline{toc}{section}{Planteamiento del problema}
-En el presente trabajo se aborda el desarrollo de un esquema de control \textit{líder-seguidor}, implementado a dos robots móviles terrestres, los cuales tendrán el objetivo de llegar a diferentes puntos o trayectorias dentro de un área de trabajo, evadiendo obstáculos que pudieran haber dentro del escenario de pruebas o en la trayectoria. \\
+En el presente trabajo se aborda el desarrollo de un esquema de control \textit{líder-seguidor}, implementado a dos robots móviles terrestres, los cuales tendrán el objetivo de llegar a diferentes puntos o trayectorias dentro de un área de trabajo, evadiendo obstáculos que pudiera haber dentro del escenario de pruebas o en la trayectoria. \\
 
 La tarea a cumplir por parte del \textit{robot líder} es la de seguir alguna trayectoria proporcionada por el usuario (por medio de una interfaz gráfica) y evadir los obstáculos fijos dentro de un área de trabajo controlada, mientras que la tarea a cumplir por parte del \textit{robot seguidor}, es imitar el comportamiento del líder de manera autónoma.
 \\\\Todo esto con el objetivo de aportar conocimiento en el rubro de la robótica cooperativa, en especial en la robótica aplicada al control líder-seguidor, con fundamentos en el desarrollo del proyecto SIP 20181591.
 
 \section*{Organización del reporte}
 \addcontentsline{toc}{section}{Organización del reporte}
-El presente trabajo se divide en 6 capítulos principales , que son: \textit{Marco de Referencia, Diseño Conceptual, Diseño Detallado, Integración del Sistema, Análisis de Costos} y \textit{Conclusiones}. 
+El presente trabajo se divide en 6 capítulos principales, que son: \textit{Marco de Referencia, Diseño Conceptual, Diseño Detallado, Integración del Sistema, Análisis de Costos} y \textit{Conclusiones}. 
 
 En el primer capítulo llamado \textit{Marco de Referecia} se  fundamenta  toda  la  metodología  del  diseño  del  control de los robots móviles y del control líder-seguidor. Se describen las características fundamentales del sistema operativo ROS \textit{(Robotic Operating System)}, así como sus librerías AMCL \textit{(Adaptive Monte Carlo Localization)} y VFH \textit{(Vector Field Histogram)}, en general se aporta todos los conceptos y teoría previa para realizar el proyecto.
 

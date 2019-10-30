@@ -3,13 +3,13 @@
 \label{sec:Glosario}
 \section*{ROS} \label{sec:ROS} Por sus siglas en inglés \textit{Robot Operating System} (Sistema Operativo Robótico), es un sistema operativo para robots que posé herramientas, librerías y convenciones para ayudar a los desarrolladores de software a crear aplicaciones, con el objetivo de simplificar la tarea de crear complejos y robustos sistemas robóticos, proveyendo de varios ambientes de desarrollo especializado en programas y aplicaciones robóticas [\citenum{ROS_book}].
 
-\section*{Nodo en ROS} Un \textit{nodo} es un proceso que ejecuta un cálculo, el cual se visualiza en un gráfico como un punto de intersección para mejor la comprensión y se comunica con otros nodos mediante \textit{tópicos} en ejecución. Un nodo esta diseñado para operar en una escala finita. Un ejemplo de como funcionan los nodos se podría ver en un sistema para controlar un robot; existirá un nodo para cada acción del robot, es decir, habrá un nodo que controle cada sensor que el robot tenga, habrá otro nodo que controle los motores del robot, la localización, la planificación de la trayectoria, habrá un nodo más que proporcione una vista gráfica del sistema y otro que manipule todos los datos obtenidos del sensando y así, de la misma manera para cada acción o tarea que tenga que ejecutar el robot.
+\section*{Nodo en ROS} Un \textit{nodo} es un proceso que ejecuta un cálculo, el cual se visualiza en un gráfico como un punto de intersección para mejor la comprensión y se comunica con otros nodos mediante \textit{tópicos} en ejecución. Un nodo está diseñado para operar en una escala finita. Un ejemplo de cómo funcionan los nodos se podría ver en un sistema para controlar un robot; existirá un nodo para cada acción del robot, es decir, habrá un nodo que controle cada sensor que el robot tenga, habrá otro nodo que controle los motores del robot, la localización, la planificación de la trayectoria, habrá un nodo más que proporcione una vista gráfica del sistema y otro que manipule todos los datos obtenidos del sensando y así, de la misma manera para cada acción o tarea que tenga que ejecutar el robot.
 
 \section*{Tópico} Un \textit{tópico} es el nombre con el cual se identifica el contenido de un \textit{mensaje}, el cual, literalmente se puede ver como un tema de conversación [\citenum{ROS_book}]. Cuando un nodo está interesado en un determinado tipo de dato se \textit{suscribe} al tópico correspondiente, por ejemplo, al estado de la batería de un determinado robot, en donde puede haber varios publicadores y suscriptores concurrentes en un mismo tópico. De igual manera un sólo nodo puede publicar y/o suscribirse a múltiples tópicos con el fin de extraer todos los datos que el nodo necesite procesar para dar una salida [\citenum{U_P_Cartagena}].
 
 \section*{Mensaje en ROS} Los \textit{nodos} se comunican entre sí mediante la publicación de \textit{mensajes} a los tópicos. Un \textit{mensaje} es una estructura de datos simple, que comprende campos escritos [\citenum{Topics}]. En otras palabras, la forma en que un nodo envía o recibe información es a través de un \textit{mensaje}.
 
-\section*{Namespace} Un \textit{namespace} es un identificador que se le pone a los tópicos con el fin de diferenciar uno del otro cuando se tienen tópicos con un mismo nombre. Por ejemplo, cuando se tienen más de una variable con mismo nombre como en el caso de dos o más baterias baterias o dos o más  actuadores, se les ponen un índice identificado para diferenciar uno del otro.
+\section*{Namespace} Un \textit{namespace} es un identificador que se le pone a los tópicos con el fin de diferenciar uno del otro cuando se tienen tópicos con un mismo nombre. Por ejemplo, cuando se tienen más de una variable con mismo nombre como en el caso de dos o más baterías o dos o más actuadores, se les ponen un índice identificado para diferenciar uno del otro.
 
 \section*{Callback}  \textit{Callback} o \textit{devolución de llamada}, es una función en ROS que controla los mensajes, es decir, cada vez que llega un mensaje ROS llama a su \textit{message manager} (administrador de mensajes) y le pasa el nuevo mensaje, para que este comience a trabajar con base en el mensaje recibido. En resumen, ejecuta la función al momento de recibir un mensaje actuando como una interrupción al sistema.
 
@@ -24,6 +24,7 @@
 \section*{Rqt} Es una herramienta para la creación de GUIs (por sus siglas en inglés \textit{Graphical User Interface}) que posé alrededor de 30 herramientas para el desarrollo y que viene integrada a partir de la versión ROS Fuerte [\citenum{ROS_book}].
 
 \section*{Qt} Es un framework multiplaforma utilizado ampliamente en la programación de GUIs y del cual, rqt esta basado [\citenum{ROS_book}].
+
 
 
 

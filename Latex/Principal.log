@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  29 OCT 2019 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.15)  29 OCT 2019 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,11 +975,11 @@ l.44 \dedicatoria
 e same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 
+l.28 
       [1
 
 ]
-LaTeX Font Info:    Try loading font information for U+futs on input line 42.
+LaTeX Font Info:    Try loading font information for U+futs on input line 45.
  (c:/texlive/2019/texmf-dist/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
 )
@@ -993,7 +993,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 
+l.45 
       [2]) [3] [4
 
 ] (./Principal.toc
@@ -1025,27 +1025,27 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 (spanish)                faked small caps on input line 6.
 
 
-Overfull \hbox (13.20064pt too wide) detected at line 7
+Overfull \hbox (6.48466pt too wide) detected at line 7
  [][]
  []
 
 
-Overfull \hbox (13.20064pt too wide) detected at line 8
+Overfull \hbox (6.48466pt too wide) detected at line 8
  [][]
  []
 
 
-Overfull \hbox (13.20064pt too wide) detected at line 9
+Overfull \hbox (6.48466pt too wide) detected at line 9
  [][]
  []
 
 
-Overfull \hbox (16.75328pt too wide) detected at line 10
+Overfull \hbox (10.03731pt too wide) detected at line 10
  [][]
  []
 
 
-Overfull \hbox (20.30592pt too wide) detected at line 11
+Overfull \hbox (13.58995pt too wide) detected at line 11
  [][]
  []
 
@@ -1073,17 +1073,17 @@ LaTeX Info: Redefining \% on input line 47.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-Overfull \hbox (9.89133pt too wide) detected at line 7
+Overfull \hbox (3.17535pt too wide) detected at line 7
  [][]
  []
 
 
-Overfull \hbox (9.89133pt too wide) detected at line 8
+Overfull \hbox (3.17535pt too wide) detected at line 8
  [][]
  []
 
 
-Overfull \hbox (16.75328pt too wide) detected at line 9
+Overfull \hbox (10.03731pt too wide) detected at line 9
  [][]
  []
 
@@ -3898,7 +3898,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12181 strings out of 492609
  199783 string characters out of 6132833
- 318134 words of memory out of 5000000
+ 318128 words of memory out of 5000000
  14899 multiletter control sequences out of 15000+600000
  15894 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3924,7 +3924,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
 e1/public/fourier/fourier-orns.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb>
-Output written on Principal.pdf (220 pages, 14032723 bytes).
+Output written on Principal.pdf (220 pages, 14032297 bytes).
 PDF statistics:
  2892 PDF objects out of 2984 (max. 8388607)
  2441 compressed objects within 25 object streams
